@@ -1,0 +1,47 @@
+/*  ------------------------------------------  */
+            /*FOOTER STYLES*/
+/*  ------------------------------------------  */
+.footer-ayr{
+    background: rgb(0,203,255);
+    background: -moz-linear-gradient(137deg, rgba(0,203,255,1) 0%, rgba(31,0,108,1) 100%);
+    background: -webkit-linear-gradient(137deg, rgba(0,203,255,1) 0%, rgba(31,0,108,1) 100%);
+    background: linear-gradient(137deg, rgba(0,203,255,1) 0%, rgba(31,0,108,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cbff",endColorstr="#1f006c",GradientType=1);
+    padding: 1vw 2vw 1vw 2vw;
+    font-size: 1.1em;
+    font-family: 'Gotham-Rounded', sans-serif;
+}
+.footer-ayr .sub-div{
+    padding: 2vw 5vw;
+    color: #fff;
+    font-weight: bold;
+    text-align: justify;
+}
+.footer-ayr .sub-div:nth-child(2){
+    font-size: 0.9em;
+    margin-top: 3.5vw;
+}
+.footer-ayr .sub-div:nth-child(3){
+    margin-top: 2vw;
+    text-align: center;
+}
+.footer-ayr .sub-div a{
+    color: #ffbf80
+    ;
+    text-decoration: none;
+}
+.footer-ayr .sub-div a:hover{
+    color: #ffd9b3;
+    text-decoration: underline;
+}
+.footer-ayr .sub-div img{
+    display: block;
+    margin: auto;
+    width: 45%;
+}
+    @media (max-width: 576px) {
+        .footer-ayr{
+            text-align: center;
+            padding: 10vw;
+        }
+    }
