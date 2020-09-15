@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/montserrat/Montserrat-Medium.ttf');
+}    
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url('../webfonts/montserrat/Montserrat-Light.ttf');
+}  
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../webfonts/Montserrat-Regular.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../webfonts/montserrat/Montserrat-Bold.ttf');
+}   
+@font-face {
+    font-family: 'Montserrat-semiBold';
+    src: url('../webfonts/montserrat/Montserrat-SemiBold.ttf');
+}   
+
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-size: 14px;
+    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Regular'; 
+    background-color: #efefef; /* color de Fondo */
+    background-repeat: inherit; 
+    background-size: 100%; 
+    background-attachment: fixed;  
+    /* Para poner color en el fondo de pantalla  
+    background-color: transparent; /* Para no poner imagenes de fondo */
+    
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color:#fff;
+}
+
+
+.header_gobierno .nav-link{
+    color: #bb264e !important;
+}
+ 
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header_title{
+    cursor: pointer;
+}
+.header_title:hover{
+    opacity: .8;
+}
+
+
+.div .containerTab .primera {
+  color:#99cd33;
+  padding-top: 3.5vw;
+  padding-left: 0vw;
+}
+
+.div .segunda {
+  color:#006666;
+  padding-top: 3.5vw;
+  padding-left: 0vw;
+}
+
+.div .tercera {
+  color:#0099cc;
+  padding-top: 3.5vw;
+  padding-left: 0vw;
+
+}
+
+.div .forma {
+  color:#993266;
+  padding-top: 3.5vw;
+  padding-left: 0vw;
+}
