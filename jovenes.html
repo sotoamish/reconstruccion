@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-   <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <meta name="keywords" content=" cordinación nacional de desarrollo cultural infantil, alas, raíces, infancias, cartelera, conciertos, juegos, niños, niñas, infantil, los pinos, feria de las calacas, aplicaciones, actividades, verano, bebés, cultura, artes">
-    <title>Alas y Raíces | Inicio</title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alas y Raíces | Jóvenes</title>
+
     <!-- Favico -->
     <link rel="icon" type="image/png" href="https://www.alasyraices.gob.mx/img/favico2.png">
-        
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139317831-1">
     </script>
@@ -23,25 +22,24 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    
+
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
 
     <!-- style sheets -->
     <!-- general styles -->
     <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/neonavbar.css">
     <link rel="stylesheet" href="css/FooterAyR.css">
     <link rel="stylesheet" href="css/FooterGob.css">
 
     <!-- page styles -->
-    <link rel="stylesheet" href="css/neoindex.css"> 
 
+    <!-- components styles -->
 </head>
- 
-
 <body>
-  <div class="container-fluid" style="overflow-x: hidden;"> 
-    <!-- header gobierno -->
+    <div class="container-fluid">
+        <!-- header gobierno -->
         <section>
             <div class="row">
                 <div class="col-12 p-0">                                        
@@ -74,64 +72,26 @@
                 </div>
             </div>
         </section>
-    <!--/.header gobierno --> 
-    
-    <!-- Page Content -->
-		<section> 
-            <div class="row">
+        <!--/.header gobierno --> 
+        
 
-                <div class="col-12 quien_eres">
-                    <img src="img/aYr.png" alt="logo de alas y raíces"> ¿Quién eres?
-                </div>
-                
-                <div class="col-12 p-0 ageBotonera">
-                    <div class="ageBtn active" id="primera" onClick="resizeBtn(this)">
-                        <div>De 0 a 5 años</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'infancia1.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/1ERA_1.png" alt="boton de 0 a 5 años">
-                        </div>
-                    </div>
-                    <div class="ageBtn" id="segunda" onClick="resizeBtn(this)">
-                        <div>De 6 a 12 años</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'infancia2.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/2DA_2.png" alt="boton de 6 a 12 años">
-                        </div>
-                    </div>
-                    <div class="ageBtn" id="tercera" onClick="resizeBtn(this)">
-                        <div>Jóvenes 18 +</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'jovenes.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/JOVENES_2.png" alt="boton de 18 +">
-                        </div>
-                    </div>
-                    <div class="ageBtn" id="forma" onClick="resizeBtn(this)">
-                        <div>Formadores</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'formadores.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/formadores.png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 banner_block">
-                    <img src="img/banner.png" alt="">
-                </div>
-
+        <section>
+            <div class="row p-0">
+                <div class="col-12 neoNavbar" id="neoNavbar"></div>
             </div>
         </section>
-    <!--/.Page Content --> 
-  
-    <!-- footer AyR -->
+        
+
+
+
+        <!-- navbar -->
+        <section>
+            <div class="row" id="neoNavbar">
+            </div>
+        </section>
+        <!--/.navbar --> 
+
+        <!-- footer AyR -->
         <section>
             <div class="row footer-ayr">
                 <div class="col-4">
@@ -153,16 +113,16 @@
                 </div>
             </div>
         </section>
-    <!--/.footer AyR --> 
+        <!--/.footer AyR --> 
         
-    <!-- footer GOBMX -->
+        <!-- footer GOBMX -->
         <section>
             <div class="row footer-gob">                
                 <div class="col-12">
                     <div class="row">
                         <img src="img/fondofooter.png" alt="pleca de separación" id="pleca-gob">
                     </div>
-                    
+                        
                     <div class="row">
                         <div class="col-sm-3 sub-div footer-gob1">
                             <div>
@@ -186,7 +146,7 @@
                                 <a href="https://www.plataformadetransparencia.org.mx/web/guest/inicio">Plataforma Nacional de Transparencia</a>
                             </p>
                         </div>
-    
+        
                         <div class="col-sm-3 sub-div footer-gob3">
                             <span>¿Qué es gob.mx?</span><br><br>
                             <p>
@@ -203,7 +163,7 @@
                                 <a href="https://www.gob.mx/sitemap">Mapa del sitio</a>
                             </p>
                         </div>
-                        
+                            
                         <div class="col-sm-3 sub-div footer-gob4">
                             <span> <a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></span><br><br>
                             <p>
@@ -216,12 +176,15 @@
                 </div>
             </div>
         </section>
-    <!--/.footer GOBMX --> 
-
-<!-- page scripts -->
-<script src="js/common.js"></script> 
-<!-- <script src="js/Components/neonavbar.js"></script>    -->
-<script src="js/index.js"></script>
-
+        <!--/.footer GOBMX --> 
+    </div>
 </body>
-</html> 
+
+<!-- general scripts -->
+<script src="js/common.js"></script> 
+<!-- page scripts -->
+
+<!-- component scripts -->
+<script src="js/Components/neonavbar.js"></script>
+
+</html>

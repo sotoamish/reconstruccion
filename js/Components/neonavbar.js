@@ -24,17 +24,17 @@ function printNavBar() {
                         </a>
                     </li>
                     <li class="nav-item infancia2">
-                        <a class="nav-link" href="infacia2.html">
+                        <a class="nav-link" href="infancia2.html">
                             6 a 18 años
                         </a>
                     </li>
                     <li class="nav-item jovenes">
-                        <a class="nav-link" href="jovenes">
+                        <a class="nav-link" href="jovenes.html">
                             18 + años
                         </a>
                     </li>
                     <li class="nav-item formadores">
-                        <a class="nav-link" href="formadores">
+                        <a class="nav-link" href="formadores.html">
                             Formadores
                         </a>
                     </li>
