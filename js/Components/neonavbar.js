@@ -1,42 +1,55 @@
-//for all pages when page is loaded create navbar
+// when page is loaded create navbar
 document.addEventListener("DOMContentLoaded", function() {
-    // function fron this script
+    // function from same script
     printNavBar();
 });
-
 
 //generate the NavBar
 function printNavBar() {
     toPrint = `
-        <nav class="navbar nav_neoayr navbar-expand-lg">
-            <button class="navbar-toggler" id="navgar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md static-top p-0">            
+            <a class="navbar-brand" href="index.html">
+                <img src="img/ayr2.png" id="navBrand" alt="al home de alas y raíces teest">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="navbarToggler" style="">
-                <div class="navbar-nav brand_container .ml-md-auto">           
-                    <a href="index.html">
-                    <img id="navBrand" src="img/neoindex/aYr.png" alt="Vamos al inicio de la página Alas y Raí­ces" />
-                    </a>
 
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <h2> ¿Quién eres? </h2>
-                    </li> 
+            <div class="collapse navbar-collapse p-0" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item infancia1">
+                        <a class="nav-link" href="infancia1.html">
+                            0 a 5 años
+                        </a>
+                    </li>
+                    <li class="nav-item infancia2">
+                        <a class="nav-link" href="infacia2.html">
+                            6 a 18 años
+                        </a>
+                    </li>
+                    <li class="nav-item jovenes">
+                        <a class="nav-link" href="jovenes">
+                            18 + años
+                        </a>
+                    </li>
+                    <li class="nav-item formadores">
+                        <a class="nav-link" href="formadores">
+                            Formadores
+                        </a>
+                    </li>
                 </ul>
-
-                </div>
             </div>
         </nav>
-            `;
-    const navAyr = document.getElementsByClassName("nav_neoayr")[0];
+    `;
+    
+    const navAyr = document.getElementById("neoNavbar");
     navAyr.innerHTML = toPrint;
 
     // set active the current section
     navAyr.querySelectorAll("li").forEach( (elm) => {
         if( window.location.href === elm.querySelector("a").href ){
-            // console.log( elm.querySelector("a").href );
             elm.classList.add("active");
         }        
     });
-
 }

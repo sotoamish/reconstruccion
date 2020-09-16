@@ -33,4 +33,11 @@
     background-size: 100%; 
     background-attachment: fixed;  
   }
+
+  .header_gobierno .nav-link{
+    color: #bb264e !important;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   
