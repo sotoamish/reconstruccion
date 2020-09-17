@@ -1,15 +1,15 @@
-// when page is loaded create navbar
+// create a navbar when page is loaded
 document.addEventListener("DOMContentLoaded", function() {
     // function from same script
     printNavBar();
 });
 
-//generate the NavBar
+// generate the NavBar
 function printNavBar() {
     toPrint = `
         <nav class="navbar navbar-expand-md static-top p-0">            
             <a class="navbar-brand" href="index.html">
-                <img src="img/ayr2.png" id="navBrand" alt="al home de alas y raíces teest">
+                <img src="img/ayrH.png" id="navBrand" alt="al home de alas y raíces teest">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,4 +52,28 @@ function printNavBar() {
             elm.classList.add("active");
         }        
     });
+}
+
+
+// change active btn of subMenu
+const subMenuBtns = document.getElementsByClassName("subMenuBtn");   
+function subMenuChange( elm ){
+
+    for (let i = 0; i < subMenuBtns.length; i++) {
+
+        if( subMenuBtns[i] === elm ){
+            if(!subMenuBtns[i].classList.contains("active"))
+            {
+                //if selected btn not contains active, add
+                subMenuBtns[i].classList.add("active");
+
+                //execute functions
+                console.log("EXECUTE SOMETHING");
+            }
+        } else {
+            //if this btn contains active, delete class
+            subMenuBtns[i].classList.remove("active");
+        }
+
+    }
 }
