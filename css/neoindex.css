@@ -8,6 +8,12 @@
 .quien_eres img{
   width: 50px;
 }
+@media (max-width: 577px) { 
+  .quien_eres{
+    padding: 6vw;
+    font-size: 1.8em;
+  }
+}
 
 
 .ageBotonera{
@@ -15,35 +21,37 @@
 }
 .ageBtn{
   display: inline-block;
-  margin:0;
-  width: 19vw;
+  margin:0px;
+  width: 21vw;
   color: #fff;
   font-size: 1.3em;
-  height: 500px;
+  height: 30vw;
   overflow: hidden;
-  -webkit-transition: width 0.5s ease-in-out, font-size 0.7s;
-  -moz-transition: width 0.5s ease-in-out, font-size 0.7s;
-  -o-transition: width 0.5s ease-in-out, font-size 0.7s;
-  transition: width 0.5s ease-in-out, font-size 0.7s;
+  cursor: pointer;
+  -webkit-transition: width 0.2s ease-in-out, font-size 0.7s;
+  -moz-transition: width 0.2s ease-in-out, font-size 0.7s;
+  -o-transition: width 0.2s ease-in-out, font-size 0.7s;
+  transition: width 0.2s ease-in-out, font-size 0.7s;
 }
-.ageBtn img{
-  width: 70%;
-  -webkit-transition: width 0.5s;
-  -moz-transition: width 0.5s;
-  -o-transition: width 0.5s;
-  transition: width 0.5s;
+@media (max-width: 768px) { 
+  .ageBtn{
+    height: 300px;
+    height: 38vw;
+  }
 }
-.ageBtn a{
-  pointer-events: none;
+@media (max-width: 577px) { 
+  .ageBotonera{
+    padding: 0;
+  }
+  .ageBtn{
+    width: 43vw;
+    height: 200px;
+  }
 }
-.ageBtn button{
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+.red{
+  background:red;
 }
+
 .ageBotonera #primera {
 background:#99cd33;
 padding-top: 3.5vw;
@@ -65,12 +73,52 @@ padding-top: 3.5vw;
 padding-left: 0vw;
 }
 .ageBtn.active{
-  width: 39vw;
+  width: 30vw;
   font-size: 2.2em;
 }
-.ageBtn.active img{
-  width: 60%;
+@media (max-width: 577px) { 
+  .ageBtn.active{
+    width: 47vw;
+    font-size: 1.4em;
+  }
+}
+
+
+.ageBtn .imgContainer {
+  width: 18vw;
+  margin: auto;
+}
+.ageBtn img{
+  width: 95%;
+  margin-top: 2vw;
 } 
+.ageBtn.active img.claro{
+  opacity: 0
+}
+.ageBtn.active img.color{
+  opacity: 1
+}
+.ageBtn img.claro{
+ opacity: 1
+}
+.ageBtn img.color{
+  margin-top: -20.5vw;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  -moz-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+@media (max-width: 577px) { 
+  .ageBtn .imgContainer {
+    width: 35vw;
+  }
+  .ageBtn img.color{
+    margin-top: -43.5vw;
+  }
+}
+
+
 .ageBtn.active button{
   opacity: 1;
   pointer-events: auto;
@@ -83,5 +131,19 @@ padding-left: 0vw;
 .banner_block{
   background: #000;
   text-align: center;
-  height: 25vh;
+  margin-bottom: 5px;
+}
+.banner_block img{
+  width: 100%;
+}
+.banner_block .small{
+  display: none;
+}
+@media (max-width: 577px) { 
+  .banner_block img{
+    display: none;
+  }
+  .banner_block .small{
+    display: block;
+  }
 }

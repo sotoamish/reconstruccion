@@ -27,10 +27,13 @@
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
 
+    <!-- swiper carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- style sheets -->
     <!-- general styles -->
     <link rel="stylesheet" href="css/Main.css">
-    <link rel="stylesheet" href="css/FooterAyR.css">
     <link rel="stylesheet" href="css/FooterGob.css">
 
     <!-- page styles -->
@@ -81,79 +84,68 @@
             <div class="row">
 
                 <div class="col-12 quien_eres">
-                    <img src="img/aYr.png" alt="logo de alas y raíces"> ¿Quién eres?
+                    <img src="img/index/aYr.png" alt="logo de alas y raíces"> ¿Quién eres?
                 </div>
                 
-                <div class="col-12 p-0 ageBotonera">
-                    <div class="ageBtn active" id="primera" onClick="resizeBtn(this)">
+                <div class="col-12 ageBotonera">
+                    <div class="ageBtn active" id="primera" data-link="infancia1.html">
                         <div>De 0 a 5 años</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'infancia1.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/1ERA_1.png" alt="boton de 0 a 5 años">
+                        <div class="imgContainer">
+                            <img src="img/index/1a inf.svg" class="claro" alt="ícono de 0 a 5 años en blanco y negro">
+                            <img src="img/index/1a inf.png" class="color"alt="ícono de 0 a 5 años en color">
                         </div>
                     </div>
-                    <div class="ageBtn" id="segunda" onClick="resizeBtn(this)">
+                    <div class="ageBtn" id="segunda" data-link="infancia2.html">
                         <div>De 6 a 12 años</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'infancia2.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/2DA_2.png" alt="boton de 6 a 12 años">
+                        <div class="imgContainer">
+                            <img src="img/index/2a inf.svg" class="claro" alt="ícono de 6 a 12 años en blanco y negro">
+                            <img src="img/index/2a inf.png" class="color"alt="ícono de 6 a 12 años en color">
                         </div>
                     </div>
-                    <div class="ageBtn" id="tercera" onClick="resizeBtn(this)">
+                    <div class="ageBtn" id="tercera" data-link="jovenes.html">
                         <div>Jóvenes 18 +</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'jovenes.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/JOVENES_2.png" alt="boton de 18 +">
+                        <div class="imgContainer">
+                            <img src="img/index/jovenes.svg" class="claro" alt="ícono de 18 +">
+                            <img src="img/index/jovenes.png" class="color"alt="ícono de 18 +">
                         </div>
                     </div>
-                    <div class="ageBtn" id="forma" onClick="resizeBtn(this)">
+                    <div class="ageBtn" id="forma" data-link="formadores.html">
                         <div>Formadores</div>
-                        <div>
-                            <button class="btn btn-dark" onClick="location.href = 'formadores.html';"> Entrar </button>
-                        </div>
-                        <div>
-                            <img src="img/formadores.png" alt="">
+                        <div class="imgContainer">
+                            <img src="img/formadores.svg" class="claro" alt="">
+                            <img src="img/formadores.png" class="color" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 banner_block">
-                    <img src="img/banner.png" alt="">
+                <div class="col-12 p-0 banner_block">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/juego y mov-02.png" alt="banner termporal">
+                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/juego y mov-02.png" alt="banner termporal">
+                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/juego y mov-02.png" alt="banner termporal">
+                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/juego y mov-02.png" alt="banner termporal">
+                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
 
             </div>
         </section>
     <!--/.Page Content --> 
-  
-    <!-- footer AyR -->
-        <section>
-            <div class="row footer-ayr">
-                <div class="col-4">
-                    <a href="#">¿Quiénes Somos?</a> <br>
-                    <a href="#">Galería</a> <br>
-                    <a href="#">Prensa</a>
-                </div>
-                <div class="col-4">
-                    <a href="#">Suscríbete</a> <br>
-                    <a href="#">Términos y Condiciones</a> <br>
-                    <a href="#">Políticas de privacidad</a>
-                </div>
-                <div class="col-4">
-                    <span>Contacto:</span> <br>
-                    <a href="#"><i class="fab fa-lg fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-lg fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-lg fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-lg fa-youtube"></i></a>
-                </div>
-            </div>
-        </section>
-    <!--/.footer AyR --> 
         
     <!-- footer GOBMX -->
         <section>
