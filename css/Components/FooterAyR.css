@@ -13,3 +13,10 @@
 .footer-ayr a:hover{
     color: #014c4c;
 }
+
+@media (max-width: 576px) {
+    .footer-ayr{
+        padding: 6vw;
+        line-height: 2.5em;
+    }
+}

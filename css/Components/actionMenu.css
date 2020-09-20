@@ -1,0 +1,29 @@
+.action_menu_block{
+    text-align: center;
+    padding: 2vw 8vw;
+   }
+   .action_menu_block .menu_btn_container{
+   
+   }
+   .action_menu_block .menu_btn_container img{
+       width: 80%;
+       cursor: pointer;
+   }
+   
+
+   .action_menu_block .menu_btn_container img.color{
+       opacity: 0;
+       margin-top: -7vw;
+       width: 75%;
+   }
+   .action_menu_block .menu_btn_container.active img.claro{
+       opacity: 0;
+   }
+   .action_menu_block .menu_btn_container.active img.color{
+       opacity: 1;
+   }
+   
+
+   .search_block{
+       padding: 3vw 4vw;
+   }   

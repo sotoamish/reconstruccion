@@ -53,27 +53,3 @@ function printNavBar() {
         }        
     });
 }
-
-
-// change active btn of subMenu
-const subMenuBtns = document.getElementsByClassName("subMenuBtn");   
-function subMenuChange( elm ){
-
-    for (let i = 0; i < subMenuBtns.length; i++) {
-
-        if( subMenuBtns[i] === elm ){
-            if(!subMenuBtns[i].classList.contains("active"))
-            {
-                //if selected btn not contains active, add
-                subMenuBtns[i].classList.add("active");
-
-                //execute functions
-                console.log("EXECUTE SOMETHING");
-            }
-        } else {
-            //if this btn contains active, delete class
-            subMenuBtns[i].classList.remove("active");
-        }
-
-    }
-}
