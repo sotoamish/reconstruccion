@@ -11,4 +11,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementsByClassName("subMenuBtn")[0].click();
     }
 
+
+
+    //PROVISIONAL, SELECCIONA BLOQUE DE AUDIOS
+    document.getElementsByClassName("menu_btn_container")[1].click();
+
 });

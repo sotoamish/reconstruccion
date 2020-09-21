@@ -1,0 +1,147 @@
+.comp_audios{
+    background: #fff;
+}
+
+
+.comp_audios .comp_audios_avatar{
+    padding: 2vw;
+    text-align: center;
+    font-family: "Montserrat-Bold";
+    font-size: 1.3em;
+    max-height: 250px;
+    overflow: hidden;
+}
+.comp_audios .comp_audios_avatar .avatar_container{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 auto 1vw auto;
+}
+.comp_audios .comp_audios_avatar .avatar_container img{
+    width: 100%;
+    margin: auto;
+}
+
+
+.comp_audios .comp_audios_trackList{
+    padding: 0 4vw 0 2vw;
+    overflow-y: auto;
+    height: 250px;
+}
+.comp_audios .comp_audios_trackList .audio_element {
+    border-bottom: 2px solid #99cc33;
+    padding: 1vw;
+    cursor: pointer;
+}
+.comp_audios .comp_audios_trackList .audio_element:hover {
+    opacity: 0.5;
+}
+.comp_audios .comp_audios_trackList .audio_element .nombre {
+    font-family: "Montserrat-Bold";
+    font-size: 1.5em;
+    color: #99cc33;
+    margin-bottom: 0.2em;
+}
+.comp_audios .comp_audios_trackList .audio_element .descripcion {
+    font-family: "Montserrat";
+    font-size: 0.9em;
+    color: #606060;
+    text-align: justify;
+}
+
+
+.comp_audios .controls_container{
+    height: 90px;
+    background: #99cc33;
+}
+.comp_audios .controls_container .comp_audios_current{
+    padding: 1vw 2vw;
+    color: #fff;
+}
+.comp_audios .controls_container .comp_audios_current #comp_audio_current_name{
+    font-family: "Montserrat-Bold";
+    font-size: 1.2em;
+}
+.comp_audios .controls_container .comp_audios_current #comp_audio_current_description{
+    font-family: "Montserrat";
+    font-size: 0.8em;
+}
+
+
+
+.comp_audios .controls_container .comp_audio_controls{
+    text-align: center;
+    padding: 0.6vw 0;
+}
+.comp_audios .controls_container .comp_audio_controls div{
+    display: inline-block;
+    font-size: 2em;
+    margin: 0 0.5vw;
+    vertical-align: middle;
+}
+.comp_audios .controls_container .comp_audio_controls .big_btn{
+    font-size: 3.5em;
+}
+.comp_audios .controls_container .comp_audio_controls #comp_audio_stop{
+    display:none;
+}
+.comp_audios .controls_container .comp_audio_controls div i{
+    cursor: pointer;
+    color: #fff;
+}
+.comp_audios .controls_container .comp_audio_controls div i:hover{
+    opacity: 0.7;
+}
+
+
+.comp_audios .controls_container .comp_audio_volume {
+    margin-top: 2.3em;
+}
+.comp_audios .controls_container .comp_audio_volume i{
+    color: #fff;
+    font-size: 1.5em;
+}
+.comp_audios .controls_container .comp_audio_volume .volume-slider-con{
+    height:10px;
+    width:100%;
+    position:relative;
+    margin-top: 0.4em;
+}
+.volume-slider{
+    height:100%;
+    width:100%;
+    position:relative;
+    background-color:#fff;
+    cursor:pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.comp_audio_playLists{
+    padding: 0;
+}
+.comp_audio_playLists .playLists_container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1vw;
+}
+.comp_audio_playLists .list_element{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    white-space: normal;
+    vertical-align: top;
+    margin: 0 1.5vw;
+    font-family: "Montserrat-semiBold";
+    font-size: 0.85em;
+}
+.comp_audio_playLists .list_element .avatar_container{
+    cursor: pointer;
+}
+.comp_audio_playLists .list_element .avatar_container img{
+    width: 80%;
+    margin: 0.7em auto;
+}

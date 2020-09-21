@@ -74,19 +74,19 @@ function actionMenuChange( elm ){
 //draw "contenido" section
 function draw_contenido( age ){
     
-    var toDraw = ``;
+    let toDraw = ``;
 
     //draw "contenido" action menu block
     toDraw += `
         <div class="col-6 action_menu_block">
             <div class="row">
-                <div class="col-3 menu_btn_container" data-target="audios" data-age="`+age+`" onClick="actionMenuChange(this)">
-                    <img src="img/infancia1/audios1.png" class="claro" alt="boton de audios"><img src="img/infancia1/audios.png" class="color" alt="boton de audios"> 
-                    Audios 
-                </div>
                 <div class="col-3 menu_btn_container" data-target="videos" data-age="`+age+`" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de videos"><img src="img/infancia1/videos.png" class="color" alt="boton de videos"> 
                     Videos 
+                </div>
+                <div class="col-3 menu_btn_container" data-target="audios" data-age="`+age+`" onClick="actionMenuChange(this)">
+                    <img src="img/infancia1/audios1.png" class="claro" alt="boton de audios"><img src="img/infancia1/audios.png" class="color" alt="boton de audios"> 
+                    Audios 
                 </div>
                 <div class="col-3 menu_btn_container" data-target="juegos" data-age="`+age+`" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de juegos"><img src="img/infancia1/videos.png" class="color" alt="boton de juegos"> 
@@ -113,6 +113,13 @@ function draw_contenido( age ){
     `;
 
     //draw a component container section
+    toDraw += `
+        <div class="col-8 component_container" id="component_container">
+        </div> 
+        <div class="col-4">
+        </div> 
+    `;
+
     action_window.innerHTML = toDraw;
 }
 

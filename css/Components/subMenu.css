@@ -35,3 +35,8 @@
     color: #993366;
     border-color: #993366;
 }
+
+
+.component_container {
+    padding: 2vw 1vw 4vw 8vw;
+}
