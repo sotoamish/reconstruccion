@@ -162,7 +162,7 @@ function rewrite_url( new_section, new_subsection ){
         } else {    //there is a selected sub_section 
             //change section paramater to selected
             url_string = url_string.split("&");
-            url_string = url_string[0] + `?subsection=`+new_subsection;
+            url_string = url_string[0] + `&subsection=`+new_subsection;
         }
     }
 
