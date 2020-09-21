@@ -81,16 +81,20 @@ function drawComponentAudios(age){
         for (let i = 0; i < Object.keys(audio_player_data).length; i++) {
             let current_key = Object.keys(audio_player_data)[i];
 
-            toDraw += `
-                <div class="list_element" data-target="`+ current_key +`" onClick="select_playlist(this)">
-                    <div class="avatar_container">
-                        <img src="`+ audio_player_data[current_key]["thumbnail"] +`" alt="logo de `+ audio_player_data[current_key]["name"] +`">
+            if( audio_player_data[current_key]["age"] === 0 ||
+                audio_player_data[current_key]["age"] === age )
+            {
+                toDraw += `
+                    <div class="list_element" data-target="`+ current_key +`" onClick="select_playlist(this)">
+                        <div class="avatar_container">
+                            <img src="`+ audio_player_data[current_key]["thumbnail"] +`" alt="logo de `+ audio_player_data[current_key]["name"] +`">
+                        </div>
+                        <div>
+                            `+ audio_player_data[current_key]["name"] +`
+                        </div>
                     </div>
-                    <div>
-                        `+ audio_player_data[current_key]["name"] +`
-                    </div>
-                </div>
-            `;
+                `;
+            }
         }
     } else {
         toDraw += `No se econtró ninguna lista de reproducción`;
