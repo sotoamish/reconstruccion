@@ -39,7 +39,7 @@ function draw_action(action, age){
     }
 
     //rewrite url, with printed action window
-    rewrite_url( action );
+    rewrite_url( action, null );
 
 }
 
@@ -61,6 +61,7 @@ function actionMenuChange( elm ){
 
                 //draw selected component "function from componentCollection.js"
                 drawComponent( elm.dataset.target, elm.dataset.age );
+                rewrite_url( null, elm.dataset.target );
             }
         } else {
             //if this btn contains active, delete class
@@ -133,20 +134,38 @@ function get_params( parameter ){
 
 
 //rewrite current url with some new parameter
-function rewrite_url( parameter ){
+function rewrite_url( new_section, new_subsection ){
+
     //get current url
     let url_string = (window.location.href).toLowerCase();
-    //look for sectin parameter
     let current_url = new URL(url_string);
-    let section = current_url.searchParams.get("section");
-    
-    if(section === null){
-        url_string+=`?section=`+parameter;
-    } else {
-        url_string = url_string.split("?");
-        url_string = url_string[0] + `?section=`+parameter;
+
+    if( new_section !== null ){     //set section 
+        //look for section parameter
+        let section = current_url.searchParams.get("section");
+        if(section === null) {     //there isnt still a selected section 
+            //add section parameter to url 
+            url_string+=`?section=`+new_section;
+        } else {    //there is a selected section 
+            //change section paramater to selected
+            url_string = url_string.split("?");
+            url_string = url_string[0] + `?section=`+new_section;
+        }
     }
     
+    if( new_subsection !== null ){
+        //look for subsection paramater
+        let subsection = current_url.searchParams.get("subsection");
+        if(subsection === null) {   //there isnt still a selected subsection 
+            //add section parameter to url 
+            url_string+=`&subsection=`+new_subsection;
+        } else {    //there is a selected sub_section 
+            //change section paramater to selected
+            url_string = url_string.split("&");
+            url_string = url_string[0] + `?subsection=`+new_subsection;
+        }
+    }
+
     window.history.pushState(
         { additionalInformation: 'Updated the URL with JS' },
         'New page title', 

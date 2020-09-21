@@ -98,6 +98,9 @@
 .comp_audios .controls_container .comp_audio_volume {
     margin-top: 2.3em;
 }
+.comp_audios .controls_container .comp_audio_volume.vol_container{
+    padding-right: 3vw;
+}
 .comp_audios .controls_container .comp_audio_volume i{
     color: #fff;
     font-size: 1.5em;
@@ -107,6 +110,7 @@
     width:100%;
     position:relative;
     margin-top: 0.4em;
+    background: rgba(255,255,255,0.5);
 }
 .volume-slider{
     height:100%;

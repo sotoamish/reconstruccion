@@ -62,7 +62,7 @@ function drawComponentAudios(age){
                     <div class="col-1 p-0 comp_audio_volume text-right">
                         <i class="fas fa-volume-up"></i>
                     </div>
-                    <div class="col-3 comp_audio_volume">
+                    <div class="col-3 comp_audio_volume vol_container">
                         <audio id="true_audio_player" controls style="display:none"></audio>
                         <div class="volume-slider-con">
                             <div class="volume-slider"></div>
