@@ -30,19 +30,44 @@
     height: 250px;
 }
 .comp_audios .comp_audios_trackList .audio_element {
-    border-bottom: 2px solid #99cc33;
     padding: 1vw;
     cursor: pointer;
 }
+.comp_audios.age_1 .comp_audios_trackList .audio_element{
+    border-bottom: 2px solid #99cc33;
+}
+.comp_audios.age_2 .comp_audios_trackList .audio_element{
+    border-bottom: 2px solid #006666;
+}
+.comp_audios.age_3 .comp_audios_trackList .audio_element{
+    border-bottom: 2px solid #0099cc;
+}
+.comp_audios.age_4 .comp_audios_trackList .audio_element{
+    border-bottom: 2px solid #993266;
+}
+
 .comp_audios .comp_audios_trackList .audio_element:hover {
     opacity: 0.5;
 }
 .comp_audios .comp_audios_trackList .audio_element .nombre {
     font-family: "Montserrat-Bold";
     font-size: 1.5em;
-    color: #99cc33;
     margin-bottom: 0.2em;
 }
+
+.comp_audios.age_1 .comp_audios_trackList .audio_element .nombre {
+    color: #99cc33;
+}
+.comp_audios.age_2 .comp_audios_trackList .audio_element .nombre {
+    color: #006666;
+}
+.comp_audios.age_3 .comp_audios_trackList .audio_element .nombre {
+    color: #0099cc;
+}
+.comp_audios.age_4 .comp_audios_trackList .audio_element .nombre {
+    color: #993266;
+}
+
 .comp_audios .comp_audios_trackList .audio_element .descripcion {
     font-family: "Montserrat";
     font-size: 0.9em;
@@ -53,8 +78,21 @@
 
 .comp_audios .controls_container{
     height: 90px;
+}
+.comp_audios.age_1 .controls_container{
     background: #99cc33;
 }
+.comp_audios.age_2 .controls_container{
+    background: #006666;
+}
+.comp_audios.age_3 .controls_container{
+    background: #0099cc;
+}
+.comp_audios.age_4 .controls_container{
+    background: #993266;
+}
+
+
 .comp_audios .controls_container .comp_audios_current{
     padding: 1vw 2vw;
     color: #fff;

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //if section exits, click on section button
         document.querySelectorAll('[data-funcname="'+section+'"]')[0].click();
     } else {
-        //if section doesn´t exists, click on first subMenu button
+        //if section doesn´t exists, click on first section button
         document.getElementsByClassName("subMenuBtn")[0].click();
     }
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if( subSection !== null){
         document.querySelectorAll('[data-target="'+subSection+'"]')[0].click();
     } else {
-        //PROVISIONAL, SELECCIONA BLOQUE DE AUDIOS
-        document.getElementsByClassName("menu_btn_container")[1].click();
+        //if subsection doesn't exists, click on first subSection button
+        document.getElementsByClassName("menu_btn_container")[0].click();
     }
 });

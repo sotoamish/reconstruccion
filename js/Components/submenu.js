@@ -41,6 +41,14 @@ function draw_action(action, age){
     //rewrite url, with printed action window
     rewrite_url( action, null );
 
+    //if there isnt subsection select first subsection
+    var subSection = get_params( "subsection" );
+    if( subSection !== null){
+        document.querySelectorAll('[data-target="'+subSection+'"]')[0].click();
+    } else {
+        //if subsection doesn't exists, click on first subSection button
+        document.getElementsByClassName("menu_btn_container")[0].click();
+    }
 }
 
 
@@ -48,10 +56,10 @@ function draw_action(action, age){
 const actionMenuBtns = document.getElementsByClassName("menu_btn_container");   
 function actionMenuChange( elm ){
 
-    for (let i = 0; i < actionMenuBtns.length; i++) {
+    for (let i = 0; i < actionMenuBtns.length; i++) {   
 
         if( actionMenuBtns[i] === elm ){
-            if(!actionMenuBtns[i].classList.contains("active"))
+            if( !actionMenuBtns[i].classList.contains("active") )
             {
                 //if selected btn not contains active, add
                 actionMenuBtns[i].classList.add("active");
@@ -135,6 +143,7 @@ function get_params( parameter ){
 
 //rewrite current url with some new parameter
 function rewrite_url( new_section, new_subsection ){
+    // console.log( new_section +'-----'+new_subsection )
 
     //get current url
     let url_string = (window.location.href).toLowerCase();

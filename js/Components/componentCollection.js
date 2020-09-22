@@ -5,7 +5,7 @@ function drawComponent( component, age ){
                 drawComponentAudios(age);
             break;
         case "videos":
-                //drawComponentsVideos(age)
+                drawComponentVideos(age)
             break;
         case "juegos":
                 //drawComponentJuegos(age)
@@ -17,6 +17,8 @@ function drawComponent( component, age ){
         default:
             break;
     }
+
+    rewrite_url( null, component );
 }
 
 
@@ -27,7 +29,7 @@ function drawComponentAudios(age){
 
     //print audio player structure
     toDraw += `
-        <div class="row comp_audios">
+        <div class="row comp_audios age_`+age+`">
             <div class="col-3 comp_audios_avatar">
                 <div class="avatar_container">
                     <img src="" tag="avatar de lista de reproducción" id="comp_audio_avatar_img">
@@ -75,7 +77,6 @@ function drawComponentAudios(age){
                 <div class="col-12 playLists_container">
     `;
 
-    // console.log( Object.keys(audio_player_data).length );
     //add all playlists (data from aduos_player_data.js)
     if( Object.keys(audio_player_data).length > 0){
         for (let i = 0; i < Object.keys(audio_player_data).length; i++) {
@@ -114,4 +115,75 @@ function drawComponentAudios(age){
     //add functions to player (functions from aduioPlayerFunction.js)
     add_audio_player_functions();
     add_volume_functions();
+}
+
+
+//draw video component
+function drawComponentVideos(age){  
+    let toDraw = ``;
+
+    toDraw += `
+        <div class="row comp_videos age_`+age+`">
+            <div class="col-8 player_container">
+                <div>
+                    <iframe id="true_video_player" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="video_info" id="video_info">
+
+                </div>
+            </div>
+            <div class="col-4 playList_container">
+    `;
+
+    //add all playlists (data from video_player_data.js)
+    if( Object.keys(video_player_data).length > 0){
+        for (let i = 0; i < Object.keys(video_player_data).length; i++) {
+            let current_key = Object.keys(video_player_data)[i];
+
+            if( video_player_data[current_key]["age"] === 0 ||
+                video_player_data[current_key]["age"] === age )
+            {
+                toDraw += `
+                    <div class="row">
+                        <div class="col-12 playList_button" data-target="video_list_`+current_key+`" onClick="show_video_list(this)">
+                            `+ video_player_data[current_key]["name"] +`
+                        </div>
+                        <div class="col-12 track_list_container" id="video_list_`+current_key+`">
+                            `;
+                //add all tracks from this playList
+                if( Object.keys(video_player_data[current_key]["playList"]).length > 0){
+                    for (let i = 0; i < Object.keys(video_player_data[current_key]["playList"]).length; i++) {
+                        let current_vid = Object.keys(video_player_data[current_key]["playList"])[i];
+
+                        toDraw += `
+                            <div class="track_button" 
+                                data-list="`+current_key+`" 
+                                data-track="`+current_vid+`"
+                                onClick="change_video(this)">`+
+                                current_vid+`. `+video_player_data[current_key]["playList"][current_vid]["name"]
+                            +`</div>
+                        `;
+                    }
+                }
+
+                toDraw += `
+                        </div>
+                    </div>
+                `;
+            }
+        }
+    } 
+                
+    toDraw += `
+            </div>
+        </div>
+    `;
+
+    document.getElementById("component_container").innerHTML = toDraw;
+
+    //auto select first playlist
+    document.getElementsByClassName("playList_button")[0].click();
+    //auto select first track
+    document.getElementsByClassName("track_button")[0].click();
 }
