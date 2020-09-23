@@ -29,13 +29,18 @@
     <!-- style sheets -->
     <!-- general styles -->
     <link rel="stylesheet" href="css/Main.css">
-    <link rel="stylesheet" href="css/neonavbar.css">
     <link rel="stylesheet" href="css/FooterAyR.css">
     <link rel="stylesheet" href="css/FooterGob.css">
 
     <!-- page styles -->
+    <link rel="stylesheet" href="css/juventud.css">
 
     <!-- components styles -->
+    <link rel="stylesheet" href="css/Components/neonavbar.css">
+    <link rel="stylesheet" href="css/Components/subMenu.css">
+    <link rel="stylesheet" href="css/Components/actionMenu.css">
+    <link rel="stylesheet" href="css/Components/audio_player.css">
+    <link rel="stylesheet" href="css/Components/video_player.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -82,6 +87,135 @@
             </div>
         </section>
         <!--/.neo navbar -->  
+
+        <!-- sub menu -->
+            <section>
+                <div class="row subMenu formadores" id="subMenu">
+                    <div class="col-3 subMenuBtn" data-funcname="contenido" data-age="4" onClick="subMenuChange(this)">
+                        Contenido <img src="img/contenido.png" alt="ícono de contenidos"> </div>
+                    <div class="col-3 subMenuBtn" data-funcname="estados" data-age="4" onClick="subMenuChange(this)"> 
+                        Estados </div> 
+                    <div class="col-3 subMenuBtn" data-funcname="cartelera" data-age="4" onClick="subMenuChange(this)">
+                     <img src="img/cartelera0.png" alt="ícono de cartelera">
+                        Cartelera</div>
+                    <div class="col-3 subMenuBtn" data-funcname="descripcionayr" data-age="4" onClick="subMenuChange(this)"> 
+                        Descripción</div>
+                </div>
+            </section>
+
+        <!-- action window -->
+            <section>
+                <div class="row action_window" id="action_window"></div>
+            </section>
+
+        <!-- descripción del sitio -->
+        <section>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+            <br>
+            <h1>Bienvenidos todos</h1>
+        <br>
+        <br>Alas y Raíces es el programa de la Secretaría de Cultura federal que propone acciones destinadas al cumplimiento de los derechos culturales de las infancias (de 0 a 17 años de edad) de México en su diversidad de circunstancias: “el derecho al descanso y el esparcimiento, al juego y a las actividades recreativas propias de su edad y a participar libremente en la vida cultural y en las artes”, como lo indica el Artículo 31 de la Convención Internacional sobre los Derechos del Niño y de la Niña.
+        <br>
+        <br>Con este fin se aprovechan las nuevas tecnologías y se desarrollan páginas de Internet y apps creadas especialmente para niñas, niños y adolescentes; se promueven y organizan presentaciones artísticas, presentaciones de danza, montajes de obras de teatro, funciones de títeres, proyecciones de cine, concursos, convocatorias, exposiciones, presentaciones de narraciones orales, lecturas y talleres y laboratorios creativos a través de diversos lenguajes artísticos; y se producen publicaciones.
+        <br>
+        <br>A través de los 32 programas estatales Alas y Raíces, que dependen de las secretarías, institutos y consejos de cultura de las entidades federativas, se fomenta el disfrute de manifestaciones artísticas y culturales entre el público infantil y juvenil en todo el país.
+        <br>
+        <br>Propiciando experiencias artísticas y culturales significativas y constantes, desde las primeras etapas de la vida, se busca contribuir al bienestar, la formación integral de niños y adolescentes y el desarrollo de su imaginación, capacidad reflexiva, a la par que su sensibilidad, empatía, curiosidad y expresión creativa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--/.descripción del sitio -->
+
+ <!-- formulario de registro -->
+        <section>
+            <div class="row registro_block">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 wrapper"> 
+
+                    <div class="row">
+                        <div class="col-12 innerWrapp">  
+                            <div class="col-6 form-group">
+                                <select class="form-control" name="estado" id="estado" onChange="updateboard()">
+                                    <option value="1">Aguascalientes</option>
+                                </select>
+                            </div> 
+                        <div class="col-6 search_block">
+                            <div class="input-group">
+                                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+
+                    <!--Estados-->
+                            <div class="board row">
+                                <label for="board">Proyectos Estatales</label>
+                               <!-- Project One -->
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <a href="#">
+                                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                                  </a>
+                                </div>
+                                <div class="col-md-5">
+                                  <h3>Proyecto uno</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p> 
+                                </div>
+                              </div>
+                              <!-- /.row -->
+
+                              <hr>
+
+                              <!-- Project Two -->
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <a href="#">
+                                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                                  </a>
+                                </div>
+                                <div class="col-md-5">
+                                  <h3>Proyecto dos</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p> 
+                                </div>
+                              </div>
+                              <!-- /.row -->
+
+                              <hr>
+
+                              <!-- Project Three -->
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <a href="#">
+                                    <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+                                  </a>
+                                </div>
+                                <div class="col-md-5">
+                                  <h3>Proyecto tres</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p> 
+                                </div>
+                                <hr>
+
+                              </div>
+                              <!-- /.row --> 
+                            </div>
+                            <br>
+                            <br>
+                          </div>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+        </section> 
+ 
+    <!-- /.container -->
+ 
 
         <!-- footer AyR -->
         <section>
@@ -174,6 +308,7 @@
 
 <!-- general scripts -->
 <script src="js/common.js"></script> 
+<script src="js/estatales.js"></script> 
 <!-- page scripts -->
 
 <!-- component scripts -->

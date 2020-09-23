@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,14 +28,19 @@
 
     <!-- style sheets -->
     <!-- general styles -->
-    <link rel="stylesheet" href="css/Main.css">
-    <link rel="stylesheet" href="css/neonavbar.css">
+    <link rel="stylesheet" href="css/Main.css"> 
     <link rel="stylesheet" href="css/FooterAyR.css">
     <link rel="stylesheet" href="css/FooterGob.css">
 
     <!-- page styles -->
+    <link rel="stylesheet" href="css/infancia2.css">
 
     <!-- components styles -->
+    <link rel="stylesheet" href="css/Components/neonavbar.css">
+    <link rel="stylesheet" href="css/Components/subMenu.css">
+    <link rel="stylesheet" href="css/Components/actionMenu.css">
+    <link rel="stylesheet" href="css/Components/audio_player.css">
+    <link rel="stylesheet" href="css/Components/video_player.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -81,7 +86,21 @@
                 <div class="col-12 neoNavbar" id="neoNavbar"></div>
             </div>
         </section>
-        <!--/.neo navbar -->  
+        <!--/.neo navbar -->
+
+<!-- sub menu -->
+            <section>
+                <div class="row subMenu infancia2" id="subMenu">
+                    <div class="col-6 subMenuBtn" data-funcname="contenido" data-age="1" onClick="subMenuChange(this)"> Contenido <img src="img/contenido.png" alt="ícono de contenidos"> </div>
+                    <div class="col-6 subMenuBtn" data-funcname="cartelera" data-age="2" onClick="subMenuChange(this)"> <img src="img/cartelera0.png" alt="ícono de cartelera"> Cartelera</div>
+                </div>
+            </section>
+
+        <!-- action window -->
+            <section>
+                <div class="row action_window" id="action_window"></div>
+            </section>
+
 
         <!-- footer AyR -->
         <section>
@@ -175,8 +194,15 @@
 <!-- general scripts -->
 <script src="js/common.js"></script> 
 <!-- page scripts -->
-
-<!-- component scripts -->
+<script src="js/infancia2.js"></script>
+<!-- components scripts -->
 <script src="js/Components/neonavbar.js"></script>
-
+<script src="js/Components/submenu.js"></script>
+<script src="js/Components/componentCollection.js"></script>
+<script src="js/Components/audioPlayerFunctions.js"></script>
+<script src="js/Components/videoPlayerFunctions.js"></script>
+<!-- data scripts -->
+<script src="js/Data/audio_player_data2.js"></script>
+<script src="js/Data/video_player_data2.js"></script>
+ 
 </html>

@@ -29,13 +29,18 @@
     <!-- style sheets -->
     <!-- general styles -->
     <link rel="stylesheet" href="css/Main.css">
-    <link rel="stylesheet" href="css/neonavbar.css">
     <link rel="stylesheet" href="css/FooterAyR.css">
     <link rel="stylesheet" href="css/FooterGob.css">
 
     <!-- page styles -->
+    <link rel="stylesheet" href="css/juventud.css">
 
     <!-- components styles -->
+    <link rel="stylesheet" href="css/Components/neonavbar.css">
+    <link rel="stylesheet" href="css/Components/subMenu.css">
+    <link rel="stylesheet" href="css/Components/actionMenu.css">
+    <link rel="stylesheet" href="css/Components/audio_player.css">
+    <link rel="stylesheet" href="css/Components/video_player.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -83,6 +88,19 @@
         </section>
         <!--/.neo navbar -->  
 
+<!-- sub menu -->
+            <section>
+                <div class="row subMenu juventud" id="subMenu">
+                    <div class="col-6 subMenuBtn" data-funcname="contenido" data-age="1" onClick="subMenuChange(this)"> Contenido <img src="img/contenido.png" alt="ícono de contenidos"> </div>
+                    <div class="col-6 subMenuBtn" data-funcname="cartelera" data-age="2" onClick="subMenuChange(this)"> <img src="img/cartelera0.png" alt="ícono de cartelera"> Cartelera</div>
+                </div>
+            </section>
+
+        <!-- action window -->
+            <section>
+                <div class="row action_window" id="action_window"></div>
+            </section>
+  
         <!-- footer AyR -->
         <section>
             <div class="row footer-ayr">
@@ -175,8 +193,14 @@
 <!-- general scripts -->
 <script src="js/common.js"></script> 
 <!-- page scripts -->
-
-<!-- component scripts -->
+<script src="js/juventud.js"></script>
+<!-- components scripts -->
 <script src="js/Components/neonavbar.js"></script>
-
+<script src="js/Components/submenu.js"></script>
+<script src="js/Components/componentCollection.js"></script>
+<script src="js/Components/audioPlayerFunctions.js"></script>
+<script src="js/Components/videoPlayerFunctions.js"></script>
+<!-- data scripts -->
+<script src="js/Data/audio_player_data.js"></script>
+<script src="js/Data/video_player_data.js"></script>
 </html>
