@@ -30,8 +30,14 @@ function draw_action(action, age){
                 draw_contenido( age );
             break;
 
-        case "cartelera":
+        case "estados": 
+            break;
 
+        case "cartelera": 
+            break;
+
+        case "descripcionayr":
+                 draw_contenido( age );
             break;
     
         default:
