@@ -146,26 +146,50 @@ function drawComponentVideos(age){
             {
                 toDraw += `
                     <div class="row">
-                        <div class="col-12 playList_button" data-target="video_list_`+current_key+`" onClick="show_video_list(this)">
+                        <div class="col-12 playList_button" data-target="video_list_`+current_key+`" onClick="show_type_list(this)">
                             `+ video_player_data[current_key]["name"] +`
                         </div>
                         <div class="col-12 track_list_container" id="video_list_`+current_key+`">
-                            `;
-                //add all tracks from this playList
-                if( Object.keys(video_player_data[current_key]["playList"]).length > 0){
-                    for (let i = 0; i < Object.keys(video_player_data[current_key]["playList"]).length; i++) {
-                        let current_vid = Object.keys(video_player_data[current_key]["playList"])[i];
+                `;
+
+                //add all video types from this playList
+                if( Object.keys(video_player_data[current_key]["type"]).length > 0){
+                    for (let j = 0; j < Object.keys(video_player_data[current_key]["type"]).length; j++) {
+                        let current_type = Object.keys(video_player_data[current_key]["type"])[j];
 
                         toDraw += `
-                            <div class="track_button" 
-                                data-list="`+current_key+`" 
-                                data-track="`+current_vid+`"
-                                onClick="change_video(this)">`+
-                                current_vid+`. `+video_player_data[current_key]["playList"][current_vid]["name"]
-                            +`</div>
+                            <div class="row">
+                                <div class="col-12 typeList_button" data-target="type_list`+current_key+`-`+current_type+`" onClick="show_play_list(this)">
+                                `+ video_player_data[current_key]["type"][current_type]["name"] +`
+                                </div>
+                            </div>
+                            <div class="col-12 type_list_container" id="type_list`+current_key+`-`+current_type+`">
+                        `;
+                            
+                        //add all tracks from this playList (descendant mode)
+                        if( Object.keys(video_player_data[current_key]["type"][current_type]["playList"]).length > 0){
+                            for (let k = Object.keys(video_player_data[current_key]["type"][current_type]["playList"]).length - 1; k >= 0; k--) {
+                                let current_vid = Object.keys(video_player_data[current_key]["type"][current_type]["playList"])[k];
+                                
+                                toDraw += `
+                                    <div class="track_button" 
+                                        data-list="`+current_key+`" 
+                                        data-type="`+current_type+`"
+                                        data-track="`+current_vid+`"
+                                        onClick="change_video(this)">`+
+                                        current_vid+`. `+video_player_data[current_key]["type"][current_type]["playList"][current_vid]["name"]
+                                    +`</div>
+                                `;
+                            }
+                        }
+
+                        toDraw += `
+                            </div>
                         `;
                     }
                 }
+            
+                
 
                 toDraw += `
                         </div>
@@ -182,8 +206,10 @@ function drawComponentVideos(age){
 
     document.getElementById("component_container").innerHTML = toDraw;
 
-    //auto select first playlist
+    //auto select first play_list
     document.getElementsByClassName("playList_button")[0].click();
+    //auto select first type_list
+    document.getElementsByClassName("typeList_button")[0].click();
     //auto select first track
     document.getElementsByClassName("track_button")[0].click();
 }
