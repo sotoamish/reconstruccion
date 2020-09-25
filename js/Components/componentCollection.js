@@ -133,7 +133,7 @@ function drawComponentVideos(age){
 
                 </div>
             </div>
-            <div class="col-4 playList_container">
+            <div class="col-4 video_list_container">
     `;
 
     //add all playlists (data from video_player_data.js)
@@ -146,10 +146,10 @@ function drawComponentVideos(age){
             {
                 toDraw += `
                     <div class="row">
-                        <div class="col-12 playList_button" data-target="video_list_`+current_key+`" onClick="show_type_list(this)">
+                        <div class="col-12 playList_button" data-target="video_list_`+current_key+`" onClick="show_play_list(this)">
                             `+ video_player_data[current_key]["name"] +`
                         </div>
-                        <div class="col-12 track_list_container" id="video_list_`+current_key+`">
+                        <div class="col-12 playList_container" id="video_list_`+current_key+`">
                 `;
 
                 //add all video types from this playList
@@ -159,11 +159,14 @@ function drawComponentVideos(age){
 
                         toDraw += `
                             <div class="row">
-                                <div class="col-12 typeList_button" data-target="type_list`+current_key+`-`+current_type+`" onClick="show_play_list(this)">
+                                <div class="col-12 typeList_button" data-target="type_list`+current_key+`-`+current_type+`" onClick="show_type_list(this)">
                                 `+ video_player_data[current_key]["type"][current_type]["name"] +`
+                                    <div class="vid_count">`
+                                        +Object.keys(video_player_data[current_key]["type"][current_type]["playList"]).length+` videos
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 type_list_container" id="type_list`+current_key+`-`+current_type+`">
+                            <div class="col-12 typeList_container" id="type_list`+current_key+`-`+current_type+`">
                         `;
                             
                         //add all tracks from this playList (descendant mode)

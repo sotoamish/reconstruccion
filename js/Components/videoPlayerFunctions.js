@@ -1,7 +1,7 @@
 // show selected playList
 function show_play_list( elm ){
     //loop all playList fields
-    let playListField = document.getElementsByClassName("type_list_container");
+    let playListField = document.getElementsByClassName("playList_container");
 
     for (let i = 0; i < playListField.length; i++) {
         if( playListField[i].id === elm.dataset.target ){
@@ -16,10 +16,10 @@ function show_play_list( elm ){
     }
 }
 
-// show selected playList
+// show selected typeList
 function show_type_list( elm ){
     //loop all type_list fields
-    let typeListField = document.getElementsByClassName("track_list_container");
+    let typeListField = document.getElementsByClassName("typeList_container");
 
     for (let i = 0; i < typeListField.length; i++) {
         if( typeListField[i].id === elm.dataset.target ){
