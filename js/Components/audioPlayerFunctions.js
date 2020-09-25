@@ -1,23 +1,45 @@
 //change and print to selected playList 
 function select_playlist( elm ){
+    let list_id = elm.dataset.target;
 
     let toDraw = `
         <div class="row">
     `;
 
-    for (let i = 0; i < Object.keys(audio_player_data[elm.dataset.target]["playList"]).length; i++) {
-        let current_key = Object.keys(audio_player_data[elm.dataset.target]["playList"])[i];
+    //draw albums buttons 
+    for( let i=0; i < Object.keys(audio_player_data[list_id]["playList"]).length; i++){
+        let album_id = Object.keys(audio_player_data[list_id]["playList"])[i];
         toDraw += `
-            <div class="col-12 audio_element" 
-                data-list="`+ elm.dataset.target +`" 
-                data-audio="`+ current_key +`" 
-                onClick="select_audio(this.dataset.list, this.dataset.audio)"
-                >
-                <div class="nombre">
-                    `+ audio_player_data[elm.dataset.target]["playList"][current_key]["songName"] +`
-                </div>
-                <div class="descripcion">
-                    `+ audio_player_data[elm.dataset.target]["playList"][current_key]["artist"] +`
+            <div class="col-12 typeList_button" onClick="select_album(`+album_id+`)">`
+                +audio_player_data[list_id]["playList"][album_id]["album"]+    
+                `<div class="album_contents">`+Object.keys(audio_player_data[list_id]["playList"][album_id]["tracklist"]).length+` tracks</div>
+            </div>
+            <div class="col-12 typeList_container" id="typeList_album-`+album_id+`">
+               <div class="row"> 
+            `;
+
+            //draw tracks (descendant form)
+            // for( let j = 0 ; j < Object.keys(audio_player_data[list_id]["playList"][album_id]['tracklist']).length; j++){
+            for( let j = Object.keys(audio_player_data[list_id]["playList"][album_id]['tracklist']).length - 1; j >= 0; j--){
+                let track_id = Object.keys(audio_player_data[list_id]["playList"][album_id]['tracklist'])[j];
+                toDraw += `
+                    <div class="col-12 audio_element" 
+                        data-list="`+ list_id +`" 
+                        data-album="`+ album_id +`" 
+                        data-track="`+ track_id +`" 
+                        onClick="select_audio(this.dataset.list, this.dataset.album, this.dataset.track)"
+                        >
+                        <div class="nombre">
+                            `+ audio_player_data[list_id]["playList"][album_id]["tracklist"][track_id]["songName"] +`
+                        </div>
+                        <div class="descripcion">
+                            `+ audio_player_data[list_id]["playList"][album_id]["tracklist"][track_id]["artist"] +`
+                        </div>
+                    </div>
+                `;
+            }
+
+        toDraw += `
                 </div>
             </div>
         `;
@@ -35,26 +57,47 @@ function select_playlist( elm ){
     //change playlist name
     document.getElementById("comp_audio_avatar_name").innerHTML = audio_player_data[elm.dataset.target]["name"];
 
-    //autop lay first track
+    //select first album
+    document.getElementsByClassName("typeList_button")[0].click();
+    //autop play first track
     document.getElementsByClassName("audio_element")[0].click();
 }
 
 
+//select an album, show track list 
+function select_album( album_id ){
+    let album_containers = document.getElementsByClassName("typeList_container");
+
+    for (let i = 0; i < album_containers.length; i++) {
+        if( (album_containers[i].id) === "typeList_album-"+album_id ){
+            // if( !playListField[i].classList.contains("active") ){
+                album_containers[i].classList.toggle("active");
+                // album_containers[i].scrollIntoView({ behavior: 'smooth', block: 'center'});  
+            // }   
+        } else {
+            //remove active
+            album_containers[i].classList.remove("active");
+        }    
+    }
+}
+
+
 //select an audio,  set on audio info, set on player
-function select_audio( list, audio ){
+function select_audio( list, album, track ){
     //invoke audio_stop
     audio_stop();
 
     //set data on audio info
-    document.getElementById("comp_audio_current_name").innerHTML = audio_player_data[ list ]["playList"][ audio ]["songName"];
+    document.getElementById("comp_audio_current_name").innerHTML = audio_player_data[ list ]["playList"][ album ]["tracklist"][track]["songName"];
 
     //set audio_file on player
     let true_player = document.getElementById("true_audio_player");
-    true_player.setAttribute('src', audio_player_data[ list ]["playList"][ audio ]["url"]);
+    true_player.setAttribute('src', audio_player_data[ list ]["playList"][ album ]["tracklist"][track]["url"]);
     
     //set audio info on player dataset
     true_player.dataset.currentplaylist = list;
-    true_player.dataset.currentid = audio;
+    true_player.dataset.currentalbum = album;
+    true_player.dataset.currentid = track;
 }
 
 
@@ -147,19 +190,20 @@ function audio_stop(){
 function audio_swap( action ) {
     let true_player = document.getElementById("true_audio_player");
     let current_playlist = true_player.dataset.currentplaylist;
+    let current_album = true_player.dataset.currentalbum
     let current_audio = true_player.dataset.currentid;
 
     //loop the arraw to know if prev or next song exists
     for (let i = 0; 
-            i < Object.keys( audio_player_data[ current_playlist ]["playList"] ).length; 
+            i < Object.keys( audio_player_data[ current_playlist ]["playList"][current_album]["tracklist"] ).length; 
             i++) 
     {
         let current_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"])[i];
 
         if( current_key === current_audio ){
             
-            let prev_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"])[i - 1];
-            let next_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"])[i + 1];
+            let prev_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"][current_album]["tracklist"])[i - 1];
+            let next_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"][current_album]["tracklist"])[i + 1];
 
             if( action === "backward" ){   //for forward action
                 if( prev_key !== undefined ){

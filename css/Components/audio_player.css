@@ -23,9 +23,59 @@
     margin: auto;
 }
 
+.comp_audios .typeList_button {
+    color: #fff;
+    padding: 2vw;
+    text-align: center;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.comp_audios .typeList_button .album_contents{
+    background: #fff;
+    color: #606060;
+    padding: 0.1em 1em;
+    position: absolute;
+    right: 2vw;
+    bottom: 1vw;
+    font-size: 0.4em;
+    border-radius: 10px;
+}
+.comp_audios .typeList_button:hover{
+    opacity: 0.8;
+}
+.comp_audios.age_1 .typeList_button {
+    background: #99cc33
+}
+.comp_audios.age_2 .typeList_button {
+    background: #006666
+}
+.comp_audios.age_3 .typeList_button {
+    background: #0099cc
+}
+.comp_audios.age_4 .typeList_button {
+    background: #993266
+}
+
+
+.comp_audios .typeList_container {
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+}
+.comp_audios .typeList_container.active{
+    max-height: 10000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+}
+
 
 .comp_audios .comp_audios_trackList{
-    padding: 0 4vw 0 2vw;
+    padding: 0 4vw 0 4vw;
     overflow-y: auto;
     height: 250px;
 }
