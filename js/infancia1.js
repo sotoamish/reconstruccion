@@ -3,9 +3,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     // get section from url paramaters "function from submenu.js"
     const section = get_params( "section" );
-    // it cant be subsection withour a prev section
-    const subSection = get_params( "subsection" );
-
 
     if( section !== null){
         //if section exits, click on section button
@@ -16,10 +13,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     
-    if( subSection !== null){
-        document.querySelectorAll('[data-target="'+subSection+'"]')[0].click();
-    } else {
-        //if subsection doesn't exists, click on first subSection button
-        document.getElementsByClassName("menu_btn_container")[0].click();
-    }
+    
 });

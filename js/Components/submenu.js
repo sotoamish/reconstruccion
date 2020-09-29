@@ -1,4 +1,4 @@
-// change active btn of subMenu
+// change active btn color of subMenu // execute draw_action
 const subMenuBtns = document.getElementsByClassName("subMenuBtn");   
 function subMenuChange( elm ){
 
@@ -21,9 +21,12 @@ function subMenuChange( elm ){
 
 }
 
-//draw the selected action window
+//execute draw_(subSection) with a switch
 const action_window = document.getElementById("action_window");
 function draw_action(action, age){    
+
+    // rewrite url, with printed action window
+    rewrite_url( action, null );
 
     switch (action) {
         case "contenido":
@@ -34,6 +37,7 @@ function draw_action(action, age){
             break;
 
         case "cartelera": 
+                draw_cartelera( age );
             break;
 
         case "descripcionayr":
@@ -44,17 +48,6 @@ function draw_action(action, age){
             break;
     }
 
-    //rewrite url, with printed action window
-    rewrite_url( action, null );
-
-    //if there isnt subsection select first subsection
-    var subSection = get_params( "subsection" );
-    if( subSection !== null){
-        document.querySelectorAll('[data-target="'+subSection+'"]')[0].click();
-    } else {
-        //if subsection doesn't exists, click on first subSection button
-        document.getElementsByClassName("menu_btn_container")[0].click();
-    }
 }
 
 
@@ -86,7 +79,7 @@ function actionMenuChange( elm ){
 }
 
 
-//draw "contenido" section
+//draw "contenido" section // start drawing an action menu 
 function draw_contenido( age ){
     
     let toDraw = ``;
@@ -136,7 +129,121 @@ function draw_contenido( age ){
     `;
 
     action_window.innerHTML = toDraw;
+
+
+    // it cant be subsection withour a prev section
+    let subSection = get_params( "subsection" );
+
+    if( subSection !== null){
+        document.querySelectorAll('[data-target="'+subSection+'"]')[0].click();
+    } else {
+        //if subsection doesn't exists, click on first subSection button
+        document.getElementsByClassName("menu_btn_container")[0].click();
+    }
 }
+
+
+//draw "cartelera" section
+function draw_cartelera( age ){
+    //EACH FILTER INVOKE onchange function "apply_filter()", ¡function from cartelera.js!"
+    //generate select-options field for each filter
+    let age_filter = `
+        <select name="age_filter"  id="age_filter" class="form-control filters" onChange="apply_filter()">
+            <option value="">Todas las edades</option> 
+            <option value="1">de 0 a 5 años</option>
+            <option value="2">de 6 a 12 años</option>
+            <option value="3">Jovenes 13+</option>
+            <option value="4">Formadores</option>
+        </select>
+    `;
+
+
+    //generate mode filter
+    let mode_filter = `
+        <select name="mode_filter" id="mode_filter" class="form-control filters" onChange="apply_filter()">
+            <option value=""> de cualquier tipo </option> 
+            <option value="Presencial">Presencial</option>
+            <option value="En linea">En linea</option>
+        </select>
+    `;
+
+
+    //generat state filter
+    let state_filter = `
+        <select name="state_filter" id="state_filter" class="form-control filters" onChange="apply_filter()">
+            <option value="">Todos los estados</option>
+    `;
+        for (let i = 0; i < Object.keys(estados_data).length; i++) {
+            let key = Object.keys(estados_data)[i];
+            
+            state_filter += `
+                <option value="`+estados_data[key]+`"> `+estados_data[key]+` </option>
+            `;
+        }
+
+    state_filter += `
+        </select>
+    `;
+
+
+    //generate activity filter
+    let activity_filter = `
+        <select name="activity_filter" id="activity_filter" class="form-control filters" onChange="apply_filter()">
+            <option value="">Todas las actividades</option>
+    `;
+            
+        for (let i = 0; i < Object.keys(activity_array).length; i++) {
+            let key = Object.keys(activity_array)[i];
+            activity_filter += `
+                <option value="`+activity_array[key]+`">`+activity_array[key]+`</option>
+            `;
+        }
+
+    activity_filter += `
+        </select>
+    `;
+
+
+    //generate month filter
+    let month_filter = `
+        <select name="month_filter" id="month_filter" class="form-control filters" onChange="apply_filter()">
+            <option value="1">Enero</option> <option value="2">Febrero</option>
+            <option value="3">Marzo</option> <option value="4">Abril</option>
+            <option value="5">Mayo</option> <option value="6">Junio</option>
+            <option value="7">Julio</option> <option value="8">Agosto</option>
+            <option value="9">Septiembre</option> <option value="10">Octubre</option>
+            <option value="11">Noviembre</option> <option value="12">Diciembre</option>
+        </select>
+    `;
+
+
+    
+    let toDraw = `
+        <div class="col-6 offset-6 search_block">
+            <div class="input-group">
+                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 cartelera_filter_container">
+            <div class="cartelera_filter"> `+age_filter+` </div>
+            <div class="cartelera_filter"> `+mode_filter+` </div>
+            <div class="cartelera_filter"> `+state_filter+` </div>
+            <div class="cartelera_filter"> `+activity_filter+` </div>
+            <div class="cartelera_filter"> `+month_filter+` </div>            
+        </div>
+
+        <div class="col-12 cartelera_action" id="cartelera_action">
+
+        </div>
+    `;
+
+    action_window.innerHTML = toDraw;
+}
+
 
 
 //get parameters from url
@@ -149,7 +256,6 @@ function get_params( parameter ){
 
 //rewrite current url with some new parameter
 function rewrite_url( new_section, new_subsection ){
-    // console.log( new_section +'-----'+new_subsection )
 
     //get current url
     let url_string = (window.location.href).toLowerCase();
