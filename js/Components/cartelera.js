@@ -70,7 +70,7 @@ function apply_filter(){
 
 }
 
-//
+//print list of filtered activities
 function print_cartelera( filt_obj ){
     console.log( filt_obj );
     let actionWindow = document.getElementById("cartelera_action");

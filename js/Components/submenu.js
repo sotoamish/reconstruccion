@@ -145,6 +145,10 @@ function draw_contenido( age ){
 
 //draw "cartelera" section
 function draw_cartelera( age ){
+    //get month
+    let today = new Date();
+    let month = today.getMonth();
+
     //EACH FILTER INVOKE onchange function "apply_filter()", ¡function from cartelera.js!"
     //generate select-options field for each filter
     let age_filter = `
@@ -207,12 +211,15 @@ function draw_cartelera( age ){
     //generate month filter
     let month_filter = `
         <select name="month_filter" id="month_filter" class="form-control filters" onChange="apply_filter()">
-            <option value="1">Enero</option> <option value="2">Febrero</option>
-            <option value="3">Marzo</option> <option value="4">Abril</option>
-            <option value="5">Mayo</option> <option value="6">Junio</option>
-            <option value="7">Julio</option> <option value="8">Agosto</option>
-            <option value="9">Septiembre</option> <option value="10">Octubre</option>
-            <option value="11">Noviembre</option> <option value="12">Diciembre</option>
+    `;        
+
+        for (let i = 0; i < months_array.length; i++) {
+
+            let selected = ( i === month )? "selected" : "" ;
+            month_filter += `<option value="${i+1}" ${selected}> ${months_array[i]} </option> `;
+        }
+
+    month_filter += `
         </select>
     `;
 
@@ -242,6 +249,8 @@ function draw_cartelera( age ){
     `;
 
     action_window.innerHTML = toDraw;
+    // execute filter
+    apply_filter();
 }
 
 
