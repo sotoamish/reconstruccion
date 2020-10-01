@@ -12,6 +12,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementsByClassName("subMenuBtn")[0].click();
     }
 
-    
-    
 });

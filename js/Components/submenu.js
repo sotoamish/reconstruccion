@@ -59,12 +59,12 @@ function actionMenuChange( elm ){
 
         if( actionMenuBtns[i] === elm ){
             if( !actionMenuBtns[i].classList.contains("active") )
-            {
+            {   
                 //if selected btn not contains active, add
                 actionMenuBtns[i].classList.add("active");
 
-                //set searcField dataset
-                document.getElementById("searchField").dataset.search = elm.dataset.target;
+                // //set searcField dataset
+                // document.getElementById("searchField").dataset.search = elm.dataset.target;
 
                 //draw selected component "function from componentCollection.js"
                 drawComponent( elm.dataset.target, elm.dataset.age );
@@ -134,6 +134,7 @@ function draw_contenido( age ){
     // it cant be subsection withour a prev section
     let subSection = get_params( "subsection" );
 
+    // console.log(subSection);
     if( subSection !== null){
         document.querySelectorAll('[data-target="'+subSection+'"]')[0].click();
     } else {
@@ -266,38 +267,36 @@ function get_params( parameter ){
 //rewrite current url with some new parameter
 function rewrite_url( new_section, new_subsection ){
 
-    //get current url
-    let url_string = (window.location.href).toLowerCase();
-    let current_url = new URL(url_string);
+    // console.log("new_section: " + new_section);
+    // console.log("new_subsection: " + new_subsection)
+    
+    let url_string = (window.location.href);
 
-    if( new_section !== null ){     //set section 
-        //look for section parameter
-        let section = current_url.searchParams.get("section");
-        if(section === null) {     //there isnt still a selected section 
-            //add section parameter to url 
-            url_string+=`?section=`+new_section;
-        } else {    //there is a selected section 
-            //change section paramater to selected
+    let current_section = get_params("section");
+    let current_subSection = get_params("subsection");
+
+    if( new_section !== null ){    
+        if( current_section === null ) {    //si aun no hay current_section, añade la new_section a la url
+            url_string+=`?section=`+new_section;        
+        } else if( current_section !== new_section ){    //si la seccion actual !== nueva seccion, modifica la seccion actual
             url_string = url_string.split("?");
             url_string = url_string[0] + `?section=`+new_section;
         }
     }
-    
-    if( new_subsection !== null ){
-        //look for subsection paramater
-        let subsection = current_url.searchParams.get("subsection");
-        if(subsection === null) {   //there isnt still a selected subsection 
-            //add section parameter to url 
+
+    if( new_subsection !== null ) {
+        if( current_subSection === null){    //si aun no hay current_subsection, añade la new_subsection a la url
             url_string+=`&subsection=`+new_subsection;
-        } else {    //there is a selected sub_section 
-            //change section paramater to selected
+        } else if( current_subSection !== new_subsection ){     //si la subseccion actual !== nueva subseccion, modifica subseccion actual 
             url_string = url_string.split("&");
             url_string = url_string[0] + `&subsection=`+new_subsection;
         }
-    }
-
+    }    
+    
     window.history.pushState(
-        { additionalInformation: 'Updated the URL with JS' },
-        'New page title', 
-        url_string);    
+        { additionalInformation: 'Actualización de parametros' },
+        'Alas y raíces', 
+        url_string
+    );    
+    
 }
