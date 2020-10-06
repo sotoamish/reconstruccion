@@ -1,6 +1,22 @@
 //this code is from https://gist.github.com/mpetroff/4666657beeb85754611f */
 //toggle menu without jquery
-let collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
+let collapseElements;
+document.addEventListener("DOMContentLoaded", function() {
+
+    //set collapse functions on all collapsible menu
+    setTimeout(()=>{
+        collapseElements = Array.prototype.slice.call(
+            // document.getElementsByClassName("navbar")
+            document.querySelectorAll('[data-toggle="collapse"]')
+        );
+
+        collapseElements.forEach((el) => {
+            el.addEventListener('click', handleCollapseElementClick);
+        });
+    }, 500);
+
+});
+
 const CLASS_SHOW = 'show';
 const CLASS_COLLAPSE = 'collapse';
 const CLASS_COLLAPSING = 'collapsing';
@@ -38,8 +54,6 @@ function handleCollapseElementClick(e) {
     }
 }
 
-collapseElements.forEach((el) => {
-    el.addEventListener('click', handleCollapseElementClick);
-});
+
 
 

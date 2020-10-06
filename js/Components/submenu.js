@@ -30,7 +30,9 @@ function draw_action(action, age){
 
     switch (action) {
         case "contenido":
-                draw_contenido( age );
+                if( age <= 2){
+                    draw_contenido( age );
+                }                
             break;
 
         case "cartelera": 
@@ -356,7 +358,10 @@ function draw_estados( age ){
         <div class="col-12 estados_board" id="estados_board">
         
         </div>
-                
+
+        <div class="col-12">
+            
+        </div>
     `;
     action_window.innerHTML = toDraw;
     

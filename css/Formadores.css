@@ -49,6 +49,11 @@
     align-items:center; 
     justify-content:center;
 }
+.estados_board .board_container .block_float i{
+    color: #993266;
+    font-size: 1.5em;
+    margin: 0 0.1em;
+}
 .estados_board .board_container .title{
     font-size: 1.3em;
     color: #993266;
