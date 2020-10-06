@@ -2,7 +2,7 @@ const estados_sedes_data = {
     "Aguascalientes" : {
         "institucion" : `INSTITUTO CULTURAL DE AGUASCALIENTES <br>
                         Casa de la Cultura <i>Víctor Sandoval</i>`, 
-        "direccion" : `<a href="https://goo.gl/maps/y6YAjnf2zRbEJMeq8">
+        "direccion" : `<a href="https://goo.gl/maps/y6YAjnf2zRbEJMeq8" target="_blank">
                             Venustiano Carranza No.101, Centro, C.P. 20000, Aguascalientes, AGS
                         </a>`,
         "responsables" : {
@@ -22,7 +22,7 @@ const estados_sedes_data = {
     },
     "Baja California" : {
         "institucion" : ``, 
-        "direccion" : `<a href="https://goo.gl/maps/sFDKGQKeNJgHwMgm9">
+        "direccion" : `<a href="https://goo.gl/maps/sFDKGQKeNJgHwMgm9" target="_blank">
                             Avenida Centenario No.151, Col. Zona Río, C.P. 22320, Tijuana, B.C.
                         </a>`,
         "responsables" : {
@@ -37,7 +37,7 @@ const estados_sedes_data = {
     "Baja California Sur" : {
         "institucion" : `INSTITUTO SUDCALIFORNIANO DE CULTURA  <br>
                         Unidad Cultural Profesor Jesús Castro Agudez `, 
-        "direccion" : `<a href="https://goo.gl/maps/RwwK3gFVsuKPNwch6">
+        "direccion" : `<a href="https://goo.gl/maps/RwwK3gFVsuKPNwch6" target="_blank">
         Antonio Navarro esq. Ignacio Altamirano y Héroes de Independencia S/N, Zona Centro, C.P. 23000, La Paz, Baja California Sur
                         </a>`,
         "responsables" : {
@@ -51,7 +51,7 @@ const estados_sedes_data = {
     },
     "Campeche" : {
         "institucion" : `SECRETARÍA DE CULTURA DE CAMPECHE`, 
-        "direccion" : `<a href="https://goo.gl/maps/Qns8B2ioTzpiRjD19">
+        "direccion" : `<a href="https://goo.gl/maps/Qns8B2ioTzpiRjD19" target="_blank">
         Calle 12 no. 172 entre 61 y 63 col. Centro Histórico, C.P. 24000, San Francisco de Campeche, Camp.
                         </a>`,
         "responsables" : {
@@ -74,7 +74,7 @@ const estados_sedes_data = {
     "Chiapas" : {
         "institucion" : `CONSEJO ESTATAL PARA LA CULTURA Y LAS ARTES DE CHIAPAS <br>
                         Centro Cultural de Chiapas "Jaime Sabines" `, 
-        "direccion" : `<a href="https://goo.gl/maps/ZGCkjHKXThEzEoxn7">
+        "direccion" : `<a href="https://goo.gl/maps/ZGCkjHKXThEzEoxn7" target="_blank">
         Av. Central 12 oriente Norte No. 2, Colonia Cinco de mayo, C.P. 29000, Tuxtla Gutiérrez, Chiapas
         </a>`,
         "responsables" : {
@@ -89,7 +89,7 @@ const estados_sedes_data = {
     },
     "Chihuahua" : {
         "institucion" : `SECRETARÍA DE CULTURA DEL ESTADO DE CHIHUAHUA `, 
-        "direccion" : `<a href="https://goo.gl/maps/UoKfqzpky4ThSbFKA">
+        "direccion" : `<a href="https://goo.gl/maps/UoKfqzpky4ThSbFKA" target="_blank">
         Av. Universidad y División del Norte S/n, Col. AltaVista, C.P. 31200, Chihuahua, Chihuahua
         </a>`,
         "responsables" : {
@@ -104,7 +104,7 @@ const estados_sedes_data = {
     },
     "Ciudad de México" : {
         "institucion" : `SECRETARÍA DE CULTURA DE LA CIUDAD DE MÉXICO  `, 
-        "direccion" : `<a href="https://goo.gl/maps/fxdz2Ug2Z8oRTzRf8">
+        "direccion" : `<a href="https://goo.gl/maps/fxdz2Ug2Z8oRTzRf8" target="_blank">
         Av. De la Paz 26, Col. Chimalistac, Alcaldía Álvaro Obregón, C.P. 01070, Ciudad de México</a>`,
         "responsables" : {
             0 : {
@@ -127,7 +127,7 @@ const estados_sedes_data = {
     "Colima" : {
         "institucion" : `SECRETARÍA DE CULTURA DE COLIMA <br>
                         Edificio Central de la Secretaría de Cultura `, 
-        "direccion" : `<a href="https://goo.gl/maps/UoKfqzpky4ThSbFKA">
+        "direccion" : `<a href="https://goo.gl/maps/UoKfqzpky4ThSbFKA" target="_blank">
                         Calz. Galván Norte y Ejército Nacional s/n Col. Centro, C.P. 28000 Colima, Col.</a>`,
         "responsables" : {
             0 : {
@@ -141,7 +141,7 @@ const estados_sedes_data = {
     },
     "Coahuila de Zaragoza" : {
         "institucion" : `SECRETARÍA DE CULTURA DEL ESTADO DE COAHUILA ZARAGOZA  <br>`, 
-        "direccion" : `<a href="https://goo.gl/maps/ZdSvS6Dmdv4PM7Bo9">
+        "direccion" : `<a href="https://goo.gl/maps/ZdSvS6Dmdv4PM7Bo9" target="_blank">
                     Boulevard Venustiano Carranza No.1569, Esquina calle Chihuahua, Colonia República Poniente, C.P. 25265, Saltillo, Coahuila
         </a>`,
         "responsables" : {
@@ -156,7 +156,7 @@ const estados_sedes_data = {
     },
     "Durango" : {
         "institucion" : `INSTITUTO DE CULTURA DEL ESTADO DE DURANGO`, 
-        "direccion" : `<a href="https://goo.gl/maps/auKCEaWrA9QYn9BB7">
+        "direccion" : `<a href="https://goo.gl/maps/auKCEaWrA9QYn9BB7" target="_blank">
                         Avenida 5 de febrero No. 800, Poniente, Zona Centro, C.P. 34000, Durango, Dgo</a>`,
         "responsables" : {
             0 : {
@@ -171,7 +171,7 @@ const estados_sedes_data = {
     "Guanajuato" : {
         "institucion" : `INSTITUTO ESTATAL DE LA CULTURA DE GUANAJUATO <br> 
                         CENTRO DE LAS ARTES DE GUANAJUATO `, 
-        "direccion" : `<a href="https://goo.gl/maps/d8cfqFqPYqWoqon96">
+        "direccion" : `<a href="https://goo.gl/maps/d8cfqFqPYqWoqon96" target="_blank">
                         Revolución 204, Esquina con Vasco de Quiroga, Ex Convento de San Agustín, Zona Centro, C.P. 36700, Salamanca, Guanajuato, GTO.</a>`,
         "responsables" : {
             0 : {
@@ -186,7 +186,7 @@ const estados_sedes_data = {
     },
     "Guerrero" : {
         "institucion" : `Secretaría de Cultura del Estado de Guerrero `, 
-        "direccion" : `<a href="https://goo.gl/maps/ZMVXgyG6s89z5MNi8">
+        "direccion" : `<a href="https://goo.gl/maps/ZMVXgyG6s89z5MNi8" target="_blank">
                         Costera Miguel Alemán No. 4834, Costa Azul, C.P. 039850, Acapulco, Gro.</a>`,
         "responsables" : {
             0 : {
@@ -200,7 +200,7 @@ const estados_sedes_data = {
     },
     "Hidalgo" : {
         "institucion" : `Secretaría de Cultura del Estado de Hidalgo `, 
-        "direccion" : `<a href="https://goo.gl/maps/jLxwwnGEReGQc4ht7">
+        "direccion" : `<a href="https://goo.gl/maps/jLxwwnGEReGQc4ht7" target="_blank">
                         Río de las Avenidas No. 200, Col. Periodistas, C.P. 42060, Pachuca, Hidalgo.</a>`,
         "responsables" : {
             0 : {
@@ -214,7 +214,7 @@ const estados_sedes_data = {
     },
     "Jalisco" : {
         "institucion" : `Secretaría de Cultura del Gobierno del Estado de Jalisco `, 
-        "direccion" : `<a href="https://goo.gl/maps/TC1K2twgAJNLoKcD7">
+        "direccion" : `<a href="https://goo.gl/maps/TC1K2twgAJNLoKcD7" target="_blank">
                         Calle Zaragoza no. 224, Edificio Arroniz, Centro, C.P. 44100, Guadalajara, Jal.</a>`,
         "responsables" : {
             0 : {
@@ -228,7 +228,7 @@ const estados_sedes_data = {
     },
     "Michoacán de Ocampo" : {
         "institucion" : `Secretaría de Cultura del Estado de Michoacán `, 
-        "direccion" : `<a href="https://goo.gl/maps/vvmeiJjA8QBTM1n79">
+        "direccion" : `<a href="https://goo.gl/maps/vvmeiJjA8QBTM1n79" target="_blank">
                         Calle Zaragoza No. 143, Centro Histórico, C.P. 58000, Morelia, Michoacán.</a>`,
         "responsables" : {
             0 : {
@@ -243,7 +243,7 @@ const estados_sedes_data = {
     "Morelos" : {
         "institucion" : `SECRETARÍA DE TURISMO Y CULTURA DEL ESTADO DE MORELOS <br>
                         Centro Cultural Infantil La Vecindad`, 
-        "direccion" : `<a href="https://goo.gl/maps/vvmeiJjA8QBTM1n79">
+        "direccion" : `<a href="https://goo.gl/maps/vvmeiJjA8QBTM1n79" target="_blank">
                         Calle Salazar No. 1, Col. Centro, esq. Humboldt, C.P. 62000, Cuernavaca, Morelos.</a>`,
         "responsables" : {
             0 : {
@@ -264,7 +264,7 @@ const estados_sedes_data = {
     },
     "México" : {
         "institucion" : `SECRETARÍA DE CULTURA DEL ESTADO DE MÉXICO `, 
-        "direccion" : `<a href="https://goo.gl/maps/ndMfR1Yzmvx2GswA8">
+        "direccion" : `<a href="https://goo.gl/maps/ndMfR1Yzmvx2GswA8" target="_blank">
                         Boulevard Jesús Reyes Heroles, No. 302 delegación San-Buena Aventura, C.P. 510, Toluca, Estado de México.</a>`,
         "responsables" : {
             0 : {
@@ -280,7 +280,7 @@ const estados_sedes_data = {
     },
     "Nayarit" : {
         "institucion" : `CONSEJO ESTATAL PARA LA CULTURA Y LAS ARTES DE NAYARIT `, 
-        "direccion" : `<a href="https://goo.gl/maps/6Vyn6h1nUJZCc1MRA">
+        "direccion" : `<a href="https://goo.gl/maps/6Vyn6h1nUJZCc1MRA" target="_blank">
                             Avenida Ignacio Allende No. 42, Oriente Col. Centro, C.P. 63000, Tepic, Nayarit
                         </a>`,
         "responsables" : {
@@ -296,7 +296,7 @@ const estados_sedes_data = {
     "Nuevo León" : {
         "institucion" : `Consejo para la Cultura y las Artes de Nuevo León <br>
                         Espacio Niños CONARTE (Interior del Parque Fundidora) `, 
-        "direccion" : `<a href="https://goo.gl/maps/T9189GmGN8NnSNY88">
+        "direccion" : `<a href="https://goo.gl/maps/T9189GmGN8NnSNY88" target="_blank">
                             Av. Fundidora y Adolfo Prieto S/N Col. Obrera C.P. 64010, Monterrey, Nuevo León
                         </a>`,
         "responsables" : {
@@ -311,7 +311,7 @@ const estados_sedes_data = {
     },
     "Oaxaca" : {
         "institucion" : `Secretaría de las Culturas y Artes de Oaxaca`, 
-        "direccion" : `<a href="https://goo.gl/maps/yCTnL1rbjZGkTuNz6">
+        "direccion" : `<a href="https://goo.gl/maps/yCTnL1rbjZGkTuNz6" target="_blank">
                             Calzada Madero No. 1336 esq. Av. Tecnológicos, Col. Lindavista C.P.68030, Oaxaca de Juárez, Oax.
                         </a>`,
         "responsables" : {
@@ -327,7 +327,7 @@ const estados_sedes_data = {
     },
     "Puebla" : {
         "institucion" : `SECRETARIA DE CULTURA DEL ESTADO DE PUEBLA `, 
-        "direccion" : `<a href="https://goo.gl/maps/BXCSN7NGtEUdLWRd6">
+        "direccion" : `<a href="https://goo.gl/maps/BXCSN7NGtEUdLWRd6" target="_blank">
                             Avenida Reforma 1305, Col. Centro, Puebla, Pue.
                         </a>`,
         "responsables" : {
@@ -341,7 +341,7 @@ const estados_sedes_data = {
     },
     "Querétaro" : {
         "institucion" : `SECRETARÍA DE CULTURA `, 
-        "direccion" : `<a href="https://goo.gl/maps/TKGx1WJqqu1TMR3a7">
+        "direccion" : `<a href="https://goo.gl/maps/TKGx1WJqqu1TMR3a7" target="_blank">
                             Arteaga No. 89, Colonia Centro, a un lado de la Iglesia de Santa Rosa de Viterbo, C.P. 76000, Santiago de Querétaro, Qro.
                         </a>`,
         "responsables" : {
@@ -355,7 +355,7 @@ const estados_sedes_data = {
     },
     "Quintana Roo" : {
         "institucion" : `INSTITUTO DE LA CULTURA Y LAS ARTES DE QUINTANA ROO `, 
-        "direccion" : `<a href="https://goo.gl/maps/Nyjh9ZBMBkCUEKD36">
+        "direccion" : `<a href="https://goo.gl/maps/Nyjh9ZBMBkCUEKD36" target="_blank">
                             Av. Héroes 68 esq. Chapultepec (Antigua Escuela Belisario Domínguez) C.P. 77000, Chetumal, Quintana Roo
                         </a>`,
         "responsables" : {
@@ -371,7 +371,7 @@ const estados_sedes_data = {
     },
     "San Luis Potsí" : {
         "institucion" : `SECRETARÍA DE CULTURA DE SAN LUIS POTOSÍ `, 
-        "direccion" : `<a href="https://goo.gl/maps/QhKUeagD2n3KHWcR6">
+        "direccion" : `<a href="https://goo.gl/maps/QhKUeagD2n3KHWcR6" target="_blank">
                             Jardín Guerrero No. 6, Centro. C.P.78000, San Luis Potosí, S.L.P.
                         </a>`,
         "responsables" : {
@@ -391,7 +391,7 @@ const estados_sedes_data = {
     },
     "Sinaloa" : {
         "institucion" : `INSTITUTO SINALOENSE DE CULTURA`, 
-        "direccion" : `<a href="https://goo.gl/maps/ocak2pNzLbRJyDfFA">
+        "direccion" : `<a href="https://goo.gl/maps/ocak2pNzLbRJyDfFA" target="_blank">
                             Rafael Buelna S/N y Paliza, Col. Centro, C.P. 80000 Culiacán, Sinaloa
                         </a>`,
         "responsables" : {
@@ -406,7 +406,7 @@ const estados_sedes_data = {
     "Sonora" : {
         "institucion" : `Instituto Sonorense de Cultura <br>
                         Casa de la Cultura de Sonora <i>Lic. Alejandro Carrillo Marcor</i>`, 
-        "direccion" : `<a href="https://goo.gl/maps/RRTX1qUep9jHoWky5">
+        "direccion" : `<a href="https://goo.gl/maps/RRTX1qUep9jHoWky5" target="_blank">
                             Av. Cultura s/n esq. Con Boulevard Vildósola, Col. Villa de Seris, C.P. 83290, Hermosillo, Son.
                         </a>`,
         "responsables" : {
@@ -430,7 +430,7 @@ const estados_sedes_data = {
     },
     "Tabasco" : {
         "institucion" : `SECRETARÍA DE CULTURA DEL ESTADO DE TABASCO `, 
-        "direccion" : `<a href="https://goo.gl/maps/L2jStUuQ49VkGqhM9">
+        "direccion" : `<a href="https://goo.gl/maps/L2jStUuQ49VkGqhM9" target="_blank">
                             Av. Carlos Pellicer Cámara s/n, Zona CICOM (A un costado de la escuela CEIBA) Colonia Centro, C.P. 86000, Villahermosa, Tabasco
                         </a>`,
         "responsables" : {
@@ -444,14 +444,14 @@ const estados_sedes_data = {
     },
     "Tamaulipas" : {
         "institucion" : `INSTITUTO TAMAULIPECO PARA LA CULTURA Y LAS ARTES `, 
-        "direccion" : `<a href="https://goo.gl/maps/buyc8S8ngWSip4Ek7">
+        "direccion" : `<a href="https://goo.gl/maps/buyc8S8ngWSip4Ek7" target="_blank">
                             Calle Guerrero No. 421, Entre Emiliano P. Nafarrete y Gaspar de la Garza, Zona Centro. C.P. 87000, Ciudad Victoria, Tamaulipas
                         </a>
                         <br><br>
                         Redes sociales:<br>
-                        <a href="https://www.facebook.com/CulturaTam">facebook.com/CulturaTam</a>     <br>
-                        <a href="https://twitter.com/CulturaTam">Twitter: @CulturaTam </a>   <br>
-                        <a href="https://www.instagram.com/cultura_tamaulipas/?hl=es-la">Ig: cultura_tamaulipas</a>`,
+                        <a href="https://www.facebook.com/CulturaTam" target="_blank">facebook.com/CulturaTam</a>     <br>
+                        <a href="https://twitter.com/CulturaTam" target="_blank">Twitter: @CulturaTam </a>   <br>
+                        <a href="https://www.instagram.com/cultura_tamaulipas/?hl=es-la" target="_blank">Ig: cultura_tamaulipas</a>`,
         "responsables" : {
             0 : {
                 "nombre" : `Lic. Sofía Noriega Zorrilla`,
@@ -463,7 +463,7 @@ const estados_sedes_data = {
     },
     "Tlaxcala" : {
         "institucion" : `INSTITUTO TLAXCALTECA DE LA CULTURA `, 
-        "direccion" : `<a href="https://goo.gl/maps/HqbP2sRNmxQb9355A">
+        "direccion" : `<a href="https://goo.gl/maps/HqbP2sRNmxQb9355A" target="_blank">
                             Calle Ángel Solana No. 1, Col. San Luis Apizaquito, C.P. 90401, Apizaco, Tlaxcala
                         </a>`,
         "responsables" : {
@@ -483,7 +483,7 @@ const estados_sedes_data = {
     },
     "Veracruz" : {
         "institucion" : `INSTITUTO VERACRUZANO DE CULTURA `, 
-        "direccion" : `<a href="https://goo.gl/maps/J57cbUsuPBjcf5JM7">
+        "direccion" : `<a href="https://goo.gl/maps/J57cbUsuPBjcf5JM7" target="_blank">
                             Calle Francisco Canal S/N Esq. Zaragoza, Col. Centro, C.P. 91700, Veracruz, Ver.
                         </a>`,
         "responsables" : {
@@ -497,7 +497,7 @@ const estados_sedes_data = {
     },
     "Yucatán" : {
         "institucion" : `SECRETARÍA DE LA CULTURA Y LAS ARTES DE YUCATÁN SEDECULTA `, 
-        "direccion" : `<a href="https://goo.gl/maps/Dp29UxiejeVzAKnU9">
+        "direccion" : `<a href="https://goo.gl/maps/Dp29UxiejeVzAKnU9" target="_blank">
                             Calle 18 No. 204, (por 23 y 25), Col. García Ginerés, C.P. 97070, Mérida, Yuc.
                         </a>`,
         "responsables" : {
@@ -517,7 +517,7 @@ const estados_sedes_data = {
     },
     "Zacatecas" : {
         "institucion" : `Instituto Zacatecano de Cultura `, 
-        "direccion" : `<a href="https://goo.gl/maps/RWuwHqLUANVZom166">
+        "direccion" : `<a href="https://goo.gl/maps/RWuwHqLUANVZom166" target="_blank">
                             Lomas del Calvario No. 105, Col. Díaz Ordaz C.P. 98020, Zacatecas, Zac.
                         </a>`,
         "responsables" : {
