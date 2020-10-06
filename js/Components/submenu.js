@@ -33,11 +33,13 @@ function draw_action(action, age){
                 draw_contenido( age );
             break;
 
-        case "estados": 
-            break;
-
         case "cartelera": 
                 draw_cartelera( age );
+            break;
+
+        case "estados": 
+                //sección de *formadores
+                draw_estados( age )
             break;
 
         case "descripcionayr":
@@ -77,6 +79,54 @@ function actionMenuChange( elm ){
 
     }
 }
+
+
+//get parameters from url
+function get_params( parameter ){
+    let url_string = (window.location.href).toLowerCase();
+    let url = new URL(url_string);
+    return url.searchParams.get(parameter);
+}
+
+
+//rewrite current url with some new parameter
+function rewrite_url( new_section, new_subsection ){
+
+    // console.log("new_section: " + new_section);
+    // console.log("new_subsection: " + new_subsection)
+    
+    let url_string = (window.location.href);
+
+    let current_section = get_params("section");
+    let current_subSection = get_params("subsection");
+
+    if( new_section !== null ){    
+        if( current_section === null ) {    //si aun no hay current_section, añade la new_section a la url
+            url_string+=`?section=`+new_section;        
+        } else if( current_section !== new_section ){    //si la seccion actual !== nueva seccion, modifica la seccion actual
+            url_string = url_string.split("?");
+            url_string = url_string[0] + `?section=`+new_section;
+        }
+    }
+
+    if( new_subsection !== null ) {
+        if( current_subSection === null){    //si aun no hay current_subsection, añade la new_subsection a la url
+            url_string+=`&subsection=`+new_subsection;
+        } else if( current_subSection !== new_subsection ){     //si la subseccion actual !== nueva subseccion, modifica subseccion actual 
+            url_string = url_string.split("&");
+            url_string = url_string[0] + `&subsection=`+new_subsection;
+        }
+    }    
+    
+    window.history.pushState(
+        { additionalInformation: 'Actualización de parametros' },
+        'Alas y raíces', 
+        url_string
+    );    
+    
+}
+
+
 
 
 //draw "contenido" section // start drawing an action menu 
@@ -255,48 +305,64 @@ function draw_cartelera( age ){
 }
 
 
+//draw "estados" section // is from formadores page
+function draw_estados( age ){
+    let toDraw = `
+        <div class="col-12 estados_block">
 
-//get parameters from url
-function get_params( parameter ){
-    let url_string = (window.location.href).toLowerCase();
-    let url = new URL(url_string);
-    return url.searchParams.get(parameter);
+            <div class="row">
+                <div class="col-12 estados_descripcion">
+                    <span> Bienvenidos todos </span>
+
+                    <p>
+                        Alas y Raíces es el programa de la Secretaría de Cultura federal que propone acciones destinadas al cumplimiento de los derechos culturales 
+                        de las infancias (de 0 a 17 años de edad) de México en su diversidad de circunstancias: “el derecho al descanso y el esparcimiento, al juego 
+                        y a las actividades recreativas propias de su edad y a participar libremente en la vida cultural y en las artes”, como lo indica el Artículo 
+                        31 de la Convención Internacional sobre los Derechos del Niño y de la Niña.
+                        <br><br>
+                    
+                        Con este fin se aprovechan las nuevas tecnologías y se desarrollan páginas de Internet y apps creadas especialmente para niñas, niños y 
+                        adolescentes; se promueven y organizan presentaciones artísticas, presentaciones de danza, montajes de obras de teatro, funciones de títeres, 
+                        proyecciones de cine, concursos, convocatorias, exposiciones, presentaciones de narraciones orales, lecturas y talleres y laboratorios 
+                        creativos a través de diversos lenguajes artísticos; y se producen publicaciones.
+                        <br><br>
+
+                        A través de los 32 programas estatales Alas y Raíces, que dependen de las secretarías, institutos y consejos de cultura de las entidades 
+                        federativas, se fomenta el disfrute de manifestaciones artísticas y culturales entre el público infantil y juvenil en todo el país.
+                        <br><br>
+
+                        Propiciando experiencias artísticas y culturales significativas y constantes, desde las primeras etapas de la vida, se busca contribuir al 
+                        bienestar, la formación integral de niños y adolescentes y el desarrollo de su imaginación, capacidad reflexiva, a la par que su sensibilidad, 
+                        empatía, curiosidad y expresión creativa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row formularios">
+                <div class="col-6">
+                    <select class="form-control" name="estado" id="estado_select" onChange="update_estados_board()"></select>
+                </div>
+                
+                <div class="col-6 input-group">
+                    <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+        <div class="col-12 estados_board" id="estados_board">
+        
+        </div>
+                
+    `;
+    action_window.innerHTML = toDraw;
+    
+    // functions from formadores.js
+    fill_estados_field();
+    update_estados_board();
 }
 
 
-//rewrite current url with some new parameter
-function rewrite_url( new_section, new_subsection ){
-
-    // console.log("new_section: " + new_section);
-    // console.log("new_subsection: " + new_subsection)
-    
-    let url_string = (window.location.href);
-
-    let current_section = get_params("section");
-    let current_subSection = get_params("subsection");
-
-    if( new_section !== null ){    
-        if( current_section === null ) {    //si aun no hay current_section, añade la new_section a la url
-            url_string+=`?section=`+new_section;        
-        } else if( current_section !== new_section ){    //si la seccion actual !== nueva seccion, modifica la seccion actual
-            url_string = url_string.split("?");
-            url_string = url_string[0] + `?section=`+new_section;
-        }
-    }
-
-    if( new_subsection !== null ) {
-        if( current_subSection === null){    //si aun no hay current_subsection, añade la new_subsection a la url
-            url_string+=`&subsection=`+new_subsection;
-        } else if( current_subSection !== new_subsection ){     //si la subseccion actual !== nueva subseccion, modifica subseccion actual 
-            url_string = url_string.split("&");
-            url_string = url_string[0] + `&subsection=`+new_subsection;
-        }
-    }    
-    
-    window.history.pushState(
-        { additionalInformation: 'Actualización de parametros' },
-        'Alas y raíces', 
-        url_string
-    );    
-    
-}

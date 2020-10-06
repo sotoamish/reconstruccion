@@ -1,0 +1,81 @@
+.estados_block{
+    padding: 1vw 10vw;
+}
+
+
+.estados_block .estados_descripcion{
+    text-align: center;
+}
+.estados_block .estados_descripcion span{
+    color: #993266;
+    font-size: 2.5em;
+    line-height: 4em;
+}
+.estados_block .estados_descripcion p{
+    font-family: "Montserrat";
+    text-align: justify;
+    font-size: 1.15em;
+}
+
+
+.estados_block .formularios{
+    margin-top: 2vw;
+}
+.estados_block .formularios select{
+    width: 70%;
+}
+.estados_block .formularios .input-group{
+    padding-left: 15%;
+    text-align: right;
+}
+
+
+.estados_board .board_wrapper{
+    padding: 1vw 10vw;
+    margin-top: 2vw;
+}
+.estados_board .board_container{
+    background: #fff;
+    padding: 2vw;
+}
+.estados_board .board_container img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.estados_board .board_container .block_float{
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+}
+.estados_board .board_container .title{
+    font-size: 1.3em;
+    color: #993266;
+    margin-bottom: 0.5em;
+}
+
+.estados_board .board_container .info_block{
+    margin-bottom: 1em;
+}
+.estados_board .board_container .info_block .nombre{
+    
+}
+.estados_board .board_container .info_block .puesto{
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+}
+
+.estados_board .board_container .contact_block{
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+}
+.estados_board .board_container .contact_block .correo{
+    margin-bottom: 0.4em;
+}
+
+.estados_board .board_container .direccion{
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
