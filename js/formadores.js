@@ -1,8 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     
-// });
-
-
 //when page ends load
 document.addEventListener("DOMContentLoaded", function(event) {
     //get section from url parameters "function from submenu.js"
@@ -91,6 +86,35 @@ function update_estados_board() {
                     </div>
                 </div>
             </div>            
+        </div>
+
+        <div class="row proyectos_board">
+            <div class="col-12 title">
+                Proyectos Estatales
+            </div>
+    `;
+    
+    for (let i = 0; i < Object.keys(estados_sedes_proyectos[sel_estado]).length; i++) {
+        let key = (Object.keys(estados_sedes_proyectos[sel_estado])[i]);
+        
+        toDraw += `
+            <div class="col-6 pic_container">
+                <img src="${estados_sedes_proyectos[sel_estado][key]["imagen"]}" alt="foto del proyecto ${estados_sedes_proyectos[sel_estado][key]["nombre"]}" />
+            </div>
+            <div class="col-6 proy_info">
+                <div class="proyect_name">
+                    ${estados_sedes_proyectos[sel_estado][key]["nombre"]}
+                </div>
+
+                <div class="proyect_description">
+                    ${estados_sedes_proyectos[sel_estado][key]["descripcion"]}
+                </div>
+            </div>   
+        `;
+
+    }
+
+    toDraw += `
         </div>
     `;
 

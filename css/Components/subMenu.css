@@ -40,3 +40,8 @@
 .component_container {
     padding: 2vw 1vw 4vw 8vw;
 }
+@media (max-width: 768px) { 
+    .component_container {
+        padding: 2vw 2vw 4vw 2vw;
+    }   
+}

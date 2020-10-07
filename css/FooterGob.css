@@ -4,9 +4,10 @@
     background-color:  #0b5ab1;
     color: #fff;
     font-size: 0.9em;
+    overflow-x: hidden;
 }
 .footer-gob #pleca-gob{
-    width: 100vw;
+    width: 100%;
 }
 .footer-gob .sub-div{
     padding: 1vw 4vw 1vw 4vw;

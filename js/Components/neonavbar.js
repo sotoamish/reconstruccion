@@ -51,7 +51,7 @@ function printNavBar() {
         `;
     } else {
         toPrint = `
-            <nav class="navbar navbar_desktop navbar-expand-lg p-0">            
+            <nav class="navbar navbar_desktop navbar-expand-lg p-0 navbar-light">            
                 <a class="navbar-brand" href="index.html">
                     <img src="img/ayrH.png" id="navBrand" alt="al home de alas y raíces teest">
                 </a>

@@ -134,49 +134,60 @@ function rewrite_url( new_section, new_subsection ){
 //draw "contenido" section // start drawing an action menu 
 function draw_contenido( age ){
     
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); 
     let toDraw = ``;
 
     //draw "contenido" action menu block
     toDraw += `
-        <div class="col-6 action_menu_block">
+        <div class="col-`+ ((isMobile)? "12" : "6") +` action_menu_block `+ ((isMobile)? "mobile" : "") +`">
             <div class="row">
                 <div class="col-3 menu_btn_container" data-target="videos" data-age="`+age+`" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de videos"><img src="img/infancia1/videos.png" class="color" alt="boton de videos"> 
-                    Videos 
+                    <div>
+                        Videos 
+                    </div>
                 </div>
                 <div class="col-3 menu_btn_container" data-target="audios" data-age="`+age+`" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/audios1.png" class="claro" alt="boton de audios"><img src="img/infancia1/audios.png" class="color" alt="boton de audios"> 
-                    Audios 
+                    <div>
+                        Audios 
+                    </div>
                 </div>
                 <div class="col-3 menu_btn_container" data-target="juegos" data-age="`+age+`" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de juegos"><img src="img/infancia1/videos.png" class="color" alt="boton de juegos"> 
-                    Juegos
+                    <div>
+                        Juegos
+                    </div>
                 </div>
                 <div class="col-3 menu_btn_container" data-target="apps" data-age="`+age+`" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de apps"><img src="img/infancia1/videos.png" class="color" alt="boton de apps"> 
-                    Apps 
+                    <div>
+                        Apps 
+                    </div>
                 </div>
             </div>
         </div>
     `;
 
-    //draw search menu block
-    toDraw += `
-        <div class="col-6 search_block">
-            <div class="input-group">
-                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                <div class="input-group-append">
-                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+    if( !isMobile ){
+        //draw search menu block
+        toDraw += `
+            <div class="col-6 search_block">
+                <div class="input-group">
+                    <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
                 </div>
             </div>
-        </div>
-    `;
+        `;   
+    }
 
     //draw a component container section
     toDraw += `
-        <div class="col-8 component_container" id="component_container">
+        <div class="col-lg-8 component_container" id="component_container">
         </div> 
-        <div class="col-4">
+        <div class="col-lg-4">
         </div> 
     `;
 

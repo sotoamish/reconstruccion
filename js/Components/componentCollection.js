@@ -1,5 +1,6 @@
 //select witch component to draw
 function drawComponent( component, age ){
+    console.log(component, age);
     switch (component) {
         case "audios":
                 drawComponentAudios(age);
@@ -120,11 +121,12 @@ function drawComponentAudios(age){
 
 //draw video component
 function drawComponentVideos(age){  
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     let toDraw = ``;
 
     toDraw += `
         <div class="row comp_videos age_`+age+`">
-            <div class="col-8 player_container">
+            <div class="col-lg-8 player_container">
                 <div>
                     <iframe id="true_video_player" src="" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -133,7 +135,7 @@ function drawComponentVideos(age){
 
                 </div>
             </div>
-            <div class="col-4 video_list_container">
+            <div class="col-lg-4 video_list_container">
     `;
 
     //add all playlists (data from video_player_data.js)
@@ -141,8 +143,8 @@ function drawComponentVideos(age){
         for (let i = 0; i < Object.keys(video_player_data).length; i++) {
             let current_key = Object.keys(video_player_data)[i];
 
-            if( video_player_data[current_key]["age"] === 0 ||
-                video_player_data[current_key]["age"] === age )
+            if( video_player_data[current_key]["age"] == 0 ||
+                video_player_data[current_key]["age"] == age )
             {
                 toDraw += `
                     <div class="row">
@@ -192,7 +194,6 @@ function drawComponentVideos(age){
                     }
                 }
             
-                
 
                 toDraw += `
                         </div>

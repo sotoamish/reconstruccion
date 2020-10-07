@@ -530,3 +530,128 @@ const estados_sedes_data = {
         },
     } 
 };
+
+
+const estados_sedes_proyectos = {
+    "Aguascalientes" : {
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+    },
+    "Baja California" : {
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/239/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+    },
+    "Baja California Sur" : {
+
+    },
+    "Campeche" : {
+
+    },
+    "Chiapas" : {
+
+    },
+    "Chihuahua" : {
+
+    },
+    "Ciudad de México" : {
+
+    },
+    "Colima" : {
+
+    },
+    "Coahuila de Zaragoza" : {
+
+    },
+    "Durango" : {
+
+    },
+    "Guanajuato" : {
+
+    },
+    "Guerrero" : {
+
+    },
+    "Hidalgo" : {
+
+    },
+    "Jalisco" : {
+
+    },
+    "Michoacán de Ocampo" : {
+
+    },
+    "Morelos" : {
+
+    },
+    "México" : {
+
+    },
+    "Nayarit" : {
+
+    },
+    "Nuevo León" : {
+
+    },
+    "Oaxaca" : {
+
+    },
+    "Puebla" : {
+
+    },
+    "Querétaro" : {
+
+    },
+    "Quintana Roo" : {
+
+    },
+    "San Luis Potsí" : {
+
+    },
+    "Sinaloa" : {
+
+    },
+    "Sonora" : {
+
+    },
+    "Tabasco" : {
+
+    },
+    "Tamaulipas" : {
+
+    },
+    "Tlaxcala" : {
+
+    },
+    "Veracruz" : {
+
+    },
+    "Yucatán" : {
+
+    },
+    "Zacatecas" : {
+
+    },
+}

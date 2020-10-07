@@ -1,7 +1,33 @@
 const cartelera_data = {
     2020 : {    //Año
+        1 : {       //Enero           
+        },
 
-        9 : {       //Septiembre
+        2 : {       //Febrero           
+        },
+
+        3 : {       //Marzo           
+        },
+
+        4 : {       //Abril           
+        },
+
+        5 : {       //Mayo           
+        },
+
+        6 : {       //Junio           
+        },
+
+        7 : {       //Julio           
+        },
+
+        8 : {       //Agosto           
+        },
+
+        9 : {       //Septiembre           
+        },
+
+        10 : {       //Octubre
             
             1 : {
                 "nombre": `laboratorio creativo de ejemplo`,
@@ -98,6 +124,12 @@ const cartelera_data = {
                 "edad": 4,
                 "thumbnail": 'img/cartelera/Septiembre/chabaud.png',
             },            
+        },
+
+        11 : {       //Noviembre           
+        },
+
+        12 : {       //Diciembre           
         },
 
     },

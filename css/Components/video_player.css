@@ -114,3 +114,48 @@
 .comp_videos .video_list_container .track_button.active{
     background: #d9d9d9;
 }
+
+
+
+@media (max-width: 768px) { 
+    .comp_videos .player_container iframe{
+        width: 100vw;
+        height: 450px;
+    }
+    .comp_videos .player_container .video_info{
+        padding: 1.5em 2.5em;
+    }
+    .comp_videos .video_list_container{
+        padding: 0 5vw;
+        height: 400px;
+    }
+    .comp_videos .video_list_container .typeList_button{
+        padding: 2vw 5vw;
+    }
+    .comp_videos .video_list_container .track_button{
+        padding: 1em;
+        font-size: 0.9em;
+        text-align: left;
+    }
+}   
+@media (max-width: 577px) { 
+    .comp_videos .player_container iframe{
+        width: 100vw;
+        height: 200px;
+    }
+    .comp_videos .player_container .video_info{
+        padding: 1em 2em;
+        font-size: 0.9em;
+    }
+    .comp_videos .video_list_container .playList_button{
+        padding: 1em;
+    }
+    .comp_videos .video_list_container{
+        padding: 0 15vw;
+        height: 300px;
+    }
+    .comp_videos .video_list_container .typeList_button{
+        padding: 2vw 8vw;
+        font-size: 0.9em;
+    }
+}

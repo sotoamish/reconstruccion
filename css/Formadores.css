@@ -84,3 +84,36 @@
     font-size: 0.9em;
     margin-bottom: 2em;
 }
+
+
+
+.proyectos_board {
+    padding: 1vw 8vw 4vw 8vw;
+}
+.proyectos_board .title {
+    font-size: 2em;
+    color: #993266;
+    margin-bottom: 2vw;
+}
+.proyectos_board .pic_container {
+    text-align: center;
+    margin-bottom: 2vw;
+    max-height: 400px;
+    overflow: hidden;
+}
+.proyectos_board .pic_container img {
+    width: 80%;
+}
+
+.proyectos_board .proy_info{
+    max-height: 400px;
+    overflow: auto;
+}
+.proyectos_board .proyect_name {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+.proyectos_board .proyect_description {
+    font-family: "Montserrat";
+    font-size: 0.9em;
+}

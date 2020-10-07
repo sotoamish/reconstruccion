@@ -1,7 +1,9 @@
 //filter cartelera, with all filters
 function apply_filter(){
+    var currentDate = new Date();
+
     // get all filters
-    let year = 2020;
+    let year = currentDate.getFullYear();
     let month = parseInt(document.getElementById("month_filter").value);
     let activity = document.getElementById("activity_filter").value;
     let age = document.getElementById("age_filter").value;
