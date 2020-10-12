@@ -128,22 +128,3 @@ padding-left: 0vw;
 }
 
 
-.banner_block{
-  background: #000;
-  text-align: center;
-  margin-bottom: 5px;
-}
-.banner_block img{
-  width: 100%;
-}
-.banner_block .small{
-  display: none;
-}
-@media (max-width: 577px) { 
-  .banner_block img{
-    display: none;
-  }
-  .banner_block .small{
-    display: block;
-  }
-}

@@ -61,3 +61,26 @@ padding: 2vw 8vw;
 
 
 
+.action_menu_block2 .menu_btn_container.alternative{
+    text-align: center;
+    margin-top: 2em;
+}
+.action_menu_block2 .menu_btn_container.alternative.active{
+    border-bottom: solid 0.25em;
+}
+.action_menu_block2 .menu_btn_container.alternative:hover{
+    opacity: 0.8;
+}
+.action_menu_block2.age_1 .menu_btn_container.alternative.active{
+    border-bottom-color: #99cc33;
+}
+.action_menu_block2.age_2 .menu_btn_container.alternative.active{
+    border-bottom-color: #006666;
+}
+.action_menu_block2.age_3 .menu_btn_container.alternative.active{
+    border-bottom-color: #0099cc;
+}
+.action_menu_block2.age_4 .menu_btn_container.alternative.active{
+    border-bottom-color: #993266;
+}
+

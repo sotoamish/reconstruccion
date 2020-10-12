@@ -6,7 +6,12 @@ function drawComponent( component, age ){
                 drawComponentAudios(age);
             break;
         case "videos":
-                drawComponentVideos(age)
+                if( age <= 2) {     //video section for "infancia1", "infancia2"
+                    drawComponentVideos(age)
+                } else {    //video section for "jovenes"
+                    drawComponentVideos2(age)
+                }
+                
             break;
         case "juegos":
                 //drawComponentJuegos(age)
@@ -119,7 +124,7 @@ function drawComponentAudios(age){
 }
 
 
-//draw video component
+//draw video component for infancia1, infancia2
 function drawComponentVideos(age){  
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     let toDraw = ``;
@@ -216,4 +221,10 @@ function drawComponentVideos(age){
     document.getElementsByClassName("typeList_button")[0].click();
     //auto select first track
     document.getElementsByClassName("track_button")[0].click();
+}
+
+
+//draw video component for jovenes
+function drawComponentVideos2(age){
+    console.log("aqui");
 }

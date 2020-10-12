@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="css/Main.css">
     <link rel="stylesheet" href="css/FooterGob.css">
 
+    <!-- components styles -->
+    <link rel="stylesheet" href="css/Components/bannerComponent.css">
+
     <!-- page styles -->
     <link rel="stylesheet" href="css/index.css"> 
 
@@ -81,8 +84,8 @@
     
     <!-- Page Content -->
 		<section> 
+            <!-- botonera de edades -->
             <div class="row">
-
                 <div class="col-12 quien_eres">
                     <img src="img/index/aYr.png" alt="logo de alas y raíces"> ¿Quién eres?
                 </div>
@@ -117,32 +120,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-12 p-0 banner_block">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/juego y mov-02.png" alt="banner termporal">
-                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/juego y mov-02.png" alt="banner termporal">
-                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/juego y mov-02.png" alt="banner termporal">
-                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/juego y mov-02.png" alt="banner termporal">
-                                <img src="img/juego y mov-02small.png" class="small" alt="banner termporal">
-                            </div>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-
+            <!-- Banners -->
+            <div class="row bannerAction" id="bannerAction">
             </div>
         </section>
     <!--/.Page Content --> 
@@ -208,7 +189,7 @@
 
 <!-- page scripts -->
 <script src="js/common.js"></script> 
-<!-- <script src="js/Components/neonavbar.js"></script>    -->
+<script src="js/Components/bannerComponent.js"></script>
 <script src="js/index.js"></script>
 
 </body>

@@ -32,7 +32,9 @@ function draw_action(action, age){
         case "contenido":
                 if( age <= 2){
                     draw_contenido( age );
-                }                
+                } else {
+                    draw_contenido2( age );
+                }               
             break;
 
         case "cartelera": 
@@ -129,9 +131,19 @@ function rewrite_url( new_section, new_subsection ){
 }
 
 
+//redirect to search link
+function activeSearch( age ) {
+    let search = document.getElementById("searchField").value;
+
+    if( search !== "" ) {
+        encodedUrl = encodeURI( `buscar.html?age=${age}&search=${search}` )
+        window.location.href = encodedUrl;
+    }    
+}
 
 
-//draw "contenido" section // start drawing an action menu 
+
+//draw "contenido" section for infancia1, infancia2 // start drawing an action menu 
 function draw_contenido( age ){
     
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); 
@@ -141,25 +153,25 @@ function draw_contenido( age ){
     toDraw += `
         <div class="col-`+ ((isMobile)? "12" : "6") +` action_menu_block `+ ((isMobile)? "mobile" : "") +`">
             <div class="row">
-                <div class="col-3 menu_btn_container" data-target="videos" data-age="`+age+`" onClick="actionMenuChange(this)">
+                <div class="col-3 menu_btn_container" data-target="videos" data-age="${age}" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de videos"><img src="img/infancia1/videos.png" class="color" alt="boton de videos"> 
                     <div>
                         Videos 
                     </div>
                 </div>
-                <div class="col-3 menu_btn_container" data-target="audios" data-age="`+age+`" onClick="actionMenuChange(this)">
+                <div class="col-3 menu_btn_container" data-target="audios" data-age="${age}" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/audios1.png" class="claro" alt="boton de audios"><img src="img/infancia1/audios.png" class="color" alt="boton de audios"> 
                     <div>
                         Audios 
                     </div>
                 </div>
-                <div class="col-3 menu_btn_container" data-target="juegos" data-age="`+age+`" onClick="actionMenuChange(this)">
+                <div class="col-3 menu_btn_container" data-target="juegos" data-age="${age}" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de juegos"><img src="img/infancia1/videos.png" class="color" alt="boton de juegos"> 
                     <div>
                         Juegos
                     </div>
                 </div>
-                <div class="col-3 menu_btn_container" data-target="apps" data-age="`+age+`" onClick="actionMenuChange(this)">
+                <div class="col-3 menu_btn_container" data-target="apps" data-age="${age}" onClick="actionMenuChange(this)">
                     <img src="img/infancia1/videos1.png" class="claro" alt="boton de apps"><img src="img/infancia1/videos.png" class="color" alt="boton de apps"> 
                     <div>
                         Apps 
@@ -175,7 +187,7 @@ function draw_contenido( age ){
             <div class="col-6 search_block">
                 <div class="input-group">
                     <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                    <div class="input-group-append">
+                    <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
                         <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
                     </div>
                 </div>
@@ -205,6 +217,50 @@ function draw_contenido( age ){
         document.getElementsByClassName("menu_btn_container")[0].click();
     }
 }
+
+
+//draw "contenido" section for jovenes // start drawing an action menu 
+function draw_contenido2( age ){
+    
+    let toDraw=``;
+
+    //draw "contenido" action menu block
+    toDraw += `
+        <div class="col-7 action_menu_block2 age_${age}">
+            <div class="row">
+                <div class="col-2 menu_btn_container alternative" data-target="videos" data-age"${age}" onClick="actionMenuChange(this)">Videos</div>
+                <div class="col-2 menu_btn_container alternative" data-target="podcast" data-age"${age}" onClick="actionMenuChange(this)">Podcast</div>
+                <div class="col-2 menu_btn_container alternative" data-target="blog" data-age"${age}" onClick="actionMenuChange(this)">Blog</div>
+                <div class="col-2 menu_btn_container alternative" data-target="salon" data-age"${age}" onClick="actionMenuChange(this)">Salón interactivo</div>
+                <div class="col-2 menu_btn_container alternative" data-target="exposiciones" data-age"${age}" onClick="actionMenuChange(this)">Exposiciones</div>
+                <div class="col-2 menu_btn_container alternative" data-target="apps" data-age"${age}" onClick="actionMenuChange(this)">Apps</div>
+            </div>
+        </div>
+
+        <div class="col-5 search_block">
+            <div class="input-group">
+                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
+                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    `;
+
+    action_window.innerHTML = toDraw;
+
+
+    // it cant be subsection withour a prev section
+    let subSection = get_params( "subsection" );
+
+    if( subSection !== null){
+        document.querySelectorAll('[data-target="'+subSection+'"]')[0].click();
+    } else {
+        //if subsection doesn't exists, click on first subSection button
+        document.getElementsByClassName("menu_btn_container")[0].click();
+    }
+}
+
 
 
 //draw "cartelera" section
@@ -293,7 +349,7 @@ function draw_cartelera( age ){
         <div class="col-6 offset-6 search_block">
             <div class="input-group">
                 <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                <div class="input-group-append">
+                <div class="input-group-append elm_search_button">
                     <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
                 </div>
             </div>
@@ -357,8 +413,8 @@ function draw_estados( age ){
                 </div>
                 
                 <div class="col-6 input-group">
-                    <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                    <div class="input-group-append">
+                    <input type="text" class="form-control searchField" id="searchField" placeholder="Buscar..." aria-label="Buscar..." >
+                    <div class="input-group-append elm_search_button">
                         <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
                     </div>
                 </div>

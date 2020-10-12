@@ -23,15 +23,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             });
         });
     }
-
-    //initialize the swiper carousel
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          dynamicBullets: true,
-        },
-    });
 });
 
 // create an array with age buttons
