@@ -226,5 +226,49 @@ function drawComponentVideos(age){
 
 //draw video component for jovenes
 function drawComponentVideos2(age){
-    console.log("aqui");
+    let toDraw = ``;
+
+    toDraw += `
+        <div class="row">
+    `;
+
+        if( Object.keys(video_player_data).length > 0 ){
+            for (let i = 0; i < Object.keys(video_player_data).length; i++) {   //recorre cada lista
+                let key = Object.keys(video_player_data)[i];
+                
+                if( video_player_data[key]["age"] == 0 || video_player_data[key]["age"] == age ){
+                    for(let j = 0; j < Object.keys(video_player_data[key]["type"]).length; j++) {     //recorre cada type
+                        let type_key = Object.keys(video_player_data[key]["type"])[j]
+
+                        for (let k = 0; k < Object.keys(video_player_data[key]["type"][type_key]["playList"]).length; k++) {    //recorre el playlist
+                            let list_key = Object.keys(video_player_data[key]["type"][type_key]["playList"])[k];
+
+                            toDraw += `
+                                <div class="col-4">
+                                   <div>
+                                        <img 
+                                            src="https://i.ytimg.com/vi/`+ (  (video_player_data[key]["type"][type_key]["playList"][list_key]["url"]).replace( 'https://www.youtube.com/embed/', '')  ) +`/1.jpg"
+                                            alt=" video de ${video_player_data[key]["type"][type_key]["playList"][list_key]["name"]}"
+                                        />
+                                    </div>
+                                    <div>
+                                        ${video_player_data[key]["type"][type_key]["playList"][list_key]["name"]}
+                                    </div>
+                                    <div> 
+                                        ${video_player_data[key]["type"][type_key]["playList"][list_key]["description"]}
+                                    </div> 
+                                </div>
+                            `;                            
+                        }
+
+                    }
+                }
+            }
+        }
+
+    toDraw += `
+        </div>
+    `;
+    
+    document.getElementById("component_container").innerHTML = toDraw;
 }

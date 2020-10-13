@@ -245,6 +245,9 @@ function draw_contenido2( age ){
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-8 component_container" id="component_container">
+        </div> 
     `;
 
     action_window.innerHTML = toDraw;
