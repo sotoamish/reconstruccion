@@ -225,50 +225,69 @@ function drawComponentVideos(age){
 
 
 //draw video component for jovenes
+var videoCollection;
+var currentShowIndex;
 function drawComponentVideos2(age){
-    let toDraw = ``;
+    videoCollection = new Array();          //for video array list
+    currentShowIndex = 1;               //for show video list index
+    
+    // get an array of avalible videos for this age
+    if( Object.keys(video_player_data).length > 0 ){
+        for (let i = 0; i < Object.keys(video_player_data).length; i++) {   //recorre cada lista
+            let key = Object.keys(video_player_data)[i];
+            
+            if( video_player_data[key]["age"] == 0 || video_player_data[key]["age"] == age ){
+                for(let j = 0; j < Object.keys(video_player_data[key]["type"]).length; j++) {     //recorre cada type
+                    let type_key = Object.keys(video_player_data[key]["type"])[j]
 
-    toDraw += `
-        <div class="row">
-    `;
+                    for (let k = 0; k < Object.keys(video_player_data[key]["type"][type_key]["playList"]).length; k++) {    //recorre el playlist
+                        let list_key = Object.keys(video_player_data[key]["type"][type_key]["playList"])[k];     
 
-        if( Object.keys(video_player_data).length > 0 ){
-            for (let i = 0; i < Object.keys(video_player_data).length; i++) {   //recorre cada lista
-                let key = Object.keys(video_player_data)[i];
-                
-                if( video_player_data[key]["age"] == 0 || video_player_data[key]["age"] == age ){
-                    for(let j = 0; j < Object.keys(video_player_data[key]["type"]).length; j++) {     //recorre cada type
-                        let type_key = Object.keys(video_player_data[key]["type"])[j]
-
-                        for (let k = 0; k < Object.keys(video_player_data[key]["type"][type_key]["playList"]).length; k++) {    //recorre el playlist
-                            let list_key = Object.keys(video_player_data[key]["type"][type_key]["playList"])[k];
-
-                            toDraw += `
-                                <div class="col-4">
-                                   <div>
-                                        <img 
-                                            src="https://i.ytimg.com/vi/`+ (  (video_player_data[key]["type"][type_key]["playList"][list_key]["url"]).replace( 'https://www.youtube.com/embed/', '')  ) +`/1.jpg"
-                                            alt=" video de ${video_player_data[key]["type"][type_key]["playList"][list_key]["name"]}"
-                                        />
-                                    </div>
-                                    <div>
-                                        ${video_player_data[key]["type"][type_key]["playList"][list_key]["name"]}
-                                    </div>
-                                    <div> 
-                                        ${video_player_data[key]["type"][type_key]["playList"][list_key]["description"]}
-                                    </div> 
-                                </div>
-                            `;                            
-                        }
-
+                        videoCollection.push({
+                            "key": key, 
+                            "type_key": type_key, 
+                            "list_key": list_key,
+                            "date" : video_player_data[key]["type"][type_key]["playList"][list_key]["date"]
+                        });
                     }
                 }
             }
         }
+    }
 
-    toDraw += `
+    // order the array by dates
+    videoCollection.sort((a, b) => {
+        let c = new Date(a.date);
+        let d = new Date(b.date);
+        
+        return d - c;
+    });
+
+    var toDraw = `
+        <div class="row">
+            <div class="col-12 vid_2">
+                <div class="row" id="vid_listContainer">
+
+                </div>
+            </div>
+
+            <div class="col-12 vidShowContainer">
+                <button id="vidShowBtn" onClick="print_videoList2()">Mostras mas</button>
+            </div>
         </div>
+
+        <div class="vid_player2_screen" id="vid_player2_screen">
+            <div class="vid_player2_container">
+                <button class="close_player" onClick="closeVid2()">
+                    <i class="far fa-times-circle"></i>
+                </button>
+                <iframe id="true_video_player" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>  
     `;
     
     document.getElementById("component_container").innerHTML = toDraw;
+
+    // print video list     (function from videoPlayerFunctions.js)
+    print_videoList2();
 }

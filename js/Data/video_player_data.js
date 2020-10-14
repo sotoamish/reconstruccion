@@ -15,6 +15,7 @@ const video_player_data = {
                         'author' : 'Ramón A Go Gó y Aarón "El Hawaiano"',
                         'description' : 'Recomendada para niñas y niños a partir de los 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/hIkdCQA9g1k',
+                        'date' : '2020-10-14',
                     }, 
                     129 : {
                         'name' : 'Click. (Primera parte)',
@@ -22,6 +23,7 @@ const video_player_data = {
                         'author' : ' Sopa de Clown',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años. En tiempos de selfies, seguramente tienes más de 20 fotos iguales en tu celular y solo tú reconoces cuál es la mejor. Así como tú, Tita y Nubi, un par de simpáticas clowns ocurrentes y juguetonas están dispuestas a tomarse la mejor foto.',
                         'url' : 'https://www.youtube.com/embed/bwu2s57wB44',
+                        'date' : '2020-10-15',
                     },    
                     108 : {
                         'name' : 'El niño y el tiburón',
@@ -29,6 +31,7 @@ const video_player_data = {
                         'author' : ' Ramón A Go Go y Aarón El Hawaiano',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/f9OhcqRUcwg',
+                        'date' : '2020-10-16',
                     },    
                     109 : {
                         'name' : 'Jonás y la ballena',
@@ -36,6 +39,7 @@ const video_player_data = {
                         'author' : 'Ramón A Go Go y Aarón El Hawaiano',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/RIoIvGwfDP8',
+                        'date' : '2020-10-17',
                     },
                     113 : {
                         'name' : 'El piojo',
@@ -43,6 +47,7 @@ const video_player_data = {
                         'author' : 'Kumaltik',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/sDEheJNi-ts',
+                        'date' : '2020-10-18',
                     },
                     130 : {
                         'name' : 'Click. (Segunda parte)',
@@ -50,6 +55,7 @@ const video_player_data = {
                         'author' : 'Sopa de Clown',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/cz_1jiB05LA',
+                        'date' : '2020-10-13',
                     },
                     58 : {
                         'name' : 'María Cirila',
@@ -57,6 +63,7 @@ const video_player_data = {
                         'author' : 'Vibra Muchá',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/SStwXbeYlsU',
+                        'date' : '2020-10-13',
                     },
                     131 : {
                         'name' : 'Click. (Tercera parte). Teatro clown',
@@ -64,6 +71,7 @@ const video_player_data = {
                         'author' : 'Sopa de Clown',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/ARR1CXMa0z4',
+                        'date' : '2020-10-13',
                     },
                     114 : {
                         'name' : 'El Cascabel',
@@ -71,6 +79,7 @@ const video_player_data = {
                         'author' : 'Kumaltik',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/YPbDo5tothU',
+                        'date' : '2020-10-13',
                     }, 
                     60 : {
                         'name' : 'Las frutas',
@@ -78,6 +87,7 @@ const video_player_data = {
                         'author' : 'Vibra Muchá',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Conoce el reggaeson, música reggae fusionada con tintes soneros, creación original del grupo Vibra Muchá, pioneros también en dirigir este género para las infancias, con la fuerte convicción de llevar su música a todas las personas.',
                         'url' : 'https://www.youtube.com/embed/_EmL9iE4kCI',
+                        'date' : '2020-10-13',
                     },
                     117 : {
                         'name' : 'La iguana',
@@ -85,6 +95,7 @@ const video_player_data = {
                         'author' : 'Kumaltik',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. La iguana forma parte de su concierto “Ay que sí que sí que no” donde se recrea la historia de la tradición musical campesina del sur de Veracruz, repleta de sones jarochos que se destacan por su fina y bella poesía, además de un buen zapateado que niñas y niños pueden bailar en casa.',
                         'url' : 'https://www.youtube.com/embed/B-Zngo43wZk',
+                        'date' : '2020-10-13',
                     },
                     54 : {
                         'name' : 'Pollito',
@@ -92,6 +103,7 @@ const video_player_data = {
                         'author' : 'Ramón A Go Go y Aarón El Hawaiano',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Ramón, un ukulele y rock con tintes hawaianos, son la mezcla perfecta para que brinques cómo chapulín con muchas canciones que te harán reír y disfrutar estos ritmos pegajosos que traen para ti.',
                         'url' : 'https://www.youtube.com/embed/MSrb61Bi8Yo',
+                        'date' : '2020-10-13',
                     },  
                     62 : {
                         'name' : 'Puro Canto, Puro Cuento',
@@ -99,6 +111,7 @@ const video_player_data = {
                         'author' : 'Puro Canto, Puro Cuento',
                         'description' : 'Textos de cuento y canciones de Rodolfo González, Música de Violeta Durán. Recomendado para niñas y niños a partir de 5 años de edad. "Puro Canto, Puro Cuento" es un grupo de música tradicional que trae para ti muchas historias, algunas serán acompañadas por Artemio, un niño muy curioso, que así como tiene muchas dudas, sabe muchas cosas.',
                         'url' : 'https://www.youtube.com/embed/MTsBJj2JEiQ',
+                        'date' : '2020-10-13',
                     }, 
                     155 : {
                         'name' : 'Cántaro',
@@ -106,6 +119,7 @@ const video_player_data = {
                         'author' : 'Tema de Cántaro',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Con una sonrisa todo sale mucho mejor. Así Lore y Chepo te cantarán algo muy cierto; todo cabe en un juego si lo sabes acomodar; platicar con elefantes, saltar con un chapulín y muchas más cosas que puedas imaginar.',
                         'url' : 'https://www.youtube.com/embed/F5lLITlFg6U',
+                        'date' : '2020-10-13',
                     },
                     165 : {
                         'name' : 'Bicho y hecho',
@@ -113,6 +127,7 @@ const video_player_data = {
                         'author' : 'Cántaro',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. ¿Te has preguntado con quién más vives en tu casa? Sí tienes plantas o un jardín sabes de que hablamos; nuestros amigos patudos, los más pequeños del reino animal. Unos zumban, otros silban cuando hacen vibrar sus alas, así es, son los bichos amistosos que hacen fiesta cuando duermes.',
                         'url' : 'https://www.youtube.com/embed/i_H2BXHZKgA',
+                        'date' : '2020-10-13',
                     },
                     64 : {
                         'name' : 'La abeja confianzuda',
@@ -120,6 +135,7 @@ const video_player_data = {
                         'author' : 'Pedro Sandoval, integrante de Los Botes Cantan',
                         'description' : 'Recomendada para niñas y niños a partir de los 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/B1m7CufYrJw',
+                        'date' : '2020-10-13',
                     },
                     57 : {
                         'name' : 'Dos Vidas. Música',
@@ -127,6 +143,7 @@ const video_player_data = {
                         'author' : ' Ro Aguilar, integrante del grupo Quiroga',
                         'description' : 'Recomendado para niñas y niños a partir de 11 años',
                         'url' : 'https://www.youtube.com/embed/nrVHHO-qHt4',
+                        'date' : '2020-10-13',
                     }, 
                     68 : {
                         'name' : 'Moby Dick',
@@ -134,6 +151,7 @@ const video_player_data = {
                         'author' : 'Pedro Sandoval, integrante de Los Botes Cantan',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/oxyqAoE6iXs',
+                        'date' : '2020-10-13',
                     },
                     133 : {
                         'name' : 'Malabares con frutas: Desmenuzando el Delirio Culinario (Primera parte). (Arte Circense)',
@@ -141,6 +159,7 @@ const video_player_data = {
                         'author' : 'Compañía Circonciente',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. Giorgo Peperonne, el chef de fama internacional, trae para nosotros recetas para hacer en casa; sólo se necesitan limones o naranjas, así de fácil, bueno, cada receta va subiendo grados de dificultad, pero con mucha práctica en casa, seguro lo lograrás.',
                         'url' : 'https://www.youtube.com/embed/jyfYLyYIo1U',
+                        'date' : '2020-10-13',
                     },
                     148 : {
                         'name' : 'Desayunando Versos',
@@ -148,6 +167,7 @@ const video_player_data = {
                         'author' : 'Staku Allende',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/8mUKbfiw-9g',
+                        'date' : '2020-10-13',
                     }, 
                 },
             },
@@ -163,6 +183,7 @@ const video_player_data = {
                         'author' : 'Ruth Galicia Islas',
                         'description' : 'Recomendada para niñas y niños de 0 a 2 años de edad. Trazado desde el sostén afectivo, tejido con la lírica tradicional latinoamericana, se dan los encuentros familiares. A partir de lecturas de textos, se inicia el encuentro entre los bebés y sus cuidadores. Mirar, leer, cantar y escribir en la piel de los bebés, se da como una forma de cercanía durante los cuidados cotidianos, juego corporal y lírica tradicional. Libros utilizados: ¿Qué te picó la hormiga de los pies a la barriga?, de Isaias Isabel y Pablo Prestifilippo. Editorial CIDCLI Cinco lobitos, de Mercedes Figuerola y Juan Ramón Alonso. Editorial Edelvives Arepita de manteca, de Rosana Faria. Ediciones Ekaré ',
                         'url' : 'https://www.youtube.com/embed/PCmOZv74sbY',
+                        'date' : '2020-10-13',
                     },
                     3 : {
                         'name' : 'Rimas del Sol',
@@ -170,6 +191,7 @@ const video_player_data = {
                         'author' : ' Janet Pankowsky',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/r7y8GLc9sKE',
+                        'date' : '2020-10-13',
                     },
                     72 : {
                         'name' : 'Lectura del libro: Ardilla miedosa',
@@ -177,6 +199,7 @@ const video_player_data = {
                         'author' : ' Ruth Galicia Islas',
                         'description' : 'Libro de Melanié Watt. Editorial SM. Recomendada para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/3ts-BWpXXmU',
+                        'date' : '2020-10-13',
                     },
                     15 : {
                         'name' : 'Yo no soy un conejo',
@@ -184,6 +207,7 @@ const video_player_data = {
                         'author' : 'Lidia Zaragoza',
                         'description' : 'Basada en el libro "Yo no soy un conejo" de Pepe Márquez y Natalia Colombo. Fondo de Cultura Económica, colección Los primerísimos. Recomendado para niñas y niños a partir 5 años de edad.',
                         'url' : 'https://www.youtube.com/embed/NX3e9zQsk8s',
+                        'date' : '2020-10-13',
                     },
                     10 : {
                         'name' : 'Trucas',
@@ -191,6 +215,7 @@ const video_player_data = {
                         'author' : 'Raúl Pérez Buendía',
                         'description' : 'Basada en el libro Trucas, de Juan Gedovius. Fondo de Cultura Económica. Recomendado para niñas y niños a partir 5 años de edad.',
                         'url' : 'https://www.youtube.com/embed/23rJibMiMo4',
+                        'date' : '2020-10-13',
                     },
                     50 : {
                         'name' : 'Cantos y juegos: Un sapito',
@@ -198,6 +223,7 @@ const video_player_data = {
                         'author' : 'Edith Álvarez Gigi',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/kOI3PD_RDII',
+                        'date' : '2020-10-13',
                     },
                     87 : {
                         'name' : 'Vacaciones en familia: Día de pesca en la playa',
@@ -205,6 +231,7 @@ const video_player_data = {
                         'author' : 'Lilian Cantante',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/nVGA5EW9UZM',
+                        'date' : '2020-10-13',
                     },
                     16 : {
                         'name' : 'El castillo de Cucuruchá',
@@ -212,6 +239,7 @@ const video_player_data = {
                         'author' : 'Lidia Zaragoza',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Basada en el libro "Así cantan y juegan en La Huasteca". Editado por CONAFE.',
                         'url' : 'https://www.youtube.com/embed/vc8c8tuGJss',
+                        'date' : '2020-10-13',
                     },
                     86 : {
                         'name' : 'Arrullos y apapachos: El juego del pin, pon, papas',
@@ -219,6 +247,7 @@ const video_player_data = {
                         'author' : 'Lilian Cantante',
                         'description' : 'Recomendado para niñas y niños a partir de 0 años de edad.',
                         'url' : 'https://www.youtube.com/embed/vw400cTR0YQ',
+                        'date' : '2020-10-13',
                     }, 
                     14 : {
                         'name' : 'El gato, son de tarima de Tixtla, Guerrero',
@@ -226,6 +255,7 @@ const video_player_data = {
                         'author' : 'Lidia Zaragoza',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/JrZXQ4-GCww',
+                        'date' : '2020-10-13',
                     }, 
                     8 : {
                         'name' : 'Donde viven los monstruos',
@@ -233,6 +263,7 @@ const video_player_data = {
                         'author' : 'Ana Cristina Ortega y Antonio Zacruz',
                         'description' : 'Basada en el libro: "Donde viven los monstruos" de Maurice Sendak. Editorial Alfaguara. Con interpretación en Lengua de Señas Mexicana. Recomendado para niñas y niños a partir de 5 años de edad. Max, un niño muy travieso ha hecho la travesura más grande, la más monstruosa, y por eso, ha tenido que ir a visitar una isla misteriosa: el lugar donde viven los monstruos. ¿Quieres saber qué pasó cuando Max y los monstruos se miraron a los ojos? Ana Cristina Ortega y Antonio Zacruz nos lo van a contar en esta es una divertida versión.',
                         'url' : 'https://www.youtube.com/embed/Qr7X5IxlRqA',
+                        'date' : '2020-10-13',
                     },
                     166 : {
                         'name' : 'Chihuahua: La historia de la Cabra Cabratis',
@@ -240,6 +271,7 @@ const video_player_data = {
                         'author' : 'Luisa Samaniego, integrante de la compañía de títeres Cachiripa',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Inspirada en un cuento anónimo de la lírica infantil latinoamericana, interpretado con títeres objetos de manipulación a la vista que nos recuerdan que no debes de confiar en desconocidos.',
                         'url' : 'https://www.youtube.com/embed/LQCUGZsjfWo',
+                        'date' : '2020-10-13',
                     }, 
                     56 : {
                         'name' : 'Jalisco: El ratón viajero',
@@ -247,6 +279,7 @@ const video_player_data = {
                         'author' : 'Yademira Barrragán y Dato López',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Con tan bonito sol y tan bonito día, el ratón Simón quiere navegar sólo que el viento parece no soplar a su favor, así que tendrá que pedir ayuda a los cuatro vientos para poder mover su barca. ¿Será que lo pueda lograr?',
                         'url' : 'https://www.youtube.com/embed/5jUenFbImsQ',
+                        'date' : '2020-10-13',
                     },
                     170 : {
                         'name' : ' La cabra que no quería comer. Coahuila',
@@ -254,6 +287,7 @@ const video_player_data = {
                         'author' : 'Anette Fonseca Moka, Cuentacuentos',
                         'description' : 'Para niñas y niños a partir de 3 años de edad. Narración basada en "La cabra que no quería comer" de Esther Hernández Palacios. Matilde era una cabra melindrosa, hasta que por fin su mamá logró que comiera con gusto, después de hacer mil intentos. Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/KlVWYP-dAes',
+                        'date' : '2020-10-13',
                     },
                     40 : {
                         'name' : 'Pequeña Mancha',
@@ -261,6 +295,7 @@ const video_player_data = {
                         'author' : 'Gerardo Méndez',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Narración basada en "Pequeña Mancha" de Lionel Le Néouanic. Pequeña Mancha se ha decido a buscar amigos; esta tarea le ha llevado a descubrir que es capaz de hacer cosas impresionantes. ¿Quieres saber cuál es su secreto? ¡Te invitamos a conocerlo! ',
                         'url' : 'https://www.youtube.com/embed/3N_J4IqdCa8',
+                        'date' : '2020-10-13',
                     }, 
                     178 : {
                         'name' : 'La retahila de la rana. Chihuahua',
@@ -268,6 +303,7 @@ const video_player_data = {
                         'author' : 'Luisa Samaniego, integrante de la compañía Cachiripa',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Este juego mental nos deja claro el ciclo sin fin de la vida por medio de juegos, coplas y seguidillas.',
                         'url' : 'https://www.youtube.com/embed/EoKZvkop9jc',
+                        'date' : '2020-10-13',
                     },
                     201 : {
                         'name' : 'La piedra de Zamuro. Jalisco',
@@ -275,6 +311,7 @@ const video_player_data = {
                         'author' : 'María Tránsito Campechano',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Un conejito, cansado de huir de sus depredadores naturales, escucha el consejo de tía tortuga para que vaya con el tío Zamuro y consiga la piedra que lo convertirá en un conejo valiente y respetable.',
                         'url' : 'https://www.youtube.com/embed/G-u2NxTi3uQ',
+                        'date' : '2020-10-13',
                     },
                     5 : {
                         'name' : 'El juego del Aiepo. (Adaptación de la canción de Luis Pescetti)',
@@ -282,6 +319,7 @@ const video_player_data = {
                         'author' : 'Ana Cristina Ortega, con interpretación en LSM con Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/eAj2wARsYqc',
+                        'date' : '2020-10-13',
                     },
                     35 : {
                         'name' : 'El elixir del todo: planteamiento',
@@ -289,6 +327,7 @@ const video_player_data = {
                         'author' : ' Astrid Perellón con interpretación en LSM de Antonio Zacruz.',
                         'description' : 'Recomendada para niñas y niños a partir de los 8 años de edad. ',
                         'url' : 'https://www.youtube.com/embed/vQxzkTW0ngU',
+                        'date' : '2020-10-13',
                     },
                     9 : {
                         'name' : 'Precisamente Así, de Rudyard Kipling.',
@@ -296,6 +335,7 @@ const video_player_data = {
                         'author' : 'Ana Cristina Ortega',
                         'description' : 'Editorial Juventud. Recomendado para niñas y niños a partir de 8 años de edad.',
                         'url' : 'https://www.youtube.com/embed/3x8VvcbEpi8',
+                        'date' : '2020-10-13',
                     },
                     32 : {
                         'name' : 'Juego 1, 2, 3, 4',
@@ -303,6 +343,7 @@ const video_player_data = {
                         'author' : ' Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 9 años.',
                         'url' : 'https://www.youtube.com/embed/HZOwB1JJnR0',
+                        'date' : '2020-10-13',
                     },
                     104 : {
                         'name' : 'Sonidos, Ritmo y Reciclado: Maraca',
@@ -310,6 +351,7 @@ const video_player_data = {
                         'author' : ' Graciela Rodríguez Ramírez',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años, acompañados de un adulto. Taller Arte en Cartón- HR (Hermanas Rodríguez), donde los niños y jóvenes puedan ver el reciclado no sólo como una herramienta o insumo, sino como la oportunidad de fomentar su creatividad a través de la elaboración de instrumentos musicales. Al realizar estos instrumentos con reciclado activan sus habilidades manuales y procesos creativos al tiempo que sembrará en ellos el sentido de cooperación en casa y de ayuda con el medio ambiente. Materiales: •   1 botella de PET de 2 litros •   15 taparroscas •   Cinta canela o transparente •   Hojas blancas recicladas •   Pintura acrílica de varios colores •   Pinceles •   Engrudo •   Tijeras •   Cúter •   Regla •   Marcador ',
                         'url' : 'https://www.youtube.com/embed/U1HI7gTfA0o',
+                        'date' : '2020-10-13',
                     }, 
                     36 : {
                         'name' : 'El elixir del todo. Desarrollo: enemigo',
@@ -317,6 +359,7 @@ const video_player_data = {
                         'author' : ' Astrid Perellón con interpretación en LSM de Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años.',
                         'url' : 'https://www.youtube.com/embed/iBOzQYanCek',
+                        'date' : '2020-10-13',
                     }, 
                     2 : {
                         'name' : 'Los monos y la Luna',
@@ -324,6 +367,7 @@ const video_player_data = {
                         'author' : 'Janet Pankowsky',
                         'description' : 'Tradición oral del oeste de África. Recomendado para niñas y niños a partir 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/1V_djA9HGQQ',
+                        'date' : '2020-10-13',
                     },
                     42 : {
                         'name' : 'La historia del Tecuán',
@@ -331,6 +375,7 @@ const video_player_data = {
                         'author' : 'Kevin Galeana y Antonio Cruz',
                         'description' : 'Tradición oral del estado de Guerrero. Con interpretación en Lengua de Señas Mexicana. Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/6Zw050k_MEQ',
+                        'date' : '2020-10-13',
                     }, 
                     37 : {
                         'name' : 'El elixir del todo. Posible desarrollo 1: aliado',
@@ -338,6 +383,7 @@ const video_player_data = {
                         'author' : ' Astrid Perellón y Antonio Zacruz',
                         'description' : 'Con interpretación en Lenguas de Señas Mexicano. Recomendado para niñas y niños a partir de 8 años de edad.',
                         'url' : 'https://www.youtube.com/embed/49Y5N6UIu-8',
+                        'date' : '2020-10-13',
                     }, 
                     38 : {
                         'name' : 'El elixir del todo. Posible desarrollo 1: pruebas',
@@ -345,6 +391,7 @@ const video_player_data = {
                         'author' : ' Astrid Perellón y Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. Con interpretación en Lengua de Señas Mexicana.',
                         'url' : 'https://www.youtube.com/embed/PLJj2jgx1U0',
+                        'date' : '2020-10-13',
                     }, 
                     15 : {
                         'name' : 'Yo no soy un conejo',
@@ -352,6 +399,7 @@ const video_player_data = {
                         'author' : 'Lidia Zaragoza',
                         'description' : 'Basada en el libro "Yo no soy un conejo" de Pepe Márquez y Natalia Colombo. Fondo de Cultura Económica, colección Los primerísimos. Recomendado para niñas y niños a partir 5 años de edad.',
                         'url' : 'https://www.youtube.com/embed/NX3e9zQsk8s',
+                        'date' : '2020-10-13',
                     },
                     39 : {
                         'name' : 'El elixir del todo: El gran final',
@@ -359,6 +407,7 @@ const video_player_data = {
                         'author' : 'Astrid Perellón y Antonio Zacruz',
                         'description' : 'Original de Astrid Perellón, con interpretación en Lengua de Señas Mexicana. Recomendado para niñas y niños a partir de 8 años de edad.',
                         'url' : 'https://www.youtube.com/embed/M3Z-9OHwmR0',
+                        'date' : '2020-10-13',
                     },
                     43 : {
                         'name' : 'Bemberecua',
@@ -366,6 +415,7 @@ const video_player_data = {
                         'author' : 'Kevin Galeana y Antonio Zacruz',
                         'description' : 'Basada en Bemberecua de Honorio Robledo. Editado por Artes de México. Con interpretación en Lengua de Señas Mexicana. Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/WpJ5JkCosEs',
+                        'date' : '2020-10-13',
                     },  
                     47 : {
                         'name' : 'El ratón que comía gatos',
@@ -373,6 +423,7 @@ const video_player_data = {
                         'author' : 'Ángel Aranda',
                         'description' : 'Basado en el cuento "El ratón que comía gatos", de Gianni Rodari. Editorial Juventud. Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/miO45qT0Kf8',
+                        'date' : '2020-10-13',
                     },
                     124 : {
                         'name' : 'Jack y la muerte (fragmento de la obra "Nocturnos")',
@@ -380,6 +431,7 @@ const video_player_data = {
                         'author' : 'Compañía Laboratorio Mecánica en Miniatura',
                         'description' : 'Teatro de títeres. Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/ftYDPaF-H0w',
+                        'date' : '2020-10-13',
                     }, 
                     101 : {
                         'name' : 'Nano rap',
@@ -387,6 +439,7 @@ const video_player_data = {
                         'author' : 'Sergio Ferrer',
                         'description' : 'Recomendado para niñas y niños a partir de 7 años de edad.',
                         'url' : 'https://www.youtube.com/embed/vub95CUSRCc',
+                        'date' : '2020-10-13',
                     },
                     66: {
                         'name' : 'Mi papá es rocanrolero',
@@ -394,6 +447,7 @@ const video_player_data = {
                         'author' : 'Pedro Sandoval, integrante de Los Botes Cantan',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. "Los Botes Cantan" siguen sorprendiendo a las infancias con canciones muy divertidas, que pueden bailar o solo escuchar en casa. Esta vez Pedro Sandoval, vocalista del grupo, nos presenta sus canciones más escuchadas, pero en una versión acústica. Canción que forma parte del disco "Diez".',
                         'url' : 'https://www.youtube.com/embed/DzE-KqApMzc',
+                        'date' : '2020-10-13',
                     },
                     6: {
                         'name' : 'El quetzal, mito de tradición oral',
@@ -401,6 +455,7 @@ const video_player_data = {
                         'author' : 'Ana Cristina Ortega y Antonio Zacruz ',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. Con interpretación en Lengua Mexicana de Señas. Cuentan en el sureste de México una historia que narra cómo eran las aves antes de que fueran como las conocemos. Ana Cristina Ortega y Antonio Zacruz nos cuentan cómo fue que antes, mucho antes, cuando las aves no podían ni volar, con la ayuda de un quetzal el dios Chaac las pudo transformar.',
                         'url' : 'https://www.youtube.com/embed/2gbZunoOCIs',
+                        'date' : '2020-10-13',
                     }, 
                     86 : {
                         'name' : 'Arrullos y apapachos: El juego del pin, pon, papas',
@@ -408,6 +463,7 @@ const video_player_data = {
                         'author' : 'Lilian Cantante',
                         'description' : 'Recomendado para niñas y niños a partir de 0 años de edad.',
                         'url' : 'https://www.youtube.com/embed/vw400cTR0YQ',
+                        'date' : '2020-10-13',
                     }, 
                     33 : {
                         'name' : 'Juego: Los pasos del abuelo',
@@ -415,6 +471,7 @@ const video_player_data = {
                         'author' : 'Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 9 años de edad.',
                         'url' : 'https://www.youtube.com/embed/ips6vzerLSA',
+                        'date' : '2020-10-13',
                     }, 
                 },
             },
@@ -430,6 +487,7 @@ const video_player_data = {
                         'author' : 'Música de Violeta Durán',
                         'description' : 'Recomendado para niñas y niños de 5 años en adelante. A mi Pingo, canción popular Argentina. Textos de cuento y canciones de Rodolfo González.',
                         'url' : 'https://www.youtube.com/embed/weXK3AQV_xA',
+                        'date' : '2020-10-13',
                     }, 
                     136 : {
                         'name' : '¿Para qué nos sirven los miedos?',
@@ -437,6 +495,7 @@ const video_player_data = {
                         'author' : 'Tanya Covarrubias y Cristóbal Barreto',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. A partir de la narración de un fragmento de "El libro valiente" de Moni Port, editorial Takatuka, niñas y niños cantarán una canción que los invita a seguir un juego y bailar a partir de una coreografía. La canción cuenta la historia de una bruja que ya nadie le tenía miedo, llamada: "La verruga de la vieja bruja".',
                         'url' : 'https://www.youtube.com/embed/eKK6Kur78KI',
+                        'date' : '2020-10-13',
                     },
                     106 : {
                         'name' : 'Álbum, memoria y exposiciones: Álbum fotográfico',
@@ -444,6 +503,7 @@ const video_player_data = {
                         'author' : 'Sandra Gasca Rodríguez',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/JIY5X0-2nJc',
+                        'date' : '2020-10-13',
                     }, 
                     150 : {
                         'name' : 'Una línea... muchas ideas',
@@ -451,6 +511,7 @@ const video_player_data = {
                         'author' : 'Flor Sandoval',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad, acompañados de un adulto. Un espacio, tu casa. Un objeto, una cuerda. Sólo con eso podrás inventar juegos, formas, imágenes y otras cosas más. Materiales: • Lazo • Gises o crayolas • Hoja blanca',
                         'url' : 'https://www.youtube.com/embed/mdwBa2hPMM4',
+                        'date' : '2020-10-13',
                     },
                     167 : {
                         'name' : 'Colima: Dado en movimiento',
@@ -458,6 +519,7 @@ const video_player_data = {
                         'author' : 'Alejandra Ibáñez, Tallerista',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Materiales: • Cartulina • Hoja blanca • Tijeras • Lápiz o plumón • Regla • Pegamento. Actividad de motricidad mediante circuitos cortos de actividad física en relación al material didáctico elaborado (el dado) para estimular el área motriz y generar un ambiente de convivencia.',
                         'url' : 'https://www.youtube.com/embed/_X5Z0W94QSY',
+                        'date' : '2020-10-13',
                     },
                     53 : {
                         'name' : 'Percusiones con vasos de plástico',
@@ -465,6 +527,7 @@ const video_player_data = {
                         'author' : 'Edith Álvarez Gigi',
                         'description' : 'Recomendado para niñas y niños de 6 a 12 años de edad. La música y el canto son un apoyo en el desarrollo del lenguaje, el ritmo y la conciencia corporal.',
                         'url' : 'https://www.youtube.com/embed/6f2VPjhRNkM',
+                        'date' : '2020-10-13',
                     },
                     69 : {
                         'name' : 'Fabricación de pelotas caseras para malabares',
@@ -472,6 +535,7 @@ const video_player_data = {
                         'author' : 'Iván Goycolea',
                         'description' : 'Recomendado para niñas y niños a partir de 10 años. Material: Globos del número 9, Semillas de mijo, lentejas (cualquier tipo de semilla semi redonda) sal, o azúcar; Una botella de PET; Un plumón para marcar; Una hoja de papel; Cinta adhesiva; Tijeras de punta roma; Unos calcetines viejos; Piedras o monedas viejas o de 10 pesos. Sinopsis: En este taller aprenderás a elaborar pelotas caseras y reconoceremos algunos elementos de las artes circenses.',
                         'url' : 'https://www.youtube.com/embed/8Pocz-TclQQ',
+                        'date' : '2020-10-13',
                     }, 
                     78 : {
                         'name' : 'Tú y un poema spoken word',
@@ -479,6 +543,7 @@ const video_player_data = {
                         'author' : 'Comikk MG',
                         'description' : 'Recomendado para niñas y niños a partir de 10 años de edad. Aprenderás cómo crear un poema libre, en formato spoken word, desde tu experiencia.',
                         'url' : 'https://www.youtube.com/embed/wv9ILpQyETg',
+                        'date' : '2020-10-13',
                     },
                     70 : {
                         'name' : 'Trucos básicos de malabares con tres pelotas',
@@ -486,6 +551,7 @@ const video_player_data = {
                         'author' : ' Iván Goycolea',
                         'description' : 'Recomendado para niñas y niños a partir de 10 años de edad. En este taller realizaremos el truco básico de malabares, haremos algunos ejercicios que desafiarán la gravedad y nos divertiremos con las pelotas que fabricamos en la Cápsula 68.',
                         'url' : 'https://www.youtube.com/embed/WXqwXbbTmqw',
+                        'date' : '2020-10-13',
                     },
                     51 : {
                         'name' : 'Dedikos: títeres para dedos',
@@ -493,6 +559,7 @@ const video_player_data = {
                         'author' : ' Edith Álvarez Gigi',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/LU-PPi6SdOc',
+                        'date' : '2020-10-13',
                     }, 
                     94 : {
                         'name' : 'La búsqueda del tesoro',
@@ -500,6 +567,7 @@ const video_player_data = {
                         'author' : 'Ana Zarina',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/nvXRYdunuQc',
+                        'date' : '2020-10-13',
                     }, 
                     91 : {
                         'name' : 'Máscara de jaguar sobre paisaje',
@@ -507,6 +575,7 @@ const video_player_data = {
                         'author' : 'Manuel Reyes Tissera',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. Materiales: dos hojas blancas de papel tamaño carta. Cinta adhesiva de cualquier tipo. Cinco plumones de colores, de preferencia, de punta delgada.',
                         'url' : 'https://www.youtube.com/embed/wryTF7xR6jE',
+                        'date' : '2020-10-13',
                     }, 
                     77 : {
                         'name' : 'Trucos de malabares con 3 y 4 pelotas',
@@ -514,6 +583,7 @@ const video_player_data = {
                         'author' : 'Iván Goycolea',
                         'description' : 'Recomendado para niñas y niños a partir de 10 años de edad.',
                         'url' : 'https://www.youtube.com/embed/xIW8lMwrzy8',
+                        'date' : '2020-10-13',
                     },
                     105 : {
                         'name' : 'Sonidos, ritmo y reciclado: Tambor',
@@ -521,6 +591,7 @@ const video_player_data = {
                         'author' : 'Roberto Gutiérrez Vega',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad, acompañados de un adulto. Taller Arte en Cartón- HR (Hermanas Rodríguez), donde los niños y jóvenes puedan ver el reciclado no sólo como una herramienta o insumo, sino como la oportunidad de fomentar su creatividad a través de la elaboración de instrumentos musicales. Al realizar estos instrumentos con reciclado activan sus habilidades manuales y procesos creativos al tiempo que sembrará en ellos el sentido de cooperación en casa y de ayuda con el medio ambiente. Materiales: Un bote de metal o plástico duro (no importa el tamaño). Dos palitos de madera redondos de 20 cm. Un pedacito de tela. Listones, agujetas o ligas de colores (opcional). Silicón líquido. Cinta canela o transparente. Hojas blancas recicladas. Pintura acrílica. Pinceles. Engrudo. Tijeras. Regla. Lápiz. ',
                         'url' : 'https://www.youtube.com/embed/8PIjnoLQRew',
+                        'date' : '2020-10-13',
                     },
                     99 : {
                         'name' : 'Flipbook. Anima tu aventura',
@@ -528,6 +599,7 @@ const video_player_data = {
                         'author' : 'Mariana Córdova',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/eOjBLgdsomI',
+                        'date' : '2020-10-13',
                     },  
                     142 : {
                         'name' : 'Dibujando nuestros miedos',
@@ -535,6 +607,7 @@ const video_player_data = {
                         'author' : 'Francisco González',
                         'description' : 'Recomendado para niñas y niños a partir de 9 años de edad. ¿Tú a qué le tienes miedo? ¿de dónde viene ese miedo? A partir de El libro valiente descubriremos en esta cápsula que nuestra familia, aunque sean personas adultas, también tienen miedos, por lo que para conocerlos les haremos a una breve entrevista para que después podamos dibujar ese miedo y, con su ayuda, darle color. Materiales: Un cuaderno. Pluma o lápiz. Hojas blancas. Lápices de colores y/o marcadores ',
                         'url' : 'https://www.youtube.com/embed/uWuJIca9ZeI',
+                        'date' : '2020-10-13',
                     },
                     97 : {
                         'name' : 'Palabras como ramas: Cómo escribir poemas al 2 x 1',
@@ -542,6 +615,7 @@ const video_player_data = {
                         'author' : 'Cynthia Franco',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. En este taller aprenderemos que escribir poesía es el antídoto contra el aburrimiento, que poner el lápiz en la hoja está en favor de las lágrimas, la risa, la alegría y la vida misma. Incluso, para crear nuevos mundos, cuando escribo, me atrevo, imagino lo que quiero. Materiales: Hojas recicladas. Lápices. Colores.',
                         'url' : 'https://www.youtube.com/embed/clWotAVYdcE',
+                        'date' : '2020-10-13',
                     }, 
                     95 : {
                         'name' : 'De viaje por nuestra casa',
@@ -549,6 +623,7 @@ const video_player_data = {
                         'author' : 'Ana Zarina',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. Diseñaremos el mapa de un recorrido turístico virtual por nuestra localidad, apoyándonos con fotografías, postales u objetos que la representen.',
                         'url' : 'https://www.youtube.com/embed/C0w55V_xP2I',
+                        'date' : '2020-10-13',
                     },
                     92 : {
                         'name' : 'Pteranomóvil',
@@ -556,6 +631,7 @@ const video_player_data = {
                         'author' : 'Manuel Reyes Tissera',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/lEGY5ea9ClA',
+                        'date' : '2020-10-13',
                     },  
                     125 : {
                         'name' : 'Construcción de kazoo (mosca)',
@@ -563,6 +639,7 @@ const video_player_data = {
                         'author' : 'Yayo Basura. Orquesta Basura',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad, con supervisión de un adulto.',
                         'url' : 'https://www.youtube.com/embed/GSnyjCmpxAo',
+                        'date' : '2020-10-13',
                     }, 
                 },
             },
@@ -578,6 +655,7 @@ const video_player_data = {
                         'author' : 'Janet Pankowsky',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Basada en Un lunes por la mañana de Uri Shulevitz. Editorial Fondo de Cultura Económica.',
                         'url' : 'https://www.youtube.com/embed/FkYbNV28mXE',
+                        'date' : '2020-10-13',
                     }, 
                     140 : {
                         'name' : 'La canción de Emma',
@@ -585,6 +663,7 @@ const video_player_data = {
                         'author' : 'Tanya Covarrubias',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/cM_NyWYC88U',
+                        'date' : '2020-10-13',
                     }, 
                     75 : {
                         'name' : 'Arrullarte: Lunas y arrullos',
@@ -592,6 +671,7 @@ const video_player_data = {
                         'author' : 'Ruth Galicia Islas',
                         'description' : 'Recomendado para niñas y niños  de 0 a 2 años años de edad.',
                         'url' : 'https://www.youtube.com/embed/XbAfudBxgrQ',
+                        'date' : '2020-10-13',
                     },
                     138 : {
                         'name' : 'Sensación y emoción',
@@ -599,6 +679,7 @@ const video_player_data = {
                         'author' : 'Tanya Covarrubias y Cristóbal Barreto', 
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Basado en "El libro valiente" de Moni Port, Editorial Takatuka.',
                         'url' : 'https://www.youtube.com/embed/5yQWW_iZ9Ps',
+                        'date' : '2020-10-13',
                     },
                     141 : {
                         'name' : '¿Cuándo has sido valiente?',
@@ -606,6 +687,7 @@ const video_player_data = {
                         'author' : 'Tanya Covarrubias y Cristóbal Barreto',
                         'description' : 'Basado en "El libro valiente" de Moni Port, editorial Takatuka. Recomendado para niñas y niños a partir de 3 años de edad. En este video conocerás una canción que habla sobre valentía, niñas y niños podrán cambiar algunas palabras para adaptarla y contar su propia historia, verán que cuando se es valiente resulta muy fácil componer canciones.',
                         'url' : 'https://www.youtube.com/embed/VbC_-Rkj-2k',
+                        'date' : '2020-10-13',
                     },
                     156 : {
                         'name' : 'Cometín',
@@ -613,6 +695,7 @@ const video_player_data = {
                         'author' : 'Luis Delgadillo',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Volar es algo con lo que soñamos mucho, tan así, que inventamos los aviones, los globos aerostáticos y demás artilugios. Bueno, pues Cometín no es la excepción, este niño tiene tantas ganas de volar, que sus amigos decidieron ponerle ese sobrenombre, y que por cierto, le queda muy bien.',
                         'url' : 'https://www.youtube.com/embed/v82D3FKLexo',
+                        'date' : '2020-10-13',
                     }, 
                     137 : {
                         'name' : '¡A volar tus miedos!',
@@ -620,6 +703,7 @@ const video_player_data = {
                         'author' : 'Cristóbal Barreto',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Materiales: • Hojas de papel blancas o de colores • Lápices de colores. Basado en "El libro valiente" de Moni Port, editorial Takatuka. Se retoman algunos puntos de los que habla el libro y a partir de esto se realiza una actividad en la que niñas y niños escriben y/o dibujan sus miedos. Se propone después hacer un avioncito de papel con la hoja del dibujo y ¡a echar los miedos a volar!',
                         'url' : 'https://www.youtube.com/embed/mzmBEcut_rc',
+                        'date' : '2020-10-13',
                     },
                     115 : {
                         'name' : 'El torito jarocho',
@@ -627,6 +711,7 @@ const video_player_data = {
                         'author' : 'Kumaltik',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. "El torito jarocho" forma parte de su concierto “Ay, que sí, que sí, qué no” donde se recrea la historia de la tradición musical campesina del sur de Veracruz, repleta de sones jarochos que se destacan por su fina y bella poesía, además de un buen zapateado que niñas y niños pueden bailar en casa.',
                         'url' : 'https://www.youtube.com/embed/Kp3skoHdvtg',
+                        'date' : '2020-10-13',
                     },
                     189 : {
                         'name' : 'Arte para los primeros años: Música e improvisación. Jalisco',
@@ -634,6 +719,7 @@ const video_player_data = {
                         'author' : 'Susana Romo y Cristina Martínez, integrantes de A la Deriva Teatro',
                         'description' : 'La música y el juego son parte fundamental en las trayectorias de desarrollo de niños y niñas en sus primeros años. A la Deriva Teatro te sugiere algunas actividades, como inventar canciones o historias con lo que está a tu  alrededor dentro de casa y generar así un espacio lúdico que provoque tranquilidad, sonrisas y conexión con tu bebé. Para padres, tutores, maestros y cuidadores.',
                         'url' : 'https://www.youtube.com/embed/b47vOgKH7lk',
+                        'date' : '2020-10-13',
                     }, 
                     177 : {
                         'name' : 'La fábula de la cigarra y la hormiga. Chihuahua',
@@ -641,6 +727,7 @@ const video_player_data = {
                         'author' : 'Luisa Samaniego, integrante de la compañía Cachiripa',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Esta historia nos enseña que cada ser vivo tiene un objetivo único y necesario en la sociedad, para algunos es trabajar y para otros es alegrar la vida, ¿cuál es el tuyo?',
                         'url' : 'https://www.youtube.com/embed/v8ouaJ0eK4I',
+                        'date' : '2020-10-13',
                     },  
                     207 : {
                         'name' : 'Dúo acrobático. Nayarit',
@@ -648,6 +735,7 @@ const video_player_data = {
                         'author' : 'Ánsar Cirko',
                         'description' : 'Recomendado para niñas y niños a partir de 4 años de edad en compañía de un adulto. Ánsar Cirko les comparte una secuencia de acroyoga, práctica divertida y dinámica que fusiona el yoga con movimientos acrobáticos. Actividad perfecta para activar cuerpo y mente desde la tranquilidad de tu hogar.',
                         'url' : 'https://www.youtube.com/embed/eSN-Xc5g07U',
+                        'date' : '2020-10-13',
                     },  
                     190 : {
                         'name' : 'Arte para los primeros años: Juega con lo que hay en casa. Jalisco',
@@ -655,6 +743,7 @@ const video_player_data = {
                         'author' : 'Susana Romo y Cristina Martínez, integrantes de A la Deriva Teatro',
                         'description' : 'Para padres, tutores, maestros y cuidadores. Los niños y niñas, en sus primeros años, disfrutan mucho del juego con materiales no estructurados que permiten la exploración y potencian su curiosidad. En A la Deriva Teatro te sugerimos jugar con cajas de cartón, recipientes de plástico o telas y así provocar un espacio lúdico de material reciclado, en donde la libertad será el mayor de los regalos.',
                         'url' : 'https://www.youtube.com/embed/glM1InfgeTQ',
+                        'date' : '2020-10-13',
                     },
                     176 : {
                         'name' : 'El sol que quería bañarse de poesía. Chihuahua',
@@ -662,6 +751,7 @@ const video_player_data = {
                         'author' : 'Luisa Samaniego, integrante de la compañía Cachiripa',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Esta es la historia de cómo todos los días se mete el sol a descansar y sale la luna a acompañar nuestros sueños.',
                         'url' : 'https://www.youtube.com/embed/idip4ab3ff4',
+                        'date' : '2020-10-13',
                     },
                     96 : {
                         'name' : 'Maj xikchisej totletenewalistonal / Sembremos nuestro tonal',
@@ -669,6 +759,7 @@ const video_player_data = {
                         'author' : 'Edgar Tochtli',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. Taller donde podremos conocer una de las lenguas originarias de México, la lengua náhuatl. Conoceremos el tonal, una de las tradiciones del pueblo Náhuatl y haremos nuestro propio tonal. Materiales: Cartulina. Hojas de colores. Pegamento en barra. Tijeras. Lápiz. Plumones de colores ',
                         'url' : 'https://www.youtube.com/embed/XRekatLtjTk',
+                        'date' : '2020-10-13',
                     },
                     49 : {
                         'name' : 'Teatrino de sombras',
@@ -676,6 +767,7 @@ const video_player_data = {
                         'author' : 'Edith Álvarez Gigi',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/UU0LcuHSH5c',
+                        'date' : '2020-10-13',
                     },
                     143 : {
                         'name' : 'Creación de una máscara contra el miedo',
@@ -683,6 +775,7 @@ const video_player_data = {
                         'author' : 'Francisco González',
                         'description' : 'Recomendado para niñas y niños a partir de 9 años de edad.',
                         'url' : 'https://www.youtube.com/embed/QyFb2f5gv9k',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -698,6 +791,7 @@ const video_player_data = {
                         'author' : 'Pepe Frank',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/mArYnUZWuQA',
+                        'date' : '2020-10-13',
                     },
                     116 : {
                         'name' : 'La bamba',
@@ -705,6 +799,7 @@ const video_player_data = {
                         'author' : 'Kumaltik',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/C48sJ3a7h38',
+                        'date' : '2020-10-13',
                     },
                     41 : {
                         'name' : 'Son de la iguana, son tradicional del estado de Veracruz',
@@ -712,6 +807,7 @@ const video_player_data = {
                         'author' : 'Kevin Galeana',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Es la hora de zapatear y versar como lo hacen los jarochos. Esta cápsula te dejará moviendo la cabeza, los hombros, los pies y las manos al son de la Iguana.',
                         'url' : 'https://www.youtube.com/embed/TqWn91mKb6I',
+                        'date' : '2020-10-13',
                     }, 
                     76 : {
                         'name' : 'Calavera',
@@ -719,6 +815,7 @@ const video_player_data = {
                         'author' : 'David Alva',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Canción de la calavera para divertirse sustituyendo vocales, estimulando así el lenguaje y memorización de las palabras en niñas y niños a través del canto.',
                         'url' : 'https://www.youtube.com/embed/_U7eYDBciTk',
+                        'date' : '2020-10-13',
                     }, 
                     166 : {
                         'name' : 'Jalisco: Kikiri Koko',
@@ -726,6 +823,7 @@ const video_player_data = {
                         'author' : 'Cristina Martínez y Sergio de Arreola, integrantes de "A la Deriva Teatro"',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/QqNRPrYM2dQ',
+                        'date' : '2020-10-13',
                     }, 
                     193 : { 
                         'name' : 'Buscar a los pollitos. Jalisco',
@@ -733,6 +831,7 @@ const video_player_data = {
                         'author' : 'Cristina Martínez y Sergio Arreola, integrantes de A la Deriva Teatro',
                         'description' : 'Para niñas y niños a partir de 3 años de edad. Para los bebés, la música constituye un elemento clave a la hora de descubrir y hacer contacto con el mundo que les rodea. "A la Deriva Teatro" te invita a jugar con la canción “Buscando a los pollitos” y generar un momento especial con tu bebé, tejiendo un ambiente de amor, confianza, protección y tranquilidad a través de la música.',
                         'url' : 'https://www.youtube.com/embed/ToV4WS7EIZo',
+                        'date' : '2020-10-13',
                     }, 
                     65 : {
                         'name' : 'Ícaro',
@@ -740,6 +839,7 @@ const video_player_data = {
                         'author' : 'Pedro Sandoval, integrante de Los Botes Cantan',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/xc_gmgHGP7M',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -755,6 +855,7 @@ const video_player_data = {
                         'author' : 'Tanya Covarrubias y Cristóbal Barreto',
                         'description' : 'Basado en El libro valiente de Moni Port, editorial Takatuka. Recomendado para niñas y niños a partir de 3 años de edad. Muchas personas le tienen miedo a lo desconocido, como dice el libro titulado El libro valiente. En la oscuridad, por ejemplo, suelen proyectarse sombras que asustan a muchos. En este video descubriremos cómo hacer un teatro de sombras y jugar con ellas.',
                         'url' : 'https://www.youtube.com/embed/duDow9vuepg',
+                        'date' : '2020-10-13',
                     },
                     181 : {
                         'name' : 'Jumentino el alebrije (parte 1). Chihuahua',
@@ -762,6 +863,7 @@ const video_player_data = {
                         'author' : 'Grupo de títeres y marionetas El Tenderete',
                         'description' : 'Obra de teatro con títeres de guante, varilla y técnica de luz negra que presenta la historia de un burro que se transforma en alebrije y como logra salvar de la muerte a su dueño, el artesano pedro Linares López, quien después de vivir esa experiencia es inspirado para crear estas fantásticas artesanías de fama mundial.',
                         'url' : 'https://www.youtube.com/embed/su-ZUYZZxaM',
+                        'date' : '2020-10-13',
                     }, 
                     179 : {
                         'name' : 'La enseñanza del venado: La creación del venado. Chihuahua',
@@ -769,6 +871,7 @@ const video_player_data = {
                         'author' : 'Compañía Fantasía Impromtú ',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Cuentan los antiguos rarámuri que la que es Madre creó al venado de las huellas que dibujó sobre una roca y después le enseñó las palabras. Desde entonces este mítico animal pasó a ser parte importante de la cultura rarámuri. Acompañemos a venado en sus andanzas por la sierra Tarahumara y aprendamos de la riqueza de la lengua rarámuri. ',
                         'url' : 'https://www.youtube.com/embed/SEdbkn8yxXU',
+                        'date' : '2020-10-13',
                     },
                     182 : {
                         'name' : 'Jumentino el alebrije (parte 2) Chihuahua.',
@@ -776,6 +879,7 @@ const video_player_data = {
                         'author' : 'Grupo de títeres y marionetas El Tenderete',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Obra de teatro con títeres de guante, varilla y técnica de luz negra que presenta la historia de un burro que se transforma en alebrije y cómo logra salvar de la muerte a su dueño, el artesano Pedro Linares López, quien, después de vivir esa experiencia, es inspirado para crear estas fantásticas artesanías de fama mundial.',
                         'url' : 'https://www.youtube.com/embed/-Rrnnjss7HY',
+                        'date' : '2020-10-13',
                     }, 
                     183 : {
                         'name' : 'Jumentino el alebrije (parte 3). Chihuahua',
@@ -783,6 +887,7 @@ const video_player_data = {
                         'author' : 'Grupo de títeres y marionetas El Tenderete ',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad. Obra de teatro con títeres de guante, varilla y técnica de luz negra que presenta la historia de un burro que se transforma en alebrije y cómo logra salvar de la muerte a su dueño, el artesano Pedro Linares López, quien, después de vivir esa experiencia, es inspirado para crear estas fantásticas artesanías de fama mundial.',
                         'url' : 'https://www.youtube.com/embed/4NdHA1db-CU',
+                        'date' : '2020-10-13',
                     }, 
                     184 : {
                         'name' : 'Jumentino, el alebrije (parte 4). Chihuahua.',
@@ -790,6 +895,7 @@ const video_player_data = {
                         'author' : 'Grupo de títeres y marionetas El Tenderete',
                         'description' : 'Obra de teatro con títeres de guante, varilla y técnica de luz negra que presenta la historia de un burro que se transforma en alebrije y como logra salvar de la muerte a su dueño, el artesano pedro Linares López, quien después de vivir esa experiencia es inspirado para crear estas fantásticas artesanías de fama mundial.',
                         'url' : 'https://www.youtube.com/embed/VL40dee9BPU',
+                        'date' : '2020-10-13',
                     }, 
                     210 : {
                         'name' : 'Jumentino el alebrije (parte 5). Chihuahua.',
@@ -797,6 +903,7 @@ const video_player_data = {
                         'author' : 'Grupo de títeres y marionetas El Tenderete',
                         'description' : 'Obra de teatro con títeres de guante, varilla y técnica de luz negra que presenta la historia de un burro que se transforma en alebrije y cómo logra salvar de la muerte a su dueño, el artesano Pedro Linares López, quien después de vivir esa experiencia, es inspirado para crear estas fantásticas artesanías de fama mundial.',
                         'url' : 'https://www.youtube.com/embed/AMHDMUMLgsc',
+                        'date' : '2020-10-13',
                     },  
                 },
             },
@@ -812,6 +919,7 @@ const video_player_data = {
                         'author' : 'Abril Márquez',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Abril Márquez te enseña a experimentar con diferentes texturas visuales para crear coloridos animales, usando crayolas o lápices de colores, hojas blancas y pegamento. Materiales: • Lápices de colores o crayolas • Cinta adhesiva • Pegamento • Hojas blancas',
                         'url' : 'https://www.youtube.com/embed/uT5cVuQDTDY',
+                        'date' : '2020-10-13',
                     },
                 }
             },
@@ -827,6 +935,7 @@ const video_player_data = {
                         'author' : 'Kevin Galeana',
                         'description' : 'Para niñas y niños a partir de 8 años de edad. "Monstruos Mexicanos" de Carmen Leñero. Ilustraciones: Kamui Gomasio y Marcos Castro. Editorial: Alas y Raíces. Año de edición: 2019. El miedo, ese frío que aparece de repente adentro de los huesos y hace pelar los ojos. ¿Qué es eso que se mueve entre las sombras? ¿Por qué a las niñas y los niños les atraen los monstruos, si son tan horripilantes y perversos? Si te gustan las historias de susto, este libro es para ti, pues en él encontrarás algunas de estas criaturas, las que nacieron y viven en México. Serpiente de fuego, Aluxes, Chaneques, Tukákame, Serpiente Tsukán, el Sinsimio, el Waay Chivo y la Serpiente de siete cabezas son algunos de los monstruos que aquí presentamos, con todos los detalles que debes tener a la mano sobre ellos. Descarga el libro en PDF en www.alasyraices.gob.mx/ebooks.html',
                         'url' : 'https://www.youtube.com/embed/awbIN8sCgJg',
+                        'date' : '2020-10-13',
                     },
                     46 : {
                         'name' : 'Semillas de tinta',
@@ -834,6 +943,7 @@ const video_player_data = {
                         'author' : 'Antonio Zacruz',
                         'description' : 'Para niñas y niños a partir de 8 años de edad.',
                         'url' : 'https://www.youtube.com/embed/oNFu741vAws',
+                        'date' : '2020-10-13',
                     },
                     13 : {
                         'name' : 'Raúl Pérez Buendía recomienda Luna sandía',
@@ -841,6 +951,7 @@ const video_player_data = {
                         'author' : 'Raúl Pérez Buendía',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. "Luna Sandía. Treinta sueños extraordinarios de niñas y niños mexicanos". Compilador: Roger Omar. Ilustradores: Jimena Estíbaliz, Daniela Martín del Campo, Pamela Medina, Gala Navarro, Mariana Roldán y Manuel Vargas. Editorial: Alas y Raíces. Año de edición: 2019. Soñar que eres raptado por los extraterrestres o que tu cama está en medio de un volcán; cosas extraordinarias y sueños muy alocados es lo que encontrarás en este libro. "Luna Sandía" ilustra sueños extraordinarios de niñas y niños de todo México.',
                         'url' : 'https://www.youtube.com/embed/sNmf32yhi6U',
+                        'date' : '2020-10-13',
                     },
                     89 : {
                         'name' : 'Danae Servin recomienda "Las horas para siempre"',
@@ -848,6 +959,7 @@ const video_player_data = {
                         'author' : 'Danae Servin',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. "Las horas para siempre". Antología de la colección “Poesía para niños”. Autores: Ramón López Velarde, Carlos Pellicer, Elías Nandino, Efraín Huerta, Octavio Paz, Jaime Sabines y Enriqueta Ochoa. Ilustraciones: Niñas y niños del ala de Oncología del Centro Médico Nacional 20 de Noviembre. Editorial: Alas y Raíces. Año de edición: 2018. La colección "Poesía para niños" es uno de los proyectos editoriales del sello Alas y Raíces. En esta ocasión, "Las horas para siempre" reúne la poesía de reconocidos autores mexicanos, como Octavio Paz, Ramón López Velarde, Carlos Pellicer, Enriqueta Ochoa, Elías Nandino, Efraín Huerta y Jaime Sabines, cuyos versos fueron ilustrados por niñas y niños del ala de Oncología del Centro Médico Nacional 20 de Noviembre.',
                         'url' : 'https://www.youtube.com/embed/kFnKzEtNg_o',
+                        'date' : '2020-10-13',
                     }, 
                     4 : {
                         'name' : 'Trabalenguas de dragones ',
@@ -855,6 +967,7 @@ const video_player_data = {
                         'author' : 'Janet Pankowsky',
                         'description' : 'Recomendado para niñas y niños a partir de 9 años de edad. Recomendación del libro "El Jinete del Dragón" de Cornelia Funke. Editorial Fondo de Cultura Económica.',
                         'url' : 'https://www.youtube.com/embed/S8ej0Dmgj5M',
+                        'date' : '2020-10-13',
                     },
                     90 : {
                         'name' : 'Martín Arias recomienda: Cuando hablaba era contigo',
@@ -862,6 +975,7 @@ const video_player_data = {
                         'author' : 'Martín Arias',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad.',
                         'url' : 'https://www.youtube.com/embed/l3YdVLBRLPo',
+                        'date' : '2020-10-13',
                     },
                     17 : {
                         'name' : 'Lidia Zaragoza y Antonio Zacruz recomiendan: Cuando nos hayamos comido el planeta',
@@ -869,6 +983,7 @@ const video_player_data = {
                         'author' : 'Lidia Zaragoza y Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
                         'url' : 'https://www.youtube.com/embed/z2lmDUAQYTA',
+                        'date' : '2020-10-13',
                     }, 
                 }
             },
@@ -884,6 +999,7 @@ const video_player_data = {
                         'author' : 'Susana Romo y Cristina Martínez, integrantes de A la deriva teatro',
                         'description' : 'Para padres, tutores, maestros y cuidadores. A través del juego en sus primeros años, los niños y niñas hacen un viaje a sí mismos, identifican las relaciones que pueden entablar con los demás y reconocen su entorno. A la deriva teatro te sugiere algunas actividades, como el juego con la luz y sombras o los juegos de manos, que desarrollan la psicomotricidad de bebés, niños y niñas y generan espacios de conexión y tranquilidad en casa.',
                         'url' : 'https://www.youtube.com/embed/2OL7Ae1PUlE',
+                        'date' : '2020-10-13',
                     }, 
                     192 : {
                         'name' : 'Arte para los primeros años: Arrullos. Jalisco.',
@@ -891,6 +1007,7 @@ const video_player_data = {
                         'author' : 'Susana Romo y Cristina Martínez, integrantes de A la Deriva Teatro',
                         'description' : 'El arrullo o nana es parte fundamental de las tradiciones y cultura de cada comunidad. A la Deriva Teatro te sugiere recuperar los arrullos tradicionales o particulares de tu familia para compartir y regalar momentos de tranquilidad a tu bebé.',
                         'url' : 'https://www.youtube.com/embed/SMK-xx3CDag',
+                        'date' : '2020-10-13',
                     }, 
                 },
             },
@@ -912,6 +1029,7 @@ const video_player_data = {
                         'author' : 'Antonio Toledo',
                         'description' : 'Recomendado para niñas y niños a partir de 1 año de edad acompañados de un adulto.',
                         'url' : 'https://www.youtube.com/embed/fSIXD5rXMYQ',
+                        'date' : '2020-10-13',
                     },
                     2 : {
                         'name' : 'Me juego',
@@ -919,6 +1037,7 @@ const video_player_data = {
                         'author' : 'Flor Sandoval',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad acompañados de un adulto.',
                         'url' : 'https://www.youtube.com/embed/OzB0DXGHwWg',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -931,6 +1050,7 @@ const video_player_data = {
                         'author' : 'Radio Gorila',
                         'description' : 'Recomendado para niñas y niños a partir de 3 años de edad.',
                         'url' : 'https://www.youtube.com/embed/MFbfsU7Wpd8',
+                        'date' : '2020-10-13',
                     },
                     11 : {
                         'name' : 'Música para jugar en casa',
@@ -938,6 +1058,7 @@ const video_player_data = {
                         'author' : 'Mariana Mallol',
                         'description' : 'Recomendado para niñas y niños a partir de 2 años de edad.',
                         'url' : 'https://www.youtube.com/embed/byfATTC3SA0',
+                        'date' : '2020-10-13',
                     }, 
                 },
             },
@@ -950,6 +1071,7 @@ const video_player_data = {
                         'author' : 'Marionetas de la esquina',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad.',
                         'url' : 'https://www.youtube.com/embed/5NYUlEFvWnc',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -971,6 +1093,7 @@ const video_player_data = {
                         'author' : 'Pily cuentacuentos',
                         'description' : 'Para niñas y niños a partir de 2 años de edad. Narración basada en “La oruga hambrienta de Erick Carle”. Una pequeña oruga quiere comerse ¡¡todo!! Pronto se dará cuenta que comer demasiado y poco saludable tiene sus problemas.',
                         'url' : 'https://www.youtube.com/embed/ixLlA73sLPo',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -983,6 +1106,7 @@ const video_player_data = {
                         'author' : 'Pepe Frank',
                         'description' : 'Para niñas y niños a partir de 3 años de edad. Pepe es un gran músico y ha cantado sus divertidas canciones a muchas generaciones. Sus canciones “Contando al revés” y “Teja la Coneja” son para bailar relajadamente y muy rápido al mismo tiempo, ¡Espera! Mejor baila como tú quieras… ¡Ah! ¡No olvides que también puedes bailar con tu familia desde casa!',
                         'url' : 'https://www.youtube.com/embed/vuIswKeK23w',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -995,6 +1119,7 @@ const video_player_data = {
                         'author' : 'Greta Licona',
                         'description' : 'Para niñas y niños a partir de 3 años de edad. Actividades musicales enfocadas a desarrollar la creatividad, la expresión corporal, el ritmo, el movimiento, la coordinación motriz, la audición musical activa y la ejecución vocal e instrumental a través del juego sonoro. ¡En este taller será indispensable jugar bailando! Materiales: · Un paliacate o mascada.',
                         'url' : 'https://www.youtube.com/embed/To-VarjCrt8',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1015,6 +1140,7 @@ const video_player_data = {
                         'author' : 'Pily cuentacuentos',
                         'description' : 'Para niñas y niños a partir de 2 años de edad. Narración basada en “La oruga hambrienta de Erick Carle”. Una pequeña oruga quiere comerse ¡¡todo!! Pronto se dará cuenta que comer demasiado y poco saludable tiene sus problemas.',
                         'url' : 'https://www.youtube.com/embed/ixLlA73sLPo',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1027,6 +1153,7 @@ const video_player_data = {
                         'author' : 'Pepe Frank',
                         'description' : 'Para niñas y niños a partir de 3 años de edad. Pepe es un gran músico y ha cantado sus divertidas canciones a muchas generaciones. Sus canciones “Contando al revés” y “Teja la Coneja” son para bailar relajadamente y muy rápido al mismo tiempo, ¡Espera! Mejor baila como tú quieras… ¡Ah! ¡No olvides que también puedes bailar con tu familia desde casa!',
                         'url' : 'https://www.youtube.com/embed/vuIswKeK23w',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1039,6 +1166,7 @@ const video_player_data = {
                         'author' : 'Greta Licona',
                         'description' : 'Para niñas y niños a partir de 3 años de edad. Actividades musicales enfocadas a desarrollar la creatividad, la expresión corporal, el ritmo, el movimiento, la coordinación motriz, la audición musical activa y la ejecución vocal e instrumental a través del juego sonoro. ¡En este taller será indispensable jugar bailando! Materiales: · Un paliacate o mascada.',
                         'url' : 'https://www.youtube.com/embed/To-VarjCrt8',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1059,6 +1187,7 @@ const video_player_data = {
                         'author' : 'Drácula Arturo Nosferatu, integrante de la Compañía Cabaret Misterio',
                         'description' : 'Drácula Arturo Nosferatu, integrante de la Compañía Cabaret Misterio te invita a que descubras ¿Los colores y profesiones son de niña, niño o solo de personas? ¿Tú que piensas? En tu libreta del Club Misterio, juega a asociar colores con algunas profesiones importantísimas como ser vampiro, momia u hombre lobo, hazlo libremente. Y tú, ¿a quién retas?',
                         'url' : 'https://www.youtube.com/embed/QH-IMz5ZiZI',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1071,6 +1200,7 @@ const video_player_data = {
                         'author' : 'Antonio Zacruz',
                         'description' : 'Coordinador: Israel Torres Moreno. Ilustraciones: Niñas y niños del Mezquital, Durango. Editorial: Alas y Raíces. Año de edición: 2019. Para niñas y niños a partir de 8 años',
                         'url' : 'https://www.youtube.com/embed/ni-LRpzbaN0',
+                        'date' : '2020-10-13',
                     },
                 }
             },
@@ -1083,6 +1213,7 @@ const video_player_data = {
                         'author' : 'Ana Zarina Palafox',
                         'description' : 'Conocerás el significado de algunas palabras y tradiciones de los rarámuri, entre ellas la importancia que tiene para ellos el compartir, que se sintetiza en la palabra Korima (que significa "compartir"); cómo surgió la tribu rarámuri; cuántas almas tienen; el por qué deben llevar siempre la vestimenta tradicional y realizar la danza tradicional.',
                         'url' : 'https://www.youtube.com/embed/3fApNivG4ig',
+                        'date' : '2020-10-13',
                     },
                 }
             },
@@ -1095,6 +1226,7 @@ const video_player_data = {
                         'author' : 'Ana Cristina Ortega y Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 7 años. Basada en Tiemblen dragones de Robert Munsch, Editorial Castillo. Con interpretación en Lengua de Señas Mexicana.',
                         'url' : 'https://www.youtube.com/embed/BGRNCi9t7T4',
+                        'date' : '2020-10-13',
                     },
                 }
             },
@@ -1107,6 +1239,7 @@ const video_player_data = {
                         'author' : 'Compañía La Caja de Teatro',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. Obra inspirada en el cuento Rey y Rey de Linda de Haan y Stern Nijland',
                         'url' : 'https://www.youtube.com/embed/4BCssO_xTqM',
+                        'date' : '2020-10-13',
                     },
                 }
             },
@@ -1127,6 +1260,7 @@ const video_player_data = {
                         'author' : 'Edgar Tochtli',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. Taller donde podremos conocer una de las lenguas originarias de México, la lengua náhuatl. Conoceremos el tonal, una de las tradiciones del pueblo Náhuatl y haremos nuestro propio tonal. Materiales: Cartulina. Hojas de colores. Pegamento en barra. Tijeras. Lápiz. Plumones de colores ',
                         'url' : 'https://www.youtube.com/embed/XRekatLtjTk',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1139,6 +1273,7 @@ const video_player_data = {
                         'author' : 'Compañía Fantasía Impromtú',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. Cuentan los antiguos rarámuri que la que es Madre creó al venado de las huellas que dibujó sobre una roca y después le enseñó las palabras. Desde entonces este mítico animal pasó a ser parte importante de la cultura rarámuri. Acompañemos a venado en sus andanzas por la sierra Tarahumara y aprendamos de la riqueza de la lengua rarámuri. ',
                         'url' : 'https://www.youtube.com/embed/SEdbkn8yxXU',
+                        'date' : '2020-10-13',
                     }, 
                     180 : {
                         'name' : 'La enseñanza del venado: El cazador. Chihuahua',
@@ -1146,6 +1281,7 @@ const video_player_data = {
                         'author' : 'Compañía Fantasía Impromtú',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. El venado es un animal muy importante para los rarámuri, él les enseñó las palabras y a bailar el Yumare, por lo tanto, merece respeto. Su espíritu está presente en la naturaleza, así como en sus rituales y celebraciones.',
                         'url' : 'https://www.youtube.com/embed/CdwXYpoCkyA',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1158,6 +1294,7 @@ const video_player_data = {
                         'author' : 'Eliud Mortor',
                         'description' : 'Conocerás el significado de algunas palabras y tradiciones de los rarámuri, entre ellas la importancia que tiene para ellos el compartir, que se sintetiza en la palabra Korima (que significa "compartir"); cómo surgió la tribu rarámuri; cuántas almas tienen; el por qué deben llevar siempre la vestimenta tradicional y realizar la danza tradicional.',
                         'url' : 'https://www.youtube.com/embed/kbqfneIRlwE',
+                        'date' : '2020-10-13',
                     },
                     197 : {
                         'name' : 'Mito mexica del maíz. Jalisco.',
@@ -1165,6 +1302,7 @@ const video_player_data = {
                         'author' : 'María Teresa Figueroa',
                         'description' : 'Este mito cuenta la manera como el dios Quetzalcóatl obtuvo el maíz que estaba encerrado en el Tonacatépetl, montaña del sagrado sustento, mientas que otros dioses de mayor fuerza no pudieron hacerlo. Recomendado para niñas y niños a partir de 8 años de edad.',
                         'url' : 'https://www.youtube.com/embed/t7dbT1QpMaM',
+                        'date' : '2020-10-13',
                     },
                     199 : {
                         'name' : 'Mito tepehuano del maíz. Jalisco.',
@@ -1172,6 +1310,7 @@ const video_player_data = {
                         'author' : 'María Teresa Figueroa',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. El pueblo tepehuano habita en las regiones serranas de Chihuahua y Durango. En este mito se narra el descubrimiento del maíz, que es femenino y del huitlacoche que también es representado por una mujer.',
                         'url' : 'https://www.youtube.com/embed/fxNH9B3znLg',
+                        'date' : '2020-10-13',
                     },
                     200 : {
                         'name' : 'Mito wixárika del maíz',
@@ -1179,6 +1318,7 @@ const video_player_data = {
                         'author' : 'María Teresa Figueroa',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. El pueblo wixárika vive al norte de Jalisco, tiene una cultura muy fuerte basada en la adoración a Tatewari, abuelo fuego, en este mito se cuenta la manera en que el primer sembrador obtuvo el maíz, que en la cultura wixárika es un ser femenino, y cómo lo perdió por no tratar de buena manera a las mujeres.',
                         'url' : 'https://www.youtube.com/embed/UNbWLexP7IU',
+                        'date' : '2020-10-13',
                     },
                     196 : {
                         'name' : 'Mito de los cinco soles. Jalisco',
@@ -1186,6 +1326,7 @@ const video_player_data = {
                         'author' : 'María Teresa Figueroa',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. Mito fundacional de la cultura mexica que narra la formación del cosmos a través de cinco ciclos con nombres específicos, características de los seres que vivieron en ellos y la manera en que desaparecieron.',
                         'url' : 'https://www.youtube.com/embed/lLi5Dser5W0',
+                        'date' : '2020-10-13',
                     },
                 },
             },
@@ -1198,6 +1339,7 @@ const video_player_data = {
                         'author' : 'Saraí Mérida',
                         'description' : 'Chupa ladxidua’ / Dos es mi corazón. Para niñas y niños a partir de 8 años de edad. Chupa ladxidua’- Dos es mi corazón  de Irma Pineda Ilustrado por Niñas y niños de Juchitán de Zaragoza, Oaxaca. Editorial Alas y Raíces, 2019. Niñas y niños del municipio Juchitán de Zaragoza, en Oaxaca, se dan cita en este libro para ilustrar fragmentos de la poesía de Irma Pineda. Dos es mi corazón es un libro que recoge los versos en español y zapoteco de la poeta y los deja en manos de los pinceles de niñas y niños para darles color con su imaginación.',
                         'url' : 'https://www.youtube.com/embed/-YzMuuDgm9s',
+                        'date' : '2020-10-13',
                     },
                     46 : {
                         'name' : 'Semillas de tinta',
@@ -1205,6 +1347,7 @@ const video_player_data = {
                         'author' : 'Antonio Zacruz',
                         'description' : 'Para niñas y niños a partir de 8 años de edad.',
                         'url' : 'https://www.youtube.com/embed/ni-LRpzbaN0',
+                        'date' : '2020-10-13',
                     }, 
                 },
             },
