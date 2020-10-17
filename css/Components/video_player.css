@@ -11,6 +11,7 @@
 .comp_videos .player_container .video_info{
     padding: 0.5em 1em;
     text-align: justify;
+    margin-bottom: 2vw;
 }
 
 
@@ -116,6 +117,44 @@
 }
 
 
+.vid_list .vid_card{
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+.vid_list .vid_card:hover{
+    opacity: 0.7;
+}
+.vid_list .vid_card img{
+    width: 100%;
+}
+.vid_list .vid_card .type{
+    color: #606060;
+    font-family: "Montserrat";
+    letter-spacing: 1.5px;
+}
+.vid_list .vid_card .title{
+    font-size: 1.1em;
+}
+.vid_list .vid_card .description{
+    font-family: "Montserrat";
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.age_1 .vid_list .vid_card .title{
+    color: #99cc33;
+}
+.age_2 .vid_list .vid_card .title{
+    color: #006666;
+}
+.age_3 .vid_list .vid_card .title{
+    color: #0099cc;
+}
+.age_4 .vid_list .vid_card .title{
+    color: #993266;
+}
+
+
 
 @media (max-width: 768px) { 
     .comp_videos .player_container iframe{
@@ -128,6 +167,7 @@
     .comp_videos .video_list_container{
         padding: 0 5vw;
         height: 400px;
+        margin-bottom: 4vw;
     }
     .comp_videos .video_list_container .typeList_button{
         padding: 2vw 5vw;
@@ -158,6 +198,30 @@
         padding: 2vw 8vw;
         font-size: 0.9em;
     }
+
+    .vid_list .vid_card{
+        margin-bottom: 4vw;
+        background-color: #fff;
+        display: flex;
+        padding: 2vw 0;
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(150,150,150,1);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(150,150,150,1);
+        box-shadow: 0px 4px 5px 0px rgba(150,150,150,1);
+    }
+    .vid_list .vid_card .img_container{
+        width: 35%;
+        display: inline-block;
+    }
+    .vid_list .vid_card .info_container{
+        width: 60%;
+        display: inline-block;
+        padding: 0 2vw;
+    }
+    .vid_list .vid_card .description{
+        font-family: "Montserrat";
+        font-size: 0.8em;
+        text-align: justify;
+    } 
 }
 
 

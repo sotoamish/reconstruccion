@@ -17,12 +17,17 @@
 
 
 .ageBotonera{
-  text-align: center;
+  text-align: left;
+}
+.ageBotonera .btn_container{
+  width: 108vw;
+  margin-left: -4vw;
 }
 .ageBtn{
+  text-align: center;
   display: inline-block;
   margin:0px;
-  width: 21vw;
+  width: 25vw;
   color: #fff;
   font-size: 1.3em;
   height: 30vw;
@@ -33,23 +38,39 @@
   -o-transition: width 0.2s ease-in-out, font-size 0.7s;
   transition: width 0.2s ease-in-out, font-size 0.7s;
 }
+.ageBtn.active{
+  width: 30vw;
+  font-size: 2.2em;
+}
 @media (max-width: 768px) { 
+  .ageBotonera .btn_container{
+    width: 108vw;
+    margin-left: -5vw;
+  }
   .ageBtn{
-    height: 300px;
     height: 38vw;
+  }
+  .ageBtn.active{
+    font-size: 1.8em;
   }
 }
 @media (max-width: 577px) { 
+  .ageBotonera .btn_container{
+    width: 120vw;
+    margin-left: 0vw;
+  }
   .ageBotonera{
     padding: 0;
   }
   .ageBtn{
-    width: 43vw;
+    margin: -3px -2px;
+    width: 50.5vw;
     height: 200px;
   }
-}
-.red{
-  background:red;
+  .ageBtn.active{
+    width: 55vw;
+    font-size: 1.4em;
+  }  
 }
 
 .ageBotonera #primera {
@@ -72,16 +93,8 @@ background:#993266;
 padding-top: 3.5vw;
 padding-left: 0vw;
 }
-.ageBtn.active{
-  width: 30vw;
-  font-size: 2.2em;
-}
-@media (max-width: 577px) { 
-  .ageBtn.active{
-    width: 47vw;
-    font-size: 1.4em;
-  }
-}
+
+
 
 
 .ageBtn .imgContainer {

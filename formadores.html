@@ -26,6 +26,12 @@
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
 
+    <!-- swiper carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- page styles -->
+
     <!-- style sheets -->
     <!-- general styles -->
     <link rel="stylesheet" href="css/Main.css">
@@ -39,6 +45,9 @@
     <link rel="stylesheet" href="css/Components/neonavbar.css">
     <link rel="stylesheet" href="css/Components/subMenu.css">
     <link rel="stylesheet" href="css/Components/actionMenu.css">
+    <link rel="stylesheet" href="css/Components/bannerComponent.css">
+    <link rel="stylesheet" href="css/Components/video_player.css">
+    <link rel="stylesheet" href="css/Components/cartelera.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -97,6 +106,14 @@
             </section>
         <!--/.sub menu -->
 
+
+        <!-- Banners -->
+            <section>
+                <div class="row bannerAction" id="bannerAction">
+                </div>
+            </section>
+        <!--/.Banners -->
+        
         
         <!-- action window -->
             <section>
@@ -198,10 +215,15 @@
 <!-- component scripts -->
 <script src="js/Components/neonavbar.js"></script>
 <script src="js/Components/submenu.js"></script>
+<script src="js/Components/bannerComponent.js"></script>
 <script src="js/Components/componentCollection.js"></script>
+<script src="js/Components/videoPlayerFunctions.js"></script>
+<script src="js/Components/cartelera.js"></script>
 
 <!-- data scripts -->
 <script src="js/Data/general_data.js"></script>
 <script src="js/Data/estados_data.js"></script>
+<script src="js/Data/video_player_data.js"></script>
+<script src="js/Data/cartelera_data.js"></script>
 
 </html>
