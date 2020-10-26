@@ -228,12 +228,12 @@ function draw_contenido2( age ){
     toDraw += `
         <div class="col-7 action_menu_block2 age_${age}">
             <div class="row">
-                <div class="col-2 menu_btn_container alternative" data-target="videos" data-age"${age}" onClick="actionMenuChange(this)">Videos</div>
-                <div class="col-2 menu_btn_container alternative" data-target="podcast" data-age"${age}" onClick="actionMenuChange(this)">Podcast</div>
-                <div class="col-2 menu_btn_container alternative" data-target="blog" data-age"${age}" onClick="actionMenuChange(this)">Blog</div>
-                <div class="col-2 menu_btn_container alternative" data-target="salon" data-age"${age}" onClick="actionMenuChange(this)">Salón interactivo</div>
-                <div class="col-2 menu_btn_container alternative" data-target="exposiciones" data-age"${age}" onClick="actionMenuChange(this)">Exposiciones</div>
-                <div class="col-2 menu_btn_container alternative" data-target="apps" data-age"${age}" onClick="actionMenuChange(this)">Apps</div>
+                <div class="col-2 menu_btn_container alternative" data-target="videos" data-age="${age}" onClick="actionMenuChange(this)">Videos</div>
+                <div class="col-2 menu_btn_container alternative" data-target="podcast" data-age="${age}" onClick="actionMenuChange(this)">Podcast</div>
+                <div class="col-2 menu_btn_container alternative" data-target="blog" data-age="${age}" onClick="actionMenuChange(this)">Blog</div>
+                <div class="col-2 menu_btn_container alternative" data-target="salon" data-age="${age}" onClick="actionMenuChange(this)">Salón interactivo</div>
+                <div class="col-2 menu_btn_container alternative" data-target="exposiciones" data-age="${age}" onClick="actionMenuChange(this)">Exposiciones</div>
+                <div class="col-2 menu_btn_container alternative" data-target="apps" data-age="${age}" onClick="actionMenuChange(this)">Apps</div>
             </div>
         </div>
 

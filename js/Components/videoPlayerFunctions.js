@@ -257,8 +257,9 @@ function getRecentVideos( age ){
 //      functions for video player 2
 //  ---------------------------------------
 //draw video component for jovenes
+var currentAge;
 function drawComponentVideos2(age){
-    console.log( "aqui" + age)
+    currentAge = age;
     var toDraw = `
         <div class="row">
             <div class="col-12 vid_2">
@@ -291,7 +292,7 @@ function drawComponentVideos2(age){
 // print video list on jovenes, formadores
 currentShowIndex = 1;               //for show video list index
 function print_videoList2(){
-    var videoCollection = getRecentVideos();
+    var videoCollection = getRecentVideos( currentAge );
     // print list with ordered array
     let toDraw = `
         <div class="row">
