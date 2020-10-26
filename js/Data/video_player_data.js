@@ -1172,15 +1172,15 @@ const video_player_data = {
                         'date' : '2020-10-13',
                     },
                     46 : {
-                        'name' : 'Semillas de tinta',
+                        'name' : 'Antonio Zacruz recomienda "Semillas de tinta"',
                         'type' : 'Fomento a la lectura',
                         'author' : 'Antonio Zacruz',
                         'description' : 'Para niñas y niños a partir de 8 años de edad.',
-                        'url' : 'https://www.youtube.com/embed/oNFu741vAws',
+                        'url' : 'https://www.youtube.com/embed/ni-LRpzbaN0',
                         'date' : '2020-10-13',
                     },
                     13 : {
-                        'name' : 'Raúl Pérez Buendía recomienda Luna sandía',
+                        'name' : 'Raúl Pérez Buendía recomienda "Luna sandía"',
                         'type' : 'Fomento a la lectura',
                         'author' : 'Raúl Pérez Buendía',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. "Luna Sandía. Treinta sueños extraordinarios de niñas y niños mexicanos". Compilador: Roger Omar. Ilustradores: Jimena Estíbaliz, Daniela Martín del Campo, Pamela Medina, Gala Navarro, Mariana Roldán y Manuel Vargas. Editorial: Alas y Raíces. Año de edición: 2019. Soñar que eres raptado por los extraterrestres o que tu cama está en medio de un volcán; cosas extraordinarias y sueños muy alocados es lo que encontrarás en este libro. "Luna Sandía" ilustra sueños extraordinarios de niñas y niños de todo México.',
@@ -1196,7 +1196,7 @@ const video_player_data = {
                         'date' : '2020-10-13',
                     }, 
                     4 : {
-                        'name' : 'Trabalenguas de dragones',
+                        'name' : 'Janet Pankowsky recomienda "Trabalenguas de dragones"',
                         'type' : 'Fomento a la lectura',
                         'author' : 'Janet Pankowsky',
                         'description' : 'Recomendado para niñas y niños a partir de 9 años de edad. Recomendación del libro "El Jinete del Dragón" de Cornelia Funke. Editorial Fondo de Cultura Económica.',
@@ -1204,7 +1204,7 @@ const video_player_data = {
                         'date' : '2020-10-13',
                     },
                     90 : {
-                        'name' : 'Martín Arias recomienda: Cuando hablaba era contigo',
+                        'name' : 'Martín Arias recomienda "Cuando hablaba era contigo"',
                         'type' : 'Fomento a la lectura',
                         'author' : 'Martín Arias',
                         'description' : 'Recomendado para niñas y niños a partir de 8 años de edad.',
@@ -1212,7 +1212,7 @@ const video_player_data = {
                         'date' : '2020-10-13',
                     },
                     17 : {
-                        'name' : 'Lidia Zaragoza y Antonio Zacruz recomiendan: Cuando nos hayamos comido el planeta',
+                        'name' : 'Lidia Zaragoza y Antonio Zacruz recomiendan "Cuando nos hayamos comido el planeta"',
                         'type' : 'Fomento a la lectura',
                         'author' : 'Lidia Zaragoza y Antonio Zacruz',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
@@ -1224,8 +1224,288 @@ const video_player_data = {
         },
     }, // 7 FIN VITAMINA SÉ SEGUNDA INFANCIA
 
-// Presentaciones de libros 2020
+// ADOLESCENCIA (13 a 17 años de edad)
+// Vitamina Sé Adolescentes
     3 : {
+        'name' : 'Vitamina Sé',
+        'age' : 3,
+        'type' : {
+            // Presentaciones artísticas Adolescentes
+            1 : {
+                'name' : `Presentaciones artísticas`,
+                'playList' : { 
+                    59 : {
+                        'name' : 'Vibra Muchá: Tu ser',
+                        'type' : 'Presentación artística',
+                        'author' : 'Vibra Muchá',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad.',
+                        'url' : 'https://www.youtube.com/embed/2FdwMS7fv2Q',
+                        'date' : '2020-03-31',
+                    },
+                    122 : {
+                        'name' : 'Love Me Twice / Ámame dos veces (música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Béke',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Love Me Twice del álbum Fragmentary EP, pieza de un rompecabezas de rock alternativo, cada una de las canciones del EP son una sola historia que al alternarse crean una narrativa completamente diferente, liderara por una voz femenina suave pero muy poderosa.',
+                        'url' : 'https://www.youtube.com/embed/OesSyCD694s',
+                        'date' : '2020-04-03',
+                    },
+                    128 : {
+                        'name' : 'Tu lugar (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Orquesta Basura',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. La Orquesta Basura, se distingue por la creación de instrumentos musicales a partir de materiales reutilizables como pvc, latas de conservas, mangueras, etc. Es con estos instrumentos que realizan sus actuaciones y logran un sonido único.',
+                        'url' : 'https://www.youtube.com/embed/x8fDo3i7rsM',
+                        'date' : '2020-04-09',
+                    },
+                    118 : {
+                        'name' : 'Emptiness / Vacío (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Béke',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Emptiness forma parte del EP Fragmentary, pieza de un rompecabezas de rock alternativo, cada una de las canciones del EP son una sola historia que al alternarse crean una narrativa completamente diferente, liderara por una voz femenina suave pero muy poderosa.',
+                        'url' : 'https://www.youtube.com/embed/Qw8Ii1v7DCo',
+                        'date' : '2020-04-17',
+                    },
+                    123 : {
+                        'name' : 'Backtrack / Retroceder (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Béke',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Backtrack del álbum Fragmentary EP, pieza de un rompecabezas de rock alternativo, cada una de las canciones del EP son una sola historia que al alternarse crean una narrativa completamente diferente, liderara por una voz femenina suave pero muy poderosa.',
+                        'url' : 'https://www.youtube.com/embed/mbVERmF_hqU',
+                        'date' : '2020-04-25',
+                    },
+                    111 : {
+                        'name' : 'Ardo (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Ro Aguilar, integrante del grupo Quiroga',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Ro Aguilar, integrante del grupo Quiroga, un grupo de rock alternativo, es también compositor, sus letras van del amor hasta la desolación, y forman parte del álbum "Equilibrio".',
+                        'url' : 'https://www.youtube.com/embed/2HaZQD2hVPU',
+                        'date' : '2020-04-26',
+                    },
+                    132 : {
+                        'name' : 'Vals de los calcetines (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Fores Basura',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Vals de los calcetines, uno de los sencillos del disco El Cancioñero, creado por Fores Basura, como su proyecto alterno, éste álbum está plagado de su delirante originalidad, sin ataduras por un ritmo especial, siendo una de las creaciones sonoras más libres en cuanto género musical.',
+                        'url' : 'https://www.youtube.com/embed/TRKRs76LlGo',
+                        'date' : '2020-04-28',
+                    },
+                    121 : {
+                        'name' : 'The Urge / La urgencia',
+                        'type' : 'Presentación artística',
+                        'author' : 'Béke',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. The Urge del álbum Fragmentary EP, pieza de un rompecabezas de rock alternativo, cada una de las canciones del EP son una sola historia que al alternarse crean una narrativa completamente diferente, liderara por una voz femenina suave pero muy poderosa. ',
+                        'url' : 'https://www.youtube.com/embed/QYG2kWUU5po',
+                        'date' : '2020-05-02',
+                    },
+                    127 : {
+                        'name' : 'Flauta transversa de PVC (Taller)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Fores Basura, integrante de Orquesta Basura ',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Fores Basura, integrante de Orquesta Basura.',
+                        'url' : 'https://www.youtube.com/embed/CRfWFAN3axs',
+                        'date' : '2020-05-24',
+                    },
+                    119 : {
+                        'name' : 'Doublethink (Doblepensar) (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Béke',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Muchas veces somos el reflejo de los demás, pero otras veces somos diferentes al darnos cuenta de eso, Doublethink es una canción cargada de realidad y reflexión, como una fotografía instantánea de nuestro presente cuando todo es caótico.',
+                        'url' : 'https://www.youtube.com/embed/f0PnDUM26y8',
+                        'date' : '2020-06-21',
+                    },
+                    110 : {
+                        'name' : 'Lunas (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Ro Aguilar, integrante de Quiroga',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Ro Aguilar, integrante de Quiroga ',
+                        'url' : 'https://www.youtube.com/embed/p0yBU1DCYk0',
+                        'date' : '2020-06-24',
+                    },
+                    120 : {
+                        'name' : 'Noiseless (Música)',
+                        'type' : 'Presentación artística',
+                        'author' : 'Béke',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad.',
+                        'url' : 'https://www.youtube.com/embed/',
+                        'date' : '2020-08-02',
+                    },
+                }, 
+            }, // FIN Presentaciones artísticas Adolescentes 
+
+            // Laboratorios creativos Adolescentes
+            2 : {
+                'name' : 'Laboratorios creativos',
+                'playList' : {
+                    82 : {
+                        'name' : 'Esténcil poético',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Jesús Urbina',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. El esténcil es una herramienta que permite la reproducción de una imagen o texto. Se hace uso de una pantalla que delimita el paso de la pintura (o la tinta) por áreas específicas para concretar, a través de un espacio no pintado y un espacio pintado, contrastes en planos, líneas y puntos, con lo cual se genera la imagen.',
+                        'url' : 'https://www.youtube.com/embed/5KeCGwC1SxI',
+                        'date' : '2020-03-29',
+                    },
+                    28 : {
+                        'name' : 'Gastronomía',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Omar Ramírez',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Mediante pasos sencillos, el chef Omar Ramírez, te lleva de la mano para elaborar dos menús completos de comida mexicana, utilizando ingredientes que puedes encontrar en el mercado de tu localidad.',
+                        'url' : 'https://www.youtube.com/embed/i6JIJjyd3Us',
+                        'date' : '2020-04-13',
+                    },
+                    145 : {
+                        'name' : 'Collage',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Francisco González',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. ¿Qué te ayuda a superar tus miedos? En esta cápsula identificaremos aquellos objetos, valores o situaciones que te ayudan a superar tus miedos a partir de recortes de revista para realizar un collage.',
+                        'url' : 'https://www.youtube.com/embed/0rlmy4y8C1I',
+                        'date' : '2020-04-18',
+                    },
+                    23 : {
+                        'name' : 'Eslam de Poesía',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Rojo Cordova',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. En este taller, acompaña a Rojo Córdova a descubrir que los poetas son aquellas personas que hacen poesía y pueden ser cualquiera de nosotros. Hay poetas peludos, flaquitos, grandotes, chiquitos, raperos o choreros.',
+                        'url' : 'https://www.youtube.com/embed/Unn9hcfpFX4',
+                        'date' : '2020-04-19',
+                    },
+                    83 : {
+                        'name' : 'Encuadernación plegable (Taller)',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Jesús Urbina',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Vamos a crear un libro plegable con materiales reciclados y económicos que se pueda expandir como un acordeón y nos sirva de soporte para nuestras creaciones literarias y artísticas, crearemos un libro que abrirlo y volverlo a abrir será un placer.',
+                        'url' : 'https://www.youtube.com/embed/7kdO0uTUkhs',
+                        'date' : '2020-04-20',
+                    },
+                    24 : {
+                        'name' : 'Hip hop dance con Funky Maya (Taller)',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Funky Maya',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Funky Maya nos enseña pasos básicos del hip hop dance como son el waving, popping, prep, smurf, criss cross y reebok; para que, al igual que como aprendimos, las letras, luego palabras y después a conjugar oraciones, combinando estos pasos aprendamos a armar una oración bailando hip hop.',
+                        'url' : 'https://www.youtube.com/embed/YhCSErL2XBU',
+                        'date' : '2020-04-20',
+                    },
+                    24 : {
+                        'name' : 'Breaking en línea (Taller)',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Aramis García y Gloria Reyes',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Aramis García y Gloria Reyes muestran que cada movimiento es una forma de expresarnos. En este taller conocerás distintos pasos del breaking para crear tu propio estilo y coreografía.',
+                        'url' : 'https://www.youtube.com/embed/ZM7yrg0cId8',
+                        'date' : '2020-04-21',
+                    },
+                    30 : {
+                        'name' : 'Tutorial huerto (Taller)',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Piero Varandiarán',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. En este taller aprenderás, mediante sencillos pasos, a crear un huerto en tu casa.',
+                        'url' : 'https://www.youtube.com/embed/MT4aWEm3jOM',
+                        'date' : '2020-05-02',
+                    },
+                    81 : {
+                        'name' : 'Libro magicollage',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Jesús Urbina',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Este taller fomenta la exploración y libertad artística y creativa de niñas y niños, al permitirles crear poemas visuales con la técnica de collage, a la par que van creando pequeños libros de artista en formatos plegables, que pueden ser doblados y desdoblados para ir pasando entre las páginas.',
+                        'url' : 'https://www.youtube.com/embed/0fi4HyvgzEg',
+                        'date' : '2020-05-06',
+                    },
+                    146 : {
+                        'name' : 'Personajes fantásticos',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Francisco González',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. En esta cápsula haremos un personaje fantástico con súper poderes, puede ser una persona, un animal o puedes crearlo como tú desees, también tienes que pensar cuál será ese súper poder que te ayudará a derribar tus miedos. ',
+                        'url' : 'https://www.youtube.com/embed/uDdGC3uLkgs',
+                        'date' : '2020-05-07',
+                    },
+                    147 : {
+                        'name' : 'Escultura de la Valentía (Taller)',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Francisco González',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. ¿Qué me hace ser valiente? A partir de recordar una anécdota en la que hayas enfrentado el miedo y cómo lo superaste, haremos una escultura de la valentía. Esta escultura será tridimensional con plastilina y otros objetos.',
+                        'url' : 'https://www.youtube.com/embed/6zYDdeL-skU',
+                        'date' : '2020-05-14',
+                    },
+                    98 : {
+                        'name' : ' El poema tiene pies: cómo hacer poemas en voz alta (Taller) ',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Cynthia Franco',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Vamos a la parte divertida de la poesía: ponerle imaginación, sonido, juego y cuerpo. El poema está hecho para hacerlo respirar. Un poema con pies. Hacerlo que baile al ritmo de nuestras palabras. Al ritmo de nuestros latidos. Caminamos con el texto. Hay quienes son muy buenos para improvisar o improversar, hay quienes prefieren escribir y luego memorizarlos, yo te voy a mostrar cómo le hago en siete pasos.',
+                        'url' : 'https://www.youtube.com/embed/WVtAWFD-gzs',
+                        'date' : '2020-05-14',
+                    },
+                    80 : {
+                        'name' : 'Poetry slam o slam de poesía (Taller)',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Comikk MG',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. Comikk MG te explica: ¿Qué es un Poetry Slam? ¿Cómo participar en uno con tus palabras y versos?',
+                        'url' : 'https://www.youtube.com/embed/JLyooefsGng',
+                        'date' : '2020-06-15',
+                    },
+                    
+                },  
+            }, 
+            // FIN Laboratorios creativos Adolescentes
+
+            // Fomento a la lectura Adolescentes
+            5 : {
+                'name' : `Fomento a la lectura`,
+                'playList' : {
+                    46 : {
+                        'name' : 'Antonio Zacruz recomienda "Semillas de tinta" ',
+                        'type' : 'Fomento a la lectura',
+                        'author' : 'Antonio Zacruz',
+                        'description' : 'Para niñas y niños a partir de 8 años de edad.',
+                        'url' : 'https://www.youtube.com/embed/ni-LRpzbaN0',
+                        'date' : '2020-04-23',
+                    }, 
+                    89 : {
+                        'name' : 'Danae Servin recomienda "Las horas para siempre"',
+                        'type' : 'Fomento a la lectura',
+                        'author' : 'Danae Servin',
+                        'description' : 'Recomendado para niñas y niños a partir de 8 años de edad. "Las horas para siempre". Antología de la colección “Poesía para niños”. Autores: Ramón López Velarde, Carlos Pellicer, Elías Nandino, Efraín Huerta, Octavio Paz, Jaime Sabines y Enriqueta Ochoa. Ilustraciones: Niñas y niños del ala de Oncología del Centro Médico Nacional 20 de Noviembre. Editorial: Alas y Raíces. Año de edición: 2018. La colección "Poesía para niños" es uno de los proyectos editoriales del sello Alas y Raíces. En esta ocasión, "Las horas para siempre" reúne la poesía de reconocidos autores mexicanos, como Octavio Paz, Ramón López Velarde, Carlos Pellicer, Enriqueta Ochoa, Elías Nandino, Efraín Huerta y Jaime Sabines, cuyos versos fueron ilustrados por niñas y niños del ala de Oncología del Centro Médico Nacional 20 de Noviembre.',
+                        'url' : 'https://www.youtube.com/embed/kFnKzEtNg_o',
+                        'date' : '2020-04-09',
+                    }, 
+                    
+                    90 : {
+                        'name' : 'Martín Arias recomienda "Cuando hablaba era contigo"',
+                        'type' : 'Fomento a la lectura',
+                        'author' : 'Martín Arias',
+                        'description' : 'Recomendado para niñas y niños a partir de 8 años de edad.',
+                        'url' : 'https://www.youtube.com/embed/l3YdVLBRLPo',
+                        'date' : '2020-04-16',
+                    },
+                    17 : {
+                        'name' : 'Lidia Zaragoza y Antonio Zacruz recomiendan "Cuando nos hayamos comido el planeta"',
+                        'type' : 'Fomento a la lectura',
+                        'author' : 'Lidia Zaragoza y Antonio Zacruz',
+                        'description' : 'Recomendado para niñas y niños a partir de 6 años de edad.',
+                        'url' : 'https://www.youtube.com/embed/z2lmDUAQYTA',
+                        'date' : '2020-04-23',
+                    }, 
+                },
+            }, // FIN Fomento a la lectura  Adolescentes
+
+              // Especial en tu día Adolescentes
+            7 : {
+                'name' : 'Especial en tu día',
+                'playList' : {
+                    1 : {
+                        'name' : ' Palabras con sentido (Taller)',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Gael Caballero',
+                        'description' : 'Recomendado para adolescentes a partir de 13 años de edad. A través del rap transmitimos ritmo, poesía, ideas y creatividad. En este taller podrás conocer los fundamentos básicos para escribir rap, entender la técnica en general y cómo generar tus propias canciones.',
+                        'url' : 'https://www.youtube.com/embed/ugPC7yX3qYc',
+                        'date' : '2020-05-01',
+                    },
+                },
+            },
+
+        },
+    }, // 7 FIN VITAMINA SÉ Adolescentes
+
+// Presentaciones de libros 2020
+    4 : {
         'name' : 'Presentaciones de libros',
         'age' : 2,
         'type' : {
@@ -1238,14 +1518,14 @@ const video_player_data = {
                         'type' : 'Fomento a la lectura',
                         'author' : 'Carmen Leñero. Ilustraciones de Kamui Gomasio y Marcos Castro.',
                         'description' : 'Recomendado para niñas y niños a partir de 6 años de edad. Editorial: Alas y Raíces, 2019. Bestias como Waay chivo y Sinsimito, de origen maya; aluxes, chaneques y guajes, de procedencia totonaca, nahua, mixe y maya; o tutákame, de origen huichol, son ahora reinterpretadas y compiladas en un sólo tomo sobre mitos y leyendas de 10 aterradoras criaturas nacidas en la imaginación de la cultura popular en nuestro país. Con ilustraciones de Kamui Gomasio y Marcos Castro. Como parte de la campaña “Contigo en la distancia”, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces invitó a niñas, niños, adolescentes y adultos a participar en la charla en vivo que se llevó a cabo el miércoles 8 de julio, a las 18 horas, sobre el libro Monstruos mexicanos, a cargo de su autora. Carmen Leñero es poeta, ensayista, narradora y cantante. Ha recibido distintos premios literarios nacionales como el Premio Nacional de Poesía Carlos Pellicer (1998) y el Premio Nacional de Cuento Infantil “Juan de la Cabada” (1996), además de distinciones internacionales como la nominación al Premio de Literatura en Memoria de Astrid Lindgren (ALMA) 2011, por el Consejo de las Artes de Suecia.',
-                        'url' : 'https://youtu.be/BdoNws1cQUc',
+                        'url' : 'https://www.youtube.com/embed/BdoNws1cQUc',
                         'date' : '2020-07-08',
                     },
                     2 : {'name' : '"Luna Sandía. Treinta sueños extraordinarios de niñas y niños mexicanos"',
                         'type' : 'Fomento a la lectura',
                         'author' : 'Roger Omar. Ilustradores: Jimena Estíbaliz, Daniela Martín del Campo, Pamela Medina, Gala Navarro, Mariana Roldán y Manuel Vargas',
                         'description' : 'Recomendado para niñas y niños a partir de 5 años de edad. La Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces, invitó a niñas, niños y adultos a la presentación en línea del libro Luna Sandía. Treinta sueños extraordinarios de niñas y niños mexicanos, como parte de la campaña “Contigo en la distancia”.',
-                        'url' : 'https://youtu.be/rdTu-2TCC0E',
+                        'url' : 'https://www.youtube.com/embed/rdTu-2TCC0E',
                         'date' : '2020-08-26',
                     },
                 },
@@ -1254,7 +1534,7 @@ const video_player_data = {
     }, // FIN Presentaciones de libros 2020
     
 // FORMACIÓN 
-    4 : {
+    5 : {
         'name' : 'Formación',
         'age' : 4,
         'type' : { //VITAMINA SÉ PARA FORMADORES
@@ -1300,7 +1580,7 @@ const video_player_data = {
 // FIN FORMACIÓN
 
 // COLOQUIO Músicas e infancias: PRIMERA INFANCIA
-    5 : {
+    6 : {
         'name' : `Primer Coloquio de Músicas e infancias`,
         'age' : 1,
         'type' : { //Muestras artísticas 
@@ -1333,7 +1613,7 @@ const video_player_data = {
                         'type' : 'Laboratorio creativo',
                         'author' : 'Beto Batuca',
                         'description' : 'Para niñas y niños a partir de 6 años de edad. Imparte: Beto Batuca. Músico, compositor y pintor, en 1982 funda el grupo de rock ¡Qué payasos! Junto con Luis Ignacio Baena Nacho Mostacho incursiona en la música para infancias, grupo del que se destaca su creación en los ámbitos de dirección de imagen, vestuario y composición. Con el objetivo de generar espacios de diálogo y reflexión sobre el desarrollo y la situación actual de la música dirigida a niñas, niños y adolescentes en distintos contextos, así como la contribución de la música en el desarrollo de sus capacidades, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizará de manera virtual el Primer Coloquio de músicas e infancias.',
-                        'url' : 'https://youtu.be/bcbgQbtMfxY',
+                        'url' : 'https://www.youtube.com/embed/bcbgQbtMfxY',
                         'date' : '2020-07-27',
                     },
                     2 : {
@@ -1358,7 +1638,7 @@ const video_player_data = {
     }, // FIN 6 COLOQUIO Músicas e infancias: PRIMERA INFANCIA
 
 // Primer Coloquio de músicas e infancias 2da infancia
-    6 : {
+    7 : {
         'name' : 'Primer Coloquio de músicas e infancias',
         'age' : 2, //
         'type' : { // Primer Coloquio de músicas e infancias: Muestras artísticas (infancia 6-12 años de edad)
@@ -1419,7 +1699,7 @@ const video_player_data = {
     }, // FIN Primer Coloquio de músicas e infancias 2da infancia
  
 // TIEMPO PARA JUGLAR
-    7 : {
+    8 : {
         'name' : 'Tiempo para juglar: Tiempo de sembrar poesía',
         'age' : 4,
         'type' : { // TIEMPO PARA JUGLAR: Tiempo de sembrar poesía, Temporada 1 y 2 
@@ -1428,50 +1708,50 @@ const video_player_data = {
                 'playList' : {
                     1 : {
                         'name' : 'Tiempo de sembrar poesía. Sesión 1',
-                        'type' : '',
+                        'type' : 'Videoconferencia',
                         'author' : 'Ana Zarina Palafox, Danger y Julio Vallejo.',
                         'description': '',
-                        'url' : 'https://youtu.be/GDoXywDWc-s',
+                        'url' : 'https://www.youtube.com/embed/GDoXywDWc-s',
                         'date' : '2020-06-18',
                     }, 
                     2 : { 
                         'name' : 'Tiempo de sembrar poesía. Sesión 2',
-                        'type' : '',
+                        'type' : 'Videoconferencia',
                         'author' : 'Raúl Eduardo González, Staku Allende y Sergio Ferrer.',
                         'description': '',
-                        'url' : 'https://youtu.be/Cys2dYCHazk',
+                        'url' : 'https://www.youtube.com/embed/Cys2dYCHazk',
                         'date' : '2020-06-25',
                     }, 
                     3 : {
                         'name' : 'Tiempo de sembrar poesía. Sesión 3',
-                        'type' : '',
+                        'type' : 'Videoconferencia',
                         'author' : 'Daniela Meléndez, Rodolfo González, Pat Boy.',
                         'description': '',
-                        'url' : 'https://youtu.be/wGudjIOJD0M',
+                        'url' : 'https://www.youtube.com/embed/wGudjIOJD0M',
                         'date' : '2020-07-02',
                     }, 
                     4 : { 
                         'name' : 'Tiempo de sembrar poesía. Sesión 4',
-                        'type' : '',
+                        'type' : 'Videoconferencia',
                         'author' : 'Erika Medellín, Atza Urieta, Cheché Coarasa, Fernando Guadarrama',
                         'description': '',
-                        'url' : 'https://youtu.be/MsQWTcOs8sU',
+                        'url' : 'https://www.youtube.com/embed/MsQWTcOs8sU',
                         'date' : '2020-07-09',
                     },
                     5 : {
                         'name' : 'Tiempo de sembrar poesía. Sesión 5',
-                        'type' : '',
+                        'type' : 'Videoconferencia',
                         'author' : 'Martín Chávez Makawi, Ismael García Marcelino, Citlaly Malpica',
-                        'description': '',
-                        'url' : 'https://youtu.be/EDiaD0AFbS4',
+                        'description': 'Incentivar la creación poética desde las infancias. Transmitida el 16 de julio de 2020, a las 17:00 horas, por Facebook Live de Alas y Raíces. Modera: Irma Pineda. Nació en Juchitán, Oaxaca, en la Cultura Binnizá. Es profesora en la Universidad Pedagógica Nacional y Asesora para Educación, Ciencia y Cultura, en la Cámara de Diputados Federal. Es autora de varios libros de poesía bilingüe. Desde hace casi dos décadas, coordina, junto con su madre y hermano, las actividades de la Biblioteca Popular “Víctor Yodo”, en la 7a. Sección (una de las zonas más humildes y de mayor tradición) de Juchitán. Por el periodo 2020-2022, fue electa por el ECOSOC como integrante del Foro Permanente sobre las Cuestiones Indígenas de la ONU. Martín Chávez Makawi. "Despertar". Poeta, traductor, músico y promotor cultural Rarámuri.  Participó en la traducción de varios autores, entre ellos Joseph Neumann y Antoine de Saint Exupéry.  En 2015 inició en la comunidad Escolar Bajichi de Mogotavo, el programa “BUSURÉLIAMI – EL DESPERTAR INTERIOR”. En 2013 fue galardonado por la Universidad de Vancouver por su trabajo de etnobiología sobre las plantas medicinales. Ismael García Marcelino. "La dinámica oral en la composición de la pirekua" Escritor y periodista, originario del pueblo p’urhépecha de Michoacán Ihuatzio. Imparte clases de lengua y literatura en la Escuela Nacional de Estudios Superiores, de la UNAM, en la ciudad de Morelia. Ha publicado dos novelas, una serie de cuentos y poemas en español y p’urhépecha, así como algunas pirekuas. Citlaly Malpica. "La poesía en las pequeñas cosas" Decimista y bailadora de son jarocho, originaria de Juan Rodríguez Clara, Veracruz. Inició en el grupo infantil “Son de Piña”. Además de ser versadora y conferencista, compuso letras para discos de distintos grupos musicales. Ha participado en festivales y documentales sobre la palabra en la música popular del sur de Veracruz. Actualmente comparte talleres de verso y zapateado. Este ciclo de charlas virtuales forman parte del proyecto "Tiempo para Juglar" de Alas y Raíces, realizadas en el marco de la campaña “Contigo en la distancia”, dirigidas al público en general, promotores culturales, artistas y creadores, con la finalidad de crear puentes entre poetas de distintas tradiciones líricas y musicales para compartir sus experiencias en la promoción de la oralidad en el trabajo creativo con niñas, niños y adolescentes.',
+                        'url' : 'https://www.youtube.com/embed/EDiaD0AFbS4',
                         'date' : '2020-07-16',
                     }, 
                     6 : {
                         'name' : 'Tiempo de sembrar poesía. Sesión 6',
-                        'type' : '',
+                        'type' : 'Videoconferencia',
                         'author' : 'Evelin Acosta, Cynthia Franco/Selma Ce, Juan Manuel Campechano Yan',
-                        'description': '',
-                        'url' : 'https://youtu.be/yhg1_BjRqIM',
+                        'description': 'Evelin Acosta, Cynthia Franco/Selma Ce, Juan Manuel Campechano Yan',
+                        'url' : 'https://www.youtube.com/embed/yhg1_BjRqIM',
                         'date' : '2020-07-23',
                     },  
                 }, 
@@ -1571,9 +1851,9 @@ const video_player_data = {
                      12 : {
                         'name' : 'Taller en línea: Desafío Diez a la Diez. Poesía, matemáticas y canciones',
                         'type' : 'Taller en línea',
-                        'author' : '',
-                        'description': '',
-                        'url' : 'https://youtu.be/jkfNrupOvrQ',
+                        'author' : 'Julio Vallejo',
+                        'description': 'La Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces, invita a los talleres de creación lírica Tiempo de sembrar poesía, dirigidos al público general, promotores culturales, artistas y creadores interesados en estimular la expresión, el pensamiento crítico y la creatividad desde la oralidad con niñas, niños y adolescentes. Imparte: Julio Vallejo. Hacedor de canciones a guitarra en español y en didxazá (zapoteco). Su trabajo cancionista se caracteriza por relatos ásperos, sin atenuantes y erotismo explícitos. Galardonado en 2017 por los Premios CaSa Creación Literaria en lengua didxazá en la categoría de canción por las décimas Ca dxi xtinu (Nuestros días).',
+                        'url' : 'https://www.youtube.com/embed/jkfNrupOvrQ',
                         'date' : '2020-10-22',
                     }, 
                 }, 
@@ -1582,7 +1862,7 @@ const video_player_data = {
     }, // FIN TIEMPO PARA JUGLAR
     
 // OTROS TALLERES DE FORMACIÓN
-    8 : {
+    9 : {
         'name' : `Formación`,
         'age' : 4,
         'type' : { // OTROS TALLERES DE FORMACIÓN
@@ -1635,7 +1915,7 @@ const video_player_data = {
     }, // FIN OTROS TALLERES DE FORMACIÓN
 
 // Primer Coloquio de músicas e infancias: FORMACIÓN
-    9 : {
+    10 : {
         'name' : `Primer Coloquio de Músicas e infancias: ciclo de conferencias`,
         'age' : 4,
         'type' : { // COLOQUIO CICLO DE CONFERENCIAS
@@ -1647,7 +1927,7 @@ const video_player_data = {
                         'type' : 'Conferencia',
                         'author' : 'Eduardo García Barrios',
                         'description' : 'Eduardo García Barrios es Director de orquesta y coordinador del Sistema Nacional de Fomento Musical. Ha dirigido las principales orquestas sinfónicas del país, además de haber sido director titular de la Filarmónica de la Universidad de Lima, Perú; la Orquesta Sinfónica del Conservatorio Nacional de Música; y la Orquesta Sinfónica Carlos Chávez; así como director asociado de la Orquesta Sinfónica de San Antonio, Texas. Fue cofundador del Centro de Artes Musicales (CAM) estatal, institución que creó y desarrolló el programa Redes 2025 y formó parte del Consejo Académico del Programa Orquesta Escuela, modelo de educación musical alternativo que actualmente rige la formación musical de la Orquesta Escuela Carlos Chávez y desde abril de 2013 es coordinador nacional del Sistema Nacional de Fomento Musical de la Secretaría de Cultura del Gobierno de México, desde donde impulsa el Modelo de Educación Musical en sus niveles Comunitaria y Profesional. Con el objetivo de generar espacios de diálogo y reflexión sobre el desarrollo y la situación actual de la música dirigida a niñas, niños y adolescentes en distintos contextos, así como la contribución de la música en el desarrollo de sus capacidades, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizó de manera virtual el Primer Coloquio de músicas e infancias.',
-                        'url' : 'https://youtu.be/ZTJ7O8TS1XU',
+                        'url' : 'https://www.youtube.com/embed/ZTJ7O8TS1XU',
                         'date' : '2020-07-27',
                     },
                     2 : {
@@ -1655,7 +1935,7 @@ const video_player_data = {
                         'type' : 'Mesa de diálogo',
                         'author' : ' Julio Gullco, Beto Batuca, Elba Rodríguez Ávalos, Roberto Rivelino García Baeza, Juan Monedita',
                         'description' : 'Participan: Julio Gullco. Investigador titular del Centro Nacional de Investigación, Documentación e Información Musical “Carlos Chavez” (CENIDIM – INBAL). Investigador y educador musical, realizó estudios de teoría musical, guitarra y flauta en   Argentina; así como de iniciación musical infantil y pedagogía musical en Argentina y México; y de comunicación en México. Beto Batuca. Músico y compositor. Músico, compositor y pintor, en 1982 funda el grupo de rock ¡Qué payasos! Junto con Luis Ignacio Baena Nacho Mostacho e incursan en la música para infancias, grupo del que se destaca su creación en los ámbitos de dirección de imagen, vestuario y composición. Elba Rodríguez Ávalos. Cantautora. Guadalajara, Jalisco. Desde 1989 imparte el taller Canto, cuento, maroma y teatro a personas adultas (maestras, maestros, pedagogos y toda persona interesada en esta acción multiplicadora).  A partir de 1995 imparte conciertos didácticos en las escuelas del estado de Michoacán a través de la Secretaría de Educación y otros estados del país a donde ha sido invitada, así como a diversos puntos de los Estados Unidos, Nicaragua y Canadá. En 1994 realiza trabajo de campo en p’horé y comienza a componer sonecitos y abajeños. Por esta razón es invitada a uno de los festejos de Radio Cherán, donde es la única mestiza que interpreta pirekuas en español, con unas cuantas palabras en esa lengua. Roberto Rivelino García Baeza. Investigador y músico. Originario de la Ciudad de México, es doctor en Literatura Hispánica por el Colegio de San Luis, músico y poeta. Licenciado en Letras Hispánicas por la UAM-I y Maestro en Literatura Hispanoamericana por el Colegio de San Luis, también estudió música en el INBA. Sus principales líneas de investigación son la literatura de tradición oral y la literatura de vanguardia latinoamericana. Se ha desempeñado como formador de educación musical en centros de educación básica y media básica y ha participado en distintos festivales con el Taller canciones tradicionales infantiles con el que busca rescatar, fomentar y difundir la lírica y los juegos infantiles tradicionales de México.  Además de investigador es músico, compositor y director de la agrupación musical Los Blueserables. Juan Monedita. Músico y compositor integrante de Monedita de Oro. Músico y compositor con más de 30 años de trayectoria musical, ha incursionado en diversos grupos musicales dirigidos para infancias, en el que destaca su participación del grupo poblano Patita de Perro, posteriormente funda el grupo Monedita de Oro con el objetivo de llevar diversos géneros musicales a niñas y niños. Modera: Pepe Frank. Músico y compositor. Es un reconocido compositor e intérprete de música infantil con más de 30 años de trayectoria en los cuales ha creado nueve fonogramas, seis libros y ha trabajado cuatro temporadas de programas radiofónicos para infancias, además su trayectoria musical cuenta con siete producciones. Con el objetivo de generar espacios de diálogo y reflexión sobre el desarrollo y la situación actual de la música dirigida a niñas, niños y adolescentes en distintos contextos, así como la contribución de la música en el desarrollo de sus capacidades, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizará de manera virtual el Primer Coloquio de músicas e infancias. ',
-                        'url' : 'https://youtu.be/kJoQLFjl0tg',
+                        'url' : 'https://www.youtube.com/embed/kJoQLFjl0tg',
                         'date' : '2020-07-27',
                     },
                     3 : {
@@ -1679,7 +1959,7 @@ const video_player_data = {
                         'type' : 'Conferencia',
                         'author' : 'Natalia Morelos',
                         'description' : 'Psicopedagoga musical y oboísta. Coordinadora Académica de la Unidad de Agrupaciones Musicales Comunitarias del Sistema Nacional de Fomento Musical (SNFM). Nació en la Ciudad de México. Cursó la Licenciatura en Instrumentista – Oboe en la Escuela Nacional de Música de la UNAM y la Maestría en el Conservatorio de Rotterdam. Ha sido miembro fundador de diversos proyectos sociales enfocados al trabajo con refugiados y personas en tránsito en los Países Bajos, así como algunos enfocados al trabajo con niños, niñas y jóvenes sin hogar en la Ciudad de México. Ha sido integrante como Oboe Principal, de diversas orquestas mexicanas y extranjeras. Acreedora dos veces al premio del Programa de Apoyo a la Docencia, Investigación y Difusión de las Artes. Actualmente es también docente de la cátedra de oboe en el Conservatorio de Música del Estado de México. Con el objetivo de generar espacios de diálogo y reflexión sobre el desarrollo y la situación actual de la música dirigida a niñas, niños y adolescentes en distintos contextos, así como la contribución de la música en el desarrollo de sus capacidades, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizará de manera virtual el Primer Coloquio de músicas e infancias. ',
-                        'url' : 'https://youtu.be/3_ksoIfxzUw',
+                        'url' : 'https://www.youtube.com/embed/3_ksoIfxzUw',
                         'date' : '2020-07-29',
                     },
                     6 : {
@@ -1712,7 +1992,7 @@ const video_player_data = {
     },
 
 // DEL AMATE Y CENZONTLE
-    10 : {
+    11 : {
         'name' : `Del amate y el cenzontle`,
         'age' : 4,
         'type' : {  
@@ -1724,7 +2004,7 @@ const video_player_data = {
                         'type' : 'Conferencia',
                         'author' : 'Gabriela Huesca',
                         'description' : 'Actividad sugerida para docentes, pedagogos y mediadores. Imparte Gabriela Huesca, Compositora, dramaturga, cantante y actriz. CDMX. Creadora de espectáculos interdisciplinarios y de nuevas tecnologías para niñas, niños y jóvenes audiencias. Fundadora y directora de Euterpe, Centro de Investigación y Educación por el Arte. Ha participado en los foros más importantes de nuestro país, ferias del libro y jornadas culturales en toda la república y en festivales de artes escénicas internacionales, en España, Italia, Suecia, Argentina, Bolivia, Estados Unidos. Ha realizado talleres de interdisciplina artística a nivel nacional e internacional dirigidos adultos. Presenta Guillermina Pérez Suárez. Secretaria Ejecutiva de Desarrollo Cultural Infantil, Coordinación Nacional de Desarrollo Cultural Infantil, Secretaría de Cultura',
-                        'url' : 'https://youtu.be/Typ6URpxVHs',
+                        'url' : 'https://www.youtube.com/embed/Typ6URpxVHs',
                         'date' : '2020-10-06',
                     },
                     2 : {
@@ -1732,7 +2012,7 @@ const video_player_data = {
                         'type' : 'Mesa de diálogo',
                         'author' : 'Teresa Figueroa, Benjamín Kumantuk Xuxpë, Fausto Ángel Díaz Ojeda, Aníbal Hoyos García, Nadia López García.',
                         'description' : 'Participan: Teresa Figueroa. Narradora oral. Tonalá, Jalisco. Ha participado en diversos proyectos de narración oral como: Primer Festival del Libro, Tonalá, 2013; programa de apoyo a la educación de la niñez migrante de la Secretaría de Educación Jalisco 2013; Festival Lecturas de Otoño, organizado por el Ceca y la Comisión de Fomento al Libro y la Lectura de Jalisco, en el Festival Internacional de Narración Oral en Guadalajara, en el Festival de Teatro y Tradiciones Nativo Americanas 2018 y en el Proyecto Encanta Cuentos, de la televisión comunitaria por internet El Matraquero. Benjamín Kumantuk Xuxpë. Ayuujk et Xuxpë / Músico y narrador oral. Xaamkëjxp. Tlahuitoltepec, Oaxaca. Incansable en su ímpetu artístico y cultural, es promotor analítico de la música ayuuujk/mixe, así como su relación intercultural y transcultural con otras tradiciones locales y del mundo. Hoy día, promueve y gestiona la cultura comunitaria ayuujk/mixe, que en el 2019, Año Internacional de las Lenguas Indígenas, se proyectó desde la Ciudad de México como un proyecto cultural amplio: Kalok iiy Cultural. Con esta iniciativa se difunde, promueve e incentiva la cultura y arte ayuujk/mixe, a partir de sus valores: desde la identidad, lengua, comunalidad, artes y música, hasta los creadores y artistas mixes y no mixes. Fausto Ángel Díaz Ojeda. Facilitador en la Enseñanza de la lengua Kumiay. San José de la Zorra, Ensenada, Baja California. Indígena Kumiay de San José de la Zorra, una comunidad ubicada en el municipio de Ensenada, Baja California. Uno de sus principales intereses ha sido recuperar el uso del idioma Kumiay fomentando su uso entre niños y niñas en edad escolar.  Con el apoyo de hablantes de Kumiay, en su comunidad ha logrado fomentar el interés de los niños y niñas, vinculando el uso de la lengua con prácticas y saberes relevantes de su cultura. Ha desarrollado talleres lingüísticos y culturales con niñas, niños y adolescentes de su comunidad, realizando recorridos a sitios sagrados, senderos tradicionales, sitios de recolección de plantas medicinales tradicionales, plantas comestibles, plantas de uso artesanal, fomentado el respeto por la naturaleza tanto como por los mayores que lo apoyan en la realización de estas actividades y cuyos saberes son revalorados, de manera voluntaria. Aníbal Hoyos García. Narrador oral y promotor cultural. Papantla, Veracruz. Ha participado en festivales tanto nacionales como internacionales presentándose en espacios como el WTC de Boca del Río y el Parque Takilsúkut del Tajín en Veracruz. Con su labor artística busca preservar la Tradición Oral de la región totonaca. Conduce Nadia López García. Responsable del área de Laboratorios Creativos.',
-                        'url' : 'https://youtu.be/Ki4AnUY0o1E',
+                        'url' : 'https://www.youtube.com/embed/Ki4AnUY0o1E',
                         'date' : '2020-10-06',
                     },
                     3 : {
@@ -1740,7 +2020,7 @@ const video_player_data = {
                         'type' : 'Mesa de diálogo',
                         'author' : 'José Cruz Almonte, Pepe Tachas; Vivianne Thirion, Arlen Espinosa, Ángela Camacho.',
                         'description' : 'Actividad sugerida para familias y acompañantes de crianza. Participan: • José Cruz Almonte, Pepe Tachas. Director de Desarrollo Cultural Infantil y Juvenil, en la Secretaría de Cultura de Coahuila Durango, Durango. Creador de El Sexto Sentido, taller de sensibilidad a la lectura. Para su fortuna, encontró a su mejor público en la infancia; en las niñas y los niños, a quienes les dedicó la totalidad de su trabajo. Es autor de unos libros de poemas (casi olvidados) y de una radionovela cursi de cuyo nombre no quiere acordarse, además ha escrito varios cuentos infantiles: La Camiseta del Capitán; La Cámara Mentirosa; El Perro Pestañas, recolector de dientes; Diez de Terror; Azul Enmascarado; Sietemanos y otros más. Tres bibliotecas escolares llevan su nombre: Saltillo, Torreón y El Diamante, en Arteaga, Coahuila. • Vivianne Thirion. Narradora oral escénica y promotora de lectura. Durango / CDMX. Formada en los talleres de la Cátedra Iberoamericana Itinerante de Narración Oral Escénica CIINOE, del maestro Francisco Garzón Cespedes, entre otros cursos y talleres complementarios como: Expresión corporal en Río Abierto con Moisés Mendelewicz; Coordinación de talleres literarios del INBAL con Ethel Krauze, y diplomada en creatividad por la UAM Xochimilco y en LIJ por la Universidad Iberoamericana. Tiene una experiencia de 30 años a nivel nacional e internacional; su labor ha sido reconocida en distintos ámbitos; es Coordinadora General de la Asociación Mexicana de Narradores Orales Escénicos AMENA AC y dirige el festival de oralidad artística HABLAPALABRA-México, que cuenta con 28 emisiones. • Arlen Espinosa. Bibliotecaria independiente. Comitán, Chiapas / CDMX. Trabaja con primera infancia desde hace quince años. Fue maestra de música y educadora comunitaria en CDMX, de donde es originaria. Coordinó procesos de formación bibliotecaria y docente en distintos proyectos educativos, tanto en el estado de Chiapas como en CDMX. Es creadora del programa de formación lectora y escritora para los niveles preescolar e inicial “Autorías: rutas para leer el mundo”; ha sido tallerista en festivales del libro infantil y ha participado como ponente en diferentes congresos educativos. Está diplomada en “Lectura en primera Infancia” por el Instituto de Investigaciones Filológicas de la UNAM y fue estudiante en el “Instituto de Adquisición de Lenguaje” en la misma casa de estudios. Actualmente coordina el Taller Libros Libres, integrado por niños y niñas de entre 4 y 9 años; es responsable de la “biblioteca itinerante José Martí”; dirige espacios de disfrute y formación lectora en la librería independiente LaLiLu en Comitán, Chiapas y es miembro del Comité Académico del Foro Latinoamericano de Educación Musical. Conduce: Ángela Camacho. Narradora Oral. Mazatlán, Sinaloa. Con trayectoria de más de veinte años, en 2014 fue becaria del FONCA por su proyecto "La Mar contadora de Historias". Colabora en talleres de capacitación de narración para docentes y ha participado en ferias como la FILIJ, así como en  los programas: Regaladores de palabras, Alas y Raíces, y colabora con el Instituto de Cultura de su comunidad.',
-                        'url' : 'https://youtu.be/0hCwcELZZl8',
+                        'url' : 'https://www.youtube.com/embed/0hCwcELZZl8',
                         'date' : '2020-10-06',
                     },
                     4 : {
@@ -1748,7 +2028,7 @@ const video_player_data = {
                         'type' : 'Activación de Fomento a la lectura',
                         'author' : 'Nacho Casas',
                         'description' : 'Nacho Casas. Narrador oral, locutor y autor. CDMX. Desde hace años dedica buena parte de su tiempo al trabajo para niñas y niños, conduce y dirige La Pandilla, revista radiofónica para niñas y niños que se transmite por las frecuencias del IMER. Como cuentacuentos ha recorrido gran parte del país, y se ha presentado en las Ferias del libro de Panamá, Los Ángeles y República Dominicana. Como autor ganó el primer concurso de novela histórica convocado por la Universidad del Claustro de Sor Juana y Penguin Random House con su novela La esclava de Juana Inés, publicada en el sello Grijalbo.',
-                        'url' : 'https://youtu.be/1D1wlKiVD54',
+                        'url' : 'https://www.youtube.com/embed/1D1wlKiVD54',
                         'date' : '2020-10-06',
                     },
                     5 : {
@@ -1756,15 +2036,15 @@ const video_player_data = {
                         'type' : '',
                         'author' : 'Mónica Bergna, Erika Olvera Díaz, Fanuel Hanán Díaz, Rodrigo Morlesin',
                         'description' : 'Erika Olvera Díaz. Promotora, traductora y editora de literatura infantil y juvenil. Desde hace más de 15 años se dedica a la promoción y edición de Literatura Infantil y Juvenil, desempeñando diferentes cargos en varias casas editoriales. A la par, pertenece a varios colectivos dedicados a la promoción cultural, en los cuales escribe, compone música, toca instrumentos y canta.  Se ha dedicado a la producción y radiofónica por más de diez años. En 2009 recibió El Premio Nacional de Locución por su participación en el programa infantil ‘Cosquillas’ de Radio 660 AM, del Instituto Mexicano de la Radio y en 2013 El Premio Nacional de Periodismo y Divulgación Científica por el programa ‘El Catalejo’ del 94.1 FM, UAM Radio. Es traductora del español, inglés y alemán. Fanuel Hanán Díaz. Teórico e investigador en literatura infantil. Licenciado en Letras por la Universidad Católica Andrés Bello y Magister Scientiarum en Ciencias y Artes aplicadas, mención Televisión. Coordinó el Departamento de Selección de Libros para Niños y Jóvenes del Banco del Libro de Venezuela y dirigió la revista Parapara. Ha dictado conferencias y talleres en diferentes países latinoamericanos y en universidades de Europa. Teórico e investigador en literatura infantil. Profesor invitado en el máster Gretel de Literatura Infantil y autor y profesor del curso virtual de Escritura Creativa del CERLALC. Recibió la beca de la Internationale jugendbibliothek (Munich) para desarrollar investigaciones sobre procesos de impresión en libros antiguos para niños. Ha sido jurado de la Bienal de Ilustración de Bratislava, del Premio Hans Christian Andersen y del Bologna Ragazzi. Editor de la revista Barataria de Literatura Infantil latinoamericana. Participó en el programa de Fellowship de la Feria del Libro Infantil de Shanghai y fue invitado como conferencista al Reading Festival de Beijing. Actualmente es Jefe de Relaciones Estratégicas LIJ del Grupo Editorial Norma. Desarrolla propuestas de investigación como independent scholar. Rodrigo Morlesin. Escritor, dictaminador, diseñador y editor. Cuando era niño los únicos libros que tenía eran los de la SEP, de ellos su favorito era el de español, aún recuerda las ilustraciones y las palabras de su página favorita... Croa-croa Croa-croa Cantaba una cantaba una rana Croa-croa Croa-croa Debajo del agua... Es co-creador del suplemento para niños Gente Chiquita del periódico Reforma.  También fue conductor de la Mesa Monitor Infantil en Radio Monitor.  Ha sido diseñador y traductor de libros para niños en el sello Océano Travesía. Es escritor, dictaminador y diseñador de novelas middle grade para Editorial Planeta en donde además publicó Elvis nunca se equivoca, el cual ha sido traducido al turco y al chino.  Barry Cunninghan, editor que descubrió la saga Harry Potter, se refirió a Elvis nunca se equivoca como: «Muy graciosa y tierna. Tiene un gran corazón y alma. ¡Una historia cautivadora!. Además tiene una cápsula semanal (durante la cuarentena es diaria) sobre libros para niños y jóvenes en Arriba Chamaco de Radio BUAP la cual también hace en video para Facebook.  Ha diseñado más de 300 libros entre los que destacan Los juegos del hambre, El diario de Greg y Elvis nunca se equivoca.  Entre los libros que ha traducido de encuentran El maravilloso sombrero de María (Satoshi Kitamura), Robot Salvaje (Peter Brown) y El misterioso asesinato del Doctor Thallomius (Nicky Thornton). Presenta: Mónica Bergna. Investigadora y editora de literatura infantil y juvenil. Desde hace más de 25 años se dedica a la investigación y la creación de literatura infantil y juvenil. Trabajó en ediciones Ekaré en Venezuela y en Ediciones Tecolote en México. El libro negro de los colores, editado por ella, recibió el prestigioso premio New Horizons de la feria de Bolonia (2007). Por su labor editorial ha recibido el White Ravens (2006 y 2007) y Lista de honor IBBY (2008), entre otros reconocimientos. En 2017 abrió su propia editorial en México, Alboroto ediciones que este año fue galardonada con el Premio BOP (best publisher of the year) otorgado por la feria de Bolonia.',
-                        'url' : 'https://youtu.be/42np7mOdNiQ',
+                        'url' : 'https://www.youtube.com/embed/42np7mOdNiQ',
                         'date' : '2020-10-06',
                     },
                     6 : {
                         'name' : 'Muestra Artística',
                         'type' : 'Narraciones orales',
                         'author' : 'Teresa Figueroa, Iván Zepeda, Apolonio Mondragón, Aníbal Hoyos',
-                        'description' : '"El cielo se va a caer", Narración oral con Teresa Figueroa, Tonalá, Jalisco. Cuento acumulativo en el que los animales comparten la noticia de que el cielo se va a caer, hasta que finalmente una mujer sabia resuelve esa inquietud. "El jorongo de la luna", de Emilio Lome. Narración oral con Iván Zepeda. Córdoba, Veracruz. La historia de cómo la Luna consiguió el atavío que la hace brillar tan distinto al Sol. "Cada quien sabe algo", Narración oral con Apolonio Mondragón. CDMX. La historia de dos pueblos que, tras quedarse sin agua, salieron en busca de respuestas. "La leyenda de los gigantes", Narración oral con Aníbal Hoyos. Papantla, Veracruz. Cuentan los sabios de Nayarit que antes, mucho antes de que nosotras y nosotros estuviéramos aquí, la tierra era habitada por gigantes.  ',
-                        'url' : 'https://youtu.be/-JOH4JSJRrE',
+                        'description' : '"El cielo se va a caer", Narración oral con Teresa Figueroa, Tonalá, Jalisco. Cuento acumulativo en el que los animales comparten la noticia de que el cielo se va a caer, hasta que finalmente una mujer sabia resuelve esa inquietud. "El jorongo de la luna", de Emilio Lome. Narración oral con Iván Zepeda. Córdoba, Veracruz. La historia de cómo la Luna consiguió el atavío que la hace brillar tan distinto al Sol. "Cada quien sabe algo", Narración oral con Apolonio Mondragón. CDMX. La historia de dos pueblos que, tras quedarse sin agua, salieron en busca de respuestas. "La leyenda de los gigantes", Narración oral con Aníbal Hoyos. Papantla, Veracruz. Cuentan los sabios de Nayarit que antes, mucho antes de que nosotras y nosotros estuviéramos aquí, la tierra era habitada por gigantes.',
+                        'url' : 'https://www.youtube.com/embed/-JOH4JSJRrE',
                         'date' : '2020-10-06',
                     },
                 },
@@ -1777,7 +2057,7 @@ const video_player_data = {
                         'type' : 'Mesa de diálogo',
                         'author' : 'Roberto Rivelino García, Vincent Velázquez, Emilia Arroyo, Ana Prado, Kevin Galeana.',
                         'description' : 'Actividad sugerida para docentes, pedagogos y mediadores. Participan: Roberto Rivelino García. Músico e investigador. CDMX. Sus principales líneas de investigación son la literatura de tradición oral, y la literatura de vanguardia latinoamericana. Entre sus trabajos destacan los estudios entorno a expresiones musicales y literarias como El jazz y el estridentismo; Lírica tradicional infantil de México: letra y música, y su tesis doctoral: Lírica de la improvisación poética. Estudio de dos casos: el huapango y el blues. Se ha desempeñado como formador de educación musical en centros de educación básica y media básica y ha participado en distintos festivales con el Taller canciones tradicionales infantiles con el que busca rescatar, fomentar y difundir la lírica y los juegos infantiles tradicionales de México. Vincent Velázquez. Sociólogo, músico, docente, bailador, poeta y promotor cultural. Xichú, Guanajuato. Hace 15 años abraza lo que él llama "su destino": la música y la palabra integrándose a proyectos de música de fusión  como “La Prodigiosa Roots”, “Militantes de la vida” y “La Maganza”. Desde hace 7 años es bailador y palabrero en la agrupación de Guillermo Velázquez y Los Leones de la Sierra de Xichú con quienes ha podido recorrer pueblos, comunidades y ciudades de México, además de viajar a otros países enarbolando la tradición del Huapango Arribeño.  Recientemente Vincent ha comenzado un proyecto llamado "palabra viva" con el que ha podido presentarse en diversos foros.  En sus palabras, es un militante de la vida cuya misión es dejar un recuerdo bonito en los demás por medio de la música, el ritmo y la palabra. Emilia Arroyo. Activista lingüística, artesana, tallerista y promotora cultural. San Miguel Tzinacapan, Cuetzalan, Puebla. Estudió para ser promotora de Derechos Humanos en un proyecto que se llamó “Jóvenes indígenas de Puebla en pro de la construcción de una cultura para el ejercicio de la vida democrática y de los derechos humanos”, donde incidía principalmente en la niñez, aunque también con jóvenes y con padres de familia.  Participó como instructora comunitaria en el Consejo Nacional de Fomento Educativo en el programa de primaria indígena, donde logró obtener un segundo año en la misma modalidad y tuvo la fortuna de ser capacitadora tutora en la modalidad de primarias rurales. Actualmente, participa en el proyecto “Lenguas de nuestra Tierra” impulsado por Alas y Raíces, con el objetivo de motivar a las y los niños de la comunidad de San Miguel Tzinacapan a fortalecer la lengua materna. Ana Prado. Cuentacuentos y acompañante de embarazo, lactancia y crianza. Apan, Hidalgo. Especializada en contar cuentos con niñas y niños en los primeros años es además acompañante en los procesos de embarazo, lactancia y crianza, proponiendo acercamientos tempranos a lenguajes artísticos como herramientas para el desarrollo. Es tallerista, mediadora del PNSL, lectora en voz alta y asesora en la creación de espacios lectores para primera infancia. Fundó en 2010 La casa del Árbol, centro de arte, juego y crianza, y trabaja en el programa de mediación lectora temprana y desarrollo infantil en comunidades rurales NicanNican, en el estado de Hidalgo. Conduce: Kevin Galeana, Narrador oral, músico y pedagogo, CDMX. Desde 2014 se ha dedicado al trabajo con las infancias y la creación de espectáculos de  narración oral pensando en, desde y con las niñas y niños, buscando que cada cuento se aloje de la mejor forma en el pensamiento de aquellas y aquellos que le escuchan. Así ha recorrido 6 años entre festivales nacionales e internacionales, ferias del libro, proyectos alternativos y editoriales. ',
-                        'url' : 'https://youtu.be/xJyAXQbWi5M',
+                        'url' : 'https://www.youtube.com/embed/xJyAXQbWi5M',
                         'date' : '2020-10-13',
                     },
                     2 : {
@@ -1785,7 +2065,7 @@ const video_player_data = {
                         'type' : 'Mesa de diálogo',
                         'author' : 'Caterina Camastra, Ana Zarina Palafox, Luis Esteban Galicia, Leodegario Gerónimo, Balam Rodrigo, Jorge Villegas.',
                         'description' : 'Actividad sugerida para comunidad artística y promotores culturales. Participan: Caterina Camastra. Escritora, traductora, investigadora y académica. Brescia, Italia. Sus principales intereses de investigación son el teatro en México en el siglo XVIII, la literatura tradicional y popular en el mundo hispánico, la traducción y la literatura comparada, las relaciones entre la cultura hispánica y la árabe-andalusí. Es investigadora de la UDIR (Unidad de Investigación sobre Representaciones Culturales y Sociales, perteneciente a la Universidad Nacional Autónoma de México) y colabora como docente con la Escuela Nacional de Estudios Superiores, UNAM campus Morelia. Ana Zarina Palafox. Música y trovadora. CDMX. Alumna de talleres de folklore latinoamericano en los años 70, músico escénico desde los 80, viajadora y registradora que empezó por Tlacotalpan desde 1985 donde ya improvisaba en coplas y sextillas. Improvisadora en décima y otras estrofas no octosilábicas sobre más de 10 estilos musicales de Iberoamérica y creadora del Método "Jugando con la rima" (técnicas lúdicas para el aprendizaje del verso improvisado en México), único realizado en su totalidad con ejercicios orales, sin pasar por la escritura. Luis Esteban Galicia. Actor y narrador oral. CDMX. Ha participado en emisiones del Festival Internacional CERVANTINO, Jornadas Alarconianas y la Muestra Nacional de Teatro; ha llevado el nombre de nuestro país a Israel, Francia, Colombia, Argentina, España, Brasil y Ecuador en materia escénica y teatro.  Fue becario del FONCA en dos ocasiones por proyectos de conciencia social, difusión y promoción de los derechos de los niños en las emisiones 2012 y 2016. Su libro Walevska fue publicado en 2016 por MC Editores, es reconocido por COPRED, CNDH y organizaciones de la sociedad civil por promover valores como igualdad, la equidad y el respeto de los derechos humanos, fue presentado en FILIJ y FIL de Guadalajara. Leodegario Gerónimo. Jefe del Departamento de Proyectos Educativos del Instituto Veracruzano de la Cultura, IVEC. Veracruz, Veracruz. Licenciado en Gestión Intercultural para el Desarrollo por la Universidad Veracruzana, como parte de su formación ha realizado una estancia de investigación en el Instituto de Investigaciones Sociológicas de la Universidad Autónoma Benito Juárez de Oaxaca, a través de la Academia Mexicana de Ciencias. Ha cursado diversos seminarios, cursos y diplomados en Gestión Cultural en la Universidad Veracruzana, la Universidad Autónoma de la Ciudad de México y la Universidad de Costa Rica. Balam Rodrigo. Escritor. Villa de Comaltitlán, Soconusco, Chiapas. Exfutbolista, biólogo y diplomado en teología pastoral. Autor de más de veinte libros de poesía; algunos de sus poemas han sido traducidos al francés, inglés, polaco, portugués y zapoteco, y aparecen en antologías, revistas y diarios de México, así como en publicaciones de Alemania, Argentina, Brasil, Chile, Colombia, Cuba, España, Estados Unidos, Francia, Guatemala, Honduras, Perú, Polonia, Portugal, Puerto Rico, República Dominicana y Uruguay. Su obra ha merecido diversos reconocimientos: Certamen Internacional de Literatura Sor Juana Inés de la Cruz 2012, Premio Internacional de Poesía  Jaime Sabines 2014, Premio Nacional de Poesía José Emilio Pacheco 2016. Miembro del Sistema Nacional Creadores de Arte México. Conduce: Jorge Villegas. Narrador oral y gestor intercultural. CDMX. Es coordinador del espacio de Narración Oral infantil “Eraclio Zepeda” de la ANUIES, y del foro Los Relatos del Caracol, proyecto colaborativo junto a Arenal, Arte y Crianza A.C; imparte el taller de cuentería enfocado a la mediación lectora “El escándalo de los libros silenciosos” dentro de la oferta cultural de la UAM, dentro del Centro Cultural Casa de las Bombas, además de ser fundador y director del grupo Narradores Salvajes.',
-                        'url' : 'https://youtu.be/PjomOpTi3e0',
+                        'url' : 'https://www.youtube.com/embed/PjomOpTi3e0',
                         'date' : '2020-10-13',
                     },
                     3 : {
@@ -1793,7 +2073,7 @@ const video_player_data = {
                         'type' : 'Conferencia',
                         'author' : 'Jumko Ogata',
                         'description' : 'Actividad sugerida para comunidad artística y promotores culturales. Jumko Ogata. Escritora y divulgadora, Veracruz. Escritora afrojaponesa y chicana originaria de Veracruz. Está haciendo su tesis de licenciatura en el Colegio de Estudios Latinoamericanos de la UNAM. Escribe ficción, ensayo y crítica de cine y ha sido publicada en la Universidad Veracruzana, Vogue México y el British Council de México. Sus temas de interés son la identidad, racialización y racismo en México. Presenta: Elia Sánchez. Responsable del Área de Narración y Tradición Oral.',
-                        'url' : 'https://youtu.be/sT6FBS1JeMU',
+                        'url' : 'https://www.youtube.com/embed/sT6FBS1JeMU',
                         'date' : '2020-10-13',
                     },
                     4 : {
@@ -1801,7 +2081,7 @@ const video_player_data = {
                         'type' : 'Activación editorial',
                         'author' : 'Nancy Mendoza, Oliver Miranda',
                         'description' : 'Actividad sugerida para niñas, niños y adolescentes. Participan: Nancy Mendoza. Diseñadora y mediadora de lectura. CDMX. Mediadora de la sala de lectura #Comelibros que ha participado con talleres de fomento a la lectura para niños y jóvenes en Ferias del Libro dentro de la República Mexicana y para el programa Alas y Raíces de la CDMX. Miembro fundador del sello editorial Andalee Ediciones desde el 2019 y BookTuber con el canal InBook Mx, mismo que participa en el Encuentro Nacional BookTube, 2018 en la Feria Internacional del Libro de Guadalajara, (FIL).  Oliver Miranda. Promotor de lectura, booktuber y escritor. CDMX. Ha publicado en diversas antologías como En el borde, Rostros en la Oscuridad, Río Arriba (UNAM), entre otras. Fue ganador del Proyecto Jóvenes con Talento Artístico en el rubro de poesía, durante 2015 y 2016 (INJUVE). Escritor de Un tren busca tus versos, de Vía Literaria (Julio-Agosto 2016); ha escrito dos libros de poesía: Hombre de Papel (Rojo Siena Editorial, 2015), No Puedes Escribir Una Historia De Amor (Sikore Ediciones, 2016) y el libro de literatura infantil Carmina (AndaLee Ediciones, 2019). Durante el 2018, se convierte en BookTuber con el canal: InBook Mx. Actualmente estudia y trabaja en proyectos de fomento a la lectura en el Faro de Aragón, Programa Nacional Salas de Lectura, Alas y Raíces, Ferias del Libro y escuelas, principalmente. ',
-                        'url' : ' https://youtu.be/FXai7LutQjo',
+                        'url' : 'https://www.youtube.com/embed/FXai7LutQjo',
                         'date' : '2020-10-13'
                     },
                     5 : {
@@ -1809,7 +2089,7 @@ const video_player_data = {
                         'type' : 'Muestra de intervención',
                         'author' : 'Dra. Alicia Mandujano, Dr. Roberto Guillermo Calva y Rodríguez, Dra. Silvia Torres, Dr. Carlos Pacheco, Mónica Zárate.',
                         'description' : 'Actividad sugerida para familias y acompañantes de crianza. Participan: Dra. Alicia Mandujano. Asociación Mexicana de Pediatría. Egresada de la Universidad Nacional Autónoma de México, Especialidad en Pediatría por el Hospital Infantil Privado, es Instructor de RCP, Diplomado de Adolescentes, Diplomado de Nutrigenómica, Diplomado en Dirección de Hospitales y fue Subdirector Médico del Hospital Infantil Privado. Pertenece al Comité Organizador del CONGRESO INTERAMERICANO DE PEDIATRÍA. Actualmente funge como Presidente de la Asociación Médica Hospital Infantil Privado. Dr. Roberto Guillermo Calva y Rodríguez. Academia Mexicana de Pediatría Profesor investigador de la facultad de medicina de la Benemérita Universidad  Autónoma de Puebla. Doctorado Honoris Causa por la Universidad Mesoamericana. Profesor catedrático de la Universidad Nacional Autónoma de México; Universidad La Salle; La Benemérita Universidad Autónoma de Puebla; La Universidad Popular Autónoma del Estado de Puebla y la Universidad Mesoamericana. En las cátedras de Pediatría, Gastroenterología pediátrica, Salud infantil y Bioética. Ponente a nivel internacional, nacional y estatal en 350 ocasiones, sobre temas de pediatría, nutrición, bioética, gastroenterología pediátrica, historia de la medicina y docencia. Entre otros, ha publicado 24 libros sobre pediatría, nutrición, gastroenterología pediátrica, bioética, historia de la medicina y cultura. Dra. Silvia Torres. Sociedad Mexicana de Pediatría, Pediatra-Neonatologo, Maestra en Ciencias de la Salud Pública, Diplomada en Neurodesarrollo, Instructor Nacional en Reanimación Neonatal, Secretaria de la Sociedad Mexicana de Pediatría. Dr. Carlos Pacheco. Confederación Nacional de Pediatría de México. Coordinador de Capítulos del Colegio de Pediatría del Estado de Oaxaca. Coordinador del Taller de Lectura Confederación Nacional de Pediatría de México A.C. Médico egresado de la Universidad Autónoma “Benito Juárez” de Oaxaca. Especialidad de Pediatría en el Hospital Juárez de México. Diplomado en Dermatología Pediátrica avalado por el Hospital Infantil de México (UNAM). Catedrático por 33 años en la Escuela de Medicina de la Universidad Autónoma “Benito Juárez” de Oaxaca. Actualmente jubilado. Catedrático de la Facultad de Enfermería y Obstetricia, por 33 años. Catedrático de la Universidad la Salle Oaxaca, 2015. Diplomado en Psicopatología del bebé por la University Paris 13, Marzo,2002. Con 30 años de experiencia en consulta particular a la fecha. Consejero de la Comisión Estatal de Arbitraje Médico de Oaxaca (CEAMO), durante el periodo 2010 – 2013. Representante Estatal por Oaxaca para participar en el Taller de desastres en el marco del 23 Congreso Nacional de Pediatría. Expresidente del Colegio de Pediatría del Estado de Oaxaca en el periodo 2014 – 2016. Diplomado de lectura Primera Infancia y Adolescentes. Secretario de la Confederación Nacional de Pediatría de México, 2016- 2018. Consejero Mexicano de Certificación en Pediatría A.C. 2019- 2021. Presenta: Mónica Zárate. Responsable del área de prospectiva y evaluación',
-                        'url' : 'https://youtu.be/I8ZCwINktgQ',
+                        'url' : 'https://www.youtube.com/embed/I8ZCwINktgQ',
                         'date' : '2020-10-13',
                     },
                     6 : {
@@ -1817,7 +2097,7 @@ const video_player_data = {
                         'type' : 'Muestra artística',
                         'author' : 'Yademira Barragán, Iván Zepeda, Lorena Álvarez',
                         'description' : 'Muestra artística para niñas y niños. Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos. "Historia de la resurrección del papagayo", de Eduardo Galeano. Narración oral con Yademira Barragán, Zapopan, Jalisco. El papagayo cayó a la olla, la noticia voló y causó tanta tristeza que modificó el paisaje. Un alfarero reunió los pesares y los transformó en una nueva oportunidad. "La lechuza y el ratón", de Beatriz Rodríguez Guillermo. Narración oral con Iván Zepeda. Córdoba, Veracruz. Cuento en verso que narra la historia de cómo el destino sorprendió a Rubia Rubí con un apuesto navegante. "Una lombriz y un águila", de Susana Olaondo. Narración oral con Lorena Álvarez. Playa del Carmen, Quintana Roo. La vida de una lombriz y un águila puede ser muy distinta si la acompañamos de cuentos, lectura y amistad. "El Rap de los libros", Rap con Roy Cuentacuentos. Tlaxcala, Tlaxcala. Canción sobre cómo Roy Cuentacuentos se enamoró de los cuentos.',
-                        'url' : 'https://youtu.be/pAXi0JoTCyk',
+                        'url' : 'https://www.youtube.com/embed/pAXi0JoTCyk',
                         'date' : '2020-10-13',
                     },
                 },
@@ -1830,7 +2110,7 @@ const video_player_data = {
                         'type' : 'Conferencia',
                         'author' : 'Eduardo Villegas Megías',
                         'description' : 'Actividad sugerida para docentes, pedagogos y mediadores. Eduardo Villegas Megías. Coordinador General de Memoria Histórica y Cultural de México. Desde el 1º de diciembre de 2018, Coordinador de la Memoria Histórica y Cultural de México, en la Presidencia de la República y Responsable de la Estrategia Nacional de Lectura. Egresado de la Facultad de Filosofía y Letras de la UNAM de la licenciatura hasta en doctorado en Filosofía. Fue Docente universitario y Servidor Público en el gobierno de la Ciudad de México. Presenta: Jesús Antonio Rodríguez "Frino". Coordinador Nacional de Desarrollo Cultural Infantil',
-                        'url' : 'https://youtu.be/4NS0PssMcwU',
+                        'url' : 'https://www.youtube.com/embed/4NS0PssMcwU',
                         'date' : '2020-10-20',
                     },
                     2: {
@@ -1838,40 +2118,40 @@ const video_player_data = {
                         'type' : 'Mesa de diálogo',
                         'author' : 'Sakiko Yokoo, César Rincón, Víctor Sierra García Muther, Martín Corona, Janet Pankowsky',
                         'description' : 'Participa: Sakiko Yokoo. Coreógrafa, bailarina, narradora y promotora de la cultura. Yamagata, Japón / CDMX. Obtuvo el título de Maestra en arte, en la Universidad de Ochanomizu, Tokio, Japón en el 2006. Aprendió la filosofía y técnica del Kamishibai; narración tradicional japonesa, con Eiko Matsui. Desde el año 2011 ha difundido el Kamishibai en México en foros importantes tales como FILIJ y las ferias de Alas y Raíces, así como, en los eventos organizados por la Fundación Japón y Embajada del Japón. Ha impartido talleres de danza y de Kamishibai para los artistas y docentes en América Latina y fue profesora en la facultad de Bellas Artes de la Universidad Michoacana. Actualmente es directora de programación en el Centro Cultural EKO, cuyo objetivo es promover la cultura de paz. Es directora de A.C. México-Japón Caminando Juntos. Madre de tres niños japo-mex. César Rincón. Actor, Narrador oral, Gestor Cultural y Productor. Zacatecas, Zacatecas. Ha participado como director, actor y narrador oral en diferentes festivales nacionales e internacionales en México, Argentina, Bolivia, Brasil, Chile, Cuba, España. Es Premio Estatal de las Artes Escénicas Zacatecas 2016 por sus méritos artísticos. Creó y coordina los Foros Permanentes de Narración Oral del Estado de Zacatecas desde 2015. Ha actuado y dirigido más de 25 obras de teatro, teatro de objetos, cabaret y narración oral. Es traductor, investigador y profesor de teatro. Académicamente se especializó en estudios del cuerpo y narración oral, en editorial Paso de Gato, Alas y Raíces e Investigación Teatral. Víctor Sierra García Muther. Coordinador del Centro Cultural Faro Zapata y Director de la Compañía de danza Break The Folk. Acapulco, Guerrero. También conocido en el mundo del baile urbano BREAKING como (bboy muther) es un joven de Acapulco que  ha desarrollado sus cualidades dancísticas a través de los 10 años dentro de la escena del hip hop. Es director de la compañía de baile Break The Folk que mezcla el baile breaking y el folclor guerrerense, proyecto con el cual ha participado en festivales internacionales como el Cervantino. Presentó su obra en el teatro de la danza Guillermina Bravo. Actualmente, también es coordinador en el Centro Cultural Faro Zapata, lugar en donde da talleres de breaking. Martín Corona. Reportero cultural, editor y narrador oral. Cholula, Puebla. Martín estudió Lengua y Literatura Hispánicas en la Universidad Veracruzana. Ha trabajado como reportero cultural, editor de libros, revistas y director librería. Como narrador oral ha recorrido diversas ferias del libro del país y fue coordinador en México del Encuentro Internacional de Cuenta Cuentos Texturas, el cual se realizaba dos veces al año una en Argentina y otra en nuestro país. Además de recorrer casi todo el país y viajar a Brasil, Argentina. Colombia y Chile con su trabajo, ha trabajado para editoriales como Alfaguara, Ediciones SM, Castillo Mac Millan, CIDCLI, El Naranjo, Edelvives, entre otras. Fue guionista y cuenta cuentos en Radio Televisión de Veracruz y en Puebla TV. Conduce: Janet Pankowsky. Profesora, escritora y contadora de cuentos. CDMX. En el año 2000 se encontró con la narración oral y, desde entonces, se ha dedicado a narrar cuentos en museos, escuelas, hospitales, parques, ferias del libro, librerías, bibliotecas, porque sabe que la palabra construye espacios de convivencia para compartir la imaginación. Actualmente se pueden escuchar sus cuentos en escuelas, en las librerías del Fondo de Cultura Económica, en sedes de Alas y raíces y de Primera Infancia de la Secretaría de cultura, en sedes del programa Tiempo de contar del INBA, en Tejedores de historias de la UNAM, entre otros.',
-                        'url' : 'https://youtu.be/DfTiYQ8De28',
+                        'url' : 'https://www.youtube.com/embed/DfTiYQ8De28',
                         'date' : '2020-10-20',
                     },
                     3 : {
                         'name' : 'Espacios para la palabra',
                         'type' : 'Mesa de diálogo',
-                        'author' : '',
-                        'description' : '',
-                        'url' : 'https://www.youtube.com/embed/',
-                        'date' : '2020-12-00',
+                        'author' : 'Marx Arriaga. Director General de Bibliotecas, Marcela Romero. Narradora oral y promotora cultural, Ismael García, Patricia Ruíz Nakazone y Apolonio Mondragón.',
+                        'description' : 'Marx Arriaga. Director General de Bibliotecas, Marcela Romero. Narradora oral y promotora cultural, Ismael García, Patricia Ruíz Nakazone y Apolonio Mondragón.',
+                        'url' : 'https://www.youtube.com/embed/l14_fFEkvQA',
+                        'date' : '2020-10-20',
                     },
                     4: {
-                        'name' : 'Poesía de día',
+                        'name' : 'Poesía día a día',
                         'type' : 'Activación editorial',
-                        'author' : '',
-                        'description' : '',
-                        'url' : 'https://www.youtube.com/embed/',
-                        'date' : '2020-12-00',
+                        'author' : 'Rojo Córdova',
+                        'description' : 'Actividad sugerida para niñas, niños y adolescentes. Con Rojo Córdova. Poeta-performer, tallerista, gestor/promotor cultural, productor, antologador, actor y escritor. CDMX. Enfocado en explorar las posibilidades de la oralidad, el hip hop y la lírica interdisciplinaria. Hoy por hoy su obra incluye poemas impresos (algunos traducidos al inglés, neerlandés y al alemán), incursiones en el teatro (MonsterTruck de Richard Viqueira, El paraíso o la vida pasada en limpio de Rubén Ortiz), cine (Hecho en México de Duncan Bridgeman en el 2012, Somos lengua de Kizza Terrazas en el 2016 y Machos, laureado documental del joven cineasta César Chiquito en 2019 ) instalación sonora (Wikipoema rampante, escalinatas del Centro de Cultura Digital), arte acción (La Pocha Nostra, colectivo El Nuevo Orden Mundial, Encuentro Internacional de Performance Poética de la Acción 2015 en el Cenart), además de ser uno de los impulsores más reconocidos de los eslams de poesía y del espoken word en México. Parte de su obra fue mencionada y analizada en los libros Beyond the page. Poetry and performance in Spanish America de Jill S. Kuhnheim editado por University of Arizona Press y en Guida liquida al poetry slam de Dome Bulfaro editada por Agenzia X (Milano, 2016). Durante marzo de 2019 fue elegido para ser el cuarto artista en residencia del programa internacional para poetas realizadores de spoken word: SLAM OUR WORLD (SLOW04) del Teatro KVS (Koninklijke Vlaamse Schouwburg) en Bruselas, Bélgica, al mismo tiempo que realizó una residencia organizada por La Maisons des Literatures Passa Porta y The Flemish Literature Fund.',
+                        'url' : 'https://www.youtube.com/embed/OR8MIGVL7sM',
+                        'date' : '2020-10-20',
                     },
                     5 : {
                         'name' : ' Leer para estar bien. La importancia del fomento de la lectura',
-                        'type' : '',
-                        'author' : '',
-                        'description' : '',
-                        'url' : 'https://www.youtube.com/embed/',
-                        'date' : '2020-12-00',
+                        'type' : 'Muestra de intervención',
+                        'author' : 'Dr. Carlos Pacheco. Dra. Silvia Torres. Dr. Roberto Guillermo Calva y Rodríguez. Dra. Alicia Mandujano',
+                        'description' : 'Muestra de intervención. Actividad sugerida para familias y acompañantes de crianza. Participan: Dra. Alicia Mandujano. Asociación Mexicana de Pediatría. Egresada de la Universidad Nacional Autónoma de México, Especialidad en Pediatría por el Hospital Infantil Privado, es Instructor de RCP, Diplomado de Adolescentes, Diplomado de Nutrigenómica, Diplomado en Dirección de Hospitales y fue Subdirector Médico del Hospital Infantil Privado. Pertenece al Comité Organizador del CONGRESO INTERAMERICANO DE PEDIATRÍA. Actualmente funge como Presidente de la Asociación Médica Hospital Infantil Privado. Dr. Roberto Guillermo Calva y Rodríguez. Academia Mexicana de Pediatría Profesor investigador de la facultad de medicina de la Benemérita Universidad  Autónoma de Puebla. Doctorado Honoris Causa por la Universidad Mesoamericana. Profesor catedrático de la Universidad Nacional Autónoma de México; Universidad La Salle; La Benemérita Universidad Autónoma de Puebla; La Universidad Popular Autónoma del Estado de Puebla y la Universidad Mesoamericana. En las cátedras de Pediatría, Gastroenterología pediátrica, Salud infantil y Bioética. Ponente a nivel internacional, nacional y estatal en 350 ocasiones, sobre temas de pediatría, nutrición, bioética, gastroenterología pediátrica, historia de la medicina y docencia. Entre otros, ha publicado 24 libros sobre pediatría, nutrición, gastroenterología pediátrica, bioética, historia de la medicina y cultura. Dra. Silvia Torres. Sociedad Mexicana de Pediatría. Pediatra-Neonatologo, Maestra en Ciencias de la Salud Pública, Diplomada en Neurodesarrollo, Instructor Nacional en Reanimación Neonatal, Secretaria de la Sociedad Mexicana de Pediatría. Dr. Carlos Pacheco. Confederación Nacional de Pediatría de México. Coordinador de Capítulos del Colegio de Pediatría del Estado de Oaxaca. Coordinador del Taller de Lectura Confederación Nacional de Pediatría de México A.C. Médico egresado de la Universidad Autónoma “Benito Juárez” de Oaxaca. Especialidad de Pediatría en el Hospital Juárez de México. Diplomado en Dermatología Pediátrica avalado por el Hospital Infantil de México (UNAM). Catedrático por 33 años en la Escuela de Medicina de la Universidad Autónoma “Benito Juárez” de Oaxaca. Actualmente jubilado. Catedrático de la Facultad de Enfermería y Obstetricia, por 33 años. Catedrático de la Universidad la Salle Oaxaca, 2015. Diplomado en Psicopatología del bebé por la University Paris 13, Marzo,2002. Con 30 años de experiencia en consulta particular a la fecha. Consejero de la Comisión Estatal de Arbitraje Médico de Oaxaca (CEAMO), durante el periodo 2010 – 2013. Representante Estatal por Oaxaca para participar en el Taller de desastres en el marco del 23 Congreso Nacional de Pediatría. Expresidente del Colegio de Pediatría del Estado de Oaxaca en el periodo 2014 – 2016. Diplomado de lectura Primera Infancia y Adolescentes. Secretario de la Confederación Nacional de Pediatría de México, 2016- 2018. Consejero Mexicano de Certificación en Pediatría A.C. 2019- 2021. Presenta: Claudia Vences. Responsable del área de Jóvenes Construyendo el Futuro del programa nacional Alas y Raíces',
+                        'url' : 'https://www.youtube.com/embed/hriFyZTuEpE',
+                        'date' : '2020-10-20',
                     },
                     6: {
                         'name' : 'Muestra artística',
-                        'type' : '',
-                        'author' : '',
-                        'description' : '',
-                        'url' : 'https://www.youtube.com/embed/',
-                        'date' : '2020-12-00',
+                        'type' : 'Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos.',
+                        'author' : 'César Rincón, Apolonio Mondragón, Sakiko Yokoo, Alejandra Guadarrama',
+                        'description' : 'Muestra artística para niñas y niños. Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos. Cuentos sonoros. Narración oral con Alejandra Guadarrama. Yauhquemehcan, Tlaxcala. ¿Cómo podríamos leer sin los ojos o hablar sin palabras? En este vídeo te mostramos las diversas formas de leer el mundo y de escuchar cuentos ¡aunque no existan las letras ni las palabras! Mamma Luna. Narración kamishibai con Sakiko Yokoo. CDMX. Esta pieza del kamishibai está creada especialmente para los más pequeños. Una propuesta de cuento sensorial para los bebés. Cuentos, juguetes y rayones. Narración oral con Apolonio Mondragón. CDMX. Historia original creada a partir de talleres con niños, ocupando sus trabajos para ilustrar escenas de la grabación. Mamás. Una familia normal. Narración animada con César Rincón. Zacatecas, Zacatecas. Todo el mundo tiene una familia y todas las familias son muy diferentes. Armando presenta la suya, a la cual, no cambiaría por nada. ',
+                        'url' : 'https://www.youtube.com/embed/xIp9_oJguME',
+                        'date' : '2020-10-20',
                     },
                 },
             } 
