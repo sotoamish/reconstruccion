@@ -2,7 +2,7 @@ const video_player_data = {
 // Vitamina Sé PRIMERA INFANCIA (0 a 5 años de edad)
     1 : {
         'name' : 'Vitamina Sé',
-        'age' : 0,
+        'age' : 1,
         'type' : {
             // Presentaciones artísticas
             1 : {
@@ -784,7 +784,7 @@ const video_player_data = {
 // Vitamina Sé
     2 : {
         'name' : 'Vitamina Sé',
-        'age' : 0,
+        'age' : 2,
         'type' : {
             // Presentaciones artísticas
             1 : {
@@ -1227,7 +1227,7 @@ const video_player_data = {
 // Presentaciones de libros 2020
     3 : {
         'name' : 'Presentaciones de libros',
-        'age' : 0,
+        'age' : 2,
         'type' : {
             // Presentaciones de libros
             1 : {
@@ -1256,7 +1256,7 @@ const video_player_data = {
 // FORMACIÓN 
     4 : {
         'name' : 'Formación',
-        'age' : 0,
+        'age' : 4,
         'type' : { //VITAMINA SÉ PARA FORMADORES
             1 : {
                 'name' : `Vitamina Sé: Arte para los primeros Años`,
@@ -1302,7 +1302,7 @@ const video_player_data = {
 // COLOQUIO Músicas e infancias: PRIMERA INFANCIA
     5 : {
         'name' : `Primer Coloquio de Músicas e infancias`,
-        'age' : 0,
+        'age' : 1,
         'type' : { //Muestras artísticas 
             1 : {
                 'name' : `Muestras artísticas`,
@@ -1360,7 +1360,7 @@ const video_player_data = {
 // Primer Coloquio de músicas e infancias 2da infancia
     6 : {
         'name' : 'Primer Coloquio de músicas e infancias',
-        'age' : 0, //
+        'age' : 2, //
         'type' : { // Primer Coloquio de músicas e infancias: Muestras artísticas (infancia 6-12 años de edad)
                 1 : {
                 'name' : `Muestras artísticas para todos`,
@@ -1421,7 +1421,7 @@ const video_player_data = {
 // TIEMPO PARA JUGLAR
     7 : {
         'name' : 'Tiempo para juglar: Tiempo de sembrar poesía',
-        'age' : 0,
+        'age' : 4,
         'type' : { // TIEMPO PARA JUGLAR: Tiempo de sembrar poesía, Temporada 1 y 2 
             1 : {
                 'name' : `Temporada 1`,
@@ -1584,7 +1584,7 @@ const video_player_data = {
 // OTROS TALLERES DE FORMACIÓN
     8 : {
         'name' : `Formación`,
-        'age' : 0,
+        'age' : 4,
         'type' : { // OTROS TALLERES DE FORMACIÓN
             1 : {
                 'name' : `Verano 2020`,
@@ -1634,10 +1634,10 @@ const video_player_data = {
         },
     }, // FIN OTROS TALLERES DE FORMACIÓN
 
-// FIN Primer Coloquio de músicas e infancias: FORMACIÓN
+// Primer Coloquio de músicas e infancias: FORMACIÓN
     9 : {
         'name' : `Primer Coloquio de Músicas e infancias: ciclo de conferencias`,
-        'age' : 0,
+        'age' : 4,
         'type' : { // COLOQUIO CICLO DE CONFERENCIAS
             1 : {
                 'name' : `Ciclo de conferencias`,
@@ -1714,7 +1714,7 @@ const video_player_data = {
 // DEL AMATE Y CENZONTLE
     10 : {
         'name' : `Del amate y el cenzontle`,
-        'age' : 0,
+        'age' : 4,
         'type' : {  
             1 : {
                 'name' : `día 1`,
