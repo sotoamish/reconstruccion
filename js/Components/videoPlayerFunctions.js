@@ -85,7 +85,7 @@ function drawComponentVideos(age){
 
 
     //draw recent recomendations (only 3 of them)
-    var videoCollection = getRecentVideos();
+    var videoCollection = getRecentVideos( age );
                 
     toDraw += `
             </div>
@@ -216,7 +216,7 @@ function change_video( elm ){
 }
 
 
-function getRecentVideos(){
+function getRecentVideos( age ){
     var videoCollection = new Array();
     // get an array of avalible videos for this age
     if( Object.keys(video_player_data).length > 0 ){
@@ -258,6 +258,7 @@ function getRecentVideos(){
 //  ---------------------------------------
 //draw video component for jovenes
 function drawComponentVideos2(age){
+    console.log( "aqui" + age)
     var toDraw = `
         <div class="row">
             <div class="col-12 vid_2">
