@@ -777,6 +777,7 @@ const video_player_data = {
                     }, 
                 }, //FIN FOMENTO A LA LECTURA
             },  
+        },
     }, //FIN 1 Vitamina Sé PRIMERA INFANCIA 
   
 // SEGUNDA INFANCIA (6 a 12 años de edad)
@@ -1220,6 +1221,7 @@ const video_player_data = {
                     }, 
                 },
             }, // FIN Fomento a la lectura 
+        },
     }, // 7 FIN VITAMINA SÉ SEGUNDA INFANCIA
 
 // Presentaciones de libros 2020
@@ -1246,8 +1248,8 @@ const video_player_data = {
                         'url' : 'https://youtu.be/rdTu-2TCC0E',
                         'date' : '2020-08-26',
                     },
-                    },
                 },
+            },
         },
     }, // FIN Presentaciones de libros 2020
     
@@ -1290,11 +1292,12 @@ const video_player_data = {
                                 'description' : 'El arrullo o nana es parte fundamental de las tradiciones y cultura de cada comunidad. A la Deriva Teatro te sugiere recuperar los arrullos tradicionales o particulares de tu familia para compartir y regalar momentos de tranquilidad a tu bebé.',
                                 'url' : 'https://www.youtube.com/embed/SMK-xx3CDag',
                                 'date' : '2020-10-13',
-                                }, 
-                        },
+                            }, 
+                },
             }, // FIN VITAMINA SÉ PARA FORMADORES
         }, 
-    }, // FIN FORMACIÓN
+    }, 
+// FIN FORMACIÓN
 
 // COLOQUIO Músicas e infancias: PRIMERA INFANCIA
     5 : {
@@ -1322,7 +1325,6 @@ const video_player_data = {
                     }, 
                 },
             }, //FIN Muestras artísticas 
-        },
             2 : {
                 'name' : `Laboratorios creativos`,
                 'playList' : { // Laboratorios Creativos
@@ -1352,6 +1354,7 @@ const video_player_data = {
                     },
                 }, // FIN Laboratorios Creativos
             },
+        },
     }, // FIN 6 COLOQUIO Músicas e infancias: PRIMERA INFANCIA
 
 // Primer Coloquio de músicas e infancias 2da infancia
