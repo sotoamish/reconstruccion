@@ -348,12 +348,18 @@ function print_videoList2(){
             let key = videoCollection[i]["key"];
             let type_key = videoCollection[i]["type_key"];
             let list_key = videoCollection[i]["list_key"];
+
+            console.log(key);
+            console.log(type_key);
+            console.log(list_key);
+            console.log("-----");
+
             
             toDraw += `
                 <div 
                     class="col-4 vid_card" 
                     data-code="${key}-${type_key}-${list_key}"
-                    onClick="changeVid2(${key}-${type_key}-${list_key})"
+                    onClick="changeVid2('${key}-${type_key}-${list_key}')"
                 >
                     <div>
                         <img 
