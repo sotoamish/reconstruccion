@@ -1,3 +1,112 @@
+//draw audios component
+function drawComponentAudios(age){
+
+    let toDraw = ``;
+
+    //print audio player structure
+    toDraw += `
+        <div class="row comp_audios age_`+age+`">
+            <div class="col-3 comp_audios_avatar">
+                <div class="avatar_container">
+                    <img src="" tag="avatar de lista de reproducción" id="comp_audio_avatar_img">
+                </div>
+                <div id="comp_audio_avatar_name">
+                    Lista de reproducción seleccionada
+                </div>
+            </div>
+
+            <div class="col-9 comp_audios_trackList" id="comp_audios_trackList">
+                comp_audios_trackList
+            </div>
+
+            <div class="col-12 p-0 controls_container">
+                <div class="row">
+                    
+                    <div class="col-4 comp_audios_current">
+                        <div id="comp_audio_current_name">
+                            Current Audio
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 comp_audio_controls">
+                        <div><i class="fas fa-step-backward" id="comp_audio_prev"></i></div>
+                        <div class="big_btn">
+                            <i class="far fa-play-circle" id="comp_audio_play"></i>
+                            <i class="far fa-stop-circle" id="comp_audio_stop"></i>
+                        </div>
+                        <div><i class="fas fa-step-forward" id="comp_audio_next"></i></div>
+                    </div>
+                    
+                    <div class="col-1 p-0 comp_audio_volume text-right">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="col-3 comp_audio_volume vol_container">
+                        <audio id="true_audio_player" controls style="display:none"></audio>
+                        <div class="volume-slider-con">
+                            <div class="volume-slider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 comp_audio_playLists">
+                <div class="col-12 playLists_container">
+    `;
+
+    //add all playlists (data from aduos_player_data.js)
+    if( Object.keys(audio_player_data).length > 0){
+        for (let i = 0; i < Object.keys(audio_player_data).length; i++) {
+            let current_key = Object.keys(audio_player_data)[i];
+
+            if( audio_player_data[current_key]["age"] === 0 ||
+                audio_player_data[current_key]["age"] === age )
+            {
+                toDraw += `
+                    <div class="list_element" data-target="`+ current_key +`" onClick="select_playlist(this)">
+                        <div class="avatar_container">
+                            <img src="`+ audio_player_data[current_key]["thumbnail"] +`" alt="logo de `+ audio_player_data[current_key]["name"] +`">
+                        </div>
+                        <div>
+                            `+ audio_player_data[current_key]["name"] +`
+                        </div>
+                    </div>
+                `;
+            }
+        }
+    } else {
+        toDraw += `No se econtró ninguna lista de reproducción`;
+    }
+    
+
+    toDraw += `
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.getElementById("component_container").innerHTML = toDraw;
+    
+    //auto select function
+    if( get_params("item")  !== null ){     //if item param exists
+        let flag = get_params("item");
+        flag = flag.split("-")
+        let listBtn = document.getElementsByClassName("list_element");
+        for (let i = 0; i < listBtn.length; i++) {
+            if( (listBtn[i]).dataset.target === flag[0] ){
+                (listBtn[i]).click();
+            }
+        }
+    } else {
+        //auto select first playList
+        document.getElementsByClassName("list_element")[0].click(); 
+    }
+
+    //add functions to player (functions from aduioPlayerFunction.js)
+    add_audio_player_functions();
+    add_volume_functions();
+}
+
+
 //change and print to selected playList 
 function select_playlist( elm ){
     let list_id = elm.dataset.target;
@@ -10,7 +119,7 @@ function select_playlist( elm ){
     for( let i=0; i < Object.keys(audio_player_data[list_id]["playList"]).length; i++){
         let album_id = Object.keys(audio_player_data[list_id]["playList"])[i];
         toDraw += `
-            <div class="col-12 typeList_button" onClick="select_album(`+album_id+`)">`
+            <div class="col-12 typeList_button" data-target="${album_id}" onClick="select_album(`+album_id+`)">`
                 +audio_player_data[list_id]["playList"][album_id]["album"]+    
                 `<div class="album_contents">`+Object.keys(audio_player_data[list_id]["playList"][album_id]["tracklist"]).length+` tracks</div>
             </div>
@@ -57,10 +166,32 @@ function select_playlist( elm ){
     //change playlist name
     document.getElementById("comp_audio_avatar_name").innerHTML = audio_player_data[elm.dataset.target]["name"];
 
-    //select first album
-    document.getElementsByClassName("typeList_button")[0].click();
-    //autop play first track
-    document.getElementsByClassName("audio_element")[0].click();
+    //auto select function
+    if( get_params("item")  !== null ){     //if item param exists
+        let flag = get_params("item");
+        flag = flag.split("-")
+        let listBtn = document.getElementsByClassName("typeList_button");
+        for (let i = 0; i < listBtn.length; i++) {
+            if( (listBtn[i]).dataset.target === flag[1] ){
+                (listBtn[i]).click();
+            }
+        }
+
+        listBtn = document.getElementsByClassName("audio_element");
+        for (let i = 0; i < listBtn.length; i++) {
+            if( (listBtn[i]).dataset.list === flag[0] &&
+                (listBtn[i]).dataset.album === flag[1] &&
+                (listBtn[i]).dataset.track === flag[2]
+            ){
+                (listBtn[i]).click();
+            }
+        }
+    } else {
+        //select first album
+        document.getElementsByClassName("typeList_button")[0].click();
+        //autop play first track
+        document.getElementsByClassName("audio_element")[0].click();
+    }
 }
 
 

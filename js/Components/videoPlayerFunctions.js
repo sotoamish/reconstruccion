@@ -143,12 +143,8 @@ function drawComponentVideos(age){
 
     document.getElementById("component_container").innerHTML = toDraw;
 
-    //auto select first play_list
-    document.getElementsByClassName("playList_button")[0].click();
-    //auto select first type_list
-    document.getElementsByClassName("typeList_button")[0].click();
-    //auto select first track
-    document.getElementsByClassName("track_button")[0].click();
+    let auto_sel_var = get_params("item");
+    autoSelectVideo( auto_sel_var );
 }
 
 // show selected playList
@@ -215,7 +211,7 @@ function change_video( elm ){
     }
 }
 
-
+//generate a list with recent videos
 function getRecentVideos( age ){
     var videoCollection = new Array();
     // get an array of avalible videos for this age
@@ -253,6 +249,50 @@ function getRecentVideos( age ){
     return videoCollection;
 }
 
+//auto select videos
+function autoSelectVideo( flag ){
+
+    if( flag === null ) {
+        //auto select first play_list
+        document.getElementsByClassName("playList_button")[0].click();
+        //auto select first type_list
+        document.getElementsByClassName("typeList_button")[0].click();
+        //auto select first track
+        document.getElementsByClassName("track_button")[0].click();
+    } else {
+        // split flag string
+        flag = flag.split("-");
+        console.log(flag);
+        //get all playLists and click on selected
+        let playListBtns = document.getElementsByClassName("playList_button");
+        for (let i = 0; i < playListBtns.length; i++) {
+            if( (playListBtns[i]).dataset.target === "video_list_"+flag[0] ){
+                (playListBtns[i]).click();
+                break;
+            }
+        }
+        //get all typeLists and click on selected
+        let typeListBtns = document.getElementsByClassName("typeList_button");
+        for (let i = 0; i < typeListBtns.length; i++) {
+            if( (typeListBtns[i]).dataset.target === "type_list"+flag[0]+"-"+flag[1] ){
+                (typeListBtns[i]).click();
+                break;
+            }
+        }
+        //get all track buttons and click on selected
+        let trackBtns = document.getElementsByClassName("track_button");
+        for (let i = 0; i < trackBtns.length; i++) {
+            if( (trackBtns[i]).dataset.list === flag[0] &&
+                (trackBtns[i]).dataset.type === flag[1] &&
+                (trackBtns[i]).dataset.track === flag[2]
+            ){
+                (trackBtns[i]).click();
+                break;
+            }
+        }
+    }
+}
+
 //  ---------------------------------------
 //      functions for video player 2
 //  ---------------------------------------
@@ -287,6 +327,10 @@ function drawComponentVideos2(age){
 
     // print video list     (function from videoPlayerFunctions.js)
     print_videoList2();
+
+    if( get_params("item") !== null ){
+        changeVid2( get_params("item") );
+    }
 }
 
 // print video list on jovenes, formadores
@@ -309,7 +353,7 @@ function print_videoList2(){
                 <div 
                     class="col-4 vid_card" 
                     data-code="${key}-${type_key}-${list_key}"
-                    onClick="changeVid2(this)"
+                    onClick="changeVid2(${key}-${type_key}-${list_key})"
                 >
                     <div>
                         <img 
@@ -351,7 +395,7 @@ function print_videoList2(){
 
 // show video window, set selected video src
 function changeVid2(elm){
-    let code = (elm.dataset.code).split("-");
+    let code = elm.split("-");
     let videoPlayer = document.getElementById("true_video_player");
     
     // set video source

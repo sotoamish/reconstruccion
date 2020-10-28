@@ -1,0 +1,87 @@
+.filter_container {
+    padding: 2vw 8vw;
+}
+.elm_search_button:hover{
+    opacity: 0.7;
+}
+
+
+.results_container {
+}
+.results_container .result_count{
+    font-size: 1.6em;
+    padding: 1.3em 8vw;
+}
+.results_container .result_count.age_0{    color:#666666;       }
+.results_container .result_count.age_1{    color:#99cd33;       }
+.results_container .result_count.age_2{    color:#006666;       }
+.results_container .result_count.age_3{    color:#0099cc;       }
+.results_container .result_count.age_4{    color:#993266;       }
+
+
+
+.event_container{
+    padding: 0 8vw;
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+.event_container .event_card{
+    background: #fff;
+    padding: 1.5vw 2vw;
+}
+.event_container .event_card:hover{
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+}
+.event_container .pic {
+    text-align: center;
+}
+.event_container .pic img{
+    min-width: 90%;
+    height: auto;
+    max-height: 10em;
+}
+.event_container .info{}
+.event_container .info .type{
+    font-family: "Montserrat";
+    color: #666666;
+    font-size: 1.2em;
+}
+.event_container .info .name{
+    font-size: 1.4em;
+}
+.event_container .info .name.age_0{    color:#666666;       }
+.event_container .info .name.age_1{    color:#99cd33;       }
+.event_container .info .name.age_2{    color:#006666;       }
+.event_container .info .name.age_3{    color:#0099cc;       }
+.event_container .info .name.age_4{    color:#993266;       }
+.event_container .info .author{
+    margin-bottom: 0.5em;
+    color: #404040;
+}
+.event_container .info .description,
+.event_container .info .fechas{
+    font-family: "Montserrat";
+    color: #666666;
+    text-align: justify;
+}
+.event_container .info .description.age_0 b, .event_container .info .fechas.age_0 b{ color:#666666; }
+.event_container .info .description.age_1 b, .event_container .info .fechas.age_1 b{ color:#99cd33; }
+.event_container .info .description.age_2 b, .event_container .info .fechas.age_2 b{ color:#006666; }
+.event_container .info .description.age_3 b, .event_container .info .fechas.age_3 b{ color:#0099cc; }
+.event_container .info .description.age_4 b, .event_container .info .fechas.age_4 b{ color:#993266; }
+
+
+.results_container .btn_block #showMoreBtn{
+    margin: auto;
+    border: none; 
+    border-radius: 5px;
+    padding: 1.5vw 6vw;
+    background: #b7b7b7;
+    color: #404040;
+    margin-bottom: 2vw;
+}
+.results_container .btn_block #showMoreBtn:hover{
+    opacity: 0.7;
+}

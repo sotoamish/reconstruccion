@@ -90,7 +90,7 @@
                         <div class="row">
                             <div class="col">
                                 <label for="age_selector">Edad:</label><br>
-                                <select name="age_selector" id="age_selector">
+                                <select class="form-control" name="age_selector" id="age_selector">
                                     <option value="0">Todas las edades</option>
                                     <option value="1">0 a 5 años de edad</option>
                                     <option value="2">6 a 12 años de edad</option>
@@ -100,7 +100,7 @@
                             </div>
                             <div class="col">
                                 <label for="type_selector">Tipo:</label><br>
-                                <select name="type_selector" id="type_selector">
+                                <select class="form-control" name="type_selector" id="type_selector">
                                     <option value="todos">Todos los archivos</option>
                                     <option value="videos">Videos</option>
                                     <option value="audios">Audios</option>
@@ -109,13 +109,19 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <input 
-                                    type="text" 
-                                    name="search_input" 
-                                    id="search_input" 
-                                    placeholder="Buscar..." 
-                                    onChange="start_search()"
-                                />
+                                <label for="search_input">Búsqueda:</label><br>
+                                <div class="input-group">
+                                    <input type="text" 
+                                        class="form-control"
+                                        type="text" 
+                                        name="search_input" 
+                                        id="search_input" 
+                                        placeholder="Buscar..." 
+                                    >
+                                    <div class="input-group-append elm_search_button" onClick="start_search()">
+                                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +140,7 @@
 
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 btn_block">
                             <button id="showMoreBtn" onClick="print_search_result()">Mostrar mas</button>
                         </div>
                     </div>

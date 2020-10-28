@@ -441,3 +441,32 @@ function draw_estados( age ){
 }
 
 
+//select witch component to draw
+function drawComponent( component, age ){
+    console.log(component, age);
+    switch (component) {
+        case "audios":
+                drawComponentAudios(age);
+            break;
+        case "videos":
+                if( age <= 2) {     //video section for "infancia1", "infancia2" -function from videoPlayerfunctions.js
+                    drawComponentVideos(age)
+                } else {    //video section for "jovenes" -function from videoPlayerfunctions.js
+                    drawComponentVideos2(age)
+                }
+                
+            break;
+        case "juegos":
+                //drawComponentJuegos(age)
+            break;
+        case "apps":
+                //drawComponentApps(age)
+            break;
+    
+        default:
+            break;
+    }
+
+    rewrite_url( null, component );
+}
+

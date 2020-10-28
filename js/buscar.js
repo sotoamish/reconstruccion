@@ -1,10 +1,12 @@
+var origin_age;
+
 document.addEventListener("DOMContentLoaded", function() {
     // get searched words - function from "submenu.js"
     var pageSearch = get_params( "search" );
-    var age = get_params("age");
+    origin_age = get_params("age");
 
     //set age selector with age var
-    document.getElementById("age_selector").value = age;
+    document.getElementById("age_selector").value = origin_age;
     //set pageSearch into search input
     document.getElementById("search_input").value = pageSearch;
     //hide show more button
@@ -35,7 +37,7 @@ function start_search(){
     
     //set current flag to zero (on each new search)
     current_flag = 0;
-    results = new Array();
+    results = [];
 
     let result_array = new Array;
 
@@ -44,7 +46,9 @@ function start_search(){
         for (let i = 0; i < Object.keys(video_player_data).length; i++) {
             let key1 = Object.keys(video_player_data)[i];
         
-            if( video_player_data[key1]["age"] === 0 || video_player_data[key1]["age"] == age ){
+            if( age == 0 || video_player_data[key1]["age"] == 0 || video_player_data[key1]["age"] == age ){
+            // if( video_player_data[key1]["age"] == 0 || video_player_data[key1]["age"] == age || age === 0 ){
+
                 for (let j = 0; j <  Object.keys(video_player_data[key1]["type"]).length; j++) {
                     let key2 = Object.keys(video_player_data[key1]["type"])[j];
 
@@ -58,19 +62,22 @@ function start_search(){
                             //if video author includes the searched words
                             ((video_player_data[key1]["type"][key2]["playList"][key3]["author"]).toLowerCase()).includes(search) ||
                             //if video type includes the searched words
-                            ((video_player_data[key1]["type"][key2]["playList"][key3]["type"]).toLowerCase()).includes(search)
+                            ("video").includes(search)
                         ) {
                             // add this regist on the array
                             result_array.push({
                                 "no" : key1+"-"+key2+"-"+key3,
-                                "type" : "video",
+                                "type" : "videos",
                                 "name" : video_player_data[key1]["type"][key2]["playList"][key3]["name"],
                                 "author" : video_player_data[key1]["type"][key2]["playList"][key3]["author"],
-                                "url" : video_player_data[key1]["type"][key2]["playList"][key3]["url"]
+                                "description" : video_player_data[key1]["type"][key2]["playList"][key3]["description"],
+                                "url" : video_player_data[key1]["type"][key2]["playList"][key3]["url"],
+                                "age" : video_player_data[key1]["age"]
                             });
                         }
                     }
                 }
+
             } 
         }
     }
@@ -80,7 +87,7 @@ function start_search(){
         for (let i = 0; i < Object.keys(audio_player_data).length; i++) {
             let key1 = Object.keys(audio_player_data)[i];
 
-            if( audio_player_data[key1]["age"] === 0 || audio_player_data[key1]["age"] == age ){
+            if( age == 0 || audio_player_data[key1]["age"] === 0 || audio_player_data[key1]["age"] == age ){
                 for (let j = 0; j < Object.keys(audio_player_data[key1]["playList"]).length; j++) {
                     let key2 = Object.keys(audio_player_data[key1]["playList"])[j];
                     
@@ -92,17 +99,20 @@ function start_search(){
                             // if audio name includes the searched words
                             ((audio_player_data[key1]["playList"][key2]["tracklist"][key3]["songName"]).toLowerCase()).includes(search) ||
                             // if audio artist includes the searched words
-                            ((audio_player_data[key1]["playList"][key2]["tracklist"][key3]["artist"]).toLowerCase()).includes(search) 
+                            ((audio_player_data[key1]["playList"][key2]["tracklist"][key3]["artist"]).toLowerCase()).includes(search) ||
+                            //if video type includes the searched words
+                            ("audio").includes(search)
                         ){
 
                             // add this regist on the array
                             result_array.push({
                                 "no" : key1+"-"+key2+"-"+key3,
-                                "type" : "audio",
+                                "type" : "audios",
                                 "name" : audio_player_data[key1]["playList"][key2]["tracklist"][key3]["songName"],
                                 "author" : audio_player_data[key1]["playList"][key2]["tracklist"][key3]["artist"],
                                 "url" : audio_player_data[key1]["playList"][key2]["tracklist"][key3]["url"],
-                                "image" : audio_player_data[key1]["thumbnail"]
+                                "image" : audio_player_data[key1]["thumbnail"],
+                                "age" : audio_player_data[key1]["age"]
                             });
                         }
                     }
@@ -140,29 +150,38 @@ function start_search(){
                         for (let k = 0; k < Object.keys(cartelera_data[key1][key2]).length; k++) {
                             let key3 = Object.keys(cartelera_data[key1][key2])[k];
                         
-                            //check if has one word of search_array;
-                            if(
-                                // if event name includes the searched words
-                                ((cartelera_data[key1][key2][key3]["nombre"]).toLowerCase()).includes(search) ||
-                                // if event staff includes the searched words
-                                ((cartelera_data[key1][key2][key3]["staff"]).toLowerCase()).includes(search) ||
-                                // if event estado includes the searched words
-                                ((cartelera_data[key1][key2][key3]["estado"]).toLowerCase()).includes(search) ||
-                                // if event ciudad includes the searched words
-                                ((cartelera_data[key1][key2][key3]["ciudad"]).toLowerCase()).includes(search)
-                            ){
-                                // add this regist on the array
-                                result_array.push({
-                                    "no" : key1+"-"+key2,
-                                    "type" : "cartelera",
-                                    "name" : cartelera_data[key1][key2][key3]["nombre"],
-                                    "author" : cartelera_data[key1][key2][key3]["staff"],
-                                    "estado" : cartelera_data[key1][key2][key3]["estado"],
-                                    "fecha_inicio" : cartelera_data[key1][key2][key3]["fecha_inicio"],
-                                    "fecha_termino" : cartelera_data[key1][key2][key3]["fecha_termino"],
-                                    "horario" : cartelera_data[key1][key2][key3]["horario"],
-                                    "image" : cartelera_data[key1][key2][key3]["thumbnail"]
-                                });
+                            if( age == 0 ||cartelera_data[key1][key2][key3]["edad"] === 0 || cartelera_data[key1][key2][key3]["edad"] == age ){
+                                //check if has one word of search_array;
+                                if(
+                                    // if event name includes the searched words
+                                    ((cartelera_data[key1][key2][key3]["nombre"]).toLowerCase()).includes(search) ||
+                                    // if event staff includes the searched words
+                                    ((cartelera_data[key1][key2][key3]["staff"]).toLowerCase()).includes(search) ||
+                                    // if event estado includes the searched words
+                                    ((cartelera_data[key1][key2][key3]["estado"]).toLowerCase()).includes(search) ||
+                                    // if event ciudad includes the searched words
+                                    ((cartelera_data[key1][key2][key3]["ciudad"]).toLowerCase()).includes(search) ||
+                                    //if video type includes the searched words
+                                    ("cartelera").includes(search)  ||
+                                    ("evento").includes(search) 
+                                ){
+                                    // add this regist on the array
+                                    result_array.push({
+                                        "no" : key1+"-"+key2,
+                                        "type" : "cartelera",
+                                        "name" : cartelera_data[key1][key2][key3]["nombre"],
+                                        "author" : cartelera_data[key1][key2][key3]["staff"],
+                                        "estado" : cartelera_data[key1][key2][key3]["estado"],
+                                        "ciudad" : cartelera_data[key1][key2][key3]["ciudad"],
+                                        "lugar" : cartelera_data[key1][key2][key3]["lugar"],
+                                        "description" : cartelera_data[key1][key2][key3]["descripcion"],
+                                        "fecha_inicio" : cartelera_data[key1][key2][key3]["fecha_inicio"],
+                                        "fecha_termino" : cartelera_data[key1][key2][key3]["fecha_termino"],
+                                        "horario" : cartelera_data[key1][key2][key3]["horario"],
+                                        "image" : cartelera_data[key1][key2][key3]["thumbnail"],
+                                        "age" : cartelera_data[key1][key2][key3]["edad"]
+                                    });
+                                }
                             }
                         }
                     }
@@ -173,7 +192,6 @@ function start_search(){
 
     
     results = result_array;
-
     //print results
     print_search_result();
 }
@@ -186,44 +204,119 @@ function print_search_result(){
 
     result_count.innerHTML = results.length + " Resultados de búsqueda";
 
-    for (let i = current_flag; i < (current_flag + 9); i++) {
-        if ( results[i] !== undefined ) {
-           
-            switch ( results[i]["type"] ) {
-                case "video":       //for video frame
-                        toDraw += `
-                            <div class="col-4">
-                                <div>
-                                    <img src="https://i.ytimg.com/vi/`+ (  (results[i]["url"]).replace( 'https://www.youtube.com/embed/', '')  ) +`/1.jpg" alt="imagen del video ${results[i]["name"]}" />
-                                </div>
-                                <div>
-                                    <div>Video</div>
-                                    <div>${results[i]["name"]}</div>
-                                    <div>${results[i]["author"]}</div>
-                                </div>
-                            </div>
-                        `;                
-                    break;
-            
-                default:
-                    break;
-            }
-
-            // execute only on the las iteration
-            if( i === (current_flag + 8) && results[i + 1] != undefined ){
-                // show "show more" button
-                document.getElementById("showMoreBtn").style.display = "block";    
-            }
-        } else {
-            // hide show more button
-            document.getElementById("showMoreBtn").style.display = "none";
-            
-            break;
-        } 
+    if(current_flag === 0){
+        result_window.innerHTML = '';
     }
 
-    result_window.innerHTML = result_window.innerHTML + toDraw;
-    current_flag += 9;
+    if( results.length > 0 ){
+        for (let i = current_flag; i < (current_flag + 4); i++) {
+            if ( results[i] !== undefined ) {
+
+                // generate destiny url 
+                console.log("result: " + results[i]["age"]);
+                console.log("origin: " + origin_age);
+                var destiny_age = ( results[i]["age"] == 0 )? origin_age : results[i]["age"] ;
+                var destiny_url = "";
+                switch ( parseInt(destiny_age) ) {
+                    case 1:     destiny_url += `infancia1.html`;     break;
+                    case 2:     destiny_url += `infancia2.html`;     break;
+                    case 3:     destiny_url += `jovenes.html`;     break;
+                    case 4:     destiny_url += `formadores.html`;     break;
+                }               
+                console.log("destiny: " + destiny_age);
+                console.log("url: " + destiny_url);
+                if( results[i]["type"] !== "cartelera" ) { destiny_url += `?section=contenido&subsection=${results[i]["type"]}&item=${results[i]["no"]}`; }
+                else { destiny_url += `?section=cartelera&item=${results[i]["no"]}`; }                
+
+                // generate elements block
+                switch ( results[i]["type"] ) {
+                    case "videos":       //for video frame
+                            toDraw += `
+                                <div class="col-12 event_container">
+                                    <a href="${destiny_url}" target="_blank">
+                                        <div class="row event_card">
+                                            <div class="col-2 pic">
+                                                <img src="https://i.ytimg.com/vi/`+ (  (results[i]["url"]).replace( 'https://www.youtube.com/embed/', '')  ) +`/1.jpg" alt="imagen del video ${results[i]["name"]}" />
+                                            </div>
+                                            <div class="col-10 info">
+                                                <div class="type">Video</div>
+                                                <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
+                                                <div class="author">${results[i]["author"]}</div>
+                                                <div class="description">${(results[i]["description"]).substring(0, 300)} ${(((results[i]["description"]).length > 300)? "..." : "" )}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            `;                
+                        break;
+    
+                    case "audios":       //for video frame
+                            toDraw += `
+                                <div class="col-12 event_container">
+                                    <a href="${destiny_url}" target="_blank">
+                                        <div class="row event_card">
+                                            <div class="col-2 pic">
+                                                <img src="${results[i]["image"]}" alt="imagen del audio ${results[i]["name"]}" />
+                                            </div>
+                                            <div class="col-10 info">
+                                                <div class="type">Audio</div>
+                                                <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
+                                                <div class="description">${results[i]["author"]}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            `;                
+                        break;
+
+                    case "cartelera":       //for cartelera frame
+                            toDraw += `
+                                <div class="col-12 event_container">
+                                    <div class="row event_card">
+                                        <div class="col-2 pic">
+                                            <img src="${results[i]["image"]}" alt="imagen del evento ${results[i]["name"]}" />
+                                        </div>
+                                        <div class="col-10 info">
+                                            <div class="type">Cartelera</div>
+                                            <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
+                                            <div class="author">${results[i]["author"]}</div>
+                                            <div class="estado">
+                                                ${results[i]["estado"]} 
+                                                ${(results[i]["ciudad"] !== "")? "- " + results[i]["ciudad"] : ""}
+                                                ${(results[i]["lugar"] !== "")? "- " + results[i]["lugar"] : ""}
+                                            </div> 
+                                            <div class="description">${(results[i]["description"]).substring(0, 400)} ${(((results[i]["description"]).length > 400)? "..." : "" )}</div>
+                                            <div class="fechas age_${results[i]["age"]}">
+                                                de <b>${results[i]["fecha_inicio"]}</b> a <b>${results[i]["fecha_termino"]}</b> <br>
+                                                Horarios: <b>${results[i]["horario"]}</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        break;
+                
+                    default:    //
+                        break;
+                }
+    
+                // execute only on the las iteration
+                if( i === (current_flag + 3) && results[i + 1] != undefined ){
+                    // show "show more" button
+                    document.getElementById("showMoreBtn").style.display = "block";
+                }
+    
+            } else {
+                // hide show more button
+                document.getElementById("showMoreBtn").style.display = "none";
+                break;
+            }   
+        }
+        current_flag += 4;
+        result_window.innerHTML = result_window.innerHTML + toDraw;
+    } else {
+        result_window.innerHTML = toDraw;
+    }
 }
 
 
