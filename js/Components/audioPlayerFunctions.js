@@ -192,6 +192,16 @@ function select_playlist( elm ){
         //autop play first track
         document.getElementsByClassName("audio_element")[0].click();
     }
+
+    //delete contextMenu functions on audio_elements
+    var audio_elements = document.getElementsByClassName("audio_element");
+    audio_elements = Array.from(audio_elements);
+    audio_elements.forEach(audio => {
+        audio.addEventListener("contextmenu", e=>{
+            e.preventDefault();
+        })
+    });
+    
 }
 
 
