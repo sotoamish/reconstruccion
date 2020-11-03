@@ -1,0 +1,81 @@
+.blog_card{
+    background: #fff;
+    padding: 0;
+    margin-bottom: 2vw;
+}
+
+.blog_card .titulo{
+    padding: 1em 1.5em 0 1.5em;
+    font-family: "Montserrat-bold";
+    font-size: 1.6em;
+}
+.blog_card.age_1 .titulo{  color:#99cd33;  }
+.blog_card.age_2 .titulo{  color:#006666;  }
+.blog_card.age_3 .titulo{  color:#0099cc;  }
+.blog_card.age_4 .titulo{  color:#993266;  }
+
+.blog_card .area,
+.blog_card .autor,
+.blog_card .fecha {
+    padding: 0.5em 1.5em 0 2.5em;
+    font-family: "Montserrat";
+    font-size: 1em;
+    margin-top: -0.5em;
+}
+
+.blog_card .imagen{
+    max-height: 18em;
+    overflow: hidden;
+    margin: 1em 0;
+}
+.blog_card .imagen img{
+    width: 100%;
+    height: auto;
+}
+
+.blog_card .subTitulo{
+    padding: 0em 1.5em 0.5em 1.5em;
+    font-size: 1.5em;
+}
+.blog_card .subTitulo.little{
+    padding: 1em 1.5em 0.5em 2em;
+    font-size: 1.2em;
+}
+.blog_card .publicacion{
+    padding: 0 2.5em 1em 2.5em;
+    text-align: justify;
+    font-family: "Montserrat";
+    font-size: 0.9em;
+}
+
+.blog_card .link{
+    padding: 0 2em 2em 2em;
+    text-align: right;
+    margin-top: -0.5em;
+}
+.blog_card .link a{
+    font-size: 1.2em;
+}
+.blog_card.age_1 .link a{   color:#99cd33;  }
+.blog_card.age_2 .link a{   color:#006666;  }
+.blog_card.age_3 .link a{   color:#0099cc;  }
+.blog_card.age_4 .link a{   color:#993266;  }
+
+.post_button{
+    text-align:  right;
+}
+.post_button button{
+    padding: 0.7em 4em;
+    font-family: "Montserrat-bold";
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.post_button button:hover{
+    opacity: 0.8;
+}
+.post_button.age_1 button{  background: #99cd33;  }
+.post_button.age_2 button{  background: #006666;  }
+.post_button.age_3 button{  background: #0099cc;  }
+.post_button.age_4 button{  background: #993266;  }

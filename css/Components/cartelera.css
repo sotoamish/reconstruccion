@@ -11,13 +11,71 @@
     
 }
 
+.cartelera .result_count{
+    font-size: 1.3em;
+    margin-bottom: 2vw;
+}
+.cartelera .result_count.age_1{     color:#99cd33;      }
+.cartelera .result_count.age_2{     color:#006666;      }
+.cartelera .result_count.age_3{     color:#0099cc;      }
+.cartelera .result_count.age_4{     color:#993266;      }
+
 .cartelera_action {
     padding: 2vw;
 }
-.cartelera_action .card{
-    margin: 1vw 0;
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 9px 5px rgba(224,224,224,1);
-    -moz-box-shadow: 0px 0px 9px 5px rgba(224,224,224,1);
-    box-shadow: 0px 0px 9px 5px rgba(224,224,224,1);
+
+.cartelera .event_container{
+    margin-bottom: 2vw;
+    padding: 2vw;
+    background-color: #fff;
+}
+.cartelera .event_container .pic_container img{
+    width: 100%;
+}
+.cartelera .event_container .info .tipo{
+    font-family: "Montserrat";
+    font-size: 1.2em;
+    color: #a6a6a6;
+    letter-spacing: 1.3px;
+}
+.cartelera .event_container .info .nombre{
+    font-size: 1.4em;
+    letter-spacing: 1.1px;
+    margin-bottom: -0.2em;
+}
+.cartelera .event_container .info .nombre.age_1{    color:#99cd33;  }
+.cartelera .event_container .info .nombre.age_2{    color:#006666;  }
+.cartelera .event_container .info .nombre.age_3{    color:#0099cc;  }
+.cartelera .event_container .info .nombre.age_4{    color:#993266;  }
+.cartelera .event_container .info .staff{
+    color: #666666;
+    font-size: 0.85em;
+    margin-bottom: 0.5em;
+}
+.cartelera .event_container .info .fecha{
+    font-family: "Montserrat";
+    margin-bottom: 0.5em;
+}
+.cartelera .event_container .info .fecha.age_1 b{     color:#99cd33;      }
+.cartelera .event_container .info .fecha.age_2 b{     color:#006666;      }
+.cartelera .event_container .info .fecha.age_3 b{     color:#0099cc;      }
+.cartelera .event_container .info .fecha.age_4 b{     color:#993266;      }
+.cartelera .event_container .info .lugar{
+    font-size: 1.1em;
+    color: #666666;
+}   
+.cartelera .event_container .info .direccion{
+    font-family: "Montserrat";
+    font-size: 0.85em;
+    color: #666666;
+    margin-bottom: 0.5em;
+}
+.cartelera .event_container .info .descripcion{
+    font-size: 1em;
+    color: #666666
+}
+.cartelera .event_container .info .anotaciones{
+    font-family: "Montserrat";
+    font-size: 0.85em;
+    color: #000;
 }

@@ -74,24 +74,43 @@ function apply_filter(){
 
 //print list of filtered activities
 function print_cartelera( filt_obj ){
-    console.log( filt_obj );
+    // console.log( filt_obj );
+    let age = document.getElementById("hidden_age").value;
     let actionWindow = document.getElementById("cartelera_action");
     
     let toPrint = `
-        <div class="row">
+        <div class="row cartelera">
+            <div class="col-12 result_count age_${age}"> 
+                ${Object.keys(filt_obj).length} Resultados de búsqueda
+            </div>
     `;
 
     for (let i = 0; i < Object.keys(filt_obj).length; i++) {
         let key = Object.keys(filt_obj)[i];
 
+        // console.log(filt_obj[key]);
+
         toPrint += `
-            <div class="col-12 card">
-                <div>`+ filt_obj[key]["nombre"] +`</div>
-                <div>`+ filt_obj[key]["actividad"] +`</div>
-                <div>`+ filt_obj[key]["tipo"] +`</div>
-                <div>`+ filt_obj[key]["estado"] +`</div>
-                <div>`+ filt_obj[key]["staff"] +`</div>
-                <div>Edad`+ filt_obj[key]["edad"] +`</div>
+            <div class="col-12 event_container">
+                <div class="row">
+                    <div class="col-3 pic_container">
+                        <img src="${filt_obj[key]["thumbnail"]}" alt="imagen del evento - ${filt_obj[key]["nombre"]}" />
+                    </div> 
+                    <div class="col-9 info">
+                        <div class="tipo">${filt_obj[key]["actividad"]}</div>
+                        <div class="nombre age_${age}">${filt_obj[key]["nombre"]}</div>
+                        <div class="staff">${filt_obj[key]["staff"]}</div>
+                        <div class="fecha age_${age}">De <b>${filt_obj[key]["fecha_inicio"]}</b> a <b>${filt_obj[key]["fecha_termino"]}</b> <br> Horarios: <b>${filt_obj[key]["horario"]}</b></div>
+                        <div class="lugar">
+                            ${filt_obj[key]["estado"]}
+                            ${ (filt_obj[key]["ciudad"] !== "" )? " - " + filt_obj[key]["ciudad"] : "" }
+                            ${ (filt_obj[key]["lugar"] !== "" )? " - " + filt_obj[key]["lugar"] : "" }
+                        </div>
+                        <div class="direccion">${filt_obj[key]["direccion"]}</div>
+                        <div class="descripcion">${filt_obj[key]["descripcion"]}</div>
+                        <div class="anotaciones">(${filt_obj[key]["anotaciones"]})</div>
+                    </div> 
+                </div>
             </div>
         `;
     }

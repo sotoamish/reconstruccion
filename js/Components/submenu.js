@@ -352,7 +352,7 @@ function draw_cartelera( age ){
         <div class="col-6 offset-6 search_block">
             <div class="input-group">
                 <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                <div class="input-group-append elm_search_button">
+                <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
                     <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
                 </div>
             </div>
@@ -367,8 +367,9 @@ function draw_cartelera( age ){
         </div>
 
         <div class="col-12 cartelera_action" id="cartelera_action">
-
         </div>
+
+        <input type="hidden" id="hidden_age" value="${age}">
     `;
 
     action_window.innerHTML = toDraw;
@@ -443,16 +444,16 @@ function draw_estados( age ){
 
 //select witch component to draw
 function drawComponent( component, age ){
-    console.log(component, age);
+    // console.log(component, age);
     switch (component) {
         case "audios":
                 drawComponentAudios(age);
             break;
         case "videos":
                 if( age <= 2) {     //video section for "infancia1", "infancia2" -function from videoPlayerfunctions.js
-                    drawComponentVideos(age)
+                    drawComponentVideos(age);
                 } else {    //video section for "jovenes" -function from videoPlayerfunctions.js
-                    drawComponentVideos2(age)
+                    drawComponentVideos2(age);
                 }
                 
             break;
@@ -461,6 +462,10 @@ function drawComponent( component, age ){
             break;
         case "apps":
                 //drawComponentApps(age)
+            break;
+
+        case "blog":
+                drawComponentBlog(age);
             break;
     
         default:

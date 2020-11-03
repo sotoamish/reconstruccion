@@ -262,7 +262,6 @@ function autoSelectVideo( flag ){
     } else {
         // split flag string
         flag = flag.split("-");
-        console.log(flag);
         //get all playLists and click on selected
         let playListBtns = document.getElementsByClassName("playList_button");
         for (let i = 0; i < playListBtns.length; i++) {
@@ -348,12 +347,6 @@ function print_videoList2(){
             let key = videoCollection[i]["key"];
             let type_key = videoCollection[i]["type_key"];
             let list_key = videoCollection[i]["list_key"];
-
-            console.log(key);
-            console.log(type_key);
-            console.log(list_key);
-            console.log("-----");
-
             
             toDraw += `
                 <div 
