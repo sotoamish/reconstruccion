@@ -14,9 +14,7 @@
 .blog_card.age_3 .titulo{  color:#0099cc;  }
 .blog_card.age_4 .titulo{  color:#993266;  }
 
-.blog_card .area,
-.blog_card .autor,
-.blog_card .fecha {
+.blog_card .area {
     padding: 0.5em 1.5em 0 2.5em;
     font-family: "Montserrat";
     font-size: 1em;
@@ -79,3 +77,46 @@
 .post_button.age_2 button{  background: #006666;  }
 .post_button.age_3 button{  background: #0099cc;  }
 .post_button.age_4 button{  background: #993266;  }
+
+
+
+
+
+.error_window{
+    padding:  8vw 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+.error_window.age_1{   color: #99cd33;    }
+.error_window.age_2{   color: #006666;    }
+.error_window.age_3{   color: #0099cc;    }
+.error_window.age_4{   color: #993266;    }
+
+.post_window .titulo{
+    font-family: "Montserrat-bold";
+    font-size: 2.5em;
+    padding: 2em 2em 0.5em 1em;
+}
+.post_window .titulo.age_1{ color: #99cd33; }
+.post_window .titulo.age_2{ color: #006666; }
+.post_window .titulo.age_3{ color: #0099cc; }
+.post_window .titulo.age_4{ color: #993266; }
+.post_window .area {
+    padding: 0.5em 1.5em 0 2.5em;
+    font-family: "Montserrat";
+    font-size: 1.1em;
+    margin-top: -0.5em;
+}
+.post_window .imagen img{
+    width: 100%;
+    margin: 1vw 0;
+}
+.post_window .subTitulo {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.post_window .publicacion{
+    font-family: "montserrat";
+    text-align: justify;
+    margin-bottom: 5em;
+}
