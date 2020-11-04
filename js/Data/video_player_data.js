@@ -1,5 +1,7 @@
 const video_player_data = {
-// Vitamina Sé PRIMERA INFANCIA (0 a 5 años de edad)
+// Vitamina Sé 
+
+// PRIMERA INFANCIA (0 a 5 años de edad)
     1 : {
         'name' : 'Vitamina Sé',
         'age' : 1,
@@ -778,10 +780,10 @@ const video_player_data = {
                 }, //FIN FOMENTO A LA LECTURA
             },  
         },
-    }, //FIN 1 Vitamina Sé PRIMERA INFANCIA 
+    }, //FIN PRIMERA INFANCIA 
   
 // SEGUNDA INFANCIA (6 a 12 años de edad)
-// Vitamina Sé
+ 
     2 : {
         'name' : 'Vitamina Sé',
         'age' : 2,
@@ -1224,8 +1226,7 @@ const video_player_data = {
         },
     }, // 7 FIN VITAMINA SÉ SEGUNDA INFANCIA
 
-// ADOLESCENCIA (13 a 17 años de edad)
-// Vitamina Sé Adolescentes
+// ADOLESCENCIA (13 a 17 años de edad) 
     3 : {
         'name' : 'Vitamina Sé',
         'age' : 3,
@@ -1533,6 +1534,8 @@ const video_player_data = {
         },
     }, // FIN Presentaciones de libros 2020
     
+// FIN Vitamina Sé 
+
 // FORMACIÓN 
     5 : {
         'name' : 'Formación',
@@ -1576,8 +1579,7 @@ const video_player_data = {
                 },
             }, // FIN VITAMINA SÉ PARA FORMADORES
         }, 
-    }, 
-// FIN FORMACIÓN
+    }, // FIN FORMACIÓN
 
 // COLOQUIO Músicas e infancias: PRIMERA INFANCIA
     6 : {
@@ -1848,13 +1850,21 @@ const video_player_data = {
                         'url' : 'https://www.youtube.com/embed/garnbGWygQo',
                         'date' : '2020-10-15',
                     },
-                     12 : {
+                    12 : {
                         'name' : 'Taller en línea: Desafío Diez a la Diez. Poesía, matemáticas y canciones',
                         'type' : 'Taller en línea',
                         'author' : 'Julio Vallejo',
                         'description': 'La Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces, invita a los talleres de creación lírica Tiempo de sembrar poesía, dirigidos al público general, promotores culturales, artistas y creadores interesados en estimular la expresión, el pensamiento crítico y la creatividad desde la oralidad con niñas, niños y adolescentes. Imparte: Julio Vallejo. Hacedor de canciones a guitarra en español y en didxazá (zapoteco). Su trabajo cancionista se caracteriza por relatos ásperos, sin atenuantes y erotismo explícitos. Galardonado en 2017 por los Premios CaSa Creación Literaria en lengua didxazá en la categoría de canción por las décimas Ca dxi xtinu (Nuestros días).',
                         'url' : 'https://www.youtube.com/embed/jkfNrupOvrQ',
                         'date' : '2020-10-22',
+                    },
+                    13 : {
+                        'name' : 'Taller: Cómo buscar tu Flow en maya',
+                        'type' : 'Taller en línea',
+                        'author' : 'Pat Boy',
+                        'description': 'En 2009, Pat Boy inició su carrera solista con la promoción de su primer rap en lengua maya. Pat Boy fusiona su Rap con otros géneros musicales; enfoca su trabajo al fortalecimiento de la lengua maya y con sus canciones, la difunde más allá de las fronteras. Apoya a jóvenes con su proyecto Rap Ich Máaya. La Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces, invita a los talleres de creación lírica Tiempo de sembrar poesía, dirigidos al público general, promotores culturales, artistas y creadores interesados en estimular la expresión, el pensamiento crítico y la creatividad desde la oralidad con niñas, niños y adolescentes.',
+                        'url' : 'https://www.youtube.com/embed/N1qlrj4_dM0',
+                        'date' : '2020-10-29',
                     }, 
                 }, 
             }, // FIN TIEMPO PARA JUGLAR Tiempo de sembrar poesía T2
@@ -1909,6 +1919,22 @@ const video_player_data = {
                         'url' : 'https://www.youtube.com/embed/EZh7DFF0VKw',
                         'date' : '2020-09-30',
                     },  
+                    6 : {
+                        'name' : 'Seminario en línea: Equidad de género a través de las artes',
+                        'type' : 'Seminario en línea',
+                        'author' : 'Mitsi Nieto e Israel Torres',
+                        'description' : 'Dirigido a promotoras y promotores culturales, docentes, talleristas y comunidad artística interesados en trabajar la equidad de género en niñas, niños y adolescentes desde los lenguajes artísticos.',
+                        'url' : 'https://www.youtube.com/embed/RCs2P3xBjg0',
+                        'date' : '2020-10-24',
+                    },  
+                    7 : {
+                        'name' : 'Seminario en línea: Arte, ciencia y tecnología para adolescentes',
+                        'type' : 'Seminario en línea',
+                        'author' : 'Antonio Isaac Gómez',
+                        'description' : 'Dirigido a promotores culturales, docentes, talleristas y comunidad artística que trabajen con adolescentes. Imparte Antonio Isaac Gómez. Artista transdisciplinario, compositor, cineasta, diseñador de tecnología con gran pasión por las ciencias. Su trabajo se enfoca en la relación entre arte, ciencia y naturaleza con uso de nuevas tecnologías y medios emergentes. ',
+                        'url' : 'https://www.youtube.com/embed/jcr04JiqYAA',
+                        'date' : '2020-10-28',
+                    },  
                 }, 
             }, // FIN OTROS TALLERES DE FORMACIÓN
         },
@@ -1931,7 +1957,7 @@ const video_player_data = {
                         'date' : '2020-07-27',
                     },
                     2 : {
-                        'name' : 'I. Historia y desarrollo de la música infantil en México',
+                        'name' : 'Mesa de diálogo I. Historia y desarrollo de la música infantil en México',
                         'type' : 'Mesa de diálogo',
                         'author' : ' Julio Gullco, Beto Batuca, Elba Rodríguez Ávalos, Roberto Rivelino García Baeza, Juan Monedita',
                         'description' : 'Participan: Julio Gullco. Investigador titular del Centro Nacional de Investigación, Documentación e Información Musical “Carlos Chavez” (CENIDIM – INBAL). Investigador y educador musical, realizó estudios de teoría musical, guitarra y flauta en   Argentina; así como de iniciación musical infantil y pedagogía musical en Argentina y México; y de comunicación en México. Beto Batuca. Músico y compositor. Músico, compositor y pintor, en 1982 funda el grupo de rock ¡Qué payasos! Junto con Luis Ignacio Baena Nacho Mostacho e incursan en la música para infancias, grupo del que se destaca su creación en los ámbitos de dirección de imagen, vestuario y composición. Elba Rodríguez Ávalos. Cantautora. Guadalajara, Jalisco. Desde 1989 imparte el taller Canto, cuento, maroma y teatro a personas adultas (maestras, maestros, pedagogos y toda persona interesada en esta acción multiplicadora).  A partir de 1995 imparte conciertos didácticos en las escuelas del estado de Michoacán a través de la Secretaría de Educación y otros estados del país a donde ha sido invitada, así como a diversos puntos de los Estados Unidos, Nicaragua y Canadá. En 1994 realiza trabajo de campo en p’horé y comienza a componer sonecitos y abajeños. Por esta razón es invitada a uno de los festejos de Radio Cherán, donde es la única mestiza que interpreta pirekuas en español, con unas cuantas palabras en esa lengua. Roberto Rivelino García Baeza. Investigador y músico. Originario de la Ciudad de México, es doctor en Literatura Hispánica por el Colegio de San Luis, músico y poeta. Licenciado en Letras Hispánicas por la UAM-I y Maestro en Literatura Hispanoamericana por el Colegio de San Luis, también estudió música en el INBA. Sus principales líneas de investigación son la literatura de tradición oral y la literatura de vanguardia latinoamericana. Se ha desempeñado como formador de educación musical en centros de educación básica y media básica y ha participado en distintos festivales con el Taller canciones tradicionales infantiles con el que busca rescatar, fomentar y difundir la lírica y los juegos infantiles tradicionales de México.  Además de investigador es músico, compositor y director de la agrupación musical Los Blueserables. Juan Monedita. Músico y compositor integrante de Monedita de Oro. Músico y compositor con más de 30 años de trayectoria musical, ha incursionado en diversos grupos musicales dirigidos para infancias, en el que destaca su participación del grupo poblano Patita de Perro, posteriormente funda el grupo Monedita de Oro con el objetivo de llevar diversos géneros musicales a niñas y niños. Modera: Pepe Frank. Músico y compositor. Es un reconocido compositor e intérprete de música infantil con más de 30 años de trayectoria en los cuales ha creado nueve fonogramas, seis libros y ha trabajado cuatro temporadas de programas radiofónicos para infancias, además su trayectoria musical cuenta con siete producciones. Con el objetivo de generar espacios de diálogo y reflexión sobre el desarrollo y la situación actual de la música dirigida a niñas, niños y adolescentes en distintos contextos, así como la contribución de la música en el desarrollo de sus capacidades, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizará de manera virtual el Primer Coloquio de músicas e infancias. ',
@@ -1947,7 +1973,7 @@ const video_player_data = {
                         'date' : '2020-07-28',
                     },
                     4 : {
-                        'name' : 'II. Música tradicional, canto y narrativa en las infancias',
+                        'name' : 'Mesa de diálogo II. Música tradicional, canto y narrativa en las infancias',
                         'type' : 'Mesa de diálogo',
                         'author' : 'Patricia García López, Marconio, Marcos Leija, Juan Manuel Campechano Yan, Génesis Mil Bernal, Rocío Román Figueroa, Samantha Tzitziky Altamirano Pérez, Evelin Acosta.',
                         'description' : 'Participan: Patricia García López. Coordinadora del Automodelo para las músicas de la tradición oral en Oaxaca, CaSa. Etnomusicóloga por la Universidad Nacional Autónoma de México. Es integrante de “Pasatono Orquesta Mexicana” donde ejecuta y difunde la música de la Mixteca, así como música de compositores nacionales y contemporáneos. Actualmente coordina el programa “Automodelo para las músicas de la tradición oral en Oaxaca” en el Centro de las Artes de San Agustín, dicho proyecto se lleva a cabo con niñas, niños y jóvenes violinistas de distintas regiones del estado. Marconio. Marco Antonio Vázquez Barrera, escritor, poeta, músico y narrador oral. Con 26 años de experiencia en los escenarios de cuentacuentos, se ha presentado en todos los estados de la República Mexicana y en 26 países del orbe. Ha escrito varios libros de cuentos y ha sido becario FONCA en dos ocasiones (2016) y (2017-2019). Ha recibido premios por sus aportaciones a al gremio de la narración oral, en México, Venezuela y Colombia. Marcos Leija. Cantautor, escritor y narrador de Nuevo Laredo, Tamaulipas, nació en Nuevo Laredo Tamaulipas en 1973. Es promotor del hábito por la lectura. Fusiona la música para niños con la narración oral. Ha participado en festivales, comunidades indígenas, centros de atención para menores migrantes, albergues para niños vulnerados, centros de rehabilitación para niños con discapacidad y en escuelas de educación básica y especial de diversos estados de México y provincias de Chile y Argentina. Cuenta con libros publicados de narrativa y poesía. Su trabajo literario infantil ha sido incluido en antologías y representado en obras teatrales, en kamishibai y teatro guiñol en México y Sudamérica. Juan Manuel Campechano Yan. Director del Ensamble Comunitario de son jarocho de San Andrés Tuxtla, Veracruz. Egresado como pedagogo de la Universidad Veracruzana, es integrante del Grupo Mono Blanco y colaborador del Centro Cultural independiente El CaSon, en Veracruz; y de la agrupación La Casa del Fandango, con los cuales realizan actividades de animación cultural, investigación y preservación de la música tradicional, y en los que genera y promueve políticas educativas que posibiliten el desarrollo musical y artístico del género y la comunidad.  Desde 2018, es Director del Ensamble Comunitario de Son jarocho de San Andrés, Tuxtla Veracruz. Génesis Mil Bernal, 13 años, estudiante de arpa del Ensamble Comunitario de son jarocho de San Andrés Tuxtla, Veracruz. Rocío Román Figueroa. Directora del semillero creativo Banda Sinfónica Comunitaria K’eri Tinganio de Tingambato, Michoacán, perteneciente al SNFM. Directora / Clarinetista, originaria de la comunidad indígena de Tingambato, Michoacán. Inició sus estudios musicales en su pueblo natal a la edad de 14 años. Como profesora ha impartido varios talleres de clarinete, con el objetivo de proporcionar herramientas de aprendizaje a los músicos de su pueblo natal y de diferentes comunidades de la zona p´urhepecha, en el estado de Michoacán y en distintas partes del territorio nacional.   Es egresada del Conservatorio de las Rosas de la Ciudad de Morelia, Michoacán, donde se destacó por ser la primera mujer indígena en su estado en graduarse de una carrera musical a nivel licenciatura. Samantha Tzitziky Altamirano Pérez. Saxofonista de la Banda Sinfónica Comunitaria K’eri Tinganio, de Tingambato, Michoacán. Originaria del municipio de Tingambato, en Uruapan, Michoacán, en 2015 ingresó a la Banda Sinfónica Comunitaria K´eri Tinganio en donde lleva cinco años tocando el saxofón alto, medio, instrumento en el que ha encontrado la manera de expresarse.  En palabras de la propia Samantha, su labor en la banda le ha permitido aprender cada vez más sobre la historia de su pueblo, la música y sobre las vestimentas tradicionales de la región, además de disfrutar de la convivencia y enseñanzas entre jóvenes. Modera: Evelin Acosta. Compositora y versadora de música tradicional de Oaxaca. Compositora y versadora de música tradicional de Oaxaca, ha participado con varios grupos y ha colaborado con grupos como Caña Dulce Caña Brava y artistas internacionales como Alexis Días Pimienta, es locutora en la Radio comunitaria de Loma Bonita, Oaxaca y conductora de Noticias Corporación oaxaqueña de radio y televisión.',
@@ -1963,7 +1989,7 @@ const video_player_data = {
                         'date' : '2020-07-29',
                     },
                     6 : {
-                        'name' : 'III. Infancias y adolescencias como artistas creadores y ejecutantes',
+                        'name' : 'Mesa de diálogo III. Infancias y adolescencias como artistas creadores y ejecutantes',
                         'type' : 'Mesa de diálogo',
                         'author' : 'Infancias y adolescencias como artistas creadores y ejecutantes ',
                         'description' : 'Infancias y adolescencias como artistas creadores y ejecutantes. Participan: Isis. Grupo Son Huasteco. Pánuco, Veracruz. Música de son huasteco, durante dos años ha asistido a cursos impartidos en la Casa de la Cultura de Pánuco, Veracruz, donde aprendió a tocar la quinta huapanguera y la jarana huasteca. Forma parte del acompañamiento musical de una comparsa que baila en día de muertos en la ciudad. José. Grupo Son del Vale. Acula, Veracruz. José Alfonso tiene 15 años y ejecuta el marimbol y la jarana en el grupo Son del Vale. María. Veracruz, Veracruz. Cecilia. Mariachi tradicional Son de Siempre. CDMX. Egresada de la Escuela de Iniciación a la música y a la danza Ollin Yolliztli. En los primeros años incursionó al área de música tradicional mexicana tomando el violín, a la edad de 8 años empezó a interpretar movimientos u obras importantes de autores como Oskar Rieding, Vivaldi y Bach.  Actualmente, es integrante del Mariachi tradicional “Son de siempre”. Denisse. Mariachi tradicional Son de Siempre. CDMX. Violinista de música tradicional mexicana, egresada de la Escuela de Iniciación a la Música y a la Danza “Ollin Yoliztli”, en el área de Música y Danza Tradicional Mexicana. Ha sido parte de dos ensambles de músicos jóvenes con alumnos de esta institución; “Vida y Tradición”, el cual participó en el Encuentro Nacional de Mariachi Tradicional en 2014, realizó un intercambio en Forthword, Texas, con alumnos del ensamble “J.P Elder Middle School Mariachi” en 2015.   Con el mariachi tradicional “Son de Siempre”, ha asistido a diversas presentaciones, festivales y encuentros, además, colaboró en la realización de su primer disco “Son de siempre”. Actualmente estudia la Licenciatura en Arquitectura en la Universidad Nacional Autónoma de México. Jhonatan. Orquesta Sinfónica Comunitaria Rey Poeta. Nezahualcóyotl, Estado de México. Contrabajista. Estudió en la Orquesta Sinfónica Comunitaria Rey Poeta, perteneciente al Sistema Nacional de Fomento Musical. Y actualmente es estudiante del Conservatorio Nacional de Música. Ha tenido distintas participaciones musicales, entre las que destacan: el Primer Encuentro Nacional de Orquestas Comunitarias del Sistema Nacional de Fomento Musical, Estado de México. (2017). Réquiem de Mozart con la Orquesta Sinfónica Metropolitana, CDMX. (2018). Campamento y gira nacional con la Orquesta Sinfónica Infantil de México (OSIM), 2019. Contrabajo de refuerzo con la Orquesta Juvenil de Guerrero en el Festival Internacional Cervantino (2019). Festival Internacional de la Quimera en el municipio de Metepec (2019). Y como Músico invitado a la Orquesta de las Altas Montañas en Orizaba, Veracruz, en su gira de cierre (2019). Contrabajo invitado con la Orquesta Sinfónica de Brooklyn, Presentándose en el Conservatorio Nacional de Música y en el Castillo de Chapultepec, CDMX (2020). Cinthya. Coro Comunitario Monumental. Iguala. Guerrero. Desde temprana edad tuvo interés por la música, la danza y la oratoria. En 2016 ingresó al Coro Monumental de Iguala, desde entonces, ha participado en presentaciones dentro de las instalaciones de la feria a la Bandera de Iguala. En 2018 fue seleccionada para participar en el Magno evento de cambio de gobierno en el zócalo capitalino y en el 2019 se presentó en el 47° Festival Internacional Cervantino y El Magno evento de cultura comunitaria Tengo un sueño realizado por la Secretaría de Cultura en el Auditorio Nacional. Modera: Norma Torres. Actriz y narradora oral. Es narradora oral desde el 2000, disciplina con la que se ha presentado en escenarios de Austria, Colombia, Cuba, EEUU, España, Panamá, Uruguay, entre otros. Ha colaborado como escritora, narradora y guionista para varias aplicaciones digitales y cortometrajes animados. Ha formado parte de distintos montajes y compañías de teatro. Tiene un proyecto de música infantil, con el cual ha publicado dos discos con canciones de su autoría. Es directora de La Torre de los Cuentos, compañía que genera y produce espectáculos y proyectos interdisciplinarios.',
@@ -1971,7 +1997,7 @@ const video_player_data = {
                         'date' : '2020-07-29',
                     },
                     7 : {
-                        'name' : 'IV.Diversidad e inclusión en la educación musical. Experiencias, enfoques y búsquedas metodológicas.',
+                        'name' : 'Mesa de diálogo IV. Diversidad e inclusión en la educación musical. Experiencias, enfoques y búsquedas metodológicas.',
                         'type' : 'Mesa de diálogo',
                         'author' : 'Lourdes Palacios, Andrés Otokani, Mercedes Alejandra Payán Ramírez, Pamela Ochoa, Manuel Islas, Gerardo Carrillo Mateos, Adriana Hernández.',
                         'description' : 'Participan: Lourdes Palacios. Pedagoga y académica de la UNAM. Doctora y maestra en Pedagogía por la UNAM y licenciada en Pedagogía por el Centro de Investigación y Docencia en Humanidades del Estado de Morelos (hoy Colegio de Morelos). Realizó estudios de Educación Musical y Fagot en la Escuela Nacional de Música (hoy Facultad de Música) de la UNAM, y de Fagot, Música de Cámara y Orquesta en la Escuela de Música Vida y Movimiento Ollin Yoliztli. Es profesora en la Licenciatura en Pedagogía en el SUAYED, de la Facultad de Filosofía y Letras de la UNAM. Ha desempeñado tareas en la docencia, investigación, gestión y planeación educativas, en instituciones como el INBA, CNA, Sistema Nacional de Fomento Musical, CONACULTA, SEP, CCOY y otras. Andrés Otokani. Director musical del grupo Rock DI. Actual Director Musical del grupo Rock DI. Ha trabajo en diversos espacios escénicos musicales como Gestor cultural, tour manager, stage manager y production managment. Sus esfuerzos se han enfocado hacía el desarrollo de artistas con discapacidad y comunidades en alto riesgo. Mercedes Alejandra Payán Ramírez. Maestra en música-etnomusicología, de la UNAM. Maestra en Música-Etnomusicología por la Facultad de Música de la UNAM, Licenciada en Educación Musical por la Universidad Veracruzana y egresada de la Licenciatura en Música-Intérprete en Flauta Transversa de la Facultad de Música de la UNAM. Investiga-colabora sobre procesos de enseñanza-aprendizaje musical, diseño curricular y formación docente en ámbitos tanto escolarizados como comunitarios de diversas tradiciones musicales. En su rol de instrumentista se ha desempeñado como flautista y piccolista de Pasatono Orquesta Mexicana con sede en Oaxaca. Pamela Ochoa. Maestra del Instituto Nacional para la Rehabilitación de Niños Ciegos y débiles visuales. INNCI. Estudió la Licenciatura en Composición musical y en Pedagogía.   Ha impartido la materia de música en el Instituto Nacional para la Rehabilitación de Niños Ciegos y Débiles visuales (INNCI donde un porcentaje alto de niños posee habilidades sobresalientes y gusto por la música.   Creó Audición Perfecta, programa social que brinda educación musical de manera gratuita.  En 2019 fue designada como Personaje Incluyente por Consejo Nacional para el Desarrollo y la inclusión de las personas con discapacidad. Manuel Islas. Músico y tallerista. Músico y maestro de música con 20 años de experiencia trabajando con niñas, niños, jóvenes y personas adultas talleres de iniciación a la educación musical y música como experiencia creativa y de vida. Gerardo Carrillo Mateos. Profesor de Música de la UAM Xochimilco. Estudio guitarra en el Conservatorio Nacional de Música y Composición en el CIEM. Además de cursos magistrales de diversas materias musicales. Así como Análisis de la Cultura en la ENAH y Gestión Cultural en Conaculta y UAM-X. Como profesor fue fundador de la Escuela de Iniciación Musical del Centro Cultural Ollin Yoliztli en 1980 y Subdirector Académico y Director General 2004-2007. En la UAM hizo la primer paleografía del Códice Saldivar Núm 4, desde 1984 es instructor de música en UAM-X, donde ha coordinado diversos cursos y programas de música. Actualmente coordina Diplomados de Actualización Musical y el Taller de Música en UAM-X, colabora en proyectos de carácter comunitario, es cofundador de la Asamblea por las Culturas y como Vicepresidente en funciones de la Asociación Musical Manuel M Ponce. Modera: Adriana Hernández. Proyectos Especiales de la Coordinación Nacional de Desarrollo Cultural Infantil. Con el objetivo de generar espacios de diálogo y reflexión sobre el desarrollo y la situación actual de la música dirigida a niñas, niños y adolescentes en distintos contextos, así como la contribución de la música en el desarrollo de sus capacidades, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizará de manera virtual el Primer Coloquio de músicas e infancias.',
@@ -1979,7 +2005,7 @@ const video_player_data = {
                         'date' : '2020-07-30',
                     },
                     8 : {
-                        'name' : 'V. Industrias musicales y autogestión',
+                        'name' : 'Mesa de diálogo V. Industrias musicales y autogestión',
                         'type' : 'Mesa de diálogo',
                         'author' : 'Pedro Sandoval, Agustín Dávalos, Valentina Barrios, Brenda Cervantes, Cristóbal Barreto, ',
                         'description' : 'Participan: Pedro Sandoval. Compositor de música con instrumentos hechos de materiales reutilizables, integrante del grupo Los Botes Cantan. Estado de México. Ha participado en los grupos musicales Destino Clandestino, Gatos de Azotea, La Garañona de a Litro y Los Mareados. Desde el 2003 crea el grupo de música para infancias Los Botes Cantan y ha mantenido su trabajo permanente como cantautor solista. Agustín Dávalos. Músico y compositor de rock, integrante de Los Amos del Recreo. Morelos. Licenciado en Música con especialidad en Composición del Centro Morelense de las Artes. Además de ser profesor de música ha estado en varios proyectos musicales como Never After Before, Monodram entre otros, en el 2013 funda Los Amos del Recreo, banda con la que pretende acercar a las infancias a distintos subgéneros del rock. Valentina Barrios. Música y compositora de rock, integrante del grupo Valentina Barrios y los Indómitos. CDMX. Creadora Escénica y Gestora Cultural enfoca principalmente su esfuerzo hacia el fomento a la lectura, se ha especializado en la creación de canciones para las infancias. Actualmente lidera la banda Valentina Barrios y los Indómitos. Brenda Cervantes. Música y compositora de jazz latino. CDMX. Música y compositora, pionera en el género de jazz latino dirigido especialmente para infancias, fundadora de los conciertos Tres y jazz y Di Da Bi Da Jazz. Cristóbal Barreto. Músico y compositor de Radio Gorila. Colima. Artista integral, ha desarrollado diversos campos artísticos como narrador oral, poeta, dramaturgo y compositor de música para las infancias, fundador y vocalistade la banda musical Radio Gorila, donde explora diversos géneros musicales pero con letras especialmente escritas para niñas y niños. Actualmente radica en Colima y es ahí donde realiza la mayor parte de su trabajo. Con el objetivo de generar espacios de diálogo y reflexión sobre el desarrollo y la situación actual de la música dirigida a niñas, niños y adolescentes en distintos contextos, así como la contribución de la música en el desarrollo de sus capacidades, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizará de manera virtual el Primer Coloquio de músicas e infancias.',
@@ -1989,9 +2015,9 @@ const video_player_data = {
                 }, // FIN COLOQUIO CICLO DE CONFERENCIAS
             },
         },
-    },
+    }, // FIN Primer Coloquio de músicas e infancias: FORMACIÓN
 
-// DEL AMATE Y CENZONTLE
+// DEL AMATE Y CENZONTLE: CONFERENCIAS
     11 : {
         'name' : `Del amate y el cenzontle`,
         'age' : 4,
@@ -2039,14 +2065,7 @@ const video_player_data = {
                         'url' : 'https://www.youtube.com/embed/42np7mOdNiQ',
                         'date' : '2020-10-06',
                     },
-                    6 : {
-                        'name' : 'Muestra Artística',
-                        'type' : 'Narraciones orales',
-                        'author' : 'Teresa Figueroa, Iván Zepeda, Apolonio Mondragón, Aníbal Hoyos',
-                        'description' : '"El cielo se va a caer", Narración oral con Teresa Figueroa, Tonalá, Jalisco. Cuento acumulativo en el que los animales comparten la noticia de que el cielo se va a caer, hasta que finalmente una mujer sabia resuelve esa inquietud. "El jorongo de la luna", de Emilio Lome. Narración oral con Iván Zepeda. Córdoba, Veracruz. La historia de cómo la Luna consiguió el atavío que la hace brillar tan distinto al Sol. "Cada quien sabe algo", Narración oral con Apolonio Mondragón. CDMX. La historia de dos pueblos que, tras quedarse sin agua, salieron en busca de respuestas. "La leyenda de los gigantes", Narración oral con Aníbal Hoyos. Papantla, Veracruz. Cuentan los sabios de Nayarit que antes, mucho antes de que nosotras y nosotros estuviéramos aquí, la tierra era habitada por gigantes.',
-                        'url' : 'https://www.youtube.com/embed/-JOH4JSJRrE',
-                        'date' : '2020-10-06',
-                    },
+                    
                 },
             },
             2 : {
@@ -2091,15 +2110,7 @@ const video_player_data = {
                         'description' : 'Actividad sugerida para familias y acompañantes de crianza. Participan: Dra. Alicia Mandujano. Asociación Mexicana de Pediatría. Egresada de la Universidad Nacional Autónoma de México, Especialidad en Pediatría por el Hospital Infantil Privado, es Instructor de RCP, Diplomado de Adolescentes, Diplomado de Nutrigenómica, Diplomado en Dirección de Hospitales y fue Subdirector Médico del Hospital Infantil Privado. Pertenece al Comité Organizador del CONGRESO INTERAMERICANO DE PEDIATRÍA. Actualmente funge como Presidente de la Asociación Médica Hospital Infantil Privado. Dr. Roberto Guillermo Calva y Rodríguez. Academia Mexicana de Pediatría Profesor investigador de la facultad de medicina de la Benemérita Universidad  Autónoma de Puebla. Doctorado Honoris Causa por la Universidad Mesoamericana. Profesor catedrático de la Universidad Nacional Autónoma de México; Universidad La Salle; La Benemérita Universidad Autónoma de Puebla; La Universidad Popular Autónoma del Estado de Puebla y la Universidad Mesoamericana. En las cátedras de Pediatría, Gastroenterología pediátrica, Salud infantil y Bioética. Ponente a nivel internacional, nacional y estatal en 350 ocasiones, sobre temas de pediatría, nutrición, bioética, gastroenterología pediátrica, historia de la medicina y docencia. Entre otros, ha publicado 24 libros sobre pediatría, nutrición, gastroenterología pediátrica, bioética, historia de la medicina y cultura. Dra. Silvia Torres. Sociedad Mexicana de Pediatría, Pediatra-Neonatologo, Maestra en Ciencias de la Salud Pública, Diplomada en Neurodesarrollo, Instructor Nacional en Reanimación Neonatal, Secretaria de la Sociedad Mexicana de Pediatría. Dr. Carlos Pacheco. Confederación Nacional de Pediatría de México. Coordinador de Capítulos del Colegio de Pediatría del Estado de Oaxaca. Coordinador del Taller de Lectura Confederación Nacional de Pediatría de México A.C. Médico egresado de la Universidad Autónoma “Benito Juárez” de Oaxaca. Especialidad de Pediatría en el Hospital Juárez de México. Diplomado en Dermatología Pediátrica avalado por el Hospital Infantil de México (UNAM). Catedrático por 33 años en la Escuela de Medicina de la Universidad Autónoma “Benito Juárez” de Oaxaca. Actualmente jubilado. Catedrático de la Facultad de Enfermería y Obstetricia, por 33 años. Catedrático de la Universidad la Salle Oaxaca, 2015. Diplomado en Psicopatología del bebé por la University Paris 13, Marzo,2002. Con 30 años de experiencia en consulta particular a la fecha. Consejero de la Comisión Estatal de Arbitraje Médico de Oaxaca (CEAMO), durante el periodo 2010 – 2013. Representante Estatal por Oaxaca para participar en el Taller de desastres en el marco del 23 Congreso Nacional de Pediatría. Expresidente del Colegio de Pediatría del Estado de Oaxaca en el periodo 2014 – 2016. Diplomado de lectura Primera Infancia y Adolescentes. Secretario de la Confederación Nacional de Pediatría de México, 2016- 2018. Consejero Mexicano de Certificación en Pediatría A.C. 2019- 2021. Presenta: Mónica Zárate. Responsable del área de prospectiva y evaluación',
                         'url' : 'https://www.youtube.com/embed/I8ZCwINktgQ',
                         'date' : '2020-10-13',
-                    },
-                    6 : {
-                        'name' : 'Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos',
-                        'type' : 'Muestra artística',
-                        'author' : 'Yademira Barragán, Iván Zepeda, Lorena Álvarez',
-                        'description' : 'Muestra artística para niñas y niños. Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos. "Historia de la resurrección del papagayo", de Eduardo Galeano. Narración oral con Yademira Barragán, Zapopan, Jalisco. El papagayo cayó a la olla, la noticia voló y causó tanta tristeza que modificó el paisaje. Un alfarero reunió los pesares y los transformó en una nueva oportunidad. "La lechuza y el ratón", de Beatriz Rodríguez Guillermo. Narración oral con Iván Zepeda. Córdoba, Veracruz. Cuento en verso que narra la historia de cómo el destino sorprendió a Rubia Rubí con un apuesto navegante. "Una lombriz y un águila", de Susana Olaondo. Narración oral con Lorena Álvarez. Playa del Carmen, Quintana Roo. La vida de una lombriz y un águila puede ser muy distinta si la acompañamos de cuentos, lectura y amistad. "El Rap de los libros", Rap con Roy Cuentacuentos. Tlaxcala, Tlaxcala. Canción sobre cómo Roy Cuentacuentos se enamoró de los cuentos.',
-                        'url' : 'https://www.youtube.com/embed/pAXi0JoTCyk',
-                        'date' : '2020-10-13',
-                    },
+                    }, 
                 },
             },
             3 : {
@@ -2145,16 +2156,235 @@ const video_player_data = {
                         'url' : 'https://www.youtube.com/embed/hriFyZTuEpE',
                         'date' : '2020-10-20',
                     },
-                    6: {
+                    
+                },
+            },
+
+            4 : {
+                'name' : `día 4`,
+                'playList' : {
+                    1 : {
+                        'name' : 'Oralidad y perspectivas: Lenguajes inclusivos',
+                        'type' : 'Mesa de diálogo',
+                        'author' : 'Alicia Molina Argudín, Antonio Zacruz, Valente Viveros y Areli García. Conduce: Benjamín Briseño Estrada.',
+                        'description' : 'Actividad sugerida para docentes, pedagogos y mediadores.',
+                        'url' : 'https://www.youtube.com/embed/8Ckr9yyJ8QI',
+                        'date' : '2020-10-27',
+                    },
+                    2: {
+                        'name' : 'Lectura y oralidad de la primera infancia',
+                        'type' : 'Conferencia',
+                        'author' : 'Emilio Lome. Presenta: Aideé Balderas.',
+                        'description' : 'Actividad sugerida para familias y acompañantes de crianza. Emilio Lome. Escritor, compositor e investigador de arte y cultura infantil y juvenil. San Cristóbal de las Casas, Chiapas.',
+                        'url' : 'https://www.youtube.com/embed/uwkgSoNIZd0',
+                        'date' : '2020-10-27',
+                    },
+                    3 : {
+                        'name' : 'Niñas, niños y adolescentes: Oralidad y agencia',
+                        'type' : 'Mesa de diálogo',
+                        'author' : 'Bruno Segura, Luciana Mulia, Sofía Villarreal Leos, Marco López, Mayté Guerra. Conduce: Lidia Zaragoza. ',
+                        'description' : 'Actividad sugerida para niñas, niños y adolescentes',
+                        'url' : 'https://www.youtube.com/embed/LYXCu0fK6NY',
+                        'date' : '2020-10-27',
+                    },
+                    4: {
+                        'name' : ' Presentación del trabajo editorial de Alas y Raíces',
+                        'type' : ' Activación editorial',
+                        'author' : 'Presentación de tres títulos de la Coordinación Nacional de Desarrollo Cultural Infantil-Alas y Raíces, que destacan la agencia cultural infantil, niñas, niños, adolescentes y jóvenes que nos comparten algo de su autoría: "Luna Sandía", donde que nos comparten sueños; "Semillas de tinta", en el que se cuestionan su realidad e ilustran su propia respuesta con enfoque de equidad de género; y la revista "El Petate", publicación con motivo del Día de Muertos “de niños muy creativos para los muertos y los vivos”.',
+                        'description' : 'Actividad sugerida para docentes, pedagogos y mediadores.',
+                        'url' : 'https://www.youtube.com/embed/LNpo1c4Pzzc',
+                        'date' : '2020-10-27',
+                    },
+                    5 : {
+                        'name' : 'Exposición de materiales de lectura para la inclusión, SEP',
+                        'type' : 'Conferencia',
+                        'author' : 'Aurora Almudena Saavedra Solá',
+                        'description' : 'Actividad sugerida para la comunidad artística y promotores culturales. Aurora Almudena Saavedra Solá, Directora General de Materiales Educativos, SEP',
+                        'url' : 'https://www.youtube.com/embed/Ik5jC9nhhHE',
+                        'date' : '2020-10-27',
+                    }, 
+                },
+            },
+        },
+    }, // FIN DEL AMATE Y CENZONTLE: CONFERENCIAS
+
+// DEL AMATE Y CENZONTLE: Muestras artísticas
+    12 : {
+        'name' : `Del amate y el cenzontle`,
+        'age' : 2,
+        'type' : {  
+            1 : {
+                'name' : `Muestras artísticas`,
+                'playList' : {
+                    1 : {
+                        'name' : 'Muestra artística',
+                        'type' : 'Narraciones orales',
+                        'author' : 'Teresa Figueroa, Iván Zepeda, Apolonio Mondragón, Aníbal Hoyos',
+                        'description' : '"El cielo se va a caer", Narración oral con Teresa Figueroa, Tonalá, Jalisco. Cuento acumulativo en el que los animales comparten la noticia de que el cielo se va a caer, hasta que finalmente una mujer sabia resuelve esa inquietud. "El jorongo de la luna", de Emilio Lome. Narración oral con Iván Zepeda. Córdoba, Veracruz. La historia de cómo la Luna consiguió el atavío que la hace brillar tan distinto al Sol. "Cada quien sabe algo", Narración oral con Apolonio Mondragón. CDMX. La historia de dos pueblos que, tras quedarse sin agua, salieron en busca de respuestas. "La leyenda de los gigantes", Narración oral con Aníbal Hoyos. Papantla, Veracruz. Cuentan los sabios de Nayarit que antes, mucho antes de que nosotras y nosotros estuviéramos aquí, la tierra era habitada por gigantes.',
+                        'url' : 'https://www.youtube.com/embed/-JOH4JSJRrE',
+                        'date' : '2020-10-06',
+                   },
+                    2 : {
+                        'name' : 'Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos',
+                        'type' : 'Muestra artística',
+                        'author' : 'Yademira Barragán, Iván Zepeda, Lorena Álvarez',
+                        'description' : 'Muestra artística para niñas y niños. Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos. "Historia de la resurrección del papagayo", de Eduardo Galeano. Narración oral con Yademira Barragán, Zapopan, Jalisco. El papagayo cayó a la olla, la noticia voló y causó tanta tristeza que modificó el paisaje. Un alfarero reunió los pesares y los transformó en una nueva oportunidad. "La lechuza y el ratón", de Beatriz Rodríguez Guillermo. Narración oral con Iván Zepeda. Córdoba, Veracruz. Cuento en verso que narra la historia de cómo el destino sorprendió a Rubia Rubí con un apuesto navegante. "Una lombriz y un águila", de Susana Olaondo. Narración oral con Lorena Álvarez. Playa del Carmen, Quintana Roo. La vida de una lombriz y un águila puede ser muy distinta si la acompañamos de cuentos, lectura y amistad. "El Rap de los libros", Rap con Roy Cuentacuentos. Tlaxcala, Tlaxcala. Canción sobre cómo Roy Cuentacuentos se enamoró de los cuentos.',
+                        'url' : 'https://www.youtube.com/embed/pAXi0JoTCyk',
+                        'date' : '2020-10-13',
+                    },
+                    3: {
                         'name' : 'Muestra artística',
                         'type' : 'Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos.',
                         'author' : 'César Rincón, Apolonio Mondragón, Sakiko Yokoo, Alejandra Guadarrama',
-                        'description' : 'Muestra artística para niñas y niños. Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos. Cuentos sonoros. Narración oral con Alejandra Guadarrama. Yauhquemehcan, Tlaxcala. ¿Cómo podríamos leer sin los ojos o hablar sin palabras? En este vídeo te mostramos las diversas formas de leer el mundo y de escuchar cuentos ¡aunque no existan las letras ni las palabras! Mamma Luna. Narración kamishibai con Sakiko Yokoo. CDMX. Esta pieza del kamishibai está creada especialmente para los más pequeños. Una propuesta de cuento sensorial para los bebés. Cuentos, juguetes y rayones. Narración oral con Apolonio Mondragón. CDMX. Historia original creada a partir de talleres con niños, ocupando sus trabajos para ilustrar escenas de la grabación. Mamás. Una familia normal. Narración animada con César Rincón. Zacatecas, Zacatecas. Todo el mundo tiene una familia y todas las familias son muy diferentes. Armando presenta la suya, a la cual, no cambiaría por nada. ',
+                        'description' : 'Muestra artística para niñas y niños. Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos. Cuentos sonoros. Narración oral con Alejandra Guadarrama. Yauhquemehcan, Tlaxcala. ¿Cómo podríamos leer sin los ojos o hablar sin palabras? En este vídeo te mostramos las diversas formas de leer el mundo y de escuchar cuentos ¡aunque no existan las letras ni las palabras! Mamma Luna. Narración kamishibai con Sakiko Yokoo. CDMX. Esta pieza del kamishibai está creada especialmente para los más pequeños. Una propuesta de cuento sensorial para los bebés. Cuentos, juguetes y rayones. Narración oral con Apolonio Mondragón. CDMX. Historia original creada a partir de talleres con niños, ocupando sus trabajos para ilustrar escenas de la grabación. Mamás. Una familia normal. Narración animada con César Rincón. Zacatecas, Zacatecas. Todo el mundo tiene una familia y todas las familias son muy diferentes. Armando presenta la suya, a la cual, no cambiaría por nada.',
+                        'url' : 'https://www.youtube.com/embed/xIp9_oJguME',
+                        'date' : '2020-10-20',
+                    },
+                    4: {
+                        'name' : 'Muestra artística',
+                        'type' : 'Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos.',
+                        'author' : 'Gisel Casas, Giovanna Cavasola, Benjamín Briseño ',
+                        'description' : 'Muestra artística para niñas y niños. Cantares, canciones, narrativas y líricas, rimas, oraciones, conjuros y cuentos.El Dragón Xalkutaat. Mito pai pai. Narración oral con Gisel Casas, CDMX. El Dragón Xalkutaat poseía el fuego en sus dientes, hasta que un valiente niño de pies ligeros decide enfrentar al temible dragón y entregar el fuego a los hombres. Yuma y los monstruos. Relato de la tradición oral de Nayarit con Giovanna Cavasola CDMX. En tiempos muy remotos la tierra era plana no existían las montañas, pero sí unos monstruos espantosos y peligrosos para los humanos, que por ello tenían que vivir escondidos, debajo de la tierra. Yuma una niña que gustaba del Sol y del Rio encontró, con la ayuda de un lucero, la forma de convertir los monstruos en cerros. Lo que ven los perros. Narración oral con Benjamín Briseño, CDMX. Leyenda popular que relata la experiencia de una mujer que al seguir un extraño ritual pudo saber a qué le ladran los perros en las noches, encontrando una escalofriante respuesta. El herrero y el diablo. Narración oral con Marcela Romero, CDMX. El diablo fue a recoger el alma de un herrero mal portado pero nunca imaginó que el pícaro sería más listo que él. ',
                         'url' : 'https://www.youtube.com/embed/xIp9_oJguME',
                         'date' : '2020-10-20',
                     },
                 },
-            } 
-        } 
-    }
+            },
+        },
+    }, // FIN DEL AMATE Y CENZONTLE: Muestras artísticas
+
+// XX Feria de las CALACAS 2020: Memorias del camino: para niños de 6 a 12
+    13 : {
+        'name' : `XX Feria de las Calacas, 2020: Memorias del camino`,
+        'age' : 2,
+        'type' : {  
+            1 : {
+                'name' : `Laboratorios Creativos`,
+                'playList' : {
+                    1 : {
+                        'name' : 'Gif de las Calacas',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Mariana Córdova',
+                        'description' : 'Taller para niñas y niños de 8 a 12 años de edad. Porque recordar y compartir también te fortalece, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces, invita a niñas, niños y adolescentes a disfrutar en familia de la “XX Feria de las Calacas: Memorias del camino”.',
+                        'url' : 'https://www.youtube.com/embed/73ew-8i-f8g',
+                        'date' : '2020-10-31',
+                    },
+                    2 : {
+                        'name' : 'Cubrebocas del recuerdo',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Filogonio Naxin. Oaxaca',
+                        'description' : 'Taller para niñas y niños de 8 a 12 años de edad. Con pinturas de colores y distintas figuras recordaremos a nuestros seres queridos y les haremos su cubrebocas para que se lo pongan cuando vengan a visitarnos desde el mundo de las almas viajeras. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/sY0dOKbED1U',
+                        'date' : '2020-10-31',
+                    },
+                    3 : {
+                        'name' : 'Rompecalaveritas',
+                        'type' : 'Laboratorio creativo',
+                        'author' : 'Cuauhtémoc Wetzka. Veracruz',
+                        'description' : 'Taller para niñas y niños de 8 a 12 años de edad. Aprende a hacer un rompecabezas y juega a intercambiar rostros y emociones al ritmo de los colores. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/f8RYwRo-xMw',
+                        'date' : '2020-11-02',
+                    }, 
+                },
+            },
+            2 : {
+                'name' : `Narraciones orales`,
+                'playList' : {
+                    1 : {
+                        'name' : 'El viaje a Mictlán',
+                        'type' : 'Narración',
+                        'author' : 'Melissa Aguilar. Colima',
+                        'description' : 'Chichitón y su abuelo tendrán que superar las pruebas para conseguir la protección de los dioses del inframundo. Basada en un texto de Víctor José Palacios. Porque recordar y compartir también te fortalece, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces, invita a niñas, niños y adolescentes a disfrutar en familia de la “XX Feria de las Calacas: Memorias del camino”. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/YdtW4HXc5ZI',
+                        'date' : '2020-10-31',
+                    },
+                    2 : {
+                        'name' : 'La Llorona',
+                        'type' : 'Narración',
+                        'author' : 'Alma Rosa Rivera. Ciudad de México',
+                        'description' : 'Narración para niñas y niños a partir de 6 años de edad. Cuentan que hace mucho tiempo La Llorona salía a espantar, pero un día eso cambió. ¿Quieres saber qué sucedió? Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/MBGcOqR3t3s',
+                        'date' : '2020-10-31',
+                    },
+                    3 : {
+                        'name' : 'Leyendas',
+                        'type' : 'Narración',
+                        'author' : 'Florina Piña. Ciudad de México',
+                        'description' : 'Narración para niñas y niños a partir de 10 años de edad. Historias y leyendas del Centro de la antigua Ciudad de México. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/_-Pj2j5lqU0',
+                        'date' : '2020-10-31',
+                    },
+                    4 : {
+                        'name' : 'El Diablo en Tampico',
+                        'type' : 'Narración',
+                        'author' : 'Jorge de la Peña. Tamaulipas',
+                        'description' : 'Narración para niñas y niños a partir de 7 años de edad. Me contó Doña Claudina Gallegos, sabia mujer tampiqueña, que el meritito Diablo se les aparece a los hijos desobedientes. Y es claro porque "cuando uno tuerce su camino, es presa fácil para que se le aparezca, le agarre o le lleve el Diablo". Bueno, eso dijo Doña Claudina. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/XRN-rQUrZEg',
+                        'date' : '2020-10-31',
+                    },
+                    5 : {
+                        'name' : 'La muerte canta',
+                        'type' : 'Narración',
+                        'author' : 'Itzel Tapia. Ciudad de México',
+                        'description' : 'Narración para niñas y niños a partir de 6 años de edad. Dicen por ahí que, en pleno Día de Muertos, la Catrina se recoge sus enaguas y agarra su florido sombrero para recorrer las calles con su tranquilo canto. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/7bSOty7tX7c',
+                        'date' : '2020-11-01',
+                    },
+                    6 : {
+                        'name' : 'Lo que desaparece',
+                        'type' : 'Narración',
+                        'author' : 'Ana Prado. Hidalgo',
+                        'description' : 'Narración para niñas y niños a partir de 7 años de edad. Algunas veces, los juguetes no aparecen por más que los busques y de repente vuelven a aparecer. ¿Te ha ocurrido? ¿Te imaginas qué pasaría si nunca los volvieras a encontrar? ¿Sabes a dónde va todo lo que desaparece? Basada en el cuento “Lo que desaparece” de Antonio Ramos Revillas. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/hVC8-AdMCgU',
+                        'date' : '2020-11-01',
+                    },
+                    7: {
+                        'name' : 'La leyenda del ánima solitaria',
+                        'type' : 'Narración',
+                        'author' : 'Apolonio Mondragón. Ciudad de México',
+                        'description' : 'Narración para niñas y niños a partir de 6 años de edad. En algunos pueblos de México se acostumbra colocar una pequeña ofrenda afuera de la casa, es para el ánima que no tiene quién le reze. Se coloca afuera porque el ánima en pena pudo ser alguien malvado en vida. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/_-dd5jtgXVU',
+                        'date' : '2020-11-01',
+                    },
+                },
+            },
+            3 : {
+                'name' : `Presentaciones artísticas`,
+                'playList' : {
+                    1 : {
+                        'name' : 'Concierto. Instrumonstruos Musicales',
+                        'type' : 'Concierto',
+                        'author' : 'Instrumonstruos Musicales',
+                        'description' : 'Música para niñas y niños a partir de 6 años de edad. Instrumonstruos Musicales trae para ti un concierto terrorífico para ponerte los pelos de punta ¡Ah! ¿No me creen? ¡Pues pasen a bailar con ellos y compruébenlo ustedes mismos! Egresados de la Escuela Nacional de Música y de la Escuela Superior de Música, algunos tocan jazz, otros rock. Brindan herramientas, a través de canciones que permiten enfrentar los miedos de formas divertidas con géneros como el rock, pop, salsa, cumbia, blues, jazz, funk, asimismo, incluyen títeres, drones y escenografía para hacer más divertida la presentación a los asistentes. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades  de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/Ss2L7s5wQl4',
+                        'date' : '2020-10-31',
+                    },
+                    2: {
+                       'name' : 'Concierto didáctico de Son Jarocho',
+                        'type' : 'Concierto',
+                        'author' : 'Grupo Taller Comunitario de Son Jarocho de Santiago Tuxtla. Veracruz',
+                        'description' : 'Música para niñas y niños a partir de 6 años de edad. ¡Saquen las guayaberas y las blusas bordadas que nos pondremos a zapatear hasta que el cuerpo aguante! Échate con tu familia un zapateado y si no sabes, pues no te preocupes, lo importante acá es que disfrutes con tus personas favoritas. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/bk8JTBdRglI',
+                        'date' : '2020-10-31',
+                    },
+                    3 : {
+                        'name' : 'Pan de Muerto y Rock And Roll',
+                        'type' : 'Concierto',
+                        'author' : 'Yucatán A Go Gó. Estado de México',
+                        'description' : 'Música para niñas y niños a partir de 6 años de edad. Un poco de surf, un poco de rock, un poco de Yucatán A Go Gó, que traen para ti un concierto especial, ¡no te lo pierdas! porque vamos a brincar como canguros ¿O era como changos? ¡No importa! ¡De qué vas a brincar, vas a brincar! Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/s6e3O6MTg4A',
+                        'date' : '2020-10-31',
+                    },
+                    4: {
+                        'name' : 'Ofrenda',
+                        'type' : 'Música',
+                        'author' : 'Los Patita de Perro. Puebla',
+                        'description' : 'Música para niñas y niños a partir de 6 años de edad. Una ofrenda para rockear con Nacho, Charly y Pancho ¡Sí, con Los Patita de Perro!  Banda legendaria de rock para niñas y niños ¡Acompáñanos a mover la melena y rockear con ellos! Patita de Perro son un trío de locos músicos que cantan para niñas y niños de todo el mundo. Compartir recuerdos y así evocar a quienes ya no están con nosotros forma parte de esta tradición ancestral que se celebra cada año en nuestro país. En este contexto, las actividades de la feria buscan brindar alternativas para que niñas, niños y adolescentes expresen su sentir y pensamientos alrededor de esta conmemoración.',
+                        'url' : 'https://www.youtube.com/embed/aoyi_EcfJy8',
+                        'date' : '2020-11-01',
+                    }, 
+                },
+            }
+        }
+    }  // FIN XX Feria de las CALACAS 2020: Memorias del camino: para niños de 6 a 12
 };
