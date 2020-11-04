@@ -154,25 +154,25 @@ function draw_contenido( age ){
         <div class="col-`+ ((isMobile)? "12" : "6") +` action_menu_block `+ ((isMobile)? "mobile" : "") +`">
             <div class="row">
                 <div class="col-3 menu_btn_container" data-target="videos" data-age="${age}" onClick="actionMenuChange(this)">
-                    <img src="img/infancia1/videos1.png" class="claro" alt="boton de videos"><img src="img/infancia1/videos.png" class="color" alt="boton de videos"> 
+                    <img src="img/infancia1/video.svg" class="claro" alt="boton de videos"><img src="img/infancia1/video.png" class="color" alt="boton de videos"> 
                     <div>
                         Videos 
                     </div>
                 </div>
                 <div class="col-3 menu_btn_container" data-target="audios" data-age="${age}" onClick="actionMenuChange(this)">
-                    <img src="img/infancia1/audios1.png" class="claro" alt="boton de audios"><img src="img/infancia1/audios.png" class="color" alt="boton de audios"> 
+                    <img src="img/infancia1/audio.svg" class="claro" alt="boton de audios"><img src="img/infancia1/audio.png" class="color" alt="boton de audios"> 
                     <div>
                         Audios 
                     </div>
                 </div>
                 <div class="col-3 menu_btn_container" data-target="juegos" data-age="${age}" onClick="actionMenuChange(this)">
-                    <img src="img/infancia1/videos1.png" class="claro" alt="boton de juegos"><img src="img/infancia1/videos.png" class="color" alt="boton de juegos"> 
+                    <img src="img/infancia1/juegos.svg" class="claro" alt="boton de juegos"><img src="img/infancia1/juegos.png" class="color" alt="boton de juegos"> 
                     <div>
                         Juegos
                     </div>
                 </div>
                 <div class="col-3 menu_btn_container" data-target="apps" data-age="${age}" onClick="actionMenuChange(this)">
-                    <img src="img/infancia1/videos1.png" class="claro" alt="boton de apps"><img src="img/infancia1/videos.png" class="color" alt="boton de apps"> 
+                    <img src="img/infancia1/apps.svg" class="claro" alt="boton de apps"><img src="img/infancia1/apps.png" class="color" alt="boton de apps"> 
                     <div>
                         Apps 
                     </div>
