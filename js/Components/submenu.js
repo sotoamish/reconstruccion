@@ -47,7 +47,7 @@ function draw_action(action, age){
             break;
 
         case "descripcionayr":
-                 draw_contenido( age );
+                 draw_descripcion( age );
             break;
     
         default:
@@ -197,9 +197,9 @@ function draw_contenido( age ){
 
     //draw a component container section
     toDraw += `
-        <div class="col-lg-8 component_container" id="component_container">
+        <div class="col-lg-7 component_container" id="component_container">
         </div> 
-        <div class="col-lg-4">
+        <div class="col-lg-5 bookshelf" id="bookshelf">
         </div> 
     `;
 
@@ -216,6 +216,9 @@ function draw_contenido( age ){
         //if subsection doesn't exists, click on first subSection button
         document.getElementsByClassName("menu_btn_container")[0].click();
     }
+
+    // draw bookShelf       //function from libreroCompponent.js
+    draw_bookshelf( age );
 }
 
 
@@ -228,12 +231,10 @@ function draw_contenido2( age ){
     toDraw += `
         <div class="col-7 action_menu_block2 age_${age}">
             <div class="row">
-                <div class="col-2 menu_btn_container alternative" data-target="videos" data-age="${age}" onClick="actionMenuChange(this)">Videos</div>
-                <div class="col-2 menu_btn_container alternative" data-target="podcast" data-age="${age}" onClick="actionMenuChange(this)">Podcast</div>
-                <div class="col-2 menu_btn_container alternative" data-target="blog" data-age="${age}" onClick="actionMenuChange(this)">Blog</div>
-                <div class="col-2 menu_btn_container alternative" data-target="salon" data-age="${age}" onClick="actionMenuChange(this)">Salón interactivo</div>
-                <div class="col-2 menu_btn_container alternative" data-target="exposiciones" data-age="${age}" onClick="actionMenuChange(this)">Exposiciones</div>
-                <div class="col-2 menu_btn_container alternative" data-target="apps" data-age="${age}" onClick="actionMenuChange(this)">Apps</div>
+                <div class="col-3 menu_btn_container alternative" data-target="videos" data-age="${age}" onClick="actionMenuChange(this)">Videos</div>
+                <div class="col-3 menu_btn_container alternative" data-target="podcast" data-age="${age}" onClick="actionMenuChange(this)">Podcast</div>
+                <div class="col-3 menu_btn_container alternative" data-target="blog" data-age="${age}" onClick="actionMenuChange(this)">Blog</div>
+                <div class="col-3 menu_btn_container alternative" data-target="salon" data-age="${age}" onClick="actionMenuChange(this)">Salón interactivo</div>
             </div>
         </div>
 
@@ -384,10 +385,17 @@ function draw_estados( age ){
         <div class="col-12 estados_block">
 
             <div class="row">
-                <div class="col-12 estados_descripcion">
-                    <span> Bienvenidos todos </span>
+                <div class="col-10 offset-1 estados_descripcion">
+                    <span> Descripción de este Sitio </span>
 
                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sapien a nibh dapibus iaculis. Aenean vel dignissim diam. Vivamus 
+                        fringilla libero ut lacus imperdiet, eget auctor orci accumsan. Quisque eget facilisis est. Donec quam risus, bibendum quis condimentum vel, 
+                        pretium id elit. Nam in metus sit amet erat interdum ornare vitae et ante. Proin convallis quis est et volutpat. Donec rutrum tempus arcu at 
+                        pulvinar. 
+                    </p>
+
+                    <!--<p>
                         Alas y Raíces es el programa de la Secretaría de Cultura federal que propone acciones destinadas al cumplimiento de los derechos culturales 
                         de las infancias (de 0 a 17 años de edad) de México en su diversidad de circunstancias: “el derecho al descanso y el esparcimiento, al juego 
                         y a las actividades recreativas propias de su edad y a participar libremente en la vida cultural y en las artes”, como lo indica el Artículo 
@@ -407,7 +415,7 @@ function draw_estados( age ){
                         Propiciando experiencias artísticas y culturales significativas y constantes, desde las primeras etapas de la vida, se busca contribuir al 
                         bienestar, la formación integral de niños y adolescentes y el desarrollo de su imaginación, capacidad reflexiva, a la par que su sensibilidad, 
                         empatía, curiosidad y expresión creativa.
-                    </p>
+                    </p>-->
                 </div>
             </div>
 
@@ -417,9 +425,11 @@ function draw_estados( age ){
                 </div>
                 
                 <div class="col-6 input-group">
-                    <input type="text" class="form-control searchField" id="searchField" placeholder="Buscar..." aria-label="Buscar..." >
-                    <div class="input-group-append elm_search_button">
-                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    <div class="input-group">
+                        <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                        <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -439,6 +449,15 @@ function draw_estados( age ){
     // functions from formadores.js
     fill_estados_field();
     update_estados_board();
+}
+
+
+//draw "descripción de alas y raices" //if from formadores page
+function draw_descripcion( age ){
+    let toDraw = `
+        En construcción
+    `;
+    action_window.innerHTML = toDraw;
 }
 
 
