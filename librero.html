@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=en , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alas y Raíces | Blog</title>
+    <title>Alas y Raíces | Librero</title>
 
     <!-- Favico -->
     <link rel="icon" type="image/png" href="https://www.alasyraices.gob.mx/img/favico2.png">
@@ -26,19 +26,18 @@
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/035f9caf7c.js" crossorigin="anonymous"></script>
 
-    <!-- swiper carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+    <!-- style sheets -->
     <!-- general styles -->
     <link rel="stylesheet" href="css/Main.css">
     <link rel="stylesheet" href="css/FooterAyR.css">
     <link rel="stylesheet" href="css/FooterGob.css">
 
+    <!-- page styles -->
+    <link rel="stylesheet" href="css/librero.css">
+
     <!-- components styles -->
     <link rel="stylesheet" href="css/Components/neonavbar.css">
-    <link rel="stylesheet" href="css/Components/bannerComponent.css">
-    <link rel="stylesheet" href="css/Components/blog.css">
+    <link rel="stylesheet" href="css/Components/subMenu.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -76,29 +75,46 @@
                 </div>
             </section>
         <!--/.header gobierno --> 
-
+        
         <!-- neo navbar -->
             <section>
                 <div class="row p-0">
                     <div class="col-12 neoNavbar" id="neoNavbar"></div>
                 </div>
             </section>
-        <!--/.neo navbar -->  
+        <!--/.neo navbar -->         
 
-        <!-- Banners -->
-            <section>
-                <div class="row bannerAction" id="bannerAction">
+        <!-- lista de resultados -->
+        <section>
+            <div class="row">
+                <div class="col-12 librero_header">
+                    <div><img src="img/libros.png" alt="log del librero digital"></div>
+                    <div>Librero digital</div>
                 </div>
-            </section>
-        <!--/.Banners -->
-
-        <!-- content window -->
-            <section>
-                <div class="row content_window" id="content_window">
-                    
+                <div class="col-12 librero_selector" id="librero_selector">
+                    <button class="lib_type" id="btn_libros" onclick="print_lib_type(this)">Libros</button>
+                    <button class="lib_type" id="btn_folletos" onclick="print_lib_type(this)">Folletos</button>
                 </div>
-            </section>
-        <!--/.content window -->
+                <div class="col-8"></div>
+                <div class="col-4 search_block">
+                    <div class="input-group">
+                        <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                        <div class="input-group-append elm_search_button" id="elm_search_button">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 offset-1">
+                    <div class="row lib_list" id="lib_list">
+                        
+                    </div>
+                </div>
+                <div class="col-10 offset-1 btn_container">
+                    <button id="btn_show_more" onclick="print_lib_type()">Mostrar más resultados</button>
+                </div>
+            </div>
+        </section>
+        <!--/.lista de resultados -->
 
         <!-- footer AyR -->
             <section>
@@ -125,62 +141,62 @@
         <!--/.footer AyR --> 
         
         <!-- footer GOBMX -->
-            <section>
-                <div class="row footer-gob">                
-                    <div class="col-12 p-0">
-                        <img src="img/fondofooter.png" alt="pleca de separación" id="pleca-gob">
-                    </div>
-
-                    <div class="col-sm-3 sub-div footer-gob1">
-                        <div>
-                            <a href="https://www.gob.mx/"> 
-                                <img src="img/logoheader.svg" alt="logo gobierno mx" /> 
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.gob.mx/cultura/"> 
-                                <img src="img/logo-cultura.svg" alt="logo secretaria de cultura" /> 
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 sub-div footer-gob2">
-                        <span>Enlaces</span><br><br>
-                        <p>
-                            <a href="https://www.participa.gob.mx/">Participa</a> <br>
-                            <a href="https://www.gob.mx/publicaciones">Publicaciones oficiales</a> <br>
-                            <a href="http://www.ordenjuridico.gob.mx/">Marco Jurídico</a> <br>
-                            <a href="https://www.plataformadetransparencia.org.mx/web/guest/inicio">Plataforma Nacional de Transparencia</a>
-                        </p>
-                    </div>
-
-                    <div class="col-sm-3 sub-div footer-gob3">
-                        <span>¿Qué es gob.mx?</span><br><br>
-                        <p>
-                            Es el portal único de trámites, información y participación ciudadana. <a href="https://www.gob.mx/que-es-gobmx">Leer más</a>
-                        </p>
-
-                        <p>
-                            <a href="https://datos.gob.mx/">Portal de datos abiertos</a><br>
-                            <a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a><br>
-                            <a href="https://www.gob.mx/privacidadintegral">Aviso de privacidad integral</a><br>
-                            <a href="https://www.gob.mx/privacidadsimplificado">Aviso de privacidad simplificado</a><br>
-                            <a href="https://www.gob.mx/terminos">Términos y condiciones</a><br>
-                            <a href="https://www.gob.mx/terminos#medidas-seguridad-informacion">Política de seguridad</a><br>
-                            <a href="https://www.gob.mx/sitemap">Mapa del sitio</a>
-                        </p>
-                    </div>
-
-                    <div class="col-sm-3 sub-div footer-gob4">
-                            <span> <a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></span><br><br>
-                            <p>
-                                Síguenos en: <br>
-                                <a href="https://www.facebook.com/gobmexico/"><i class="fab fa-lg fa-facebook-f"></i></a> &nbsp;&nbsp;
-                                <a href="https://twitter.com/GobiernoMX"><i class="fab fa-lg fa-twitter"></i></a>
-                            </p>
-                    </div>                
+        <section>
+            <div class="row footer-gob">                
+                <div class="col-12 p-0">
+                    <img src="img/fondofooter.png" alt="pleca de separación" id="pleca-gob">
                 </div>
-            </section>
+
+                <div class="col-sm-3 sub-div footer-gob1">
+                    <div>
+                        <a href="https://www.gob.mx/"> 
+                            <img src="img/logoheader.svg" alt="logo gobierno mx" /> 
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.gob.mx/cultura/"> 
+                            <img src="img/logo-cultura.svg" alt="logo secretaria de cultura" /> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 sub-div footer-gob2">
+                    <span>Enlaces</span><br><br>
+                    <p>
+                        <a href="https://www.participa.gob.mx/">Participa</a> <br>
+                        <a href="https://www.gob.mx/publicaciones">Publicaciones oficiales</a> <br>
+                        <a href="http://www.ordenjuridico.gob.mx/">Marco Jurídico</a> <br>
+                        <a href="https://www.plataformadetransparencia.org.mx/web/guest/inicio">Plataforma Nacional de Transparencia</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-3 sub-div footer-gob3">
+                    <span>¿Qué es gob.mx?</span><br><br>
+                    <p>
+                        Es el portal único de trámites, información y participación ciudadana. <a href="https://www.gob.mx/que-es-gobmx">Leer más</a>
+                    </p>
+
+                    <p>
+                        <a href="https://datos.gob.mx/">Portal de datos abiertos</a><br>
+                        <a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a><br>
+                        <a href="https://www.gob.mx/privacidadintegral">Aviso de privacidad integral</a><br>
+                        <a href="https://www.gob.mx/privacidadsimplificado">Aviso de privacidad simplificado</a><br>
+                        <a href="https://www.gob.mx/terminos">Términos y condiciones</a><br>
+                        <a href="https://www.gob.mx/terminos#medidas-seguridad-informacion">Política de seguridad</a><br>
+                        <a href="https://www.gob.mx/sitemap">Mapa del sitio</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-3 sub-div footer-gob4">
+                        <span> <a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></span><br><br>
+                        <p>
+                            Síguenos en: <br>
+                            <a href="https://www.facebook.com/gobmexico/"><i class="fab fa-lg fa-facebook-f"></i></a> &nbsp;&nbsp;
+                            <a href="https://twitter.com/GobiernoMX"><i class="fab fa-lg fa-twitter"></i></a>
+                        </p>
+                </div>                
+            </div>
+        </section>
         <!--/.footer GOBMX --> 
     </div>
 </body>
@@ -188,13 +204,10 @@
 <!-- general scripts -->
 <script src="js/common.js"></script> 
 <!-- page scripts -->
-<script src="js/blog.js"></script>
-<!-- component scripts -->
+<script src="js/Components/libreroComponent.js"></script>
+<!-- components scripts -->
 <script src="js/Components/neonavbar.js"></script>
 <script src="js/Components/submenu.js"></script>
-<script src="js/Components/bannerComponent.js"></script>
-
 <!-- data scripts -->
-<script src="js/Data/blog_data.js"></script>
-
+<script src="js/Data/librero_data.js"></script>
 </html>

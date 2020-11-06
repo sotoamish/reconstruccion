@@ -17,7 +17,7 @@
     font-size: 1.3em;
     font-family: "Montserrat-bold";
     padding: 1em 1em;
-    line-height: 1.2;
+    line-height: 2.4;
 }
 
 .shelf_container .separator{
@@ -55,6 +55,7 @@
     opacity: 0.7;
 }
 
+
 .book_card .image {
     max-height: 10em;
     overflow: hidden;
@@ -66,4 +67,5 @@
     padding: 1em;
     text-align: center;
     font-family: "Montserrat";
+    color: #000;
 }

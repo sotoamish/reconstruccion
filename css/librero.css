@@ -1,0 +1,100 @@
+.librero_header{
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 0.8em;
+    font-size: 1.4em;
+}
+.librero_header img{
+    width: 4em;
+}
+.librero_header div{
+    display: inline;
+    margin: 0 0.5em;
+}
+
+.librero_selector{
+    text-align: center;
+    padding: 2vw;
+}
+.librero_selector button{
+    border: none;
+    background: none;
+    font-family: "Montserrat-bold";
+    font-size: 1.4em;
+    margin: 0 2em;
+    color: #666666;
+}
+.librero_selector.age_1 .lib_type.active{  color:#99cd33;  border-bottom: solid 3px #99cd33;  }
+.librero_selector.age_2 .lib_type.active{  color:#006666;  border-bottom: solid 3px #006666;  }
+.librero_selector.age_3 .lib_type.active{  color:#0099cc;  border-bottom: solid 3px #0099cc;  }
+.librero_selector.age_4 .lib_type.active{  color:#993266;  border-bottom: solid 3px #993266;  }
+
+
+.lib_list{
+
+}
+.lib_list .lib_card{
+    display: inline-block;
+    padding: 1em;
+}
+.lib_list .lib_card .card_container:hover{
+    background-color: #fff;
+    -webkit-box-shadow: 6px 7px 10px -2px #8A8A8A; 
+    box-shadow: 6px 7px 10px -2px #8A8A8A;
+}
+.lib_list .lib_card a{
+    color: #000;
+    text-decoration: none;
+}
+.lib_list .lib_card .image{
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+}
+.lib_list .lib_card .image img{
+    width: 100%;
+}
+.lib_list .lib_card .info{
+    display: inline-block;
+    width: 69%;
+    padding: 0.5em 1em;
+}
+.lib_list .lib_card .info .type{
+    font-family: "Montserrat";
+    color: #666666;
+    font-size: 1.2em;
+}
+.lib_list .lib_card .info .name{
+    font-family: "Montserrat-bold";
+    font-size: 1.3em;
+}
+.lib_list .lib_card.age_1 .info .name{  color:#99cd33;  }
+.lib_list .lib_card.age_2 .info .name{  color:#006666;  }
+.lib_list .lib_card.age_3 .info .name{  color:#0099cc;  }
+.lib_list .lib_card.age_4 .info .name{  color:#993266;  }
+.lib_list .lib_card .info .author{
+    font-family: "Montserrat";
+    margin-bottom: 0.5em;
+}
+.lib_list .lib_card .info .description{
+    font-family: "Montserrat";
+    color: #666666;
+    font-size: 0.9em;
+}
+
+.btn_container{
+    text-align: center;
+    padding: 3em;
+}
+.btn_container #btn_show_more{
+    color: #fff;
+    border: none;
+    padding: 0.5em 6em;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+.btn_container #btn_show_more.age_1{    background:#99cd33;  }
+.btn_container #btn_show_more.age_2{    background:#006666;  }
+.btn_container #btn_show_more.age_3{    background:#0099cc;  }
+.btn_container #btn_show_more.age_4{    background:#993266;  }
