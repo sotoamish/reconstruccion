@@ -25,6 +25,7 @@
     margin: 0 2em;
     color: #666666;
 }
+.librero_selector.age_0 .lib_type.active{  color:#000;     border-bottom: solid 3px #000;  }
 .librero_selector.age_1 .lib_type.active{  color:#99cd33;  border-bottom: solid 3px #99cd33;  }
 .librero_selector.age_2 .lib_type.active{  color:#006666;  border-bottom: solid 3px #006666;  }
 .librero_selector.age_3 .lib_type.active{  color:#0099cc;  border-bottom: solid 3px #0099cc;  }

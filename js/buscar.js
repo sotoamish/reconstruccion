@@ -123,7 +123,39 @@ function start_search(){
 
     //search elements in "LIBROS PLAYER DATA"
     if( type === "todos" || type === "libros" ){
-        // still in construction
+        for (let i = 0; i < Object.keys(librero_data).length; i++) {    //type level
+            let key1 = Object.keys(librero_data)[i];
+
+            for (let j = 0; j < Object.keys(librero_data[key1]).length; j++) {    //element level
+                let key2 = Object.keys(librero_data[key1])[j];
+
+                //check age
+                if( age == 0 || librero_data[key1][key2]["age"] === 0 || librero_data[key1][key2]["age"] == age){
+                    //check if has one word of search_array;
+                    if(
+                        // if librero elm name includes the searched words
+                        ((librero_data[key1][key2]["name"]).toLowerCase()).includes(search) ||
+                        // if librero elm type includ the searched words
+                        ((librero_data[key1][key2]["type"]).toLowerCase()).includes(search) ||
+                        // if librero elm author includ the searched words
+                        ((librero_data[key1][key2]["author"]).toLowerCase()).includes(search)
+                    ){
+                        // add this regist on the array
+                        result_array.push({
+                            "no" : key2,
+                            "type" : "libros",
+                            "true_type" : librero_data[key1][key2]["type"],
+                            "name" : librero_data[key1][key2]["name"],
+                            "author" : librero_data[key1][key2]["author"],
+                            "url" : librero_data[key1][key2]["url"],
+                            "image" : librero_data[key1][key2]["cover"],
+                            "age" : librero_data[key1][key2]["age"],
+                            "description" : librero_data[key1][key2]["description"]
+                        });
+                    }
+                }
+            }   
+        }
     }
 
     //search elements in "CARTELERA DATA"
@@ -213,8 +245,6 @@ function print_search_result(){
             if ( results[i] !== undefined ) {
 
                 // generate destiny url 
-                console.log("result: " + results[i]["age"]);
-                console.log("origin: " + origin_age);
                 var destiny_age = ( results[i]["age"] == 0 )? origin_age : results[i]["age"] ;
                 var destiny_url = "";
                 switch ( parseInt(destiny_age) ) {
@@ -223,14 +253,12 @@ function print_search_result(){
                     case 3:     destiny_url += `jovenes.html`;     break;
                     case 4:     destiny_url += `formadores.html`;     break;
                 }               
-                console.log("destiny: " + destiny_age);
-                console.log("url: " + destiny_url);
-                if( results[i]["type"] !== "cartelera" ) { destiny_url += `?section=contenido&subsection=${results[i]["type"]}&item=${results[i]["no"]}`; }
-                else { destiny_url += `?section=cartelera&item=${results[i]["no"]}`; }                
+                         
 
                 // generate elements block
                 switch ( results[i]["type"] ) {
                     case "videos":       //for video frame
+                            destiny_url += `?section=contenido&subsection=${results[i]["type"]}&item=${results[i]["no"]}`
                             toDraw += `
                                 <div class="col-12 event_container">
                                     <a href="${destiny_url}" target="_blank">
@@ -251,6 +279,7 @@ function print_search_result(){
                         break;
     
                     case "audios":       //for video frame
+                            destiny_url += `?section=contenido&subsection=${results[i]["type"]}&item=${results[i]["no"]}`
                             toDraw += `
                                 <div class="col-12 event_container">
                                     <a href="${destiny_url}" target="_blank">
@@ -270,6 +299,7 @@ function print_search_result(){
                         break;
 
                     case "cartelera":       //for cartelera frame
+                            destiny_url += `?section=cartelera&item=${results[i]["no"]}`
                             toDraw += `
                                 <div class="col-12 event_container">
                                     <div class="row event_card">
@@ -296,6 +326,26 @@ function print_search_result(){
                             `;
                         break;
                 
+                    case "libros" : 
+                            destiny_url = `librero.html?age=${results[i]["age"]}&type=${results[i]["true_type"]}s&id=${results[i]["no"]}`;
+                            toDraw += `
+                                <div class="col-12 event_container">
+                                    <a href="${destiny_url}" target="_blank">
+                                        <div class="row event_card">
+                                            <div class="col-2 pic">
+                                                <img src="${results[i]["image"]}" alt="imagen del evento ${results[i]["name"]}" />  
+                                            </div>
+                                            <div class="col-10 info">
+                                                <div class="type">${results[i]["true_type"]}</div>
+                                                <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
+                                                <div class="author">${results[i]["author"]}</div>
+                                                <div class="description">${(results[i]["description"]).substring(0, 300)} ${(((results[i]["description"]).length > 300)? "..." : "" )}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            `;
+                        break;
                     default:    //
                         break;
                 }

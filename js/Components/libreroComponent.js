@@ -83,7 +83,7 @@ function prepare_page() {
     // get age, get type, get id
     let age = get_params("age");
     let type = get_params("type");
-    let id = get_params("id")
+    let id = get_params("id");
 
     //get window elements
     let librero_selector = document.getElementById("librero_selector");
