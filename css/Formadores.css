@@ -118,3 +118,132 @@
     font-size: 0.9em;
 }
 
+
+
+.who_are{
+    font-family: "Montserrat";
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+.who_are .title{
+    font-family: "Montserrat-bold";
+    font-size: 1.7em;
+    color: #993266;
+    text-align: center;
+}
+.who_are .description{
+    margin-top: 1em;
+    text-align: center;
+}
+.who_are .info{
+    background: #fff;
+    padding: 0;
+    margin-top: 1.5em;
+}
+.who_are .info .btn_container{
+    display: flex;
+}
+.who_are .info .btn_container .info_btn{
+    flex: 1;
+    font-family: "Montserrat-bold";
+    color: #993266;
+    font-size: 1.2vw;
+    padding: 0.7em 2em 0.7em 0;
+    border: none;
+    text-align: center;
+    background-image: url('../img/btnbg.png');
+    background-size: cover;          
+    border-bottom: solid 2px #aaa;  
+    background-position-x: 1em;
+    cursor: pointer;
+}
+.who_are .info .btn_container .info_btn.active{
+    border-bottom: solid 2px #fff;  
+    background-image: url('../img/btnbgActive.png');
+}
+.who_are .des_info{
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.who_are .des_info.shown{
+    display:  block;
+    opacity: 1;
+    padding: 2em;
+}
+
+.form_gallery{
+    margin-top: 2em;
+}
+.form_gallery .title{
+    color: #993266;
+    font-family: "Montserrat-bold";
+}
+.form_gallery .gallery_wrapper{
+    max-height: 30em;
+    overflow-y: auto;
+    margin-top: 1em;
+}
+.masonry {
+    transition: all .5s ease-in-out;
+    column-gap: 30px;
+    column-fill: initial;
+    column-count: 3;
+    column-gap: 0;
+}
+/* Masonry image effects */
+.masonry .brick img {
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden; /* Remove Image flickering on hover */
+    width:100%;
+    height: auto;
+    margin-bottom: 0;
+}
+.masonry .brick:hover img {
+    opacity: .75;
+}
+
+
+.contact_block{
+    margin: 2em 0;
+}
+.contact_block .description{
+    text-align: center;
+    font-family: "Montserrat";
+}
+.contact_block .form_block{
+    margin-top: 1em;
+}
+.contact_block .form_block input,
+.contact_block .form_block textarea{
+    width: 100%;
+    margin-top: 0.5em;
+    border: none;
+    padding: 0.5em 1em;
+}
+.contact_block .submit_block{
+    font-family: "Montserrat-bold";
+    color: #993266;
+    font-size: 1.2em;
+    text-align: right;
+    margin-top: 1em;
+}
+.contact_block .submit_block a{
+    margin: 0 0.1em;
+    color:#993266;
+}
+.contact_block .submit_block a:first-child{
+    margin-left: 1em;
+}
+.contact_block .submit_block button{
+    border: none;
+    border-radius: 5px;
+    background-color: #993266;
+    color: #fff;
+    padding: 0.3em 2em;
+    margin-left: 1em;
+}
+.contact_block .submit_block button:hover{
+    opacity: 0.8;
+}

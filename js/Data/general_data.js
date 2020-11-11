@@ -48,3 +48,19 @@ const activity_array = {
     4 : 'Talleres',
     5 : 'Exposiciones',
 }
+
+
+const gallery_pic = [
+    "http://lorempixel.com/400/200/abstract",
+    "http://lorempixel.com/400/300/animals",
+    "http://lorempixel.com/400/300/cats",
+    "http://lorempixel.com/400/200/city",
+    "http://lorempixel.com/400/300/food",
+    "http://lorempixel.com/400/200/nightlife",
+    "http://lorempixel.com/400/300/fashion",
+    "http://lorempixel.com/400/200/people",
+    "http://lorempixel.com/400/300/nature",
+    "http://lorempixel.com/400/200/sports",
+    "http://lorempixel.com/400/300/technics",
+    "http://lorempixel.com/400/200/transport",
+];

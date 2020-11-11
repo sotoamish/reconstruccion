@@ -247,8 +247,10 @@ function draw_contenido2( age ){
             </div>
         </div>
 
-        <div class="col-8 component_container age_${age}" id="component_container">
-         </div> 
+        <div class="col-7 component_container age_${age}" id="component_container">
+        </div> 
+        <div class="col-lg-5 bookshelf" id="bookshelf">
+        </div> 
     `;
 
     action_window.innerHTML = toDraw;
@@ -263,6 +265,9 @@ function draw_contenido2( age ){
         //if subsection doesn't exists, click on first subSection button
         document.getElementsByClassName("menu_btn_container")[0].click();
     }
+
+    // draw bookShelf       //function from libreroCompponent.js
+    draw_bookshelf( age );
 }
 
 
@@ -455,9 +460,125 @@ function draw_estados( age ){
 //draw "descripción de alas y raices" //if from formadores page
 function draw_descripcion( age ){
     let toDraw = `
-        En construcción
+        <div class="col-6 offset-6 search_block">
+            <div class="input-group">
+                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
+                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 offset-1 who_are age_${age}">
+            <div class="row">
+                <div class="col-12 title">¿Quienes somos?</div>
+                <div class="col-12 description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna faucibus est ultrices tincidunt ac pellentesque dolor. <br>
+                    Donec blandit turpis dictum tincidunt sollicitudin. Nullam sed viverra odio. Nunc felis purus, sodales mollis felis vitae, egestas lobortis orci.  <br>
+                    Quisque mi dolor, tristique scelerisque pharetra tincidunt, bibendum et ligula. Vivamus blandit tincidunt risus vitae elementum. <br>
+                    Vivamus fringilla nisl et ipsum sodales euismod. 
+                </div>
+
+                <div class="col-12 info">
+                    <div class="btn_container">
+                        <div class="info_btn" data-target="w-1" onClick="changeInfoWindow(this)">Programación cultural</div>
+                        <div class="info_btn" data-target="w-2" onClick="changeInfoWindow(this)">Formación</div>
+                        <div class="info_btn" data-target="w-3" onClick="changeInfoWindow(this)">Fomento a la lectura</div>
+                        <div class="info_btn" data-target="w-4" onClick="changeInfoWindow(this)">Proyectos estatales</div>
+                    </div> 
+                    <div class="des_info" id="w-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae scelerisque lectus. Donec varius eros nec commodo sollicitudin. Quisque bibendum orci non ante ullamcorper cursus. Nullam vehicula sed tellus quis malesuada. In vitae massa ut magna luctus tempus. Donec nisl metus, consequat ac sapien a, dictum dictum dolor. Fusce eu nunc at odio tempus finibus quis a orci. Proin porttitor arcu ut purus gravida, at varius nulla mollis. Fusce in consectetur enim. Etiam vehicula ipsum quam, et convallis mi egestas nec. Mauris dignissim diam eu tempus lacinia. Praesent pharetra nunc non tincidunt feugiat. Proin erat est, ullamcorper vitae neque vitae, consectetur placerat velit. 
+                    </div>       
+                    <div class="des_info" id="w-2">
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer porta at turpis a commodo. Integer pretium tristique libero, ut mattis ligula fringilla nec. Quisque ac quam at est posuere dictum ac sed erat. Cras ultrices, lorem ac accumsan vulputate, tellus diam pellentesque dui, sit amet bibendum nibh nibh vitae orci. Nam vitae molestie velit. Donec ac rhoncus nibh, non imperdiet purus. Duis tempus condimentum orci, quis tincidunt dui ultricies id. Praesent vestibulum ultricies quam vel ultrices. Nam sit amet felis vitae eros laoreet sollicitudin. In porttitor metus sed sapien egestas fermentum. Fusce dictum imperdiet tincidunt. Suspendisse lacinia imperdiet lorem in pulvinar. Sed id lacus a lorem euismod dictum. 
+                    </div>       
+                    <div class="des_info" id="w-3">
+                        Curabitur mauris magna, hendrerit ornare ante sit amet, venenatis interdum nunc. Praesent accumsan erat eros, non suscipit lacus accumsan in. Ut vel vehicula urna. Etiam lobortis luctus sem, ac vehicula elit tincidunt et. Integer mattis ullamcorper viverra. Morbi euismod risus eu felis vestibulum, eget porttitor leo porta. Aliquam et diam arcu. Sed ullamcorper ac nibh quis rutrum. Nullam aliquam elementum tincidunt. Praesent id orci ullamcorper quam luctus elementum. Curabitur quis nisl eu dolor viverra ultrices volutpat sed urna. Suspendisse nec purus ut dolor pellentesque ultricies. 
+                    </div>       
+                    <div class="des_info" id="w-4">
+                        Etiam quis ante augue. Suspendisse vel venenatis eros. Praesent magna enim, pellentesque non volutpat luctus, feugiat quis purus. Etiam venenatis viverra magna, eget tristique dui ullamcorper eget. Etiam feugiat mollis neque. Phasellus euismod ex a urna pulvinar, eget eleifend justo elementum. Integer nec purus id augue ullamcorper euismod. Integer vestibulum massa vitae erat aliquam sollicitudin. Donec tempor molestie ante, vel mollis tellus malesuada eu. Suspendisse nec ligula mauris. Quisque non nisi sit amet nulla vestibulum bibendum et et massa. 
+                    </div>                    
+                </div>
+
+                <div class="col-12 form_gallery">
+                    <div class="title">Galería</div>
+                    <div class="gallery_wrapper">
+                        <div class="masonry">
+
+`;
+
+    for (let i = 0; i < gallery_pic.length; i++) {
+        toDraw += `
+            <div class="brick">
+                <img src="${gallery_pic[i]}" />
+            </div>    
+        `;
+    }
+
+toDraw+= `
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 contact_block">
+                    <div class="title">Contacto</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non urna sit amet diam sollicitudin iaculis at non lectus. In volutpat ac lacus in rutrum. 
+                    </div>
+                    <div class="row form_block">
+                        <div class="col-4">
+                            <input type="text" placeholder="Nombre" />
+                        </div>
+                        <div class="col-8">
+                            <input type="text" placeholder="Asunto" />
+                        </div>
+                        <div class="col-12">
+                            <textarea placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="submit_block">
+                        O visita nuestras redes sociales
+                        <a href="#"><i class="fab fa-lg fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-lg fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-lg fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-lg fa-youtube"></i></a>
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     `;
     action_window.innerHTML = toDraw;
+
+    //click on first info btn
+    (document.getElementsByClassName("info_btn")[0]).click();
+
+}
+function changeInfoWindow( elm ){
+    //set unset active on info_btn
+    let btn_array = [].slice.call( document.getElementsByClassName("info_btn") );
+    let field_array = [].slice.call( document.getElementsByClassName("des_info") );
+    let target = "";
+    
+    btn_array.forEach( btn => {
+        if( btn === elm){
+            if( !btn.classList.contains("active") ){
+                btn.classList.add("active");
+                target = btn.dataset.target;
+            }
+        } else { btn.classList.remove("active"); }
+    });
+    
+    //hide all fields and show only selected
+    field_array.forEach( field => {
+        if( field.id === target ){
+            if ( !field.classList.contains("shown") ) {
+                field.classList.add("shown");
+            }
+        } else {
+            field.classList.remove("shown");
+        }
+    });
 }
 
 
