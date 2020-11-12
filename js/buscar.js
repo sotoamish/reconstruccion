@@ -263,10 +263,10 @@ function print_search_result(){
                                 <div class="col-12 event_container">
                                     <a href="${destiny_url}" target="_blank">
                                         <div class="row event_card">
-                                            <div class="col-2 pic">
+                                            <div class="col-lg-2 col-md-3 pic">
                                                 <img src="https://i.ytimg.com/vi/`+ (  (results[i]["url"]).replace( 'https://www.youtube.com/embed/', '')  ) +`/1.jpg" alt="imagen del video ${results[i]["name"]}" />
                                             </div>
-                                            <div class="col-10 info">
+                                            <div class="col-lg-10 col-md-9 info">
                                                 <div class="type">Video</div>
                                                 <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
                                                 <div class="author">${results[i]["author"]}</div>
@@ -284,10 +284,10 @@ function print_search_result(){
                                 <div class="col-12 event_container">
                                     <a href="${destiny_url}" target="_blank">
                                         <div class="row event_card">
-                                            <div class="col-2 pic">
+                                            <div class="col-lg-2 col-md-3 col-4 pic">
                                                 <img src="${results[i]["image"]}" alt="imagen del audio ${results[i]["name"]}" />
                                             </div>
-                                            <div class="col-10 info">
+                                            <div class="col-lg-10 col-md-9 col-8 info">
                                                 <div class="type">Audio</div>
                                                 <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
                                                 <div class="description">${results[i]["author"]}</div>
@@ -303,10 +303,10 @@ function print_search_result(){
                             toDraw += `
                                 <div class="col-12 event_container">
                                     <div class="row event_card">
-                                        <div class="col-2 pic">
+                                        <div class="col-lg-2 col-md-3 pic">
                                             <img src="${results[i]["image"]}" alt="imagen del evento ${results[i]["name"]}" />
                                         </div>
-                                        <div class="col-10 info">
+                                        <div class="col-lg-10 col-md-9 info">
                                             <div class="type">Cartelera</div>
                                             <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
                                             <div class="author">${results[i]["author"]}</div>
@@ -332,10 +332,10 @@ function print_search_result(){
                                 <div class="col-12 event_container">
                                     <a href="${destiny_url}" target="_blank">
                                         <div class="row event_card">
-                                            <div class="col-2 pic">
+                                            <div class="col-lg-2 col-md-3 col-4 pic">
                                                 <img src="${results[i]["image"]}" alt="imagen del evento ${results[i]["name"]}" />  
                                             </div>
-                                            <div class="col-10 info">
+                                            <div class="col-lg-10 col-md-9 col-8 info">
                                                 <div class="type">${results[i]["true_type"]}</div>
                                                 <div class="name age_${results[i]["age"]}">${results[i]["name"]}</div>
                                                 <div class="author">${results[i]["author"]}</div>
