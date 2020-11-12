@@ -19,8 +19,8 @@ function printNavBar() {
                         alt="al home de alas y raíces teest"
                         onclick="location.href = 'index.html';">
 
-                <div>
-                    <i class="fas fa-search" id="searchField"></i>
+                <div onClick="showSearchWindow()">
+                    <i class="fas fa-search" id="searchIcon"></i>
                 </div>                
 
                 <div class="collapse navbar-collapse p-0" id="navbarResponsive">
@@ -48,6 +48,27 @@ function printNavBar() {
                     </ul>
                 </div>
             </nav>
+
+            <div class="smokeSearch" id="smokeSearch">
+                <div class="search_window">
+                    <div class="close">
+                        <button onClick="hideSmokeSearch()">
+                            <i class="far fa-times-circle"></i>
+                        </button>
+                    </div>
+                    <div class="info">
+                        Realiza una búsqueda
+                    </div>
+                    <div class="input">
+                        <input class="form-control" type="text" placeholder="Buscar" id="searchField" />
+                    </div>
+                    <div>
+                        <button class="search_btn" onClick="activeSearch(0)">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         `;
     } else {
         toPrint = `
@@ -97,4 +118,12 @@ function printNavBar() {
             elm.classList.add("active");
         }        
     });
+}
+
+function showSearchWindow(){
+    document.getElementById("smokeSearch").style.display = "block"
+}
+
+function hideSmokeSearch(){
+    document.getElementById("smokeSearch").style.display = "none"
 }

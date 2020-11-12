@@ -86,7 +86,7 @@
     padding: 0 1.5rem 0.5rem 1.5rem!important;
 }
 
-.neoNavbar .navbar_mobile #searchField{
+.neoNavbar .navbar_mobile #searchIcon{
     font-size: 1.5em;
 }
 
@@ -105,58 +105,57 @@
     background: #993266;
 }
 
+
+
+.smokeSearch{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0 ,0 ,0.5);
+    z-index: 8;
+    display: none;
+}
+.smokeSearch .search_window{
+    background: #efefef;
+    position: absolute;
+    width: 80%;
+    top: 20vh;
+    left: 10vw;
+    padding: 3em;
+    text-align:center;
+}
+.smokeSearch .search_window .close{
+    position: absolute; 
+    top: 0.5em;
+    right: 0.5em;
+}
+.smokeSearch .search_window .close button{
+    font-size: 1.5em;
+    color: #000;
+    border: none;
+}
+.smokeSearch .search_window .info{
+    font-family: "Montserrat-bold";
+    font-size: 1.5em;
+}
+.smokeSearch .search_window .input{
+    margin: 1em 0;
+}
+.smokeSearch .search_window .search_btn{
+    padding: 0.5em 3.5em;
+    background: #b7b7b7;
+    font-size: 1.5em;
+    border: none;
+    margin-top: 0.5em;
+}
+
+
+
 @media (max-width: 576px) { 
     .neoNavbar .navbar_mobile #navBrand{
         width: 30vw;
     }    
 }
 
-
-
-/* 
-
-@media (max-width: 768.98px) {
-    .neoNavbar{
-        background-color: #f8f9fa;
-
-    }
-    .neoNavbar .nav-bar a{
-        text-align: center;
-    }
-    .neoNavbar.brand_container {
-        text-align: center;
-    }
-    .neoNavbar #navBrand{
-        width: 25%;
-        margin: auto;
-        margin-bottom: 2vw;
-    }
-
-    .neoNavbar .nav-item{
-        line-height: 5vw;
-    }
-    .neoNavbar .nav-item .nav-link{
-        padding: 0 1.5rem 1rem 1.5rem!important;
-        display: inline;
-        line-height: 7vw;
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 576px) { 
-    .neoNavbar .navbar-toggler {
-        padding: 0.3em 0.7em;
-    }
-    .neoNavbar .nav-item .nav-link{
-        padding: 0 1.5rem 1rem 1.5rem!important;
-        display: inline;
-        line-height: 14vw;
-        font-size: 1em;
-    }
-    .neoNavbar #navBrand{
-        width: 25%;
-        margin: auto;
-        display: center;
-        margin-bottom: 4vw;
-    }
-} */

@@ -263,7 +263,7 @@ function print_search_result(){
                                 <div class="col-12 event_container">
                                     <a href="${destiny_url}" target="_blank">
                                         <div class="row event_card">
-                                            <div class="col-lg-2 col-md-3 pic">
+                                            <div class="col-lg-2 col-md-3 pic video">
                                                 <img src="https://i.ytimg.com/vi/`+ (  (results[i]["url"]).replace( 'https://www.youtube.com/embed/', '')  ) +`/1.jpg" alt="imagen del video ${results[i]["name"]}" />
                                             </div>
                                             <div class="col-lg-10 col-md-9 info">

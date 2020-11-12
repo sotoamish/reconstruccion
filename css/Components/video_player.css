@@ -301,8 +301,8 @@
     position: absolute;
     top: 15%;
     left: 10%;
-    width: 90vw;
-    height: 30em;
+    width: 80vw;
+    height: 40em;
 }
 .vid_player2_screen .vid_player2_container iframe{
     width: 100%;
@@ -338,6 +338,13 @@
     .vid_player2_screen .vid_player2_container{
         left: 5%;
         width: 90vw;
+        height: 20em;
+    }
+    .vid_player2_screen .vid_player2_container{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 80vw;
         height: 20em;
     }
  }
