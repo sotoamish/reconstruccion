@@ -605,7 +605,8 @@ function drawComponent( component, age ){
                 //drawComponentJuegos(age)
             break;
         case "apps":
-                //drawComponentApps(age)
+                //draw apps component for "infancia1", "infancia2" -function from appComponent.js
+                drawComponentApps(age)
             break;
 
         case "blog":

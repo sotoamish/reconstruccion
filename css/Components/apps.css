@@ -1,0 +1,51 @@
+.apps_block .app_card{
+    padding: 1.5em 1em;
+    text-align: center;
+    height: 40em;
+    background: #fff
+}
+.apps_block .app_card .image img{
+    width: 70%;
+}
+.apps_block .app_card .name{
+    font-family: "Montserrat-bold";
+    font-size: 1.7em;
+    margin-top: 0.5em;
+}
+.apps_block.age_1 .app_card .name{  color:#99cd33;  }
+.apps_block.age_2 .app_card .name{  color:#006666;  }
+.apps_block.age_3 .app_card .name{  color:#0099cc;  }
+.apps_block.age_4 .app_card .name{  color:#993266;  }
+.apps_block .app_card .links{
+    margin: 0.5em 0;
+}
+.apps_block .app_card .links img{
+    width: 48%;
+}
+.apps_block .app_card .tags,
+.apps_block .app_card .size{
+    font-family: "Montserrat";
+    font-size: 0.85em;
+}
+.apps_block .app_card .description{
+    padding: 0 0.5em;
+    margin-top: 0.5em;
+    font-family: "Montserrat";
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+
+@media (max-width: 768px) { 
+    .apps_block{
+        padding: 2em;
+    }
+    .apps_block .app_card{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 577px) { 
+    .apps_block{
+        padding: 2em;
+    }
+}
