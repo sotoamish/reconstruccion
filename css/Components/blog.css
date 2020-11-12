@@ -120,3 +120,34 @@
     text-align: justify;
     margin-bottom: 5em;
 }
+
+@media (max-width: 768px) { 
+    
+}
+@media (max-width: 577px) { 
+    .blog_card .titulo{
+        font-size: 1.4em;
+    }
+    .blog_card .subTitulo{
+        font-size: 1.2em;
+    }
+
+
+    .post_window .titulo{
+        font-size: 2.3em;
+        padding: 1em 0.5em 0.5em 0.5em;
+    }
+    .post_window .area {
+        padding: 0.5em 1.5em 0 2.5em;
+        font-family: "Montserrat";
+        font-size: 1em;
+        margin-top: -0.5em;
+    }
+    .post_window .subTitulo {
+        padding: 0 0.5em;
+        font-size: 1.5em;
+    }
+    .post_window .publicacion{
+        padding: 0 1em;
+    }
+}

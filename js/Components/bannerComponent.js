@@ -23,13 +23,15 @@ const listaBanners = {
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); 
+    let maxWidth = window.screen.availWidth - (window.outerWidth - window.innerWidth);
     let bannerAction = document.getElementById("bannerAction");
     let toDraw = `
         <div class="col-12 p-0 banner_block">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
     `;
+
+    console.log(maxWidth);
 
     for (let i = 0; i < Object.keys(listaBanners).length; i++) {
         let key = Object.keys(listaBanners)[i];
@@ -38,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     <div class="swiper-slide">
                         <a href="${listaBanners[key]['url']}" target="_blank">
                             <img 
-                                src="`+( (isMobile)? listaBanners[key]['mobil'] : listaBanners[key]['desktop'] )+`"
-                                class="`+( (isMobile)? 'small' : '' )+`"
+                                src="`+( (maxWidth <= 575.98)? listaBanners[key]['mobil'] : listaBanners[key]['desktop'] )+`"
+                                class="`+( (maxWidth <= 575.98)? 'small' : '' )+`"
                                 alt="Banner de ${listaBanners[key]['evento']}"
                             />                
                         </a>

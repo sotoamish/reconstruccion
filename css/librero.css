@@ -99,3 +99,24 @@
 .btn_container #btn_show_more.age_2{    background:#006666;  }
 .btn_container #btn_show_more.age_3{    background:#0099cc;  }
 .btn_container #btn_show_more.age_4{    background:#993266;  }
+
+
+@media (max-width: 768px) { 
+    .lib_list{
+        margin-top: 3vw;
+    }
+    .search_block{
+        display:none;
+    }
+}
+@media (max-width: 577px) { 
+    .librero_selector button{
+        font-size: 1.2em;
+    }
+    .lib_list .lib_card .info .name{
+        font-size: 1.2em;
+    }
+    .search_block{
+        display:none;
+    }
+}

@@ -40,26 +40,26 @@ function update_estados_board() {
             <div class="col-12 board_wrapper">
                 <div class="row board_container">
                 
-                    <div class="col-1 block_float">
+                    <div class="col-lg-1 col-md-2 col-12 block_float">
                         <img src="img/index/aYr.png" alt="logo de alas y raíces" style="vertical-align:middle"/>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-lg-8 col-md-10">
                         <div class="row">
 
-                        <div class="col-12 title">
-                            Alas y Raíces ${sel_estado}
-                        </div> 
+                            <div class="col-12 title">
+                                Alas y Raíces ${sel_estado}
+                            </div> 
     `;
 
     for (let i = 0; i < Object.keys(estados_sedes_data[sel_estado]["responsables"]).length; i++) {
         let current_key = Object.keys(estados_sedes_data[sel_estado]["responsables"])[i];
         toDraw += `
-                            <div class="col-7 info_block">    
+                            <div class="col-md-7 col-6 info_block">    
                                 <div class="nombre">${estados_sedes_data[sel_estado]["responsables"][current_key]["nombre"]}</div>
                                 <div class="puesto">${estados_sedes_data[sel_estado]["responsables"][current_key]["puesto"]}</div>
                             </div>
-                            <div class="col-5 contact_block">
+                            <div class="col-md-5 col-6 contact_block">
                                 <div><b>Contacto:</b></div>
                                 <div class="correo">${estados_sedes_data[sel_estado]["responsables"][current_key]["correo"]}</div>
                                 <div class="telefono">${estados_sedes_data[sel_estado]["responsables"][current_key]["telefono"]}</div>
@@ -72,7 +72,7 @@ function update_estados_board() {
                         </div>
                     </div>
 
-                    <div class="col-2 block_float">
+                    <div class="col-lg-2 col-md-12 block_float">
                         <div class="text-center">
                             <div class="direccion">   
                                 ${estados_sedes_data[sel_estado]["direccion"]}
@@ -98,10 +98,10 @@ function update_estados_board() {
         let key = (Object.keys(estados_sedes_proyectos[sel_estado])[i]);
         
         toDraw += `
-            <div class="col-6 pic_container">
+            <div class="col-md-6 pic_container">
                 <img src="${estados_sedes_proyectos[sel_estado][key]["imagen"]}" alt="foto del proyecto ${estados_sedes_proyectos[sel_estado][key]["nombre"]}" />
             </div>
-            <div class="col-6 proy_info">
+            <div class="col-md-6 proy_info">
                 <div class="proyect_name">
                     ${estados_sedes_proyectos[sel_estado][key]["nombre"]}
                 </div>

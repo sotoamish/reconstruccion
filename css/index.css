@@ -40,7 +40,7 @@
 }
 .ageBtn.active{
   width: 30vw;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 @media (max-width: 768px) { 
   .ageBotonera .btn_container{
@@ -49,9 +49,10 @@
   }
   .ageBtn{
     height: 38vw;
+    font-size: 1.2em;
   }
   .ageBtn.active{
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 577px) { 
@@ -66,10 +67,11 @@
     margin: -3px -2px;
     width: 50.5vw;
     height: 200px;
+    font-size: 1em;
   }
   .ageBtn.active{
     width: 55vw;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }  
 }
 

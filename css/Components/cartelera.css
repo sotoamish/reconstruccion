@@ -1,11 +1,10 @@
 .cartelera_filter_container {
-    display: flex;
-    flex-direction: row;
+    padding: 0 3em;
+    margin-bottom: 2vw;
 }
 
 .cartelera_filter {
-    flex: 1 1 auto;
-    margin: 1em;
+    padding: 1vw;
 }
 .cartelera_filter select{
     
@@ -21,7 +20,7 @@
 .cartelera .result_count.age_4{     color:#993266;      }
 
 .cartelera_action {
-    padding: 2vw;
+    /* padding: 2vw; */
 }
 
 .cartelera .event_container{
@@ -78,4 +77,65 @@
     font-family: "Montserrat";
     font-size: 0.85em;
     color: #000;
+}
+
+
+@media (max-width: 768px) { 
+    .cartelera_filter_container {
+        margin-top: 2vw;
+    }
+    .cartelera .event_container .info .tipo{
+        font-size: 1em;
+    }
+    .cartelera .event_container .info .nombre{
+        font-size: 1.2em;
+    }
+    .cartelera .event_container .info .staff{
+        font-size: 0.75em;
+    }
+    .cartelera .event_container .info .fecha{
+        font-size: 0.9em;
+    }
+    .cartelera .event_container .info .lugar{
+        font-size: 1em;
+    }   
+    .cartelera .event_container .info .direccion{
+        font-size: 0.85em;
+    }
+    .cartelera .event_container .info .descripcion{
+        font-size: 0.9em;
+    }
+    .cartelera .event_container .info .anotaciones{
+        font-size: 0.85em;
+    }
+}
+@media (max-width: 577px) { 
+    .cartelera_filter_container {
+        margin-top: 4vw;
+        padding: 0 2em;
+    }
+    .cartelera .event_container .info .tipo{
+        font-size: 0.9em;
+    }
+    .cartelera .event_container .info .nombre{
+        font-size: 1.1em;
+    }
+    .cartelera .event_container .info .staff{
+        font-size: 0.75em;
+    }
+    .cartelera .event_container .info .fecha{
+        font-size: 0.85em;
+    }
+    .cartelera .event_container .info .lugar{
+        font-size: 0.9em;
+    }   
+    .cartelera .event_container .info .direccion{
+        font-size: 0.85em;
+    }
+    .cartelera .event_container .info .descripcion{
+        font-size: 0.9em;
+    }
+    .cartelera .event_container .info .anotaciones{
+        font-size: 0.75em;
+    }
 }

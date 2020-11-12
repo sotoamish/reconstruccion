@@ -93,10 +93,10 @@ function print_cartelera( filt_obj ){
         toPrint += `
             <div class="col-12 event_container">
                 <div class="row">
-                    <div class="col-3 pic_container">
+                    <div class="col-md-3 col-5 pic_container">
                         <img src="${filt_obj[key]["thumbnail"]}" alt="imagen del evento - ${filt_obj[key]["nombre"]}" />
                     </div> 
-                    <div class="col-9 info">
+                    <div class="col-md-9 col-7 info">
                         <div class="tipo">${filt_obj[key]["actividad"]}</div>
                         <div class="nombre age_${age}">${filt_obj[key]["nombre"]}</div>
                         <div class="staff">${filt_obj[key]["staff"]}</div>

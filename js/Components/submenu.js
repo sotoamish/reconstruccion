@@ -184,16 +184,17 @@ function draw_contenido( age ){
     if( !isMobile ){
         //draw search menu block
         toDraw += `
-            <div class="col-6 search_block">
-                <div class="input-group">
-                    <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                    <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
-                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                <div class="col-6 search_block">
+                    <div class="input-group">
+                        <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                        <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                        </div>
                     </div>
                 </div>
-            </div>
         `;   
     }
+    
 
     //draw a component container section
     toDraw += `
@@ -224,30 +225,37 @@ function draw_contenido( age ){
 
 //draw "contenido" section for jovenes // start drawing an action menu 
 function draw_contenido2( age ){
-    
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     let toDraw=``;
 
     //draw "contenido" action menu block
     toDraw += `
-        <div class="col-7 action_menu_block2 age_${age}">
+        <div class="col-`+ ((isMobile)? "12" : "7") +` action_menu_block2 `+ ((isMobile)? "mobile" : "") +` age_${age}">
             <div class="row">
-                <div class="col-3 menu_btn_container alternative" data-target="videos" data-age="${age}" onClick="actionMenuChange(this)">Videos</div>
-                <div class="col-3 menu_btn_container alternative" data-target="podcast" data-age="${age}" onClick="actionMenuChange(this)">Podcast</div>
-                <div class="col-3 menu_btn_container alternative" data-target="blog" data-age="${age}" onClick="actionMenuChange(this)">Blog</div>
-                <div class="col-3 menu_btn_container alternative" data-target="salon" data-age="${age}" onClick="actionMenuChange(this)">Salón interactivo</div>
+                <div class="col-md-3 col-6 menu_btn_container alternative" data-target="videos" data-age="${age}" onClick="actionMenuChange(this)">Videos</div>
+                <div class="col-md-3 col-6 menu_btn_container alternative" data-target="podcast" data-age="${age}" onClick="actionMenuChange(this)">Podcast</div>
+                <div class="col-md-3 col-6 menu_btn_container alternative" data-target="blog" data-age="${age}" onClick="actionMenuChange(this)">Blog</div>
+                <div class="col-md-3 col-6 menu_btn_container alternative" data-target="salon" data-age="${age}" onClick="actionMenuChange(this)">Salón interactivo</div>
             </div>
         </div>
+    `;
 
-        <div class="col-5 search_block">
-            <div class="input-group">
-                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
-                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+    if( !isMobile ){
+        //draw search menu block
+        toDraw += `
+            <div class="col-5 search_block">
+                <div class="input-group">
+                    <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                    <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
                 </div>
             </div>
-        </div>
+        `;   
+    }
 
-        <div class="col-7 component_container age_${age}" id="component_container">
+    toDraw += `
+        <div class="col-lg-7 component_container age_${age}" id="component_container">
         </div> 
         <div class="col-lg-5 bookshelf" id="bookshelf">
         </div> 
@@ -274,15 +282,17 @@ function draw_contenido2( age ){
 
 //draw "cartelera" section
 function draw_cartelera( age ){
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); 
     //get month
     let today = new Date();
     let month = today.getMonth();
+    let toDraw = "";
 
     //EACH FILTER INVOKE onchange function "apply_filter()", ¡function from cartelera.js!"
     //generate select-options field for each filter
     let age_filter = `
         <select name="age_filter"  id="age_filter" class="form-control filters" onChange="apply_filter()">
-            <option value="">Todas las edades</option> 
+            <option value="">Edades</option> 
             <option value="1">de 0 a 5 años</option>
             <option value="2">de 6 a 12 años</option>
             <option value="3">Jovenes 13+</option>
@@ -294,7 +304,7 @@ function draw_cartelera( age ){
     //generate mode filter
     let mode_filter = `
         <select name="mode_filter" id="mode_filter" class="form-control filters" onChange="apply_filter()">
-            <option value=""> de cualquier tipo </option> 
+            <option value="">Tipo de evento</option> 
             <option value="Presencial">Presencial</option>
             <option value="En linea">En linea</option>
         </select>
@@ -304,7 +314,7 @@ function draw_cartelera( age ){
     //generat state filter
     let state_filter = `
         <select name="state_filter" id="state_filter" class="form-control filters" onChange="apply_filter()">
-            <option value="">Todos los estados</option>
+            <option value="">Estados</option>
     `;
         for (let i = 0; i < Object.keys(estados_data).length; i++) {
             let key = Object.keys(estados_data)[i];
@@ -322,7 +332,7 @@ function draw_cartelera( age ){
     //generate activity filter
     let activity_filter = `
         <select name="activity_filter" id="activity_filter" class="form-control filters" onChange="apply_filter()">
-            <option value="">Todas las actividades</option>
+            <option value="">Tipo de actividad</option>
     `;
             
         for (let i = 0; i < Object.keys(activity_array).length; i++) {
@@ -352,24 +362,29 @@ function draw_cartelera( age ){
         </select>
     `;
 
-
-    
-    let toDraw = `
-        <div class="col-6 offset-6 search_block">
-            <div class="input-group">
-                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
-                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+    if( !isMobile ){
+        toDraw += `
+            <div class="col-6 offset-6 search_block">
+                <div class="input-group">
+                    <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
+                    <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
                 </div>
             </div>
-        </div>
+        `;
+    }
+    
 
+    toDraw += `
         <div class="col-12 cartelera_filter_container">
-            <div class="cartelera_filter"> `+age_filter+` </div>
-            <div class="cartelera_filter"> `+mode_filter+` </div>
-            <div class="cartelera_filter"> `+state_filter+` </div>
-            <div class="cartelera_filter"> `+activity_filter+` </div>
-            <div class="cartelera_filter"> `+month_filter+` </div>            
+            <div class="row justify-content-center">
+                <div class="col-lg col-6 cartelera_filter"> `+age_filter+` </div>
+                <div class="col-lg col-6 cartelera_filter"> `+mode_filter+` </div>
+                <div class="col-lg col-6 cartelera_filter"> `+state_filter+` </div>
+                <div class="col-lg col-6 cartelera_filter"> `+activity_filter+` </div>
+                <div class="col-lg col-6 cartelera_filter"> `+month_filter+` </div>            
+            </div>
         </div>
 
         <div class="col-12 cartelera_action" id="cartelera_action">
@@ -379,6 +394,10 @@ function draw_cartelera( age ){
     `;
 
     action_window.innerHTML = toDraw;
+
+
+    //auto select age
+    document.getElementById("age_filter").value = age;
     // execute filter
     apply_filter();
 }
@@ -390,7 +409,7 @@ function draw_estados( age ){
         <div class="col-12 estados_block">
 
             <div class="row">
-                <div class="col-10 offset-1 estados_descripcion">
+                <div class="col-lg-10 offset-lg-1 estados_descripcion">
                     <span> Descripción de este Sitio </span>
 
                     <p>
@@ -425,18 +444,12 @@ function draw_estados( age ){
             </div>
 
             <div class="row formularios">
-                <div class="col-6">
+                <div class="col-md-8 offset-md-2">
                     <select class="form-control" name="estado" id="estado_select" onChange="update_estados_board()"></select>
                 </div>
-                
-                <div class="col-6 input-group">
-                    <div class="input-group">
-                        <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                        <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
-                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
+    `;
+
+    toDraw += `    
             </div>
 
         </div> 
@@ -460,15 +473,6 @@ function draw_estados( age ){
 //draw "descripción de alas y raices" //if from formadores page
 function draw_descripcion( age ){
     let toDraw = `
-        <div class="col-6 offset-6 search_block">
-            <div class="input-group">
-                <input type="text" class="form-control searchField" id="searchField" data-search="" placeholder="Buscar..." aria-label="Buscar..." >
-                <div class="input-group-append elm_search_button" onClick="activeSearch(${age})">
-                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
-                </div>
-            </div>
-        </div>
-
         <div class="col-10 offset-1 who_are age_${age}">
             <div class="row">
                 <div class="col-12 title">¿Quienes somos?</div>
@@ -480,11 +484,11 @@ function draw_descripcion( age ){
                 </div>
 
                 <div class="col-12 info">
-                    <div class="btn_container">
-                        <div class="info_btn" data-target="w-1" onClick="changeInfoWindow(this)">Programación cultural</div>
-                        <div class="info_btn" data-target="w-2" onClick="changeInfoWindow(this)">Formación</div>
-                        <div class="info_btn" data-target="w-3" onClick="changeInfoWindow(this)">Fomento a la lectura</div>
-                        <div class="info_btn" data-target="w-4" onClick="changeInfoWindow(this)">Proyectos estatales</div>
+                    <div class="row btn_container">
+                        <div class="col-md-3 col-6 info_btn" data-target="w-1" onClick="changeInfoWindow(this)">Programación cultural</div>
+                        <div class="col-md-3 col-6 info_btn" data-target="w-2" onClick="changeInfoWindow(this)">Formación</div>
+                        <div class="col-md-3 col-6 info_btn" data-target="w-3" onClick="changeInfoWindow(this)">Fomento a la lectura</div>
+                        <div class="col-md-3 col-6 info_btn" data-target="w-4" onClick="changeInfoWindow(this)">Proyectos estatales</div>
                     </div> 
                     <div class="des_info" id="w-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae scelerisque lectus. Donec varius eros nec commodo sollicitudin. Quisque bibendum orci non ante ullamcorper cursus. Nullam vehicula sed tellus quis malesuada. In vitae massa ut magna luctus tempus. Donec nisl metus, consequat ac sapien a, dictum dictum dolor. Fusce eu nunc at odio tempus finibus quis a orci. Proin porttitor arcu ut purus gravida, at varius nulla mollis. Fusce in consectetur enim. Etiam vehicula ipsum quam, et convallis mi egestas nec. Mauris dignissim diam eu tempus lacinia. Praesent pharetra nunc non tincidunt feugiat. Proin erat est, ullamcorper vitae neque vitae, consectetur placerat velit. 
@@ -526,13 +530,13 @@ toDraw+= `
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non urna sit amet diam sollicitudin iaculis at non lectus. In volutpat ac lacus in rutrum. 
                     </div>
                     <div class="row form_block">
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <input type="text" placeholder="Nombre" />
                         </div>
-                        <div class="col-8">
+                        <div class="col-md-8">
                             <input type="text" placeholder="Asunto" />
                         </div>
-                        <div class="col-12">
+                        <div class="col-md-12">
                             <textarea placeholder="Mensaje"></textarea>
                         </div>
                     </div>

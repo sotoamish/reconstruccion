@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     if( blog_data[post_name] === undefined ){
         toDraw += `
-            <div class="col-10 offset-1 error_window age_${age}">
+            <div class="col-md-10 offset-md-1 error_window age_${age}">
                 Lo sentimos, no pudimos encontrar éste artículo <br>σ(￣、￣〃)
             </div>
         `;
     } else {
         toDraw += `
-            <div class="col-10 offset-1 post_window">
+            <div class="col-md-10 offset-md-1 post_window">
                 <div class="titulo age_${age}">${blog_data[post_name]["titulo"]}</div>
                 <div class="area">
                     ${blog_data[post_name]["area"]} &nbsp; - &nbsp;

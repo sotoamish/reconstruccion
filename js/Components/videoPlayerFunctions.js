@@ -350,7 +350,7 @@ function print_videoList2(){
             
             toDraw += `
                 <div 
-                    class="col-4 vid_card" 
+                    class="col-md-4 col-6 vid_card" 
                     data-code="${key}-${type_key}-${list_key}"
                     onClick="changeVid2('${key}-${type_key}-${list_key}')"
                 >

@@ -21,9 +21,7 @@
 .estados_block .formularios{
     margin-top: 2vw;
 }
-.estados_block .formularios select{
-    width: 70%;
-}
+
 .estados_block .formularios .input-group{
     padding-left: 15%;
     text-align: right;
@@ -74,6 +72,7 @@
 .estados_board .board_container .contact_block{
     font-family: 'Montserrat';
     font-size: 0.9em;
+    word-break: break-all;
 }
 .estados_board .board_container .contact_block .correo{
     margin-bottom: 0.4em;
@@ -137,29 +136,23 @@
 }
 .who_are .info{
     background: #fff;
-    padding: 0;
     margin-top: 1.5em;
 }
 .who_are .info .btn_container{
-    display: flex;
 }
 .who_are .info .btn_container .info_btn{
-    flex: 1;
     font-family: "Montserrat-bold";
     color: #993266;
     font-size: 1.2vw;
     padding: 0.7em 2em 0.7em 0;
     border: none;
     text-align: center;
-    background-image: url('../img/btnbg.png');
-    background-size: cover;          
-    border-bottom: solid 2px #aaa;  
-    background-position-x: 1em;
+    border: solid 2px #aaa;  
     cursor: pointer;
 }
 .who_are .info .btn_container .info_btn.active{
     border-bottom: solid 2px #fff;  
-    background-image: url('../img/btnbgActive.png');
+    background-color: #aaa;
 }
 .who_are .des_info{
     display: none;
@@ -246,4 +239,96 @@
 }
 .contact_block .submit_block button:hover{
     opacity: 0.8;
+}
+
+
+
+@media (max-width: 768px) { 
+    .estados_block .estados_descripcion span{
+        font-size: 2.2em;
+        line-height: 3em;
+    }
+    .estados_block .estados_descripcion p{
+        font-size: 0.9em;
+    }
+    .contact_block{
+        margin: 0 0;
+    }
+    .estados_board .board_container .block_float{
+        margin-top: 1.5em;
+    }
+    .proyectos_board .title {
+        font-size: 1.5em;
+    }
+
+
+    .who_are .description{
+        font-size:0.9em;
+    }
+    .who_are .info .btn_container .info_btn{
+        font-size: 1.4vw;
+    }
+    .who_are .des_info{
+        font-size: 0.9em;
+    }
+    .form_gallery .gallery_wrapper{
+        max-height: 25em;
+    }
+    .who_are .contact_block{
+        margin-top: 2em;
+    }
+    .contact_block .submit_block{
+        font-family: "Montserrat-bold";
+        color: #993266;
+        font-size: 1.2em;
+        text-align: right;
+        margin: 1em 0;
+    }
+}
+@media (max-width: 577px) { 
+    .estados_block .estados_descripcion span{
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    .estados_board .board_container img{
+        width: 15%;
+        vertical-align: middle;
+    }
+    .estados_board .board_container .info_block .puesto{
+        font-size: 0.8em;
+    }
+    .estados_board .board_container .contact_block a{
+        font-size: 0.9em;
+    }
+    .proyectos_board .proy_info{
+        margin-bottom: 2em;
+    }
+
+
+    .who_are .description{
+        font-size:0.8em;
+        text-align: justify;
+    }
+    .who_are .info .btn_container .info_btn{
+        font-size: 1em;
+        padding: 0.7em 0em 0.7em 0;
+    }
+    .who_are .info .btn_container .info_btn.active{
+        border-bottom: solid 1px #aaa;  
+        background-color: #aaa;
+    }
+    .who_are .des_info{
+        font-size: 0.8em;
+    }
+    .form_gallery .gallery_wrapper{
+        max-height: 40em;
+    }
+    .who_are .contact_block{
+        margin-top: 2em;
+    }
+    .contact_block .submit_block{
+        font-size: 1em;
+        text-align: center;
+        margin: 1em 0;
+    }
 }

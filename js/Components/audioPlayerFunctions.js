@@ -6,7 +6,7 @@ function drawComponentAudios(age){
     //print audio player structure
     toDraw += `
         <div class="row comp_audios age_`+age+`">
-            <div class="col-3 comp_audios_avatar">
+            <div class="col-md-3 col-4 comp_audios_avatar">
                 <div class="avatar_container">
                     <img src="" tag="avatar de lista de reproducción" id="comp_audio_avatar_img">
                 </div>
@@ -15,20 +15,20 @@ function drawComponentAudios(age){
                 </div>
             </div>
 
-            <div class="col-9 comp_audios_trackList" id="comp_audios_trackList">
+            <div class="col-md-9 col-8 comp_audios_trackList" id="comp_audios_trackList">
                 comp_audios_trackList
             </div>
 
-            <div class="col-12 p-0 controls_container">
+            <div class="col-12 controls_container">
                 <div class="row">
                     
-                    <div class="col-4 comp_audios_current">
+                    <div class="col-md-4 col-7 comp_audios_current">
                         <div id="comp_audio_current_name">
                             Current Audio
                         </div>
                     </div>
                     
-                    <div class="col-4 comp_audio_controls">
+                    <div class="col-md-4 col-5 comp_audio_controls">
                         <div><i class="fas fa-step-backward" id="comp_audio_prev"></i></div>
                         <div class="big_btn">
                             <i class="far fa-play-circle" id="comp_audio_play"></i>

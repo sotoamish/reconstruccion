@@ -13,8 +13,8 @@ function draw_bookshelf( age ){
     let shelf_collection = getShelfCollection(age);
 
     toDraw += `
-        <div class="row">
-            <div class="col-10 offset-1 shelf_container age_${age}">
+        <div class="row shelf_wrapper">
+            <div class="col-lg-10 offset-lg-1 shelf_container age_${age}">
                 <div class="icon_container">
                     <div class="icon"><img src="img/libros.png" alt="ícono del librero digital" /></div>
                     <div class="name">Librero digital</div>
@@ -160,7 +160,7 @@ function print_lib_type( elm = null ){
 
             toDraw += `
                 
-                <div class="col-4 lib_card age_${age}">
+                <div class="col-lg-4 col-md-6 col-12 lib_card age_${age}">
                     <div class="card_container">
                         <a href="${elm_obj["url"]}" target="_blank">
                             <div class="image"> <img src="${elm_obj["cover"]}" alt="portada de ${elm_obj["name"]}" /> </div>

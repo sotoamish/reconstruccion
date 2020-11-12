@@ -36,7 +36,7 @@
 
 .shelf_container .folleto_container,
 .shelf_container .libro_container{
-    display: block ruby;
+    display: -webkit-box;
     padding: 2em 3em;
     overflow-x: auto;
 }
@@ -68,4 +68,15 @@
     text-align: center;
     font-family: "Montserrat";
     color: #000;
+}
+
+@media (max-width: 768px) { 
+    .shelf_wrapper{
+        padding: 3vw;
+    }
+}
+@media (max-width: 577px) { 
+    .shelf_wrapper{
+        padding: 6vw;
+    }
 }

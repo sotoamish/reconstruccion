@@ -2,7 +2,6 @@
     background: #fff;
 }
 
-
 .comp_audios .comp_audios_avatar{
     padding: 2vw;
     text-align: center;
@@ -27,7 +26,7 @@
     color: #fff;
     padding: 1.5vw;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.7em;
     cursor: pointer;
 }
 .comp_audios .typeList_button .album_contents{
@@ -101,7 +100,7 @@
 }
 .comp_audios .comp_audios_trackList .audio_element .nombre {
     font-family: "Montserrat-Bold";
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 0.2em;
 }
 
@@ -236,4 +235,46 @@
 .comp_audio_playLists .list_element .avatar_container img{
     width: 80%;
     margin: 0.7em auto;
+}
+
+
+
+
+@media (max-width: 768.9px) { 
+    .comp_audios .comp_audios_avatar{
+        text-align: center;
+        padding: 2vw;
+        font-size: 1.1em;
+    }
+    .comp_audios .comp_audios_trackList .audio_element .nombre {
+        font-size: 1.2em;
+    }
+    .comp_audios .comp_audios_trackList .audio_element .descripcion {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 577px) { 
+    .comp_audios .typeList_button {
+        padding: 2vw 0;
+        font-size: 1.3em;
+    }
+    .comp_audios .comp_audios_trackList .audio_element .nombre {
+        font-size: 1.1em;
+    }
+    .comp_audios .comp_audios_trackList .audio_element .descripcion {
+        font-size: 0.75em;
+    }
+    .comp_audios .controls_container{
+        padding: 0.5em 0.5em 0.5em 1.5em;
+    }
+    .comp_audio_volume{
+        display: none;
+    }
+    .comp_audios .controls_container .comp_audios_current #comp_audio_current_name{
+        font-size: 1em;
+    }
+    .comp_audios .comp_audios_trackList{
+        height: 205px;
+    }
+
 }
