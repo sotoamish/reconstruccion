@@ -79,7 +79,7 @@ function print_blog_posts(age){
                         <div class="area">${blog_data[key_name]["area"]} &nbsp; - &nbsp; Por: ${blog_data[key_name]["autor"]} &nbsp; - &nbsp; ${(key_name.split("-"))[0]}</div>
                         <div class="subTitulo little">${blog_data[key_name]["subTitulo"]}</div>
                         <div class="link">
-                            <a href="" target="_blank"> 
+                            <a href="blog.html?age=${age}&post=${key_name}" target="_blank"> 
                                 Leer más
                             </a> 
                         </div>

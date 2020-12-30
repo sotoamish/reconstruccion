@@ -239,6 +239,8 @@ function select_audio( list, album, track ){
     true_player.dataset.currentplaylist = list;
     true_player.dataset.currentalbum = album;
     true_player.dataset.currentid = track;
+
+    // audio_play();
 }
 
 
@@ -339,22 +341,23 @@ function audio_swap( action ) {
             i < Object.keys( audio_player_data[ current_playlist ]["playList"][current_album]["tracklist"] ).length; 
             i++) 
     {
-        let current_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"])[i];
+    
+        let current_key = Object.keys(audio_player_data[ current_playlist ]["playList"][current_album]["tracklist"])[i] ;   
 
         if( current_key === current_audio ){
             
-            let prev_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"][current_album]["tracklist"])[i - 1];
-            let next_key = Object.keys(audio_player_data[ true_player.dataset.currentplaylist ]["playList"][current_album]["tracklist"])[i + 1];
+            let prev_key = [parseInt(current_key) + 1];
+            let next_key = [parseInt(current_key) - 1];
 
             if( action === "backward" ){   //for forward action
-                if( prev_key !== undefined ){
+                if( audio_player_data[ current_playlist ]["playList"][current_album]["tracklist"][prev_key] !== undefined ){
                     //change audio to prev
-                    select_audio( current_playlist, prev_key );
+                    select_audio( current_playlist, current_album, prev_key );
                 }
             } else if ( action === "forward" ) {   //for backward action
-                if( next_key !== undefined ){
+                if( audio_player_data[ current_playlist ]["playList"][current_album]["tracklist"][next_key] !== undefined ){
                     //change audio to next
-                    select_audio( current_playlist, next_key );
+                    select_audio( current_playlist, current_album, next_key );
                 }
             }   
             break;
