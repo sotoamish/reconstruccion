@@ -69,7 +69,6 @@ const estados_sedes_data = {
                "telefono" : `<a href="tel:9818114204">981 8 11 42 04</a>.`,
            },
         },
-
     },
     "Chiapas" : {
         "institucion" : `CONSEJO ESTATAL PARA LA CULTURA Y LAS ARTES DE CHIAPAS <br>
@@ -85,7 +84,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:9616125155">961 612 51 55</a>, ext. 115 y 108 `,
             },        
         },   
-
     },
     "Chihuahua" : {
         "institucion" : `SECRETARÍA DE CULTURA DEL ESTADO DE CHIHUAHUA `, 
@@ -100,7 +98,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:6142144800">614 214 48 00</a>, ext. 220 y ext. 234  `,
             },        
         },   
-
     },
     "Ciudad de México" : {
         "institucion" : `SECRETARÍA DE CULTURA DE LA CIUDAD DE MÉXICO  `, 
@@ -122,7 +119,6 @@ const estados_sedes_data = {
             },      
 
         },   
-
     },
     "Colima" : {
         "institucion" : `SECRETARÍA DE CULTURA DE COLIMA <br>
@@ -137,7 +133,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:3123144272">312 3144272 </a>.`,
             },        
         },   
-
     },
     "Coahuila de Zaragoza" : {
         "institucion" : `SECRETARÍA DE CULTURA DEL ESTADO DE COAHUILA ZARAGOZA  <br>`, 
@@ -152,7 +147,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:8444142747">84 4414 27 47</a>, ext. 113 y 119`,
             },        
         },
-
     },
     "Durango" : {
         "institucion" : `INSTITUTO DE CULTURA DEL ESTADO DE DURANGO`, 
@@ -166,7 +160,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:6188124623">618 812 46 23 </a>.`,
             },        
         },   
-
     },
     "Guanajuato" : {
         "institucion" : `INSTITUTO ESTATAL DE LA CULTURA DE GUANAJUATO <br> 
@@ -182,7 +175,6 @@ const estados_sedes_data = {
                               <a href="tel:4646482007">464 648 20 07</a>, ext. 109`,
             },        
         },   
-
     },
     "Guerrero" : {
         "institucion" : `Secretaría de Cultura del Estado de Guerrero `, 
@@ -196,7 +188,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:7444847168">744 484 71 68 </a>.`,
             },        
         },   
-
     },
     "Hidalgo" : {
         "institucion" : `Secretaría de Cultura del Estado de Hidalgo `, 
@@ -210,7 +201,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:7717780921">771 778 09 21 </a>, ext. 106 .`,
             },        
         },   
-
     },
     "Jalisco" : {
         "institucion" : `Secretaría de Cultura del Gobierno del Estado de Jalisco `, 
@@ -224,7 +214,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:3330304517">333 030 45 17 </a>, Ext. 54742 y 54743.`,
             },        
         },   
-
     },
     "Michoacán de Ocampo" : {
         "institucion" : `Secretaría de Cultura del Estado de Michoacán `, 
@@ -238,7 +227,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:4433228900">443 322 89 00 </a>, ext. 129.`,
             },        
         },   
-
     },
     "Morelos" : {
         "institucion" : `SECRETARÍA DE TURISMO Y CULTURA DEL ESTADO DE MORELOS <br>
@@ -260,7 +248,6 @@ const estados_sedes_data = {
                 "telefono" : `<a href="tel:7773105371">777 310 53 71 </a>. `,
             },             
         },   
-
     },
     "México" : {
         "institucion" : `SECRETARÍA DE CULTURA DEL ESTADO DE MÉXICO `, 
@@ -276,7 +263,6 @@ const estados_sedes_data = {
             },
                   
         },   
-
     },
     "Nayarit" : {
         "institucion" : `CONSEJO ESTATAL PARA LA CULTURA Y LAS ARTES DE NAYARIT `, 
@@ -369,7 +355,7 @@ const estados_sedes_data = {
             },
         },  
     },
-    "San Luis Potsí" : {
+    "San Luis Potosí" : {
         "institucion" : `SECRETARÍA DE CULTURA DE SAN LUIS POTOSÍ `, 
         "direccion" : `<a href="https://goo.gl/maps/QhKUeagD2n3KHWcR6" target="_blank">
                             Jardín Guerrero No. 6, Centro. C.P.78000, San Luis Potosí, S.L.P.
@@ -530,8 +516,7 @@ const estados_sedes_data = {
         },
     } 
 };
-
-
+ 
 const estados_sedes_proyectos = {
     "Aguascalientes" : {
         0 : {
@@ -565,93 +550,649 @@ const estados_sedes_proyectos = {
         },
     },
     "Baja California Sur" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Campeche" : {
-
+        0 : {
+            "nombre" : " Limpieza de los Santos Restos, Campeche. 2º Encuentro Nacional de Saberes Locales.",
+            "imagen" : "img/estatales/CampecheSantosRestos.png",
+            "descripcion" : `
+                Localidad de Pomuch, Municipio de Hecelchakán, Campeche 
+                *Sofía Avendaño Tah 
+                *Dara Jimena Suárez Tah 
+                *Laysha Pino Poot 
+                *Juan Pablo Hernández Chí 
+                *Génesis Alcocer Euán 
+                *Manuel Panti Pat 
+                *Gerad Panti Pat 
+                *Jorge Euán Salazar 
+                Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Chiapas" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Chihuahua" : {
+        0 : {
+            "nombre" : " Confección de ropa rarámuri, Chihuahua. 2º Encuentro Nacional de Saberes Locales",
+            "imagen" : "img/estatales/ChihuahuaRopaRaramuri.png",
+            "descripcion" : `
+               Confección de ropa rarámuri
+                Norogachi, Guachochi, Chihuahua 
 
+                *José Guadalupe  
+
+                Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                 
+                Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Ciudad de México" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Colima" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Coahuila de Zaragoza" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Durango" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Guanajuato" : {
+        0 : {
+            "nombre" : "Cartonería, Guanajuato. 2º Encuentro Nacional de Saberes Locales.",
+            "imagen" : "img/estatales/GuanajuatoCartoneria.png",
+            "descripcion" : `
+                Taller de Cartonería “Almas de Papel” 
+                    Salamanca, Guanajuato 
 
+                    *Sebastián Ruelas Gómez 
+                    *Isis Yerahi Yépez Velázquez 
+                    *Paulina Michelle Jiménez 
+
+                    Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                     
+                    Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Guerrero" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Hidalgo" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Jalisco" : {
-
+        0 : {
+            "nombre" : "Bordado en San Andrés Cohamiata, Jalisco. 2º Encuentro Nacional de Saberes Locales.",
+            "imagen" : "img/estatales/JaliscoBordadoSanAndresCohamiata.png",
+            "descripcion" : `
+                Bordado. Localidad de San Andrés Cohamiata, Municipio de Mezquitic, Jalisco
+            *Estrella Hernán de la Cruz  
+            Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+            Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Michoacán de Ocampo" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Morelos" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "México" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Nayarit" : {
-
+    	0 : {
+            "nombre" : "Secado de camarón. Llano del Tigre, Municipio de Rosamorada, Nayarit. 2º Encuentro Nacional de Saberes Locales",
+            "imagen" : "img/estatales/NayaritRosamorada.png",
+            "descripcion" : ` Del 20 de noviembre al 5 de diciembre de 2020, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realizó el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia; a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
     },
     "Nuevo León" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Oaxaca" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Puebla" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Querétaro" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Quintana Roo" : {
+        0 : {
+            "nombre" : "Música Tradicional de Chetumal, Quintana Roo. 2º Encuentro Nacional de Saberes Locales.",
+            "imagen" : "img/estatales/QuintanaRooMusica.png",
+            "descripcion" : `
+                *Krishna Adary Calderón Marín  
+            Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+            Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
+        1 : {
+            "nombre" : "Bordado a mano, Quintana Roo. 2º Encuentro Nacional de Saberes Locales. ",
+            "imagen" : "img/estatales/QuintanaRooBordadoamano.png",
+            "descripcion" : `
+                Bordado a mano
+                    Comunidad de X-Pichil; Municipio de Felipe Carrillo Puerto, Quintana Roo
 
+                    *Rony Rashid Chuc Pech 
+
+                    Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                     
+                    Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
+        2 : {
+            "nombre" : "Bordado a Mano 2, Quintana Roo. 2º Encuentro Nacional de Saberes Locales.",
+            "imagen" : "img/estatales/QuintanaRooBordado2.png",
+            "descripcion" : `
+                        Bordado a Mano 2
+                        X-Pichil, Felipe Carrillo Puerto, Quintana Roo
+
+                        *Metzy Shaely Tuk Chuc 
+
+                        Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                         
+                        Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
     },
-    "San Luis Potsí" : {
-
+    "San Luis Potosí" : {
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Sinaloa" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Sonora" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Tabasco" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Tamaulipas" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Tlaxcala" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Veracruz" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Yucatán" : {
-
+        0 : {
+            "nombre" : "Proyecto 1",
+            "imagen" : "https://picsum.photos/id/237/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
+        1 : {
+            "nombre" : "Proyecto 2",
+            "imagen" : "https://picsum.photos/id/238/300/200",
+            "descripcion" : `
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laudantium veniam exercitationem expedita laborum at voluptate. Labore, 
+                voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+            `,
+        },
     },
     "Zacatecas" : {
+        0 : {
+            "nombre" : "Danza de pardos, Zacatecas. 2º Encuentro Nacional de Saberes Locales.",
+            "imagen" : "img/estatales/ZacatecasDanzadepardos.png",
+            "descripcion" : `
+                Danza de pardos
+                    Comunidad La Estanzuela, Francisco R. Murguía, Zacatecas
 
+                    *Pamela Rodríguez Gómez 
+                    *Janeth Saldívar González 
+                    *Josué Rodríguez García 
+                    *Felipe Reina Ibarra 
+                    *Joaquín Saldívar Saucedo  
+
+                    Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                     
+                    Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+            `,
+        },
+        1 : {
+            "nombre" : "Melcochas y dulces típicos, Zacatecas. 2º Encuentro Nacional de Saberes Locales.",
+            "imagen" : "img/estatales/ZacatecasMelcochas.png",
+            "descripcion" : `
+                Melcochas y dulces típicos 
+                Localidad de Guadalupe, Zacatecas 
+
+                *Nadia Guadalupe Miranda Baltazar 
+                *Jesús Daniel Miranda Baltazar 
+                *José Issac Miranda Baltazar 
+
+                Del 20 de noviembre al 5 de diciembre, la Secretaría de Cultura del Gobierno de México, a través del programa nacional Alas y Raíces realiza el Segundo Encuentro Nacional de Saberes Locales, un espacio para reconocer la riqueza que hay en nuestras comunidades, familias, localidades y el poder de niñas, niños y adolescentes como portadores y agentes culturales. 
+                 
+                Para la segunda edición de este encuentro, en Alas y Raíces invitamos a 67 niñas, niños y adolescentes de 40 municipios de 24 entidades federativas de México y de La Paz, Bolivia a compartir sus saberes -a la distancia y con el uso de las tecnologías- con otros niños y niñas de distintas partes del país y del mundo.  
+
+            `,
+        },
     },
 }

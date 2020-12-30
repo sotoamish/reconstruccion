@@ -295,7 +295,7 @@ function draw_cartelera( age ){
             <option value="">Edades</option> 
             <option value="1">de 0 a 5 años</option>
             <option value="2">de 6 a 12 años</option>
-            <option value="3">Jovenes 13+</option>
+            <option value="3">Jóvenes 13+</option>
             <option value="4">Formadores</option>
         </select>
     `;
@@ -306,7 +306,7 @@ function draw_cartelera( age ){
         <select name="mode_filter" id="mode_filter" class="form-control filters" onChange="apply_filter()">
             <option value="">Tipo de evento</option> 
             <option value="Presencial">Presencial</option>
-            <option value="En linea">En linea</option>
+            <option value="En línea">En linea</option>
         </select>
     `;
 
@@ -410,36 +410,28 @@ function draw_estados( age ){
 
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 estados_descripcion">
-                    <span> Descripción de este Sitio </span>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sapien a nibh dapibus iaculis. Aenean vel dignissim diam. Vivamus 
-                        fringilla libero ut lacus imperdiet, eget auctor orci accumsan. Quisque eget facilisis est. Donec quam risus, bibendum quis condimentum vel, 
-                        pretium id elit. Nam in metus sit amet erat interdum ornare vitae et ante. Proin convallis quis est et volutpat. Donec rutrum tempus arcu at 
-                        pulvinar. 
-                    </p>
-
-                    <!--<p>
+                    <span> ¿Quiénes somos y qué hacemos en Alas y Raíces?</span>
+                        <p>
                         Alas y Raíces es el programa de la Secretaría de Cultura federal que propone acciones destinadas al cumplimiento de los derechos culturales 
                         de las infancias (de 0 a 17 años de edad) de México en su diversidad de circunstancias: “el derecho al descanso y el esparcimiento, al juego 
                         y a las actividades recreativas propias de su edad y a participar libremente en la vida cultural y en las artes”, como lo indica el Artículo 
                         31 de la Convención Internacional sobre los Derechos del Niño y de la Niña.
-                        <br><br>
-                    
+                        <br><br> 
                         Con este fin se aprovechan las nuevas tecnologías y se desarrollan páginas de Internet y apps creadas especialmente para niñas, niños y 
                         adolescentes; se promueven y organizan presentaciones artísticas, presentaciones de danza, montajes de obras de teatro, funciones de títeres, 
                         proyecciones de cine, concursos, convocatorias, exposiciones, presentaciones de narraciones orales, lecturas y talleres y laboratorios 
                         creativos a través de diversos lenguajes artísticos; y se producen publicaciones.
-                        <br><br>
-
+                        <br><br> 
                         A través de los 32 programas estatales Alas y Raíces, que dependen de las secretarías, institutos y consejos de cultura de las entidades 
                         federativas, se fomenta el disfrute de manifestaciones artísticas y culturales entre el público infantil y juvenil en todo el país.
-                        <br><br>
-
+                        <br><br> 
                         Propiciando experiencias artísticas y culturales significativas y constantes, desde las primeras etapas de la vida, se busca contribuir al 
                         bienestar, la formación integral de niños y adolescentes y el desarrollo de su imaginación, capacidad reflexiva, a la par que su sensibilidad, 
                         empatía, curiosidad y expresión creativa.
-                    </p>-->
+                        <br><br>
+                        A continuación puede consultar el directorio de los coordinadores estatales y contactarlos a través de sus correos electrónicos o redes sociales.
+                        Seleccione el estado en la caja siguiente para conocer sus datos de contacto:
+                    </p> 
                 </div>
             </div>
 
@@ -475,12 +467,26 @@ function draw_descripcion( age ){
     let toDraw = `
         <div class="col-10 offset-1 who_are age_${age}">
             <div class="row">
-                <div class="col-12 title">¿Quienes somos?</div>
+                <div class="col-12 title">¿Quiénes somos?</div>
                 <div class="col-12 description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna faucibus est ultrices tincidunt ac pellentesque dolor. <br>
-                    Donec blandit turpis dictum tincidunt sollicitudin. Nullam sed viverra odio. Nunc felis purus, sodales mollis felis vitae, egestas lobortis orci.  <br>
-                    Quisque mi dolor, tristique scelerisque pharetra tincidunt, bibendum et ligula. Vivamus blandit tincidunt risus vitae elementum. <br>
-                    Vivamus fringilla nisl et ipsum sodales euismod. 
+                    <p>
+                        Alas y Raíces es el programa de la Secretaría de Cultura federal que propone acciones destinadas al cumplimiento de los derechos culturales 
+                        de las infancias (de 0 a 17 años de edad) de México en su diversidad de circunstancias: “el derecho al descanso y el esparcimiento, al juego 
+                        y a las actividades recreativas propias de su edad y a participar libremente en la vida cultural y en las artes”, como lo indica el Artículo 
+                        31 de la Convención Internacional sobre los Derechos del Niño y de la Niña.
+                        <br><br> 
+                        Con este fin se aprovechan las nuevas tecnologías y se desarrollan páginas de Internet y apps creadas especialmente para niñas, niños y 
+                        adolescentes; se promueven y organizan presentaciones artísticas, presentaciones de danza, montajes de obras de teatro, funciones de títeres, 
+                        proyecciones de cine, concursos, convocatorias, exposiciones, presentaciones de narraciones orales, lecturas y talleres y laboratorios 
+                        creativos a través de diversos lenguajes artísticos; y se producen publicaciones.
+                        <br><br> 
+                        A través de los 32 programas estatales Alas y Raíces, que dependen de las secretarías, institutos y consejos de cultura de las entidades 
+                        federativas, se fomenta el disfrute de manifestaciones artísticas y culturales entre el público infantil y juvenil en todo el país.
+                        <br><br> 
+                        Propiciando experiencias artísticas y culturales significativas y constantes, desde las primeras etapas de la vida, se busca contribuir al 
+                        bienestar, la formación integral de niños y adolescentes y el desarrollo de su imaginación, capacidad reflexiva, a la par que su sensibilidad, 
+                        empatía, curiosidad y expresión creativa.
+                    </p> 
                 </div>
 
                 <div class="col-12 info">
@@ -491,16 +497,16 @@ function draw_descripcion( age ){
                         <div class="col-md-3 col-6 info_btn" data-target="w-4" onClick="changeInfoWindow(this)">Proyectos estatales</div>
                     </div> 
                     <div class="des_info" id="w-1">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae scelerisque lectus. Donec varius eros nec commodo sollicitudin. Quisque bibendum orci non ante ullamcorper cursus. Nullam vehicula sed tellus quis malesuada. In vitae massa ut magna luctus tempus. Donec nisl metus, consequat ac sapien a, dictum dictum dolor. Fusce eu nunc at odio tempus finibus quis a orci. Proin porttitor arcu ut purus gravida, at varius nulla mollis. Fusce in consectetur enim. Etiam vehicula ipsum quam, et convallis mi egestas nec. Mauris dignissim diam eu tempus lacinia. Praesent pharetra nunc non tincidunt feugiat. Proin erat est, ullamcorper vitae neque vitae, consectetur placerat velit. 
+                        Contiene las áreas de Presentaciones artísticas, Exposiciones, Narraciones y Tradición Oral, Laboratorios Creativos, Formación, Fomento a la lectura y Ediciones. Planea, proyecta y realiza acciones a lo largo del país, permitiendo el acercamiento de lactantes, preescolares, niñas, niños y adolescentes a diversas actividades culturales y artísticas, tanto en espacios rurales como urbanos, pensando la medición cultural como un espacio para la reconstrucción de los tejidos sociales y el diálogo de saberes. Todo ello, orientado por un equipo de especialistas en diversas metodologías pedagógicas y disciplinas artísticas, conocedores del desarrollo de las infancias y adolescencias en México.
                     </div>       
                     <div class="des_info" id="w-2">
-                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer porta at turpis a commodo. Integer pretium tristique libero, ut mattis ligula fringilla nec. Quisque ac quam at est posuere dictum ac sed erat. Cras ultrices, lorem ac accumsan vulputate, tellus diam pellentesque dui, sit amet bibendum nibh nibh vitae orci. Nam vitae molestie velit. Donec ac rhoncus nibh, non imperdiet purus. Duis tempus condimentum orci, quis tincidunt dui ultricies id. Praesent vestibulum ultricies quam vel ultrices. Nam sit amet felis vitae eros laoreet sollicitudin. In porttitor metus sed sapien egestas fermentum. Fusce dictum imperdiet tincidunt. Suspendisse lacinia imperdiet lorem in pulvinar. Sed id lacus a lorem euismod dictum. 
+                        Es el proceso que busca la actualización y profesionalización, de los promotores de cultura infantil, con la finalidad de ampliar sus conocimientos, habilidades y actitudes, para la instrumentación de proyectos artísticos y culturales dirigidos a niñas, niños y adolescentes desde un enfoque de derechos, que generen su participación en procesos creativos. A partir de distintas modalidades didácticas -talleres, cursos, conferencias, diplomados, entre otros- se abren espacios de reflexión y análisis, para brindar elementos tanto teóricos como metodológicos, que enriquezcan el quehacer de los promotores y gestores culturales, maestros que trabajan con y para niñas, niños y adolescentes. 
                     </div>       
                     <div class="des_info" id="w-3">
-                        Curabitur mauris magna, hendrerit ornare ante sit amet, venenatis interdum nunc. Praesent accumsan erat eros, non suscipit lacus accumsan in. Ut vel vehicula urna. Etiam lobortis luctus sem, ac vehicula elit tincidunt et. Integer mattis ullamcorper viverra. Morbi euismod risus eu felis vestibulum, eget porttitor leo porta. Aliquam et diam arcu. Sed ullamcorper ac nibh quis rutrum. Nullam aliquam elementum tincidunt. Praesent id orci ullamcorper quam luctus elementum. Curabitur quis nisl eu dolor viverra ultrices volutpat sed urna. Suspendisse nec purus ut dolor pellentesque ultricies. 
+                        Centro de documentación de cultura infantil, donde se recopilan y se ofrecen materiales documentales, artísticos, digitales, sonoros o audiovisuales de consulta, enfocados a las infancias, que permitan a los niños, niñas y adolescentes el acercamiento y participación a las diferentes expresiones artísticas y culturales en México, así como a los trabajadores con infancias, aprovechar metodologías y disponer de recursos para su labor. 
                     </div>       
                     <div class="des_info" id="w-4">
-                        Etiam quis ante augue. Suspendisse vel venenatis eros. Praesent magna enim, pellentesque non volutpat luctus, feugiat quis purus. Etiam venenatis viverra magna, eget tristique dui ullamcorper eget. Etiam feugiat mollis neque. Phasellus euismod ex a urna pulvinar, eget eleifend justo elementum. Integer nec purus id augue ullamcorper euismod. Integer vestibulum massa vitae erat aliquam sollicitudin. Donec tempor molestie ante, vel mollis tellus malesuada eu. Suspendisse nec ligula mauris. Quisque non nisi sit amet nulla vestibulum bibendum et et massa. 
+                        La Coordinación Nacional de Desarrollo Cultural Infantil, realiza de manera conjunta con Institutos, Consejos y Secretarías de Cultura de las 32 entidades federativas del país, proyectos regionales, propuestas de trabajo artístico y cultural que buscan dar atención a alguna problemática que afecta a las niñas, niños y adolescentes de cada una de las regiones del país: Norte, Centro Occidente, Centro y Sur. Para su instrumentación, los promotores de cultura infantil participan en acciones de formación sobre la problemática compartida entre los estados que conforman una región y las metodologías pertinentes para tal fin. Desde una perspectiva intercultural, de respeto a la diversidad e incluyente, se generan procesos de participación infantil en contextos adversos. Para hacer contacto con alguna de las coordinaciones estatales, haz clic en el directorio nacional de Alas y Raíces en los estados de la República mexicana.
                     </div>                    
                 </div>
 
@@ -527,7 +533,7 @@ toDraw+= `
                 <div class="col-12 contact_block">
                     <div class="title">Contacto</div>
                     <div class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non urna sit amet diam sollicitudin iaculis at non lectus. In volutpat ac lacus in rutrum. 
+                        Si desea saber más sobre los proyectos o contactar con alguna de las personas que forman parte de esta labor, por favor llene el siguiente formulario y nos pondremos en contacto con usted. 
                     </div>
                     <div class="row form_block">
                         <div class="col-md-4">
@@ -542,10 +548,10 @@ toDraw+= `
                     </div>
                     <div class="submit_block">
                         O visita nuestras redes sociales
-                        <a href="#"><i class="fab fa-lg fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-lg fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-lg fa-instagram-square"></i></a>
-                        <a href="#"><i class="fab fa-lg fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/alasyraicescultura/"><i class="fab fa-lg fa-facebook-square"></i></a>
+                        <a href="https://www.facebook.com/alasyraicescultura/"><i class="fab fa-lg fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/alasyraicescultura/"><i class="fab fa-lg fa-instagram-square"></i></a>
+                        <a href="https://www.youtube.com/c/AlasyRa%C3%ADcesCultura/"><i class="fab fa-lg fa-youtube"></i></a>
                         <button>Enviar</button>
                     </div>
                 </div>

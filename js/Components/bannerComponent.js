@@ -1,23 +1,23 @@
 // lista de banners para escritorio y mobil
 const listaBanners = {
     0 : {
-        "evento" : "soy el nombre del evento o banner",
-        "desktop" : "img/juego y mov-02.png",
-        "mobil" : "img/juego y mov-02small.png" ,
-        "url" : "pagina_evento.html"
+        "evento" : "Descarga libros de la colección Alas de Lagartija",
+        "desktop" : "img/banners/alasdelagartija.png",
+        "mobil" : "img/banners/alasdelagartija.png" ,
+        "url" : "https://www.alasyraices.gob.mx/librero.html?age=2&type=libros&id=27"
     },
     1 : {
         "evento" : "soy el nombre del evento o banner",
-        "desktop" : "img/juego y mov-02.png",
-        "mobil" : "img/juego y mov-02small.png" ,
-        "url" : "pagina_evento.html"
-    },
+        "desktop" : "img/banners/vozdibujacambio.png",
+        "mobil" : "img/banners/vozdibujacambio.png" ,
+        "url" : "https://www.youtube.com/playlist?list=PLGsaNvyPG8GG2vr1Zc6lXrlpj2L6uPTpa"
+    }, /*
     2 : {
         "evento" : "soy el nombre del evento o banner",
         "desktop" : "img/juego y mov-02.png",
         "mobil" : "img/juego y mov-02small.png" ,
         "url" : "pagina_evento.html"
-    },
+    }, */
 };
 
 
